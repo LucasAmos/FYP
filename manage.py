@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 
-from thermos import app, db
+from Shares import app, db
 
-from thermos.models import User, Userownedshare, Share
+from Shares.models import User, Userownedshare, Share
 from flask.ext.script import Manager, prompt_bool
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand

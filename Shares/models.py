@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from sqlalchemy import desc
-from flask_login import UserMixin
+from flask_login import UserMixin, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from Shares import db
@@ -15,7 +15,7 @@ class User(db.Model, UserMixin):
     phonenumber = db.Column(db.String(15))
     emailupdate = db.Column(db.Boolean)
     updatefrequency = db.Column(db.Integer)
-    shares = db.relationship('Userownedshare', backref='author', lazy='dynamic')
+    shares = db.relationship('Userownedshare', backref='Userownedshare', lazy='dynamic')
 
     @property
     def password(self):
@@ -47,6 +47,13 @@ class Userownedshare(db.Model):
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))
         name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
+
+        @staticmethod
+        def listshares():
+
+            if current_user.is_authenticated:
+
+              return Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username)
 
         def __repr__(self):
             return "*Userownedshare* " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user

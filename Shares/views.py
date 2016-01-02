@@ -4,7 +4,7 @@ from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
 from forms import BookmarkForm, LoginForm, SignupForm
-from models import User
+from models import User, Userownedshare
 
 
 @login_manager.user_loader
@@ -15,7 +15,7 @@ def load_user(userid):
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', shares=Userownedshare.listshares())
 
 
 @app.route('/add', methods=['GET', 'POST'])
@@ -23,13 +23,12 @@ def index():
 def add():
     form = BookmarkForm()
     if form.validate_on_submit():
-        url = form.url.data
-        description = form.description.data
-        tags = form.tags.data
-       # bm = Bookmark(user=current_user, url=url, description=description, tags=tags)
-       # db.session.add(bm)
+        ticker = form.ticker.data
+        quantity = form.quantity.data
+        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker)
+        db.session.add(bm)
         db.session.commit()
-        flash("Stored bookmark '{}'".format(description))
+        flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
     return render_template('add.html', form=form)
 

@@ -10,11 +10,26 @@ Thermos -- Welcome -- Test
 
     <header>
         <h1>Welcome {{ current_user.username }} </h1>
-        <p>Thermos is a simple bookmarking site</p>
+        <p>Your share portfolio</p>
     </header>
 
     <section>
-        <h2>Recently Added</h2>
+
+        {% if shares %}
+
+        <h2>You own the following shares</h2>
+
+        {% for share in shares %}
+
+            <li>
+                Ticker: {{share.ticker}}<br>
+                Name: {{share.name.name}}<br>
+                Quantity: {{share.quantity}}</li>
+
+        {% endfor %}
+
+            {% endif %}
+
 
 
     </section>

@@ -5,12 +5,15 @@ from flask_login import login_required, login_user, logout_user, current_user
 from Shares import app, db, login_manager
 from forms import BookmarkForm, LoginForm, SignupForm
 from models import User, Userownedshare
-#from share_data import getalljsonshares
 from share_data import share_data
 
 
 @login_manager.user_loader
 def load_user(userid):
+
+    if userid is None or userid == 'None':
+       userid =0
+    print 'ID: %s, leaving load_user' % (userid)
     return User.query.get(int(userid))
 
 

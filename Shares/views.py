@@ -19,7 +19,7 @@ def load_user(userid):
 def index():
 
     if current_user.is_authenticated:
-        print(share_data.getalljsonshares(current_user.username))
+        #print(share_data.getalljsonshares(current_user.username))
 
         return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
 

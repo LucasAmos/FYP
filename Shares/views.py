@@ -21,8 +21,9 @@ def index():
     if current_user.is_authenticated:
         print(share_data.getalljsonshares(current_user.username))
 
-    return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
-    #return render_template('index.html', shares=Userownedshare.listshares())
+        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
+
+    else: return render_template('index.html')
 
 
 @app.route('/add', methods=['GET', 'POST'])

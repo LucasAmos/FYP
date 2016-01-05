@@ -22,13 +22,16 @@ Thermos -- Welcome -- Test
         {% for share in shares %}
 
             <li>
-                Ticker: {{share.ticker}}<br>
-                Name: {{share.name.name}}<br>
-                Quantity: {{share.quantity}}</li>
+                Ticker: {{share.symbol}}<br>
+                Name: {{share.name}}<br>
+                Quantity: {{share.quantity}} <br>
+                Price: {{share['price']}}
+            </li>
 
         {% endfor %}
 
             {% endif %}
+
 
 
 

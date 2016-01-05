@@ -1,7 +1,7 @@
 from sqlalchemy import desc
 import urllib
 import json
-
+from models import Userownedshare
 
 class share_data():
 
@@ -24,22 +24,22 @@ class share_data():
 
 
     @staticmethod
-    def getalljsonshares(val):
-        tempshares = Share.query.order_by(desc(Share.time)).filter(Share.share == val)
-        #tempshares = Share.query.order_by(desc(Share.time)).all()
+    def getalljsonshares(user):
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
 
         sharearray = []
 
         for row in tempshares:
 
-            ticker = row.share
+            ticker = row.ticker
             quote = share_data.JSONSharePrice(ticker)
 
             sharedata = {
                 'symbol': quote['query']['results']['quote']['symbol'],
                 'quantity': row.quantity,
-                'Price': quote['query']['results']['quote']['LastTradePriceOnly'],
-                'Name': quote['query']['results']['quote']['Name']
+                'price': quote['query']['results']['quote']['LastTradePriceOnly'],
+                #'name': quote['query']['results']['quote']['Name']
+                'name': row.name
             }
 
             sharearray.append(sharedata)

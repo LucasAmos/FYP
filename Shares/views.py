@@ -8,7 +8,7 @@ from models import User, Userownedshare
 from share_data import share_data
 import json
 from flask import jsonify
-#test
+
 @login_manager.user_loader
 def load_user(userid):
 

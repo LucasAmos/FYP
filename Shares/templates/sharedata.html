@@ -13,11 +13,12 @@
         {% for share in data %}
 
             <li>
-                Ticker: {{share.symbol}}<br>
                 Name: {{share.name}}<br>
-                Quantity: {{share.quantity}} <br>
+                Ticker: {{share.symbol}}<br>
+                Quantity: {{share['quantity']}} <br>
                 Price: {{share['price']}}
             </li>
+    <br>
 
         {% endfor %}
 

@@ -20,7 +20,6 @@ class share_data():
         data = response.read()
         quote = json.loads(data)
 
-       # print quote
         return quote
 
 
@@ -41,13 +40,7 @@ class share_data():
                 'price': quote['query']['results']['quote']['LastTradePriceOnly'],
                 #'name': quote['query']['results']['quote']['Name']
                 'name': row.name.name
-
             }
-
-            # temp = json.dumps(sharedata)
-            # print(temp)
             sharearray.append(sharedata)
 
-
-        print sharearray
         return sharearray

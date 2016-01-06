@@ -2,14 +2,21 @@ from flask_wtf import Form
 from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField
 from flask.ext.wtf.html5 import URLField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError
+from flask_login import current_user
+from models import User, Userownedshare
 
-from models import User
 
-
-class BookmarkForm(Form):
+class ShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                   message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
+    dividends = IntegerField('Have you received any dividends for this share?')
+
+
+    def validate_ticker(self, ticker_field):
+        if Userownedshare.query.filter_by(ticker=ticker_field.data).filter_by(user=current_user.username).first():
+            raise ValidationError('This share is already in your portfolio')
+
 
     def validate(self):
 

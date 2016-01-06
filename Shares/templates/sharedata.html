@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% if data %}
+
+        <h2>You own the following shares</h2>
+
+        {% for share in data %}
+
+            <li>
+                Ticker: {{share.symbol}}<br>
+                Name: {{share.name}}<br>
+                Quantity: {{share.quantity}} <br>
+                Price: {{share['price']}}
+            </li>
+
+        {% endfor %}
+
+            {% endif %}
+
+
+</body>
+</html>

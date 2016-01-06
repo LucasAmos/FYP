@@ -294,7 +294,7 @@ footer h3 {
 }
 
 
-# errors
+/*# errors*/
 
 .error, .error input {
 color: red;
@@ -310,6 +310,14 @@ margin-top: 20px
 
 input, button {
 margin-left: 10px;
+}
+
+
+#gear {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 

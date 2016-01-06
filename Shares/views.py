@@ -6,7 +6,8 @@ from Shares import app, db, login_manager
 from forms import BookmarkForm, LoginForm, SignupForm
 from models import User, Userownedshare
 from share_data import share_data
-
+import json
+from flask import jsonify
 
 @login_manager.user_loader
 def load_user(userid):
@@ -22,9 +23,10 @@ def load_user(userid):
 def index():
 
     if current_user.is_authenticated:
-        #print(share_data.getalljsonshares(current_user.username))
 
         return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
+        #return render_template('index.html', shares=Userownedshare.listshares())
+
 
     else: return render_template('index.html')
 
@@ -113,7 +115,21 @@ def page_not_found(e):
 def server_error(e):
     return render_template('500.html'), 500
 
+from StringIO import StringIO
+io = StringIO()
+
+from StringIO import StringIO
 
 
+@app.route('/sharedata')
 
+def sharedata():
+    js = share_data.getalljsonshares(current_user.username)
+    io = StringIO()
+    #return json.dumps(js, io)
+    data= json.dumps(js, io)
+
+    if current_user.is_authenticated:
+
+        return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username))
 

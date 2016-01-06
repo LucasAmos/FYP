@@ -22,10 +22,8 @@ def initdb():
         db.session.add(lucas)
 
 
-        google = Userownedshare(user="reindert", ticker="GOOG", quantity=1)
-        db.session.add(google)
 
-        apple = Userownedshare(user="lucas", ticker="AAPL", quantity=1)
+        apple = Userownedshare(user="lucas", ticker="GOOG", quantity=1)
         db.session.add(apple)
 
         apple2 = Userownedshare(user="reindert", ticker="AAPL", quantity=1)
@@ -39,6 +37,9 @@ def initdb():
 
         share2 = Share(ticker="AAPL", name="APPLE inc")
         db.session.add(share2)
+
+        share3 = Share(ticker="IBM", name="INTERNATIONAL BUSINESS MACHINES")
+        db.session.add(share3)
 
         db.session.commit()
 

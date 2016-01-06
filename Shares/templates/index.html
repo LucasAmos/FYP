@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Thermos -- Welcome -- Test
+FYP - share portfolio
 {% endblock %}
 
 {% block content %}
@@ -14,38 +14,46 @@ Thermos -- Welcome -- Test
     </header>
 
     <section>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-        {% if shares %}
+        {% if current_user.is_authenticated %}
 
-        <h2>You own the following shares</h2>
+        <div id="result">
+            <img id="gear" src="static/img/gears.gif">
+        </div>
 
-        {% for share in shares %}
 
-            <li>
-                Ticker: {{share.symbol}}<br>
-                Name: {{share.name}}<br>
-                Quantity: {{share.quantity}} <br>
-                Price: {{share['price']}}
-            </li>
 
-        {% endfor %}
+        <script>$( document ).ready(function() {
+            $('#result').load('/sharedata')
 
-            {% endif %}
+        });
+
+
+        </script>
+
+        {% endif %}
 
 
 
 
     </section>
+
+
 
     <section>
         <h2>article section h2</h2>
         <p>Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. </p>
     </section>
     <section><h2>article section h2</h2>
-    <p>Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
-    </p>
+        <p>Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
+        </p>
     </section>
 
 </article>
 
+
+
 {% endblock %}
+
+

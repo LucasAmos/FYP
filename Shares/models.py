@@ -37,6 +37,7 @@ class User(db.Model, UserMixin):
 
 
 class Userownedshare(db.Model):
+
         id = db.Column(db.Integer)
         ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'), primary_key=True)
         user = db.Column(db.String, db.ForeignKey('user.username'), primary_key=True)

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -6,27 +7,32 @@
 </head>
 <body>
 
+
     {% if data %}
+
 
         <h2>You own the following shares</h2>
 
         {% for share in data %}
 
-            <li>
-                Name: {{share.name}}<br>
+
+
+                <hr>
+
+                {{share.name}}<br>
                 Ticker: {{share.symbol}}<br>
                 Quantity: {{share['quantity']}} <br>
                 Price: {{share['price']}} <br>
                 <span class="editlinks">
                     <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a>
                 </span>
-            </li>
-            </li>
-    <br>
 
         {% endfor %}
 
             {% endif %}
+
+  Your net worth is:
+
 
 
 </body>

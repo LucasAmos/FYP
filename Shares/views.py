@@ -60,21 +60,9 @@ def edit_share(bookmark_id):
         flash("You have successfully edited the share: '{}'". format(tempeditshare.name.name))
         return redirect(url_for('index'))
 
-    return render_template('bookmark_form.html', form=form, title="Edit bookmark")
+    return render_template('editshare_form.html', form=form, title="Edit share")
 
 
-
-
-@app.route('/user/<username>')
-def user(username):
-    # user = User.query.filter_by(username=username).first_or_404()
-    # print(current_user.username)
-    # print "test"
-    #
-    # if current_user.username == user.username:
-    #     return render_template('user.html', user=user)
-    # else:
-        return render_template('404.html')
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

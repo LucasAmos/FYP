@@ -10,7 +10,7 @@ class ShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                   message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
-    dividends = IntegerField('Have you received any dividends for this share?')
+    dividends = DecimalField('Have you received any dividends for this share?')
 
 
     def validate_ticker(self, ticker_field):

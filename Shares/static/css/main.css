@@ -27,7 +27,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px sold #ccc;
+    border-top: 1px  #ccc;
     margin: 1em 0;
     padding: 20px 0;
 
@@ -81,7 +81,7 @@ color: #000;
 
 article.flashes {
 margin-bottom: 1em;
-}sohobikes
+}
 
 section {
 clear: left;
@@ -108,7 +108,7 @@ a.header h3 {
 }
 
 div.info {
-    font-size:. 95em;
+    font-size: 95em;
     color: #666666;
 }
 
@@ -320,6 +320,10 @@ margin-left: 10px;
 
 }
 
+.share {
+ list-style-type: none;
+    padding:0; margin:0;
+}
 
 
 

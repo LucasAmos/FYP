@@ -24,8 +24,6 @@ def index():
     if current_user.is_authenticated:
 
         return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
-        #return render_template('index.html', shares=Userownedshare.listshares())
-
 
     else: return render_template('index.html')
 

@@ -45,3 +45,35 @@ class share_data():
             sharearray.append(sharedata)
 
         return sharearray
+
+
+    @staticmethod
+    def getportfoliovalue(user):
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
+
+        sharearray = []
+
+        value = 0.1
+
+        for row in tempshares:
+
+            ticker = row.ticker
+            quote = share_data.JSONSharePrice(ticker)
+
+            sharedata = {
+                'symbol': quote['query']['results']['quote']['symbol'],
+                'quantity': row.quantity,
+                'price': quote['query']['results']['quote']['LastTradePriceOnly'],
+                #'name': quote['query']['results']['quote']['Name']
+                'name': row.name.name,
+                'id': row.id
+            }
+            sharearray.append(sharedata)
+            shareprice = float (quote['query']['results']['quote']['LastTradePriceOnly'])
+            quantity = row.quantity
+            shareholding = shareprice * quantity
+
+            value = value + shareholding
+
+        return value
+

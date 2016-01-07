@@ -112,7 +112,6 @@ from StringIO import StringIO
 
 
 @app.route('/sharedata')
-
 def sharedata():
     js = share_data.getalljsonshares(current_user.username)
     io = StringIO()
@@ -123,3 +122,9 @@ def sharedata():
 
         return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username))
 
+@app.route('/portfoliovalue')
+def portfoliovalue():
+
+    if current_user.is_authenticated:
+
+        return render_template('portfoliovalue.html', data=share_data.getportfoliovalue(current_user.username))

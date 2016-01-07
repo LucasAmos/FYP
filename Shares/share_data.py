@@ -39,7 +39,8 @@ class share_data():
                 'quantity': row.quantity,
                 'price': quote['query']['results']['quote']['LastTradePriceOnly'],
                 #'name': quote['query']['results']['quote']['Name']
-                'name': row.name.name
+                'name': row.name.name,
+                'id': row.id
             }
             sharearray.append(sharedata)
 

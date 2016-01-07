@@ -38,9 +38,9 @@ class User(db.Model, UserMixin):
 
 class Userownedshare(db.Model):
 
-        id = db.Column(db.Integer)
-        ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'), primary_key=True)
-        user = db.Column(db.String, db.ForeignKey('user.username'), primary_key=True)
+        id = db.Column(db.Integer, primary_key=True)
+        ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'))
+        user = db.Column(db.String, db.ForeignKey('user.username'))
         quantity = db.Column(db.Integer, nullable=False)
         dividends = db.Column(db.Float)
         triggerlevel = db.Column(db.Integer)
@@ -48,6 +48,17 @@ class Userownedshare(db.Model):
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))
         name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
+
+        # id = db.Column(db.Integer)
+        # ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'), primary_key=True)
+        # user = db.Column(db.String, db.ForeignKey('user.username'), primary_key=True)
+        # quantity = db.Column(db.Integer, nullable=False)
+        # dividends = db.Column(db.Float)
+        # triggerlevel = db.Column(db.Integer)
+        # smsalert = db.Column(db.Boolean)
+        # emailalert = db.Column(db.Boolean)
+        # portfolioid = db.Column(db.String(50))
+        # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
 
         @staticmethod
         def listshares():

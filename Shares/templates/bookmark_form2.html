@@ -11,9 +11,9 @@ Thermos -- {{ Title }}
     <form action="" method="post">
         {{form.hidden_tag()}}
         <table>
-            {{ render_field(form.ticker, size=50) }}
-            {{ render_field(form.quantity, size=50) }}
-            {{ render_field(form.dividends, size=50) }}
+            {{ render_field(form.url, size=50) }}
+            {{ render_field(form.description, size=50) }}
+            {{ render_field(form.tags, size=50) }}
 
             <tr class="submit">
                 <td></td>

@@ -1,6 +1,6 @@
 from flask_wtf import Form
 from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField
-from flask.ext.wtf.html5 import URLField
+from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError
 from flask_login import current_user
 from models import User, Userownedshare
@@ -16,6 +16,26 @@ class ShareForm(Form):
     def validate_ticker(self, ticker_field):
         if Userownedshare.query.filter_by(ticker=ticker_field.data).filter_by(user=current_user.username).first():
             raise ValidationError('This share is already in your portfolio')
+
+
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True
+
+class EditShareForm(Form):
+    ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
+                                                  message="The share ticker must only be letters")])
+    quantity = IntegerField('How many of this share do you own:')
+    dividends = DecimalField('Have you received any dividends for this share?')
+
+
+    def validate_ticker(self, ticker_field):
+        print Userownedshare.query.filter_by(ticker=ticker_field.data).filter_by(user=current_user.username).count()
+        if Userownedshare.query.filter_by(ticker=ticker_field.data).filter_by(user=current_user.username).count() != 1:
+            raise ValidationError('You cannot edit a different share')
 
 
     def validate(self):

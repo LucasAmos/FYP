@@ -11,7 +11,9 @@
     {% if data %}
 
 
-        <h1>  Your portfolio value is: £{{data}} </h1>
+        <h1>  Your portfolio value is: £{{data['portfoliovalue']}}   </h1>
+        <h1>  Your shares are worth: £{{data['sharevalue']}} </h1>
+        <h1>  You have £{{data['dividends']}} in dividends </h1>
 
 
 

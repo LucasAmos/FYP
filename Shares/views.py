@@ -14,7 +14,6 @@ def load_user(userid):
 
     if userid is None or userid == 'None':
        userid =0
-    print 'ID: %s, leaving load_user' % (userid)
     return User.query.get(int(userid))
 
 

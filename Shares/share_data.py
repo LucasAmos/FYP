@@ -53,27 +53,26 @@ class share_data():
 
         sharearray = []
 
-        value = 0.1
+        sharevalue = 0.0
+        dividends = 0.0
+        portfoliovalue = 0.0
 
         for row in tempshares:
 
             ticker = row.ticker
             quote = share_data.JSONSharePrice(ticker)
 
-            sharedata = {
-                'symbol': quote['query']['results']['quote']['symbol'],
-                'quantity': row.quantity,
-                'price': quote['query']['results']['quote']['LastTradePriceOnly'],
-                #'name': quote['query']['results']['quote']['Name']
-                'name': row.name.name,
-                'id': row.id
-            }
-            sharearray.append(sharedata)
             shareprice = float (quote['query']['results']['quote']['LastTradePriceOnly'])
             quantity = row.quantity
             shareholding = shareprice * quantity
+            dividends = dividends + row.dividends
+            sharevalue += shareholding
+            portfoliovalue = sharevalue + dividends
 
-            value = value + shareholding
+        sharearray.append(sharevalue)
+        sharearray.append(dividends)
+        sharearray.append(portfoliovalue)
+        dictvalues = {'portfoliovalue': portfoliovalue, 'sharevalue': sharevalue, 'dividends': dividends}
 
-        return value
+        return dictvalues
 

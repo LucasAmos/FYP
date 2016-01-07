@@ -28,9 +28,9 @@
                     <ul>
                         <li><a href="{{ url_for('add') }}">Add share</a></li>
                         {% if current_user.is_authenticated %}
-                            <li><a href="google.com">
-                               My News</a> </li>
+                            <li><a href="google.com">My News</a> </li>
                              <li><a href=" {{ url_for('logout') }}"> Sign out </a> </li>
+
                         {% else %}
                              <li><a href=" {{ url_for('signup') }}"> Sign up </a> </li>
                              <li><a href=" {{ url_for('login') }}"> Sign in </a> </li>

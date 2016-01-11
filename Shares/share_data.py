@@ -2,7 +2,7 @@ from sqlalchemy import desc
 import urllib
 import json
 from models import Userownedshare
-
+#testttttt
 class share_data():
 
     @staticmethod

@@ -54,6 +54,12 @@
 
                 <a class="navbar-brand" href="{{url_for('index') }}">{{ current_user.username }}</a>
 
+            {% else %}
+
+                <a class="navbar-brand" href="{{url_for('index') }}">FYP</a>
+
+
+
             {% endif %}
 
         </div>

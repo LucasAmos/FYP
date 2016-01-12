@@ -99,6 +99,15 @@ class Share(db.Model):
         ticker = db.Column(db.String(50), db.ForeignKey('userownedshare.ticker'), primary_key=True)
         tickermatch = db.relationship('Userownedshare', backref='share',  foreign_keys=[ticker])
 
+
+        @staticmethod
+        def exists(shareticker):
+
+            if Share.query.filter_by(ticker=shareticker).first():
+                return True
+            else:
+                return False
+
         def __repr__(self):
             return "*Share* " + self.name + " " + " Ticker: " + self.ticker
 

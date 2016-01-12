@@ -4,7 +4,7 @@ from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
 from forms import ShareForm, LoginForm, SignupForm, EditShareForm
-from models import User, Userownedshare
+from models import User, Userownedshare, Share
 from share_data import share_data
 import json
 from sets import Set
@@ -23,8 +23,6 @@ def index():
 
     if current_user.is_authenticated:
 
-
-
         return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids = Userownedshare.listportfolios())
 
     else: return render_template('index.html')
@@ -38,6 +36,16 @@ def add():
         ticker = form.ticker.data
         quantity = form.quantity.data
         dividends = form.dividends.data
+
+        if not Share.exists(ticker):
+
+            sharedata = share_data.JSONSharePrice(ticker)
+            sharename = sharedata['query']['results']['quote']['Name']
+
+            newshare = Share(ticker=ticker, name=sharename)
+            db.session.add(newshare)
+            db.session.commit()
+
         bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends)
         db.session.add(bm)
         db.session.commit()

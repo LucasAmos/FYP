@@ -7,7 +7,7 @@ from forms import ShareForm, LoginForm, SignupForm, EditShareForm
 from models import User, Userownedshare
 from share_data import share_data
 import json
-from flask import jsonify
+from sets import Set
 
 @login_manager.user_loader
 def load_user(userid):
@@ -23,7 +23,9 @@ def index():
 
     if current_user.is_authenticated:
 
-        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username))
+
+
+        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids = Userownedshare.listportfolios())
 
     else: return render_template('index.html')
 
@@ -41,7 +43,7 @@ def add():
         db.session.commit()
         flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
-    return render_template('add.html', form=form)
+    return render_template('add.html', form=form, portfolioids = Userownedshare.listportfolios())
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -57,7 +59,7 @@ def edit_share(bookmark_id):
         flash("You have successfully edited the share: '{}'". format(tempeditshare.name.name))
         return redirect(url_for('index'))
 
-    return render_template('editshare_form.html', form=form, title="Edit share")
+    return render_template('editshare_form.html', portfolioids = Userownedshare.listportfolios(), form=form, title="Edit share")
 
 
 
@@ -117,7 +119,9 @@ def sharedata():
 
     if current_user.is_authenticated:
 
-        return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username))
+        return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username),
+                               portfolioids=Userownedshare.listportfolios())
+
 
 @app.route('/portfoliovalue')
 def portfoliovalue():
@@ -125,3 +129,34 @@ def portfoliovalue():
     if current_user.is_authenticated:
 
         return render_template('portfoliovalue.html', data=share_data.getportfoliovalue(current_user.username))
+
+
+@app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])
+@login_required
+def list_portfolio(portfolio_id):
+
+    allshares = share_data.getalljsonshares(current_user.username)
+    sharesinportfolio = []
+
+    for share in allshares:
+
+        if share['portfolioid'] == portfolio_id:
+
+            sharesinportfolio.append(share)
+
+
+    return render_template('portfolio.html', id=portfolio_id, portfolioids = Userownedshare.listportfolios(), portfolioshares=sharesinportfolio)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

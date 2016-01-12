@@ -41,6 +41,9 @@ def initdb():
         share3 = Share(ticker="IBM", name="INTERNATIONAL BUSINESS MACHINES")
         db.session.add(share3)
 
+        XOM = Share(ticker="XOM", name="EXXON MOBIL CORPORATION")
+        db.session.add(XOM)
+
         db.session.commit()
 
 

@@ -1,12 +1,12 @@
+{% extends "base.html" %}
 
-{% if data %}
+{%  block content %}
 
+    <h2>{{ id | capitalize  }}</h2>
 
+    {% for share in portfolioshares  %}
 
-    {% for share in data %}
-
-
-        <div class="col-md-4">
+   <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-ils"></i>  {{share.name}} </h4>
@@ -38,8 +38,7 @@
 
         </div>
 
+    {%  endfor %}
+{% endblock %}
 
-    {% endfor %}
-
-{% endif %}
 

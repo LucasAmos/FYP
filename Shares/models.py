@@ -42,7 +42,7 @@ class Userownedshare(db.Model):
         ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'))
         user = db.Column(db.String, db.ForeignKey('user.username'))
         quantity = db.Column(db.Integer, nullable=False)
-        dividends = db.Column(db.Float)
+        dividends = db.Column(db.Float, server_default="0.0")
         triggerlevel = db.Column(db.Integer)
         smsalert = db.Column(db.Boolean)
         emailalert = db.Column(db.Boolean)
@@ -60,6 +60,11 @@ class Userownedshare(db.Model):
         # portfolioid = db.Column(db.String(50))
         # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
 
+
+        @staticmethod
+        def all(username):
+            return Userownedshare.query.filter_by(user=username).all()
+
         @staticmethod
         def listshares():
 
@@ -68,7 +73,25 @@ class Userownedshare(db.Model):
               return Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username)
 
         def __repr__(self):
-            return "*Userownedshare* " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user
+            return "**Userownedshare** " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user
+
+
+        @staticmethod
+        def listportfolios():
+
+            if current_user.is_authenticated:
+
+                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != None)
+
+                tempset = set()
+                for row in shares:
+                    print row
+                    id = row.portfolioid
+                    tempset.add(id)
+
+                templist = list(tempset)
+
+                return templist
 
 class Share(db.Model):
         id = db.Column(db.Integer)

@@ -8,16 +8,66 @@
 <body>
 
 
-    {% if data %}
+{% if data %}
 
 
-        <h1>  Your portfolio value is: £{{data['portfoliovalue']}}   </h1>
-        <h1>  Your shares are worth: £{{data['sharevalue']}} </h1>
-        <h1>  You have £{{data['dividends']}} in dividends </h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Portfolio value</h3>
+                </div>
+
+                 <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item"> £{{data['portfoliovalue']}}</li>
+
+                        </span>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Total share value </h3>
+                </div>
+
+                <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item">£{{data['sharevalue']}}</li>
+
+                        </span>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dividend value</h3>
+                </div>
+              <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item">£{{data['dividends']}}</li>
+
+                        </span>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
 
 
-
-            {% endif %}
+{% endif %}
 
 
 </body>

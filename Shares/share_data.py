@@ -40,7 +40,9 @@ class share_data():
                 'price': quote['query']['results']['quote']['LastTradePriceOnly'],
                 #'name': quote['query']['results']['quote']['Name']
                 'name': row.name.name,
-                'id': row.id
+                'dividends': row.dividends,
+                'id': row.id,
+                'portfolioid': row.portfolioid
             }
             sharearray.append(sharedata)
 
@@ -75,4 +77,22 @@ class share_data():
         dictvalues = {'portfoliovalue': portfoliovalue, 'sharevalue': sharevalue, 'dividends': dividends}
 
         return dictvalues
+
+
+    @staticmethod
+    def getportfolioids(user):
+
+       portfolioids= Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != None)
+       print portfolioids
+
+       tempset = set()
+       for row in portfolioids:
+           id = row.portfolioid
+           print(id)
+           tempset.add(id)
+
+           templist = list(tempset)
+           return templist
+
+
 

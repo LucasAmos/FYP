@@ -3,6 +3,7 @@ import urllib
 import json
 from models import Userownedshare
 
+
 class share_data():
 
     @staticmethod
@@ -93,6 +94,37 @@ class share_data():
 
            templist = list(tempset)
            return templist
+
+
+    @staticmethod
+    def getsubportfoliovalue(user, portfolio):
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user = user).filter(Userownedshare.portfolioid == portfolio)
+
+
+        sharearray = []
+
+        sharevalue = 0.0
+        dividends = 0.0
+        portfoliovalue = 0.0
+
+        for row in tempshares:
+
+            ticker = row.ticker
+            quote = share_data.JSONSharePrice(ticker)
+
+            shareprice = float (quote['query']['results']['quote']['LastTradePriceOnly'])
+            quantity = row.quantity
+            shareholding = shareprice * quantity
+            dividends = dividends + row.dividends
+            sharevalue += shareholding
+            portfoliovalue = sharevalue + dividends
+
+        sharearray.append(sharevalue)
+        sharearray.append(dividends)
+        sharearray.append(portfoliovalue)
+        dictvalues = {'portfoliovalue': portfoliovalue, 'sharevalue': sharevalue, 'dividends': dividends}
+
+        return dictvalues
 
 
 

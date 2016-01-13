@@ -1,8 +1,73 @@
 {% extends "base.html" %}
 
+
+
 {%  block content %}
 
     <h2>{{ id | capitalize  }}</h2>
+
+{% if portfoliovalue %}
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Portfolio value</h3>
+                </div>
+
+                 <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item"> £{{portfoliovalue['portfoliovalue']}}</li>
+
+                        </span>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Total share value </h3>
+                </div>
+
+                <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item">£{{portfoliovalue['sharevalue']}}</li>
+
+                        </span>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Dividend value</h3>
+                </div>
+              <ul class="list-group">
+
+                        <span class="price">
+
+                        <li class="list-group-item">£{{portfoliovalue['dividends']}}</li>
+
+                        </span>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endif %}
+
+
 
     {% for share in portfolioshares  %}
 

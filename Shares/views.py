@@ -23,7 +23,7 @@ def index():
 
     if current_user.is_authenticated:
 
-        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids = Userownedshare.listportfolios())
+        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=Userownedshare.listportfolios())
 
     else: return render_template('index.html')
 
@@ -44,7 +44,7 @@ def add():
 
             newshare = Share(ticker=ticker, name=sharename)
             db.session.add(newshare)
-            db.session.commit()
+           # db.session.commit()
 
         bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends)
         db.session.add(bm)
@@ -153,7 +153,7 @@ def list_portfolio(portfolio_id):
             sharesinportfolio.append(share)
 
 
-    return render_template('portfolio.html', id=portfolio_id, portfolioids = Userownedshare.listportfolios(), portfolioshares=sharesinportfolio)
+    return render_template('portfolio.html', id=portfolio_id, portfolioids = Userownedshare.listportfolios(), portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
 
 
 

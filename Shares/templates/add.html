@@ -8,6 +8,10 @@ FYP -- Add share
 {% block content %}
 <section>
     <h1>Add a new share to your portfolio</h1>
+    <h4 style="color:red;">Don't put in an invalid ticker or you will mess shit up, I will add validation later <br>
+    "FCX", "BAC", "GSK" are valid tickers you can use
+    </h4>
+    <br>
     <form action="" method="post">
         {{form.hidden_tag()}}
         <table>

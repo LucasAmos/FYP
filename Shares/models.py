@@ -59,6 +59,7 @@ class Userownedshare(db.Model):
         # emailalert = db.Column(db.Boolean)
         # portfolioid = db.Column(db.String(50))
         # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
+        # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
 
 
         @staticmethod
@@ -85,7 +86,6 @@ class Userownedshare(db.Model):
 
                 tempset = set()
                 for row in shares:
-                    print row
                     id = row.portfolioid
                     tempset.add(id)
 

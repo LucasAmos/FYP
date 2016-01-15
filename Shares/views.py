@@ -3,7 +3,7 @@ from flask import render_template, flash, redirect, url_for, request, abort
 from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
-from forms import ShareForm, LoginForm, SignupForm, EditShareForm
+from forms import AddShareForm, LoginForm, SignupForm, EditShareForm
 from models import User, Userownedshare, Share
 from share_data import share_data
 import json
@@ -31,11 +31,12 @@ def index():
 @app.route('/add', methods=['GET', 'POST'])
 @login_required
 def add():
-    form = ShareForm()
+    form = AddShareForm()
     if form.validate_on_submit():
         ticker = form.ticker.data
         quantity = form.quantity.data
         dividends = form.dividends.data
+        portfolioid = form.portfolioid.data
 
         if not Share.exists(ticker):
 
@@ -46,7 +47,7 @@ def add():
             db.session.add(newshare)
            # db.session.commit()
 
-        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends)
+        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, portfolioid=portfolioid)
         db.session.add(bm)
         db.session.commit()
         flash("Added share '{}'".format(ticker))

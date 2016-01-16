@@ -48,7 +48,7 @@ class EditShareForm(Form):
                                                   message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
     dividends = DecimalField('Have you received any dividends for this share?')
-    portfolioid = StringField('Enter a portfolio name', validators=[ExistingShareInPortfolioValidator()])
+    portfolioid = StringField('Enter a portfolio name')
 
     def validate(self):
 

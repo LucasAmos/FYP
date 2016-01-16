@@ -84,12 +84,10 @@ class share_data():
     def getportfolioids(user):
 
        portfolioids= Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != None)
-       print portfolioids
 
        tempset = set()
        for row in portfolioids:
            id = row.portfolioid
-           print(id)
            tempset.add(id)
 
            templist = list(tempset)
@@ -125,6 +123,22 @@ class share_data():
         dictvalues = {'portfoliovalue': portfoliovalue, 'sharevalue': sharevalue, 'dividends': dividends}
 
         return dictvalues
+
+
+    @staticmethod
+    def getportfoliovalues(user):
+
+        portfolioids = Userownedshare.listportfolios()
+        portfoliovalues ={}
+
+        for id in portfolioids:
+
+            portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
+
+        print "test:"
+        print portfoliovalues
+        return portfoliovalues
+
 
 
 

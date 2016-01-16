@@ -15,3 +15,15 @@
 .portfolio a {
     color: red
 }
+
+
+.share tr:nth-child(odd)		{ background-color:#eee; }
+.share tr:nth-child(even)		{ background-color:#fff; }
+
+.share td {
+    padding: 10px;
+}
+
+.share th {
+    padding: 5px;
+}

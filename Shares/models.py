@@ -77,12 +77,14 @@ class Userownedshare(db.Model):
             return "**Userownedshare** " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user
 
 
+
+# is this being user anywhere?
         @staticmethod
         def listportfolios():
 
             if current_user.is_authenticated:
 
-                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != None)
+                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != "")
 
                 tempset = set()
                 for row in shares:

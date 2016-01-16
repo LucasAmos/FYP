@@ -23,6 +23,8 @@ def index():
 
     if current_user.is_authenticated:
 
+        share_data.getportfoliovalues(current_user.username)
+
         return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=Userownedshare.listportfolios())
 
     else: return render_template('index.html')
@@ -129,15 +131,9 @@ def sharedata():
     if current_user.is_authenticated:
 
         return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username),
-                               portfolioids=Userownedshare.listportfolios())
+                                portfoliovalues= share_data.getportfoliovalues(current_user.username))
 
 
-@app.route('/portfoliovalue')
-def portfoliovalue():
-
-    if current_user.is_authenticated:
-
-        return render_template('portfoliovalue.html', data=share_data.getportfoliovalue(current_user.username))
 
 
 @app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])

@@ -2,44 +2,63 @@
 {% if data %}
 
 
+{% for id in portfoliovalues %}
+
+<h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id }} </a> </h2>
+
+
+<table class="share">
+    <caption>Portfolio details</caption>
+    <th> Portfolio value  </th>
+    <th> Total share value  </th>
+    <th> Dividend value  </th>
+
+    <tr>
+        <td> {{portfoliovalues[id]['portfoliovalue'] }}  </td>
+        <td> {{portfoliovalues[id]['sharevalue'] }}  </td>
+        <td> {{portfoliovalues[id]['dividends'] }} </td>
+
+
+    </tr>
+
+</table>
+
+
+<table class="share">
+    <caption>Share details</caption>
+    <th>Name</th>
+    <th>Ticker</th>
+    <th>Share value</th>
+    <th>Quantity</th>
+    <th>Dividends</th>
+    <th>Profit/loss</th>
+    <th>Edit</th>
+
+
 
     {% for share in data %}
 
+        {% if share.portfolioid == id %}
 
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-ils"></i>  {{share.name}} </h4>
-
-                    {% if share.portfolioid %}
-
-                        <h5 class="portfolio">
-                            <a href="{{ url_for('list_portfolio', portfolio_id =share.portfolioid) }}"> {{ share.portfolioid | capitalize }} </a>
-                        </h5>
-
-
-                    {% endif %}
-                </div>
-                <div class="panel-body">
-
-                    Ticker: {{share.symbol}}<br>
-                    Quantity: {{share['quantity']}} <br>
-                    Price: {{share['price']}} <br>
-                    Dividends: {{share['dividends']}} <br>
-                <span class="editlinks">
-                    <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a>
-                </span>
-
-                </div>
+    <tr>
+        <td> {{share['name']}} </td>
+        <td> {{share['symbol']}} </td>
+        <td> {{share['price']}} </td>
+        <td> {{share['quantity']}} </td>
+        <td> {{share['dividends']}} </td>
+        <td></td>
+        <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>
+    </tr>
 
 
-            </div>
-
-
-        </div>
-
+        {% endif%}
 
     {% endfor %}
+</table>
+
+
+{% endfor %}
+
 
 {% endif %}
 

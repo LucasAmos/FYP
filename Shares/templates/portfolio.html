@@ -1,20 +1,13 @@
 {% extends "base.html" %}
 
-
-
 {%  block content %}
 
-
 {% if portfoliovalue %}
-
-
 
 <div class="container-fluid">
 
 
-   <h1>{{ id | capitalize  }}</h1>
-
-
+    <h1>{{ id | capitalize  }}</h1>
 
     <table class="share" width=100% >
         <tr>
@@ -22,12 +15,9 @@
             <th>Total share value: £{{portfoliovalue['sharevalue']}}</th>
             <th>Dividend value: £{{portfoliovalue['dividends']}}</th>
         </tr>
-        </table>
-
-
+    </table>
 
     <br>
-
 
     <table class="share">
         <tr>
@@ -40,7 +30,7 @@
             <th>Edit</th>
         </tr>
 
-      {% for share in portfolioshares  %}
+        {% for share in portfolioshares  %}
 
         <tr>
             <td>{{share.symbol}}</td>
@@ -52,118 +42,15 @@
             <td><a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a></td>
         </tr>
 
-
         {% endfor%}
     </table>
 
+</div>
 
+{% endif %}
 
 </div>
 
-
-
-
-
-<!--<br>-->
-<!--<br>-->
-<!--<br>-->
-
-
-<!--<div class="row">-->
-    <!--<div class="col-md-4">-->
-        <!--<div class="panel panel-primary text-center">-->
-            <!--<div class="panel-heading">-->
-                <!--<h3 class="panel-title">Portfolio value</h3>-->
-            <!--</div>-->
-
-            <!--<ul class="list-group">-->
-
-                        <!--<span class="price">-->
-
-                        <!--<li class="list-group-item"> £{{portfoliovalue['portfoliovalue']}}</li>-->
-
-                        <!--</span>-->
-
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="col-md-4">-->
-        <!--<div class="panel panel-primary text-center">-->
-            <!--<div class="panel-heading">-->
-                <!--<h3 class="panel-title">Total share value </h3>-->
-            <!--</div>-->
-
-            <!--<ul class="list-group">-->
-
-                        <!--<span class="price">-->
-
-                        <!--<li class="list-group-item">£{{portfoliovalue['sharevalue']}}</li>-->
-
-                        <!--</span>-->
-
-            <!--</ul>-->
-
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="col-md-4">-->
-        <!--<div class="panel panel-primary text-center">-->
-            <!--<div class="panel-heading">-->
-                <!--<h3 class="panel-title">Dividend value</h3>-->
-            <!--</div>-->
-            <!--<ul class="list-group">-->
-
-                        <!--<span class="price">-->
-
-                        <!--<li class="list-group-item">£{{portfoliovalue['dividends']}}</li>-->
-
-                        <!--</span>-->
-
-            <!--</ul>-->
-
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-<!--{% endif %}-->
-
-
-
-<!--{% for share in portfolioshares  %}-->
-
-<!--<div class="col-md-4">-->
-    <!--<div class="panel panel-default">-->
-        <!--<div class="panel-heading">-->
-            <!--<h4><i class="fa fa-ils"></i>  {{share.name}} </h4>-->
-
-            <!--{% if share.portfolioid %}-->
-
-            <!--<h5 class="portfolio">-->
-                <!--<a href="{{ url_for('list_portfolio', portfolio_id =share.portfolioid) }}"> {{ share.portfolioid | capitalize }} </a>-->
-            <!--</h5>-->
-
-
-            <!--{% endif %}-->
-        <!--</div>-->
-        <!--<div class="panel-body">-->
-
-            <!--Ticker: {{share.symbol}}<br>-->
-            <!--Quantity: {{share['quantity']}} <br>-->
-            <!--Price: {{share['price']}} <br>-->
-            <!--Dividends: {{share['dividends']}} <br>-->
-                <!--<span class="editlinks">-->
-                    <!--<a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a>-->
-                <!--</span>-->
-
-        <!--</div>-->
-
-
-    <!--</div>-->
-
-
-</div>
-
-{%  endfor %}
 {% endblock %}
 
 

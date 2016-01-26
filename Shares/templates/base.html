@@ -29,8 +29,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -52,11 +52,11 @@
 
             {% if current_user.is_authenticated %}
 
-                <a class="navbar-brand" href="{{url_for('index') }}">{{ current_user.username }}</a>
+            <a class="navbar-brand" href="{{url_for('index') }}">{{ current_user.username }}</a>
 
             {% else %}
 
-                <a class="navbar-brand" href="{{url_for('index') }}">FYP</a>
+            <a class="navbar-brand" href="{{url_for('index') }}">FYP</a>
 
 
 
@@ -68,23 +68,17 @@
             <ul class="nav navbar-nav navbar-right">
 
                 {% if current_user.is_authenticated %}
-                    <li><a href="{{ url_for('add') }}">Add share</a></li>
-                    <li><a href=" {{ url_for('logout') }}"> Sign out </a> </li>
+                <li><a href="{{ url_for('add') }}">Add share</a></li>
+                <li><a href=" {{ url_for('logout') }}"> Sign out </a> </li>
 
                 {% else %}
-                    <li><a href=" {{ url_for('signup') }}"> Sign up </a> </li>
-                    <li><a href=" {{ url_for('login') }}"> Sign in </a> </li>
+                <li><a href=" {{ url_for('signup') }}"> Sign up </a> </li>
+                <li><a href=" {{ url_for('login') }}"> Sign in </a> </li>
                 {% endif %}
 
 
 
-                <li>
-                    <a href="about.html">About</a>
-                </li>
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
 
                 {% if current_user.is_authenticated %}
 
@@ -107,41 +101,50 @@
                     </ul>
                 </li>
 
-            {% endif %}
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="blog-home-1.html">Blog Home 1</a>
-                        </li>
-                        <li>
-                            <a href="blog-home-2.html">Blog Home 2</a>
-                        </li>
-                        <li>
-                            <a href="blog-post.html">Blog Post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="full-width.html">Full Width Page</a>
-                        </li>
-                        <li>
-                            <a href="sidebar.html">Sidebar Page</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="404.html">404</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html">Pricing Table</a>
-                        </li>
-                    </ul>
-                </li>
+                {% endif %}
+
+
+                <!--<li>-->
+                    <!--<a href="about.html">About</a>-->
+                <!--</li>-->
+
+                <!--<li>-->
+                    <!--<a href="contact.html">Contact</a>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li>-->
+                <!--<a href="blog-home-1.html">Blog Home 1</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="blog-home-2.html">Blog Home 2</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="blog-post.html">Blog Post</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li>-->
+                <!--<a href="full-width.html">Full Width Page</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="sidebar.html">Sidebar Page</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="faq.html">FAQ</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="404.html">404</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="pricing.html">Pricing Table</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</li>-->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -159,23 +162,23 @@
 
 
         {% with messages = get_flashed_messages() %}
-            {% if messages %}
+        {% if messages %}
 
-                <div class="col-lg-12">
+        <div class="col-lg-12">
 
-                    <ol class="breadcrumb"  id="flashes">
+            <ol class="breadcrumb"  id="flashes">
 
 
-                        <ul>
-                            {% for message in messages %}
-                                <li>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
+                <ul>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
 
-                    </ol>
-                    <br>
-                </div>
-            {% endif %}
+            </ol>
+            <br>
+        </div>
+        {% endif %}
         {% endwith %}
 
 

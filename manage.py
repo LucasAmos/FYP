@@ -6,7 +6,7 @@ from Shares.models import User, Userownedshare, Share
 from flask.ext.script import Manager, prompt_bool
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand
-test
+
 
 
 manager = Manager(app)

@@ -1,40 +1,77 @@
 {% extends "base.html" %}
 
 {% block title %}
-    FYP - share portfolio
+FYP - share portfolio
 {% endblock %}
 
+
+
+
+
+{% block carousel %}
+
+{% if current_user.is_authenticated == False %}
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('static/img/chart.jpg');"></div>
+            <div class="carousel-caption">
+
+                </section><h1>INITIAL PROTOTYPE VERSION</h1> </section>
+                <a href="{{ url_for('login') }}" class="btn btn-lg btn-primary  tweaked-margin"> Login</a>
+
+                <a href="{{ url_for('signup') }}" class="btn btn-lg btn-primary">Signup</a>
+
+        </div>
+
+    </div>
+    </div>
+
+</header>
+{% endif %}
+{% endblock %}
+
+
+
+
 {% block content %}
- <div class="row">
+<div class="row">
 
     <article>
 
-
+{% if current_user.is_authenticated %}
         <header>
             <h1>Welcome {{ current_user.username }} </h1>
 
         </header>
-
+{% endif%}
 
         <section>
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
 
+
+
             {% if current_user.is_authenticated %}
 
-                <div id="result">
-                    <br>
-                    <img id="gear" src="static/img/gears.gif">
-                    Just fetching your portfolio...
-                    <br><br>
-                </div>
+            <div id="result">
+                <br>
+                <img id="gear" src="static/img/gears.gif">
+                Just fetching your portfolio...
+                <br><br>
+            </div>
 
 
-                <script>$( document ).ready(function() {
-                    $('#result').load('/sharedata')
-                });
-                </script>
+            <script>$( document ).ready(function() {
+                $('#result').load('/sharedata')
+            });
+            </script>
 
             {% endif %}
         </section>
@@ -42,9 +79,10 @@
 
     </article>
 </div>
-<row>
 
-           </section><h1>INITIAL PROTOTYPE VERSION</h1> </section>
+
+
+
 
 </row>
 

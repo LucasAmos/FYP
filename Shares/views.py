@@ -111,7 +111,7 @@ def edit_share(bookmark_id):
 def delete_share(bookmark_id):
     tempshare = Userownedshare.query.get_or_404(bookmark_id)
     if current_user.username != tempshare.user:
-        abort(403)
+        return render_template('confirm_delete.html', share=tempshare, nolinks=True)
 
     if request.method == "POST":
         db.session.delete(tempshare)

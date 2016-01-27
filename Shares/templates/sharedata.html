@@ -33,7 +33,6 @@
     <th>Dividends</th>
     <th>Profit/loss</th>
     <th>Edit</th>
-    <th>Delete</th>
 
 
 
@@ -49,7 +48,6 @@
         <td> {{share['dividends']}} </td>
         <td></td>
         <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>
-        <td> <a href="{{url_for('delete_share', bookmark_id=share.id) }}"> delete </a> </td>
     </tr>
 
 

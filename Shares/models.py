@@ -3,7 +3,6 @@ from datetime import datetime
 from sqlalchemy import desc
 from flask_login import UserMixin, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
-from sqlalchemy.orm import backref
 
 from Shares import db
 
@@ -39,66 +38,79 @@ class User(db.Model, UserMixin):
 
 class Userownedshare(db.Model):
 
-    id = db.Column(db.Integer, primary_key=True)
-    ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'))
-    user = db.Column(db.String, db.ForeignKey('user.username'))
-    quantity = db.Column(db.Integer, nullable=False)
-    dividends = db.Column(db.Float, server_default="0.0")
-    triggerlevel = db.Column(db.Integer)
-    smsalert = db.Column(db.Boolean)
-    emailalert = db.Column(db.Boolean)
-    portfolioid = db.Column(db.String(50))
-    name = db.relationship('Share', backref='userownedshare',  foreign_keys=[ticker], lazy="joined")
+        id = db.Column(db.Integer, primary_key=True)
+        ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'))
+        user = db.Column(db.String, db.ForeignKey('user.username'))
+        quantity = db.Column(db.Integer, nullable=False)
+        dividends = db.Column(db.Float, server_default="0.0")
+        triggerlevel = db.Column(db.Integer)
+        smsalert = db.Column(db.Boolean)
+        emailalert = db.Column(db.Boolean)
+        portfolioid = db.Column(db.String(50))
+        name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
 
-    @staticmethod
-    def all(username):
-        return Userownedshare.query.filter_by(user=username).all()
-
-    @staticmethod
-    def listshares():
-
-        if current_user.is_authenticated:
-
-            return Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username)
-
-    def __repr__(self):
-        return "**Userownedshare** " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user
+        # id = db.Column(db.Integer)
+        # ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'), primary_key=True)
+        # user = db.Column(db.String, db.ForeignKey('user.username'), primary_key=True)
+        # quantity = db.Column(db.Integer, nullable=False)
+        # dividends = db.Column(db.Float)
+        # triggerlevel = db.Column(db.Integer)
+        # smsalert = db.Column(db.Boolean)
+        # emailalert = db.Column(db.Boolean)
+        # portfolioid = db.Column(db.String(50))
+        # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
+        # name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
 
 
+        @staticmethod
+        def all(username):
+            return Userownedshare.query.filter_by(user=username).all()
 
-    # is this being user anywhere?
-    @staticmethod
-    def listportfolios():
+        @staticmethod
+        def listshares():
 
-        if current_user.is_authenticated:
+            if current_user.is_authenticated:
 
-            shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != "")
+              return Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username)
 
-            tempset = set()
-            for row in shares:
-                id = row.portfolioid
-                tempset.add(id)
+        def __repr__(self):
+            return "**Userownedshare** " + " Ticker: " + self.ticker + " " + " Share owner: " + self.user
 
-            templist = list(tempset)
 
-            return templist
+
+# is this being user anywhere?
+        @staticmethod
+        def listportfolios():
+
+            if current_user.is_authenticated:
+
+                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != "")
+
+                tempset = set()
+                for row in shares:
+                    id = row.portfolioid
+                    tempset.add(id)
+
+                templist = list(tempset)
+
+                return templist
 
 class Share(db.Model):
-    id = db.Column(db.Integer)
-    name = db.Column(db.String(50), nullable=False)
-    ticker = db.Column(db.String(50), primary_key=True)
-    tickermatch = db.relationship('Userownedshare', backref='share', cascade="all, delete-orphan", lazy="joined")
+        id = db.Column(db.Integer)
+        name = db.Column(db.String(50), nullable=False)
+        ticker = db.Column(db.String(50), db.ForeignKey('userownedshare.ticker'), primary_key=True)
+        tickermatch = db.relationship('Userownedshare', backref='share',  foreign_keys=[ticker])
 
 
-    @staticmethod
-    def exists(shareticker):
+        @staticmethod
+        def exists(shareticker):
 
-        if Share.query.filter_by(ticker=shareticker).first():
-            return True
-        else:
-            return False
+            if Share.query.filter_by(ticker=shareticker).first():
+                return True
+            else:
+                return False
 
-    def __repr__(self):
-        return "*Share* " + self.name + " " + " Ticker: " + self.ticker
+        def __repr__(self):
+            return "*Share* " + self.name + " " + " Ticker: " + self.ticker
 
 

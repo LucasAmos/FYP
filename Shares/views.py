@@ -121,7 +121,7 @@ def delete_share(bookmark_id):
     else:
         flash("Please confirm deleting the bookmark.")
 
-    return render_template('confirm_delete.html', share=tempshare, nolinks=True)
+    return render_template('confirm_delete.html', portfolioids = Userownedshare.listportfolios(), share=tempshare, nolinks=True)
 
 
 

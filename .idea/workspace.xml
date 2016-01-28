@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/static/css/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/static/js/chosen.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/models.py" afterPath="$PROJECT_DIR$/Shares/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/static/css/main.css" afterPath="$PROJECT_DIR$/Shares/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/add.html" afterPath="$PROJECT_DIR$/Shares/templates/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/confirm_delete.html" afterPath="$PROJECT_DIR$/Shares/templates/confirm_delete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,33 +92,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.09453782">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#562#1099#0" expanded="false" />
-                <element signature="e#604#715#0" expanded="false" />
-                <element signature="e#762#1099#0" expanded="false" />
-                <element signature="e#1762#1835#0" expanded="false" />
-                <element signature="e#1869#2537#0" expanded="false" />
-                <element signature="e#2330#2403#0" expanded="false" />
-                <element signature="e#2454#2537#0" expanded="false" />
-                <element signature="e#2567#2792#0" expanded="false" />
-                <element signature="e#2823#3921#0" expanded="false" />
-                <element signature="e#3589#3731#0" expanded="false" />
-                <element signature="e#3790#3921#0" expanded="false" />
+                <element signature="e#452#989#0" expanded="false" />
+                <element signature="e#494#605#0" expanded="false" />
+                <element signature="e#652#989#0" expanded="false" />
+                <element signature="e#1652#1725#0" expanded="false" />
+                <element signature="e#1759#2427#0" expanded="false" />
+                <element signature="e#2220#2293#0" expanded="false" />
+                <element signature="e#2344#2427#0" expanded="false" />
+                <element signature="e#2457#2682#0" expanded="false" />
+                <element signature="e#2713#3811#0" expanded="false" />
+                <element signature="e#3479#3621#0" expanded="false" />
+                <element signature="e#3680#3811#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.394958">
+            <state vertical-scroll-proportion="0.0">
               <caret line="87" column="61" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
               <folding />
             </state>
@@ -201,9 +190,9 @@
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/templates/add.html" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/models.py" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
       </list>
     </option>
   </component>
@@ -741,12 +730,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00014" summary="Initial project commit">
-      <created>1451496511952</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1451496511952</updated>
-    </task>
     <task id="LOCAL-00015" summary="Rename package from thermos to Shares">
       <created>1451496671672</created>
       <option name="number" value="00015" />
@@ -1035,7 +1018,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453926785679</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="total overhaul, fixed loads of broken shit">
+      <created>1453998225621</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1453998225621</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1107,7 +1096,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added JS" />
     <MESSAGE value="added code to add the 'Share' object to database when it does not already exist" />
     <MESSAGE value="signup title" />
     <MESSAGE value="added FYP home link on navbar&#10;" />
@@ -1132,7 +1120,8 @@
     <MESSAGE value="purge&#10;" />
     <MESSAGE value="new commit" />
     <MESSAGE value="fixed reversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed reversion" />
+    <MESSAGE value="total overhaul, fixed loads of broken shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="total overhaul, fixed loads of broken shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1491,27 +1480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#562#1099#0" expanded="false" />
-            <element signature="e#604#715#0" expanded="false" />
-            <element signature="e#762#1099#0" expanded="false" />
-            <element signature="e#1762#1835#0" expanded="false" />
-            <element signature="e#1869#2537#0" expanded="false" />
-            <element signature="e#2330#2403#0" expanded="false" />
-            <element signature="e#2454#2537#0" expanded="false" />
-            <element signature="e#2567#2792#0" expanded="false" />
-            <element signature="e#2823#3921#0" expanded="false" />
-            <element signature="e#3589#3731#0" expanded="false" />
-            <element signature="e#3790#3921#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1522,9 +1490,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.394958">
+        <state vertical-scroll-proportion="0.0">
           <caret line="87" column="61" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09453782">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#452#989#0" expanded="false" />
+            <element signature="e#494#605#0" expanded="false" />
+            <element signature="e#652#989#0" expanded="false" />
+            <element signature="e#1652#1725#0" expanded="false" />
+            <element signature="e#1759#2427#0" expanded="false" />
+            <element signature="e#2220#2293#0" expanded="false" />
+            <element signature="e#2344#2427#0" expanded="false" />
+            <element signature="e#2457#2682#0" expanded="false" />
+            <element signature="e#2713#3811#0" expanded="false" />
+            <element signature="e#3479#3621#0" expanded="false" />
+            <element signature="e#3680#3811#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

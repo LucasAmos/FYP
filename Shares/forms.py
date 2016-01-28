@@ -3,8 +3,6 @@ from wtforms.fields import StringField, IntegerField, PasswordField, BooleanFiel
 from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError
 from wtforms_components import read_only
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
-from flask_admin.form.widgets import Select2Widget
 
 from flask_login import current_user
 from models import User, Userownedshare

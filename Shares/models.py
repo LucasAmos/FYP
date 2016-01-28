@@ -47,7 +47,8 @@ class Userownedshare(db.Model):
         smsalert = db.Column(db.Boolean)
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))
-        name = db.relationship('Share', backref='userownedshare', foreign_keys=[ticker])
+        name = db.relationship('Share', backref='userownedshare' ,  foreign_keys=[ticker], lazy="joined")
+
 
         # id = db.Column(db.Integer)
         # ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'), primary_key=True)
@@ -98,10 +99,8 @@ class Userownedshare(db.Model):
 class Share(db.Model):
         id = db.Column(db.Integer)
         name = db.Column(db.String(50), nullable=False)
-        ticker = db.Column(db.String(50), db.ForeignKey('userownedshare.ticker'), primary_key=True)
-        tickermatch = db.relationship('Userownedshare', backref='share',  foreign_keys=[ticker])
-
-
+        ticker = db.Column(db.String(50), primary_key=True)
+        tickermatch = db.relationship('Userownedshare', backref='share', cascade="all, delete-orphan", lazy="joined")
         @staticmethod
         def exists(shareticker):
 

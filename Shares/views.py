@@ -63,10 +63,11 @@ def logout():
     return redirect(url_for('index'))
 
 
-@app.route('/add', methods=['GET', 'POST'])
+@app.route('/add', methods=['GET', 'POST'], )
 @login_required
 def add():
     form = AddShareForm()
+    form.portfolioid.choices = [(h, h) for h in  Userownedshare.listportfolios()]
     if form.validate_on_submit():
         ticker = form.ticker.data
         quantity = form.quantity.data
@@ -87,7 +88,7 @@ def add():
         db.session.commit()
         flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
-    return render_template('add.html', form=form, portfolioids = Userownedshare.listportfolios())
+    return render_template('add.html', form=form, portfolioids = Userownedshare.listportfolios(), )
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -121,12 +122,7 @@ def delete_share(bookmark_id):
     else:
         flash("Please confirm deleting the bookmark.")
 
-    return render_template('confirm_delete.html', portfolioids = Userownedshare.listportfolios(), share=tempshare, nolinks=True)
-
-
-
-
-
+    return render_template('confirm_delete.html', portfolioids=Userownedshare.listportfolios(), share=tempshare, nolinks=True)
 
 @app.errorhandler(404)
 def page_not_found(e):

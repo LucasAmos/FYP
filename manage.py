@@ -20,13 +20,13 @@ def initdb():
         # reindert=User(username="reindert", email="reindert@example.com", password="test")
         # db.session.add(reindert)
 
-        #lucas=User(username="lucas", email="lucas@example.com", password="test")
-       # db.session.add(lucas)
+        lucas=User(username="lucas", email="lucas@example.com", password="test")
+        db.session.add(lucas)
 
 
 
-        # apple = Userownedshare(user="lucas", ticker="GOOG", quantity=1)
-        # db.session.add(apple)
+        google = Userownedshare(user="lucas", ticker="GOOG", quantity=1, portfolioid="test")
+        db.session.add(google)
         #
         # apple2 = Userownedshare(user="reindert", ticker="AAPL", quantity=1)
         # db.session.add(apple2)
@@ -34,8 +34,8 @@ def initdb():
         # ibm = Userownedshare(user="lucas", ticker="IBM", quantity=1)
         # db.session.add(ibm)
         #
-        # share = Share(ticker="GOOG", name="ALPHABET inc")
-        # db.session.add(share)
+        share = Share(ticker="GOOG", name="ALPHABET inc")
+        db.session.add(share)
         #
         # share2 = Share(ticker="AAPL", name="APPLE inc")
         # db.session.add(share2)
@@ -50,7 +50,7 @@ def initdb():
 
         # lucas=User(username="lucas", email="lucas@example.com", password="test")
         # db.session.add(lucas)
-        # db.session.commit()
+        db.session.commit()
 
 
         print('Database initialised')

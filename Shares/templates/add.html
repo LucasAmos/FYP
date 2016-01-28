@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% from "form_macros.html" import render_field %}
 
+
+
 {% block title %}
 FYP -- Add share
 {% endblock %}
 
 {% block content %}
+
 <section>
     <h1>Add a new share to your portfolio</h1>
     <h4 style="color:red;">Don't put in an invalid ticker or you will mess shit up, I will add validation later <br>
@@ -15,10 +18,12 @@ FYP -- Add share
     <form action="" method="post">
         {{form.hidden_tag()}}
         <table>
-            {{ render_field(form.ticker, size=50) }}
-            {{ render_field(form.quantity, size=50) }}
-            {{ render_field(form.dividends, size=50) }}
-            {{ render_field(form.portfolioid, size=50) }}
+            {{ render_field(form.ticker, size=20) }}
+            {{ render_field(form.quantity, size=20) }}
+            {{ render_field(form.dividends, size=20) }}
+            <!--{{ render_field(form.portfolioid, size=20) }}-->
+            {{ render_field(form.portfolioid, class="chosen dropdown", size=260) }}
+
 
 
             <tr class="submit">
@@ -31,8 +36,11 @@ FYP -- Add share
     </form>
 
 </section>
+
+
 {% endblock %}
 
 {% block sidebar %}
 
 {% endblock %}
+

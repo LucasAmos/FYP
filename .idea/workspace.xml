@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -730,12 +730,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00015" summary="Rename package from thermos to Shares">
-      <created>1451496671672</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1451496671672</updated>
-    </task>
     <task id="LOCAL-00016" summary="commit templates">
       <created>1451497484015</created>
       <option name="number" value="00016" />
@@ -1024,7 +1018,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453998225621</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="removed import">
+      <created>1453998928229</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1453998928229</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1096,7 +1096,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added code to add the 'Share' object to database when it does not already exist" />
     <MESSAGE value="signup title" />
     <MESSAGE value="added FYP home link on navbar&#10;" />
     <MESSAGE value="removed unnecessary print statement" />
@@ -1121,7 +1120,8 @@
     <MESSAGE value="new commit" />
     <MESSAGE value="fixed reversion" />
     <MESSAGE value="total overhaul, fixed loads of broken shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="total overhaul, fixed loads of broken shit" />
+    <MESSAGE value="removed import" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed import" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

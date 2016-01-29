@@ -29,7 +29,7 @@
 .share tr:nth-child(even)		{ background-color:#fff; }
 
 .share td {
-    padding: 10px;
+    padding: 5px;
 }
 
 .share th {

@@ -151,5 +151,10 @@ class share_data():
         return portfoliovalues
 
 
+    @staticmethod
+    def getPortfolioIDbyusernameandPortfolioName(username, portfolioname):
 
+        ID = Portfolios.query.filter_by(portfolioname=portfolioname).filter_by(username=username).first()
+
+        return ID
 

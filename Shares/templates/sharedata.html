@@ -4,7 +4,7 @@
 
 {% for id in portfoliovalues %}
 
-<h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id }} </a> </h2>
+<h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id | capitalize }} </a> </h2>
 
 
 <table class="share portfolioshares">

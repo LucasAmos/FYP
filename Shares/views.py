@@ -68,19 +68,32 @@ def logout():
 def editportfolios():
 
     form = AddPortfolioForm()
+    d_form = DeletePortfolioForm()
+    d_form.name.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
 
     if form.validate_on_submit():
         name = form.name.data
 
-        portfolio = Portfolios(portfolioname=name, username=current_user.username)
+        portfolio = Portfolios(portfolioname=name.lower(), username=current_user.username)
         db.session.add(portfolio)
         db.session.commit()
 
-
-
         flash("Added portfolio '{}'".format(name))
         return redirect(url_for('index'))
-    return render_template('editportfolios.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username) )
+
+
+    if d_form.validate_on_submit():
+        name = d_form.name.data
+
+        portfolio = share_data.getPortfolioIDbyusernameandPortfolioName(current_user.username, name)
+        db.session.delete(portfolio)
+        db.session.commit()
+
+        flash("deleted portfolio '{}'".format(name))
+        return redirect(url_for('index'))
+
+
+    return render_template('editportfolios.html', form=form, d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username) )
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -147,6 +160,7 @@ def add():
         quantity = form.quantity.data
         dividends = form.dividends.data
         portfolioid = form.portfolioid.data
+
 
         if not Share.exists(ticker):
 

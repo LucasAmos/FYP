@@ -24,11 +24,6 @@ class ExistingShareInPortfolioValidator(object):
             raise ValidationError(self.message)
 
 
-
-
-
-
-
 class ExistingPortfolioValidator(object):
     def __init__(self, message=None):
         if not message:
@@ -48,6 +43,7 @@ class AddShareForm(Form):
                                                                                  message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
     dividends = DecimalField('Do you have any dividends for this share? &nbsp')
+    originalportfolioid = HiddenField("hidden field")
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
@@ -109,7 +105,7 @@ class SignupForm(Form):
             raise ValidationError('This username is already taken.')
 
 class AddPortfolioForm(Form):
-    name = StringField('New portfolio name: ', validators=[ExistingPortfolioValidator()])
+    name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator()])
 
     def validate(self):
 
@@ -118,5 +114,13 @@ class AddPortfolioForm(Form):
 
         return True
 
+class DeletePortfolioForm(Form):
+    name = SelectField('Select a portfolio to delete: &nbsp ', validators=[DataRequired()])
 
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True
 

@@ -101,6 +101,5 @@ class Share(db.Model):
 
 
 class Portfolios(db.Model):
-    id = db.Column(db.Integer)
     portfolioname = db.Column(db.String(50), primary_key=True)
     username = db.Column(db.String(50), primary_key=True)

@@ -1,7 +1,7 @@
 from sqlalchemy import desc
 import urllib
 import json
-from models import Userownedshare
+from models import Userownedshare, Portfolios
 
 
 class share_data():
@@ -11,10 +11,10 @@ class share_data():
 
         base_url = 'https://query.yahooapis.com/v1/public/yql?'
         query = {
-        'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("%s","")' %ticker,
-        'format': 'json',
-         'env': 'store://datatables.org/alltableswithkeys'
-         }
+            'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("%s","")' %ticker,
+            'format': 'json',
+            'env': 'store://datatables.org/alltableswithkeys'
+        }
 
         url = base_url + urllib.urlencode(query)
         response = urllib.urlopen(url)
@@ -79,20 +79,34 @@ class share_data():
 
         return dictvalues
 
+    #not used anywhere, move code from models.py to here
+    # @staticmethod
+    # def getportfolioids(user):
+    #
+    #     portfolioids= Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != None)
+    #
+    #     tempset = set()
+    #     for row in portfolioids:
+    #         id = row.portfolioid
+    #         tempset.add(id)
+    #
+    #         templist = list(tempset)
+    #         return templist
+
 
     @staticmethod
-    def getportfolioids(user):
+    def getportfolioidsfromtable(user):
 
-       portfolioids= Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != None)
+        portfolioids = Portfolios.query.order_by(desc(Portfolios.portfolioname)).filter_by(username=user)
 
-       tempset = set()
-       for row in portfolioids:
-           id = row.portfolioid
-           tempset.add(id)
+        tempset = set()
+        templist = list(tempset)
+        for row in portfolioids:
+            name = row.portfolioname
+            tempset.add(name)
 
-           templist = list(tempset)
-           return templist
-
+            templist = list(tempset)
+        return templist
 
     @staticmethod
     def getsubportfoliovalue(user, portfolio):

@@ -3,9 +3,9 @@ from flask import render_template, flash, redirect, url_for, request, abort
 from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
-from forms import AddShareForm, LoginForm, SignupForm, EditShareForm
+from forms import *
 from models import User, Userownedshare, Share
-from share_data import share_data
+from share_data import *
 import json
 
 
@@ -25,7 +25,7 @@ def index():
 
         share_data.getportfoliovalues(current_user.username)
 
-        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=Userownedshare.listportfolios())
+        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
     else: return render_template('index.html')
 
@@ -63,32 +63,25 @@ def logout():
     return redirect(url_for('index'))
 
 
-@app.route('/add', methods=['GET', 'POST'], )
+@app.route('/editportfolios', methods=['GET', 'POST'], )
 @login_required
-def add():
-    form = AddShareForm()
-    form.portfolioid.choices = [(h, h) for h in  Userownedshare.listportfolios()]
+def editportfolios():
+
+    print(share_data.getportfolioidsfromtable(current_user.username))
+    form = AddPortfolioForm()
+
     if form.validate_on_submit():
-        ticker = form.ticker.data
-        quantity = form.quantity.data
-        dividends = form.dividends.data
-        portfolioid = form.portfolioid.data
+        name = form.name.data
 
-        if not Share.exists(ticker):
-
-            sharedata = share_data.JSONSharePrice(ticker)
-            sharename = sharedata['query']['results']['quote']['Name']
-
-            newshare = Share(ticker=ticker, name=sharename)
-            db.session.add(newshare)
-           # db.session.commit()
-
-        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, portfolioid=portfolioid)
-        db.session.add(bm)
+        portfolio = Portfolios(portfolioname=name, username=current_user.username)
+        db.session.add(portfolio)
         db.session.commit()
-        flash("Added share '{}'".format(ticker))
+
+
+
+        flash("Added portfolio '{}'".format(name))
         return redirect(url_for('index'))
-    return render_template('add.html', form=form, portfolioids = Userownedshare.listportfolios(), )
+    return render_template('editportfolios.html', form=form )
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -124,6 +117,52 @@ def delete_share(bookmark_id):
 
     return render_template('confirm_delete.html', portfolioids=Userownedshare.listportfolios(), share=tempshare, nolinks=True)
 
+
+@app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])
+@login_required
+def list_portfolio(portfolio_id):
+
+    allshares = share_data.getalljsonshares(current_user.username)
+    sharesinportfolio = []
+
+    for share in allshares:
+
+        if share['portfolioid'] == portfolio_id:
+
+            sharesinportfolio.append(share)
+
+
+    return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username), portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
+
+
+@app.route('/add', methods=['GET', 'POST'], )
+@login_required
+def add():
+    form = AddShareForm()
+    form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+    if form.validate_on_submit():
+        ticker = form.ticker.data
+        quantity = form.quantity.data
+        dividends = form.dividends.data
+        portfolioid = form.portfolioid.data
+
+        if not Share.exists(ticker):
+
+            sharedata = share_data.JSONSharePrice(ticker)
+            sharename = sharedata['query']['results']['quote']['Name']
+
+            newshare = Share(ticker=ticker, name=sharename)
+            db.session.add(newshare)
+           # db.session.commit()
+
+        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, portfolioid=portfolioid)
+        db.session.add(bm)
+        db.session.commit()
+        flash("Added share '{}'".format(ticker))
+        return redirect(url_for('index'))
+    return render_template('add.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), )
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -152,21 +191,7 @@ def sharedata():
                                 portfoliovalues= share_data.getportfoliovalues(current_user.username))
 
 
-@app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])
-@login_required
-def list_portfolio(portfolio_id):
 
-    allshares = share_data.getalljsonshares(current_user.username)
-    sharesinportfolio = []
-
-    for share in allshares:
-
-        if share['portfolioid'] == portfolio_id:
-
-            sharesinportfolio.append(share)
-
-
-    return render_template('portfolio.html', id=portfolio_id, portfolioids = Userownedshare.listportfolios(), portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
 
 
 

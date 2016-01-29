@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% from "form_macros.html" import render_field %}
+
+
+
+{% block title %}
+FYP -- Edit portfolios
+{% endblock %}
+
+{% block content %}
+
+<section>
+    <h1>Create and delete portfolios</h1>
+    <br>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        <table>
+            {{ render_field(form.name, size=20) }}
+
+
+
+
+            <tr class="submit">
+                <td></td>
+                <td><button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+
+
+</section>
+
+
+{% endblock %}
+

@@ -5,7 +5,7 @@ from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url
 from wtforms_components import read_only
 
 from flask_login import current_user
-from models import User, Userownedshare
+from models import *
 
 
 class ExistingShareInPortfolioValidator(object):
@@ -15,13 +15,24 @@ class ExistingShareInPortfolioValidator(object):
         self.message = message
 
     def __call__(self, form, field):
-        print form.data['ticker']
-        print form.data['portfolioid']
 
         ticker = form.data['ticker']
         portfolioid = form.data['portfolioid']
 
         if Userownedshare.query.filter_by(ticker=ticker).filter_by(user=current_user.username).filter_by(portfolioid=portfolioid).first():
+            raise ValidationError(self.message)
+
+class ExistingPortfolioValidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"A portfolio with that name already exists"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        name = form.data['name']
+
+        if Portfolios.query.filter_by(portfolioname=name).filter_by(username=current_user.username).first():
             raise ValidationError(self.message)
 
 
@@ -30,8 +41,7 @@ class AddShareForm(Form):
                                                                                  message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
     dividends = DecimalField('Do you have any dividends for this share? &nbsp')
-    #portfolioid = StringField('Enter a portfolio name:', validators=[ExistingShareInPortfolioValidator()])
-    portfolioid = SelectField(u'Or choose an existing portfolio:', validators=[ExistingShareInPortfolioValidator()])
+    portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
 
@@ -90,7 +100,15 @@ class SignupForm(Form):
         if User.query.filter_by(username=username_field.data).first():
             raise ValidationError('This username is already taken.')
 
+class AddPortfolioForm(Form):
+    name = StringField('New portfolio name: ', validators=[ExistingPortfolioValidator()])
 
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True
 
 
 

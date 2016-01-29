@@ -52,7 +52,7 @@ def login():
         if user is not None and user.check_password(form.password.data):
             login_user(user, form.remember_me.data)
             flash("Logged in successfully as {}.".format(user.username))
-            return redirect(request.args.get('next') or url_for('index', username=user.username))
+            return redirect(request.args.get('next') or url_for('index'))
 
         flash('Incorrect username or password.')
     return render_template("login.html", form=form)

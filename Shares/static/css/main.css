@@ -35,3 +35,7 @@
 .share th {
     padding: 5px;
 }
+
+.portfolioshares{
+    border: 1px dashed lightgrey;
+}

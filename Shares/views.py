@@ -117,7 +117,7 @@ def delete_share(bookmark_id):
     else:
         flash("Please confirm deleting the bookmark.")
 
-    return render_template('confirm_delete.html', portfolioids=Userownedshare.listportfolios(), share=tempshare, nolinks=True)
+    return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(), share=tempshare, nolinks=True)
 
 
 @app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])

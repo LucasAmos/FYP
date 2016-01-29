@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,19 +48,20 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6058632">
-              <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.3897937">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="e#23#98#0" expanded="true" />
                 <element signature="e#381#475#0" expanded="false" />
+                <element signature="e#533#854#0" expanded="false" />
                 <element signature="e#922#1334#0" expanded="false" />
                 <element signature="e#1400#1906#0" expanded="false" />
                 <element signature="e#1948#1999#0" expanded="false" />
-                <element signature="e#2681#3226#0" expanded="false" />
-                <element signature="e#3345#3894#0" expanded="false" />
-                <element signature="e#5656#5695#0" expanded="false" />
-                <element signature="e#5746#5785#0" expanded="false" />
-                <element signature="e#5912#6296#0" expanded="false" />
+                <element signature="e#3443#3992#0" expanded="false" />
+                <element signature="e#4122#4595#0" expanded="false" />
+                <element signature="e#4675#5701#0" expanded="false" />
+                <element signature="e#5754#5793#0" expanded="false" />
+                <element signature="e#5844#5883#0" expanded="false" />
+                <element signature="e#6010#6394#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -749,12 +752,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00018" summary="commit static files">
-      <created>1451497719576</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1451497719576</updated>
-    </task>
     <task id="LOCAL-00019" summary="commit all">
       <created>1451497774611</created>
       <option name="number" value="00019" />
@@ -1043,7 +1040,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454031603452</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="added new table to store portfolio names and added functionality for this">
+      <created>1454031716217</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1454031716217</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1554,19 +1557,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6058632">
-          <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.3897937">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#23#98#0" expanded="true" />
             <element signature="e#381#475#0" expanded="false" />
+            <element signature="e#533#854#0" expanded="false" />
             <element signature="e#922#1334#0" expanded="false" />
             <element signature="e#1400#1906#0" expanded="false" />
             <element signature="e#1948#1999#0" expanded="false" />
-            <element signature="e#2681#3226#0" expanded="false" />
-            <element signature="e#3345#3894#0" expanded="false" />
-            <element signature="e#5656#5695#0" expanded="false" />
-            <element signature="e#5746#5785#0" expanded="false" />
-            <element signature="e#5912#6296#0" expanded="false" />
+            <element signature="e#3443#3992#0" expanded="false" />
+            <element signature="e#4122#4595#0" expanded="false" />
+            <element signature="e#4675#5701#0" expanded="false" />
+            <element signature="e#5754#5793#0" expanded="false" />
+            <element signature="e#5844#5883#0" expanded="false" />
+            <element signature="e#6010#6394#0" expanded="false" />
           </folding>
         </state>
       </provider>

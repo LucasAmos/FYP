@@ -81,7 +81,7 @@ def editportfolios():
 
         flash("Added portfolio '{}'".format(name))
         return redirect(url_for('index'))
-    return render_template('editportfolios.html', form=form )
+    return render_template('editportfolios.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username) )
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -97,7 +97,7 @@ def edit_share(bookmark_id):
         flash("You have successfully edited the share: '{}'". format(tempeditshare.name.name))
         return redirect(url_for('index'))
 
-    return render_template('editshare_form.html', portfolioids = Userownedshare.listportfolios(), form=form, title="Edit share")
+    return render_template('editshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
 
 
 @app.route('/delete/<int:bookmark_id>', methods=['GET', 'POST'])

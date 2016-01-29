@@ -21,25 +21,34 @@
 
     <table class="share">
         <tr>
-            <th>Ticker</th>
             <th>Name</th>
-            <th>Share value </th>
+            <th>Ticker</th>
+            <th>Share value</th>
             <th>Quantity</th>
             <th>Dividends</th>
+            <th>Total share value</th>
             <th>Profit/loss</th>
+            <th> Add </th>
             <th>Edit</th>
+            <th>Delete</th>
+
         </tr>
 
         {% for share in portfolioshares  %}
 
+        {% set price = share['price'] | float * share['quantity'] %}
+
         <tr>
-            <td>{{share.symbol}}</td>
-            <td>{{share.name}}</td>
-            <td>{{share['price']}} </td>
-            <td>{{share['quantity']}}</td>
+            <td> {{share['name']}} </td>
+            <td> {{share['symbol']}} </td>
+            <td> {{share['price']}} </td>
+            <td> {{share['quantity']}} </td>
             <td> {{share['dividends']}} </td>
+            <td>{{price}}</td>
             <td></td>
-            <td><a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a></td>
+            <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> add  </a> </td>
+            <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>
+            <td> <a href="{{url_for('delete_share', bookmark_id=share.id) }}"> delete </a> </td>
         </tr>
 
         {% endfor%}

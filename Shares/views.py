@@ -34,8 +34,8 @@ def index():
 def signup():
     form = SignupForm()
     if form.validate_on_submit():
-        user = User(email=form.email.data,
-                    username=form.username.data,
+        user = User(email=form.email.data.lower(),
+                    username=form.username.data.lower(),
                     password=form.password.data)
         db.session.add(user)
         db.session.commit()
@@ -67,7 +67,6 @@ def logout():
 @login_required
 def editportfolios():
 
-    print(share_data.getportfolioidsfromtable(current_user.username))
     form = AddPortfolioForm()
 
     if form.validate_on_submit():
@@ -91,6 +90,9 @@ def edit_share(bookmark_id):
     if current_user.username != tempeditshare.user:
         abort(403)
     form = EditShareForm(obj=tempeditshare)
+    form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+    form.originalportfolioid.data = Userownedshare.query.get_or_404(bookmark_id).portfolioid
+
     if form.validate_on_submit():
         form.populate_obj(tempeditshare)
         db.session.commit()
@@ -141,7 +143,7 @@ def add():
     form = AddShareForm()
     form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
     if form.validate_on_submit():
-        ticker = form.ticker.data
+        ticker = form.ticker.data.upper()
         quantity = form.quantity.data
         dividends = form.dividends.data
         portfolioid = form.portfolioid.data
@@ -180,10 +182,6 @@ from StringIO import StringIO
 
 @app.route('/sharedata')
 def sharedata():
-    js = share_data.getalljsonshares(current_user.username)
-    io = StringIO()
-    #return json.dumps(js, io)
-    data= json.dumps(js, io)
 
     if current_user.is_authenticated:
 

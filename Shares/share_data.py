@@ -146,11 +146,8 @@ class share_data():
         portfoliovalues ={}
 
         for id in portfolioids:
-
             portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
 
-        print "test:"
-        print portfoliovalues
         return portfoliovalues
 
 

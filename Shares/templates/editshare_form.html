@@ -11,10 +11,11 @@ FYP -- edit share{{ Title }}
     <form action="" method="post">
         {{form.hidden_tag()}}
         <table>
-            {{ render_field(form.ticker, size=50) }}
-            {{ render_field(form.quantity, size=50) }}
-            {{ render_field(form.dividends, size=50) }}
-            {{ render_field(form.portfolioid, size=50) }}
+            {{ render_field(form.ticker, size=20) }}
+            {{ render_field(form.quantity, size=20) }}
+            {{ render_field(form.dividends, size=20) }}
+            <!--{{ render_field(form.originalportfolioid, size=20) }}-->
+            {{ render_field(form.portfolioid, class="chosen dropdown", size=260) }}
 
             <tr class="submit">
                 <td></td>

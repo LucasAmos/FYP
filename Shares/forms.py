@@ -1,5 +1,5 @@
 from flask_wtf import Form
-from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField
+from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField
 from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError
 from wtforms_components import read_only
@@ -18,9 +18,16 @@ class ExistingShareInPortfolioValidator(object):
 
         ticker = form.data['ticker']
         portfolioid = form.data['portfolioid']
+        originalportfolioid = form.data['originalportfolioid']
 
-        if Userownedshare.query.filter_by(ticker=ticker).filter_by(user=current_user.username).filter_by(portfolioid=portfolioid).first():
+        if Userownedshare.query.filter_by(ticker=ticker).filter_by(user=current_user.username).filter_by(portfolioid=portfolioid).first() and originalportfolioid != portfolioid:
             raise ValidationError(self.message)
+
+
+
+
+
+
 
 class ExistingPortfolioValidator(object):
     def __init__(self, message=None):
@@ -56,7 +63,8 @@ class EditShareForm(Form):
                                                                                  message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share do you own:')
     dividends = DecimalField('Have you received any dividends for this share?')
-    portfolioid = StringField('Enter a portfolio name')
+    originalportfolioid = HiddenField("hidden field")
+    portfolioid = SelectField('Choose a portfolio to add the share to', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
 

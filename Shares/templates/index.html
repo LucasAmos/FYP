@@ -46,7 +46,7 @@ FYP - share portfolio
 
 {% if current_user.is_authenticated %}
         <header>
-            <h1>Welcome {{ current_user.username }} </h1>
+            <h1>Welcome {{ current_user.username | capitalize }} </h1>
 
         </header>
 {% endif%}

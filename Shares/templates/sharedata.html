@@ -31,6 +31,7 @@
     <th>Share value</th>
     <th>Quantity</th>
     <th>Dividends</th>
+    <th>Total share value</th>
     <th>Profit/loss</th>
     <th> Add </th>
     <th>Edit</th>
@@ -48,6 +49,7 @@
         <td> {{share['price']}} </td>
         <td> {{share['quantity']}} </td>
         <td> {{share['dividends']}} </td>
+        <td></td>
         <td></td>
         <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> add  </a> </td>
         <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>

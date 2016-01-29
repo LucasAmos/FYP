@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/templates/editportfolios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/models.py" afterPath="$PROJECT_DIR$/Shares/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/add.html" afterPath="$PROJECT_DIR$/Shares/templates/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +46,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27361563">
-              <caret line="141" column="47" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.6058632">
+              <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
               <folding>
                 <element signature="e#23#98#0" expanded="true" />
                 <element signature="e#381#475#0" expanded="false" />
@@ -757,12 +749,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00017" summary="commit static files">
-      <created>1451497539632</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1451497539632</updated>
-    </task>
     <task id="LOCAL-00018" summary="commit static files">
       <created>1451497719576</created>
       <option name="number" value="00018" />
@@ -1051,7 +1037,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453999305794</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added new table to store portfolio names and added functionality for this">
+      <created>1454031603452</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1454031603452</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1123,7 +1115,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added FYP home link on navbar&#10;" />
     <MESSAGE value="removed unnecessary print statement" />
     <MESSAGE value="added &quot;prototype&quot; blurb" />
     <MESSAGE value="added warning text" />
@@ -1148,7 +1139,8 @@
     <MESSAGE value="total overhaul, fixed loads of broken shit" />
     <MESSAGE value="removed import" />
     <MESSAGE value="database init" />
-    <option name="LAST_COMMIT_MESSAGE" value="database init" />
+    <MESSAGE value="added new table to store portfolio names and added functionality for this" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new table to store portfolio names and added functionality for this" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1562,8 +1554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27361563">
-          <caret line="141" column="47" selection-start-line="141" selection-start-column="47" selection-end-line="141" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.6058632">
+          <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
           <folding>
             <element signature="e#23#98#0" expanded="true" />
             <element signature="e#381#475#0" expanded="false" />

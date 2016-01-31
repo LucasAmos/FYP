@@ -63,16 +63,15 @@ def logout():
     return redirect(url_for('index'))
 
 
-@app.route('/editportfolios', methods=['GET', 'POST'], )
+@app.route('/addportfolio', methods=['GET', 'POST'] )
 @login_required
-def editportfolios():
+def addportfolio():
 
     form = AddPortfolioForm()
-    d_form = DeletePortfolioForm()
-    d_form.name.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+
 
     if form.validate_on_submit():
-        name = form.name.data
+        name = form.name.data.lower()
 
         portfolio = Portfolios(portfolioname=name.lower(), username=current_user.username)
         db.session.add(portfolio)
@@ -81,19 +80,29 @@ def editportfolios():
         flash("Added portfolio '{}'".format(name))
         return redirect(url_for('index'))
 
+    return render_template('addportfolio.html', form=form)
+
+
+
+@app.route('/deleteportfolio', methods=['GET', 'POST'])
+@login_required
+def deleteportfolio():
+
+    d_form = DeletePortfolioForm()
+    d_form.name.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+
 
     if d_form.validate_on_submit():
-        name = d_form.name.data
+        name2 = d_form.name.data
 
-        portfolio = share_data.getPortfolioIDbyusernameandPortfolioName(current_user.username, name)
+        portfolio = share_data.getPortfolioIDbyusernameandPortfolioName(current_user.username, name2)
         db.session.delete(portfolio)
         db.session.commit()
 
-        flash("deleted portfolio '{}'".format(name))
+        flash("deleted portfolio '{}'".format(name2))
         return redirect(url_for('index'))
 
-
-    return render_template('editportfolios.html', form=form, d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username) )
+    return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
 @app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
@@ -136,6 +145,8 @@ def delete_share(bookmark_id):
 @app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])
 @login_required
 def list_portfolio(portfolio_id):
+
+
 
     allshares = share_data.getalljsonshares(current_user.username)
     sharesinportfolio = []

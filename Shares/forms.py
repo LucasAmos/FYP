@@ -1,7 +1,7 @@
 from flask_wtf import Form
 from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField
 from flask.ext.wtf.html5 import DecimalField
-from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError
+from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, optional
 from wtforms_components import read_only
 
 from flask_login import current_user
@@ -32,17 +32,35 @@ class ExistingPortfolioValidator(object):
 
     def __call__(self, form, field):
 
-        name = form.data['name']
+        name = form.data['name'].lower()
 
         if Portfolios.query.filter_by(portfolioname=name).filter_by(username=current_user.username).first():
             raise ValidationError(self.message)
+
+        if name == "":
+            raise ValidationError("You must enter a portfolio name")
+
+
+class EmptyPortfolioValidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"You cannot delete portfolios that contain shares"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        name = form.data['name']
+
+        if Userownedshare.query.filter_by(user=current_user.username).filter_by(portfolioid=name).first():
+            raise ValidationError(self.message)
+
 
 
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
-    quantity = IntegerField('How many of this share do you own:')
-    dividends = DecimalField('Do you have any dividends for this share? &nbsp')
+    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
+    dividends = DecimalField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
@@ -57,8 +75,8 @@ class AddShareForm(Form):
 class EditShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
-    quantity = IntegerField('How many of this share do you own:')
-    dividends = DecimalField('Have you received any dividends for this share?')
+    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
+    dividends = DecimalField('Have you received any dividends for this share?', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
     portfolioid = SelectField('Choose a portfolio to add the share to', validators=[ExistingShareInPortfolioValidator()])
 
@@ -115,7 +133,7 @@ class AddPortfolioForm(Form):
         return True
 
 class DeletePortfolioForm(Form):
-    name = SelectField('Select a portfolio to delete: &nbsp ', validators=[DataRequired()])
+    name = SelectField('Select a portfolio to delete: &nbsp ', validators=[EmptyPortfolioValidator()])
 
     def validate(self):
 

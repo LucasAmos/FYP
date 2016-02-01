@@ -7,6 +7,7 @@
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/static/css/chosen.css" afterPath="$PROJECT_DIR$/Shares/static/css/chosen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.803279">
-              <caret line="204" column="35" selection-start-line="204" selection-start-column="35" selection-end-line="204" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.592299">
+              <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -118,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chosen.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="chosen.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/static/css/chosen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -238,9 +239,9 @@
         <option value="$PROJECT_DIR$/Shares/templates/deleteportfolio.html" />
         <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
         <option value="$PROJECT_DIR$/Shares/static/css/chosen.css" />
+        <option value="$PROJECT_DIR$/Shares/templates/base.html" />
       </list>
     </option>
   </component>
@@ -778,12 +779,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00037" summary="added JS">
-      <created>1452634979517</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1452634979517</updated>
-    </task>
     <task id="LOCAL-00038" summary="added code to add the 'Share' object to database when it does not already exist">
       <created>1452637604257</created>
       <option name="number" value="00038" />
@@ -1072,7 +1067,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454286623340</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="test">
+      <created>1454286675033</created>
+      <option name="number" value="00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1454286675033</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1144,7 +1145,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited login form size" />
     <MESSAGE value="edited sign up form size" />
     <MESSAGE value="fixed overflowing page caused by footer" />
     <MESSAGE value="removed credentials" />
@@ -1169,7 +1169,8 @@
     <MESSAGE value="faded out flashes and changed their colour" />
     <MESSAGE value="test flash css" />
     <MESSAGE value=" flash css" />
-    <option name="LAST_COMMIT_MESSAGE" value=" flash css" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1625,10 +1626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/chosen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.803279">
-          <caret line="204" column="35" selection-start-line="204" selection-start-column="35" selection-end-line="204" selection-end-column="35" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1641,10 +1642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/chosen.css">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.592299">
+          <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
           <folding />
         </state>
       </provider>

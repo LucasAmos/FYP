@@ -103,7 +103,7 @@
 
                         <li>
                             <a href=" {{ url_for('addportfolio') }}"> Add portfolio</a> </li>
-                     <li>   <a href=" {{ url_for('deleteportfolio') }} "> Delete portfolio</a> </li>
+                        <li>   <a href=" {{ url_for('deleteportfolio') }} "> Delete portfolio</a> </li>
 
                     </ul>
 
@@ -205,6 +205,13 @@
                 allow_single_deselect: true,
                 placeholder_text_single: "Choose a portfolio to delete"
             });
+
+            $(function() {
+                $('#flashes').delay(500).fadeIn('normal', function() {
+                    $(this).delay(10000).fadeOut();
+                });
+            });
+
         });
 
     </script>

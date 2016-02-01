@@ -36,7 +36,8 @@
 
         {% for share in portfolioshares  %}
 
-        {% set price = share['price'] | float * share['quantity'] %}
+        {% set totalprice = share['price'] | float * share['quantity'] %}
+
 
         <tr>
             <td> {{share['name']}} </td>
@@ -44,11 +45,12 @@
             <td> {{share['price']}} </td>
             <td> {{share['quantity']}} </td>
             <td> {{share['dividends']}} </td>
-            <td>{{price}}</td>
-            <td></td>
-            <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> add  </a> </td>
+            <td> {{totalprice}}</td>
+            <td>  {{share['profit']}}</td>
+            <td> <a href="#"> add  </a> </td>
             <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>
-            <td> <a href="{{url_for('delete_share', bookmark_id=share.id) }}"> delete </a> </td>
+            <td> <a href="{{url_for('delete_share', bookmark_id=share.id) }}"> delete </a></td>
+
         </tr>
 
         {% endfor%}

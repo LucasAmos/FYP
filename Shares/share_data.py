@@ -34,15 +34,15 @@ class share_data():
 
             ticker = row.ticker
             quote = share_data.JSONSharePrice(ticker)
-
             sharedata = {
                 'symbol': quote['query']['results']['quote']['symbol'],
                 'quantity': row.quantity,
                 'price': quote['query']['results']['quote']['LastTradePriceOnly'],
-                #'name': quote['query']['results']['quote']['Name']
+                'averagepurchaseprice': row.averagepurchaseprice,
                 'name': row.name.name,
                 'dividends': row.dividends,
                 'id': row.id,
+
                 'portfolioid': row.portfolioid
             }
             sharearray.append(sharedata)

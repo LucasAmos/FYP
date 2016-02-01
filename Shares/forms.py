@@ -62,6 +62,7 @@ class AddShareForm(Form):
     quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
     dividends = DecimalField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
+    purchaseprice = DecimalField('How much did you pay for each of these shares? &nbsp', validators=[number_range(min=0.0)])
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):

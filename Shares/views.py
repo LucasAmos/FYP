@@ -13,7 +13,7 @@ import json
 def load_user(userid):
 
     if userid is None or userid == 'None':
-       userid =0
+        userid =0
     return User.query.get(int(userid))
 
 
@@ -69,7 +69,6 @@ def addportfolio():
 
     form = AddPortfolioForm()
 
-
     if form.validate_on_submit():
         name = form.name.data.lower()
 
@@ -81,7 +80,6 @@ def addportfolio():
         return redirect(url_for('index'))
 
     return render_template('addportfolio.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
-
 
 
 @app.route('/deleteportfolio', methods=['GET', 'POST'])
@@ -155,10 +153,11 @@ def list_portfolio(portfolio_id):
 
         if share['portfolioid'] == portfolio_id:
 
+            share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
             sharesinportfolio.append(share)
 
-
-    return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username), portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
+    return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
+                           portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
 
 
 @app.route('/add', methods=['GET', 'POST'], )
@@ -170,6 +169,7 @@ def add():
         ticker = form.ticker.data.upper()
         quantity = form.quantity.data
         dividends = form.dividends.data
+        purchaseprice = form.purchaseprice.data
         portfolioid = form.portfolioid.data
 
 
@@ -180,10 +180,9 @@ def add():
 
             newshare = Share(ticker=ticker, name=sharename)
             db.session.add(newshare)
-           # db.session.commit()
 
-        bm = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, portfolioid=portfolioid)
-        db.session.add(bm)
+        share = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, averagepurchaseprice=purchaseprice, portfolioid=portfolioid)
+        db.session.add(share)
         db.session.commit()
         flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
@@ -211,7 +210,7 @@ def sharedata():
     if current_user.is_authenticated:
 
         return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username),
-                                portfoliovalues= share_data.getportfoliovalues(current_user.username))
+                               portfoliovalues= share_data.getportfoliovalues(current_user.username))
 
 
 

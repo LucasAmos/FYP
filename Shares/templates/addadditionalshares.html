@@ -10,8 +10,10 @@ FYP -- Add additional shares{{ Title }}
     <h1>{{ title }}</h1>
     <form action="" method="post">
 
-        {{name}}
+        <h1>Add shares and dividends </h1>
+        <h3 class="red"> <strong>{{name}}</strong></h3>
         {{form.hidden_tag()}}
+        <br>
         <table>
             {{ render_field(form.sharequantity, size=20) }}
             {{ render_field(form.shareprice, size=20) }}

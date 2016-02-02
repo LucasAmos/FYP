@@ -55,6 +55,29 @@ class EmptyPortfolioValidator(object):
             raise ValidationError(self.message)
 
 
+class SharePricevalidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"Enter the share quantity purchased"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        if field.data and not form.data['sharequantity']:
+            raise ValidationError(self.message)
+
+
+class ShareQuantityValidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"You must also enter the price paid for these shares"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        if field.data and not form.data['shareprice']:
+            raise ValidationError(self.message)
+
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
@@ -90,6 +113,7 @@ class EditShareForm(Form):
     def __init__(self, *args, **kwargs):
         super(EditShareForm, self).__init__(*args, **kwargs)
         read_only(self.ticker)
+
 
 class LoginForm(Form):
     username = StringField('Your Username', validators=[DataRequired()])
@@ -135,8 +159,8 @@ class AddPortfolioForm(Form):
 
 class AddAdditionalShares(Form):
     name = StringField('Share name')
-    sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(), number_range(min=1, max=10000)])
-    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(), number_range(min=1, max=10000)])
+    sharequantity = IntegerField('Have you bought any additional shares:', validators=[ShareQuantityValidator(), number_range(min=1, max=10000)])
+    shareprice = FloatField('How much did you pay for these shares:', validators=[SharePricevalidator(), number_range(min=1, max=10000)])
     dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)])
 
     def validate(self):
@@ -145,6 +169,8 @@ class AddAdditionalShares(Form):
             return False
 
         return True
+
+
 
 class DeletePortfolioForm(Form):
     name = SelectField('Select a portfolio to delete: &nbsp ', validators=[EmptyPortfolioValidator()])

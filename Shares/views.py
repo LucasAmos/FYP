@@ -192,8 +192,10 @@ def add():
 @app.route('/addadditionalshares/<string:share_id>', methods=['GET', 'POST'], )
 @login_required
 def addadditionalshares(share_id):
-
     share = Userownedshare.query.get_or_404(share_id)
+
+    if current_user.username != share.user:
+        abort(403)
 
     form = AddAdditionalShares()
 
@@ -203,30 +205,27 @@ def addadditionalshares(share_id):
 
         if form.sharequantity.data and form.shareprice.data:
 
-
             totalshares = float(share.quantity) + form.sharequantity.data
-
             newaveragepurchaseprice = (((float(share.averagepurchaseprice) * share.quantity) + (form.sharequantity.data * form.shareprice.data)) / totalshares)
-
             share.averagepurchaseprice = newaveragepurchaseprice
 
             share.quantity += form.sharequantity.data
             db.session.commit()
 
-
-
-
         if form.dividends.data:
             share.dividends += float(form.dividends.data)
             db.session.commit()
 
-
-            #averageprice = float(form.sharequantity.data) * float(form.shareprice.data)
-
-
         return redirect(url_for('index'))
 
     return render_template('addadditionalshares.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), name=share.name.name)
+
+
+
+@app.errorhandler(403)
+def page_not_found(e):
+    return render_template('403.html'), 403
+
 
 @app.errorhandler(404)
 def page_not_found(e):

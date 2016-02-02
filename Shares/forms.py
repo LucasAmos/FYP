@@ -1,5 +1,5 @@
 from flask_wtf import Form
-from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField
+from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField, FloatField
 from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, optional
 from wtforms_components import read_only
@@ -55,7 +55,6 @@ class EmptyPortfolioValidator(object):
             raise ValidationError(self.message)
 
 
-
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
@@ -92,7 +91,6 @@ class EditShareForm(Form):
         super(EditShareForm, self).__init__(*args, **kwargs)
         read_only(self.ticker)
 
-
 class LoginForm(Form):
     username = StringField('Your Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -123,8 +121,23 @@ class SignupForm(Form):
         if User.query.filter_by(username=username_field.data).first():
             raise ValidationError('This username is already taken.')
 
+
 class AddPortfolioForm(Form):
     name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator()])
+
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True
+
+
+class AddAdditionalShares(Form):
+    name = StringField('Share name')
+    sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(), number_range(min=1, max=10000)])
+    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(), number_range(min=1, max=10000)])
+    dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)])
 
     def validate(self):
 

@@ -3,12 +3,12 @@
         <td> {{ field.label }}</td>
         <td>{{ field(**kwargs) |safe }}</td>
     </tr>
-<tr class="error">
+<tr >
     <td></td>
     <td>
-        <ul>
+        <ul class="error">
             {% for error in field.errors %}
-                <li>{{  error }}</li>
+                <li> <div class="red"> {{  error }} </div></li>
             {% endfor %}
         </ul>
     </td>

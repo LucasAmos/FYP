@@ -28,9 +28,7 @@
             <th>Dividends</th>
             <th>Total share value</th>
             <th>Profit/loss</th>
-            <th> Add </th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th> Edit </th>
 
         </tr>
 
@@ -46,23 +44,23 @@
             <td> {{share['dividends']}} </td>
             <td> {{totalprice}}</td>
 
-            {% if  share['profit'] | float < 1 %}
+            {% if  share['profit'] | float < 0 %}
 
-            <td class="loss">
-            {{share['profit']}}</td>
+            <td class="loss"> {{share['profit']}}</td>
 
             {% else %}
 
-            <td> {{share['profit']}} </td>
+            <td class="profit"> {{share['profit']}} </td>
 
             {% endif %}
 
 
 
-
-            <td> <a href="#"> add  </a> </td>
-            <td> <a href="{{ url_for('edit_share', bookmark_id=share.id) }}"> edit </a> </td>
-            <td> <a href="{{url_for('delete_share', bookmark_id=share.id) }}"> delete </a></td>
+            <td>
+               <a href="{{url_for('addadditionalshares', share_id=share.id)}}"> <span class="glyphicon glyphicon-plus-sign glyph" aria-hidden="true"></span> </a>
+                <a href="{{ url_for('edit_share', share_id=share.id) }}"><span class="glyphicon glyphicon-minus-sign glyph" aria-hidden="true"></span> </a>
+                <a href="{{url_for('delete_share', share_id=share.id) }}">  <span class="glyphicon glyphicon-remove-circle glyph" aria-hidden="true"></span> </a>
+            </td>
 
         </tr>
 

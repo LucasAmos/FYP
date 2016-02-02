@@ -103,15 +103,15 @@ def deleteportfolio():
     return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
-@app.route('/edit/<int:bookmark_id>', methods=['GET', 'POST'])
+@app.route('/edit/<share_id>', methods=['GET', 'POST'])
 @login_required
-def edit_share(bookmark_id):
-    tempeditshare = Userownedshare.query.get_or_404(bookmark_id)
+def edit_share(share_id):
+    tempeditshare = Userownedshare.query.get_or_404(share_id)
     if current_user.username != tempeditshare.user:
         abort(403)
     form = EditShareForm(obj=tempeditshare)
     form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
-    form.originalportfolioid.data = Userownedshare.query.get_or_404(bookmark_id).portfolioid
+    form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
 
     if form.validate_on_submit():
         form.populate_obj(tempeditshare)
@@ -122,10 +122,10 @@ def edit_share(bookmark_id):
     return render_template('editshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
 
 
-@app.route('/delete/<int:bookmark_id>', methods=['GET', 'POST'])
+@app.route('/delete/<share_id>', methods=['GET', 'POST'])
 @login_required
-def delete_share(bookmark_id):
-    tempshare = Userownedshare.query.get_or_404(bookmark_id)
+def delete_share(share_id):
+    tempshare = Userownedshare.query.get_or_404(share_id)
     if current_user.username != tempshare.user:
         abort(403)
 
@@ -186,8 +186,47 @@ def add():
         db.session.commit()
         flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
-    return render_template('add.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), )
+    return render_template('add.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
+
+@app.route('/addadditionalshares/<string:share_id>', methods=['GET', 'POST'], )
+@login_required
+def addadditionalshares(share_id):
+
+    share = Userownedshare.query.get_or_404(share_id)
+
+    form = AddAdditionalShares()
+
+    share.averagepurchaseprice
+
+    if form.validate_on_submit():
+
+        if form.sharequantity.data and form.shareprice.data:
+
+
+            totalshares = float(share.quantity) + form.sharequantity.data
+
+            newaveragepurchaseprice = (((float(share.averagepurchaseprice) * share.quantity) + (form.sharequantity.data * form.shareprice.data)) / totalshares)
+
+            share.averagepurchaseprice = newaveragepurchaseprice
+
+            share.quantity += form.sharequantity.data
+            db.session.commit()
+
+
+
+
+        if form.dividends.data:
+            share.dividends += float(form.dividends.data)
+            db.session.commit()
+
+
+            #averageprice = float(form.sharequantity.data) * float(form.shareprice.data)
+
+
+        return redirect(url_for('index'))
+
+    return render_template('addadditionalshares.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), name=share.name.name)
 
 @app.errorhandler(404)
 def page_not_found(e):

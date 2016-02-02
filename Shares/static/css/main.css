@@ -1,5 +1,22 @@
+.error{
+    list-style-type: none;
+}
+
+.red{
+    color: red
+}
+
+.glyph {
+    color: black;
+      font-size: 17px;
+}
+
 .loss {
     color: red;
+}
+
+.profit{
+    color: green;
 }
 
 .dropdown{

@@ -95,13 +95,13 @@ class AddShareForm(Form):
         return True
 
 
-class EditShareForm(Form):
+class RemoveShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
-    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
-    dividends = DecimalField('Have you received any dividends for this share?', validators=[optional(), number_range(min=0.00)])
+    quantity = IntegerField('How many of this share did you sell:', validators=[number_range(min=1, max=10000)])
+    price = DecimalField('What price did you sell them for', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
-    portfolioid = SelectField('Choose a portfolio to add the share to', validators=[ExistingShareInPortfolioValidator()])
+    portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
 
@@ -111,7 +111,7 @@ class EditShareForm(Form):
         return True
 
     def __init__(self, *args, **kwargs):
-        super(EditShareForm, self).__init__(*args, **kwargs)
+        super(RemoveShareForm, self).__init__(*args, **kwargs)
         read_only(self.ticker)
 
 

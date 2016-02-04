@@ -23,9 +23,11 @@ def index():
 
     if current_user.is_authenticated:
 
-        share_data.getportfoliovalues(current_user.username)
+        try:
+            return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
-        return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+        except:
+            return render_template("500.html")
 
     else: return render_template('index.html')
 
@@ -102,24 +104,6 @@ def deleteportfolio():
 
     return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
-
-@app.route('/edit/<share_id>', methods=['GET', 'POST'])
-@login_required
-def edit_share(share_id):
-    tempeditshare = Userownedshare.query.get_or_404(share_id)
-    if current_user.username != tempeditshare.user:
-        abort(403)
-    form = EditShareForm(obj=tempeditshare)
-    form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
-    form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
-
-    if form.validate_on_submit():
-        form.populate_obj(tempeditshare)
-        db.session.commit()
-        flash("You have successfully edited the share: '{}'". format(tempeditshare.name.name))
-        return redirect(url_for('index'))
-
-    return render_template('editshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
 
 
 @app.route('/delete/<share_id>', methods=['GET', 'POST'])
@@ -220,6 +204,50 @@ def addadditionalshares(share_id):
 
     return render_template('addadditionalshares.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), name=share.name.name)
 
+
+@app.route('/sell/<share_id>', methods=['GET', 'POST'])
+@login_required
+def sell_share(share_id):
+    share = Userownedshare.query.get_or_404(share_id)
+    if current_user.username != share.user:
+        abort(403)
+    #form = RemoveShareForm(obj=tempeditshare)
+    form = RemoveShareForm()
+    form.ticker.data = share.ticker
+
+    form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+    form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
+
+    if form.validate_on_submit():
+        #form.populate_obj(tempeditshare)
+
+        print "***added ***"
+        print form.ticker.data
+        print "Total sale price:" + str (form.quantity.data * form.price.data)
+        print "Average share sale price:" + str(form.price.data)
+
+
+        originalpurchaseprice = float(share.averagepurchaseprice)
+        originalquantity = float(share.quantity)
+        salequantity = float(form.quantity.data)
+        saleprice = float(form.price.data)
+
+        newpurchaseprice = str( ((originalpurchaseprice * originalquantity) - (saleprice * salequantity)) / (originalquantity-salequantity)
+
+        )
+
+        share.averagepurchaseprice = newpurchaseprice
+        share.quantity = (originalquantity - salequantity)
+        db.session.commit()
+
+
+        print "New average purchase price:" + newpurchaseprice
+
+        db.session.commit()
+        flash("You have successfully edited the share: '{}'". format(share.name.name))
+        return redirect(url_for('index'))
+
+    return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
 
 
 @app.errorhandler(403)

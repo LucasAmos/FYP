@@ -4,8 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/Shares/templates/add.html" line="22" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+    <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="add additional share validation">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/templates/editshare_form.html" afterPath="$PROJECT_DIR$/Shares/templates/sellshare_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/portfolio.html" afterPath="$PROJECT_DIR$/Shares/templates/portfolio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/tests/testDatabase.py" afterPath="$PROJECT_DIR$/Shares/tests/testDatabase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +27,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase.coverage" NAME="Unittests in testDatabase Coverage Results" MODIFIED="1453806686061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase.coverage" NAME="Unittests in testDatabase Coverage Results" MODIFIED="1454600469413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
     <SUITE FILE_PATH="coverage/FYP$tutorial_feature.coverage" NAME="tutorial.feature Coverage Results" MODIFIED="1453301149451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FYP$tutorial.coverage" NAME="tutorial Coverage Results" MODIFIED="1453753243845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_FlaskrTestCase.coverage" NAME="Unittests in FlaskrTestCase Coverage Results" MODIFIED="1453335241683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
@@ -46,68 +54,84 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3225806">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state vertical-scroll-proportion="-31.32258">
+              <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
               <folding>
                 <element signature="e#381#476#0" expanded="false" />
-                <element signature="e#534#855#0" expanded="false" />
-                <element signature="e#923#1351#0" expanded="false" />
-                <element signature="e#1417#1899#0" expanded="false" />
-                <element signature="e#1941#1992#0" expanded="false" />
-                <element signature="e#2090#2569#0" expanded="false" />
-                <element signature="e#2672#3281#0" expanded="false" />
-                <element signature="e#4261#4814#0" expanded="false" />
-                <element signature="e#4946#5572#0" expanded="false" />
-                <element signature="e#5652#6742#0" expanded="false" />
-                <element signature="e#6880#7871#0" expanded="false" />
-                <element signature="e#8107#8146#0" expanded="false" />
-                <element signature="e#8274#8516#0" expanded="false" />
+                <element signature="e#534#874#0" expanded="false" />
+                <element signature="e#942#1370#0" expanded="false" />
+                <element signature="e#1436#1918#0" expanded="false" />
+                <element signature="e#1960#2011#0" expanded="false" />
+                <element signature="e#2109#2588#0" expanded="false" />
+                <element signature="e#2691#3300#0" expanded="false" />
+                <element signature="e#3410#3963#0" expanded="false" />
+                <element signature="e#4095#4721#0" expanded="false" />
+                <element signature="e#4801#5891#0" expanded="false" />
+                <element signature="e#6029#7020#0" expanded="false" />
+                <element signature="e#7125#8711#0" expanded="false" />
+                <element signature="e#8764#8803#0" expanded="false" />
+                <element signature="e#8856#8895#0" expanded="false" />
+                <element signature="e#8946#8985#0" expanded="false" />
+                <element signature="e#9113#9355#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="403.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/403.html">
+      <file leaf-file-name="testDatabase.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/tests/testDatabase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.275862">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#415#482#0" expanded="false" />
+                <element signature="e#517#558#0" expanded="false" />
+                <element signature="e#597#868#0" expanded="false" />
+                <element signature="e#911#1166#0" expanded="false" />
+                <element signature="e#1206#1343#0" expanded="false" />
+                <element signature="e#1387#1617#0" expanded="false" />
+                <element signature="e#1666#2062#0" expanded="false" />
+                <element signature="e#2115#2662#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/models.py">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-              <folding>
-                <element signature="e#243#1163#0" expanded="false" />
-                <element signature="e#696#746#0" expanded="false" />
-                <element signature="e#811#864#0" expanded="false" />
-                <element signature="e#914#970#0" expanded="false" />
-                <element signature="e#1033#1087#0" expanded="false" />
-                <element signature="e#1121#1163#0" expanded="false" />
-                <element signature="e#1929#1987#0" expanded="false" />
-                <element signature="e#2050#2202#0" expanded="false" />
-                <element signature="e#2244#2337#0" expanded="false" />
-                <element signature="e#2442#2859#0" expanded="false" />
-                <element signature="e#2893#3455#0" expanded="false" />
-                <element signature="e#3222#3350#0" expanded="false" />
-                <element signature="e#3392#3455#0" expanded="false" />
-                <element signature="e#3490#3606#0" expanded="false" />
-              </folding>
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addadditionalshares.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/addadditionalshares.html">
+      <file leaf-file-name="share_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4281081">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#1557#2455#0" expanded="false" />
+                <element signature="e#2996#3313#0" expanded="false" />
+                <element signature="e#3388#4322#0" expanded="false" />
+                <element signature="e#4386#4601#0" expanded="false" />
+                <element signature="e#4706#4822#0" expanded="false" />
+                <marker date="1454461678971" expanded="false" signature="274:364" placeholder="select LastT... quote" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +139,18 @@
       <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.592592">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sellshare_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/sellshare_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -126,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/Shares/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="e#482#1048#0" expanded="false" />
                 <element signature="e#524#635#0" expanded="false" />
@@ -145,19 +179,18 @@
                 <element signature="e#2612#2706#0" expanded="false" />
                 <element signature="e#2738#3593#0" expanded="false" />
                 <element signature="e#3520#3593#0" expanded="false" />
-                <element signature="e#3627#4509#0" expanded="false" />
-                <element signature="e#4302#4375#0" expanded="false" />
-                <element signature="e#4426#4509#0" expanded="false" />
-                <element signature="e#4539#4764#0" expanded="false" />
-                <element signature="e#4795#5893#0" expanded="false" />
-                <element signature="e#5561#5703#0" expanded="false" />
-                <element signature="e#5762#5893#0" expanded="false" />
-                <element signature="e#5930#6129#0" expanded="false" />
-                <element signature="e#6056#6129#0" expanded="false" />
-                <element signature="e#6169#6717#0" expanded="false" />
-                <element signature="e#6644#6717#0" expanded="false" />
-                <element signature="e#6758#6964#0" expanded="false" />
-                <element signature="e#6891#6964#0" expanded="false" />
+                <element signature="e#4288#4361#0" expanded="false" />
+                <element signature="e#4412#4497#0" expanded="false" />
+                <element signature="e#4527#4752#0" expanded="false" />
+                <element signature="e#4783#5881#0" expanded="false" />
+                <element signature="e#5549#5691#0" expanded="false" />
+                <element signature="e#5750#5881#0" expanded="false" />
+                <element signature="e#5918#6117#0" expanded="false" />
+                <element signature="e#6044#6117#0" expanded="false" />
+                <element signature="e#6157#6705#0" expanded="false" />
+                <element signature="e#6632#6705#0" expanded="false" />
+                <element signature="e#6746#6952#0" expanded="false" />
+                <element signature="e#6879#6952#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -203,12 +236,10 @@
         <option value="$USER_HOME$/Desktop/website/index.html" />
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/test.py" />
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py" />
-        <option value="$PROJECT_DIR$/Shares/tests/testDatabase.py" />
         <option value="$PROJECT_DIR$/Shares/templates/signup.html" />
         <option value="$PROJECT_DIR$/Shares/templates/confirm_delete.html" />
         <option value="$PROJECT_DIR$/Shares/templates/layout.html" />
         <option value="$PROJECT_DIR$/Shares/templates/home.html" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/templates/login.html" />
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
@@ -220,15 +251,18 @@
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/models.py" />
         <option value="$PROJECT_DIR$/Shares/templates/add.html" />
-        <option value="$PROJECT_DIR$/Shares/share_data.py" />
         <option value="$PROJECT_DIR$/Shares/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Shares/templates/form_macros.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
         <option value="$PROJECT_DIR$/Shares/templates/addnewshares.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
-        <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/templates/addadditionalshares.html" />
+        <option value="$PROJECT_DIR$/Shares/share_data.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/sellshare_form.html" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
+        <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/Shares/tests/testDatabase.py" />
       </list>
     </option>
   </component>
@@ -238,10 +272,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="73" />
+    <option name="y" value="27" />
+    <option name="width" value="1847" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -299,6 +333,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,7 +478,7 @@
       <recent name="$PROJECT_DIR$/Shares" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.views">
+  <component name="RunManager" selected="Python tests.Unittests in testDatabase">
     <configuration default="false" name="tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -689,8 +781,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.views" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testDatabase" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testDatabase" />
+        <item index="1" class="java.lang.String" itemvalue="Python.views" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test" />
         <item index="3" class="java.lang.String" itemvalue="Python.tutorial" />
         <item index="4" class="java.lang.String" itemvalue="Python.test_flaskr" />
@@ -707,12 +799,6 @@
       <created>1450373040501</created>
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
-    </task>
-    <task id="LOCAL-00043" summary="added warning text">
-      <created>1452684234334</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1452684234334</updated>
     </task>
     <task id="LOCAL-00044" summary="not up to date?">
       <created>1452694175740</created>
@@ -1002,65 +1088,71 @@
       <option name="project" value="LOCAL" />
       <updated>1454436284312</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="add additional share validation">
+      <created>1454436423395</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1454436423396</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 42m 41s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 32m 00s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 42m 48s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 32m 10s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 43m 41s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 32m 46s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 43m 57s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 33m 05s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 44m 23s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 35m 45s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 44m 28s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 36m 39s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 59m 53s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 38m 14s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 01h 59m 58s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 39m 02s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 11h 01m 19s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 40m 39s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testDatabase - 2016.01.26 at 11h 11m 27s.xml">
+    <history-entry file="Unittests_in_testDatabase - 2016.02.04 at 15h 41m 11s.xml">
       <configuration name="Unittests in testDatabase" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="73" y="27" width="1847" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3626149" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19924201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4297694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24004085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4297694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1107,12 +1199,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>67</line>
+          <line>69</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1122,7 +1209,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>144</line>
+          <line>128</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1150,19 +1237,17 @@
           <line>177</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/share_data.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Shares/static/js/vendor/jquery-1.11.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrations/README">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1306,20 +1391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018967334">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/tutorial/tutorial.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twilioSMS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1331,13 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18506494">
           <caret line="397" column="0" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/tests/testDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1400,27 +1464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/sharedata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3703704">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="90" selection-start-line="27" selection-start-column="90" selection-end-line="27" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/form_macros.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.6666665">
@@ -1436,25 +1479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/editshare_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35332605">
-          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/addportfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64776444">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1496,10 +1524,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.275862">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="1402" column="2" selection-start-line="1402" selection-start-column="0" selection-end-line="1402" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/addadditionalshares.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.666667">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/sharedata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21405405">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#1557#2455#0" expanded="false" />
+            <element signature="e#2996#3313#0" expanded="false" />
+            <element signature="e#3388#4322#0" expanded="false" />
+            <element signature="e#4386#4601#0" expanded="false" />
+            <element signature="e#4706#4822#0" expanded="false" />
+            <marker date="1454461678971" expanded="false" signature="274:364" placeholder="select LastT... quote" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.592592">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/sellshare_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/tutorial/tutorial.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018967334">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.32258">
+          <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
+          <folding>
+            <element signature="e#381#476#0" expanded="false" />
+            <element signature="e#534#874#0" expanded="false" />
+            <element signature="e#942#1370#0" expanded="false" />
+            <element signature="e#1436#1918#0" expanded="false" />
+            <element signature="e#1960#2011#0" expanded="false" />
+            <element signature="e#2109#2588#0" expanded="false" />
+            <element signature="e#2691#3300#0" expanded="false" />
+            <element signature="e#3410#3963#0" expanded="false" />
+            <element signature="e#4095#4721#0" expanded="false" />
+            <element signature="e#4801#5891#0" expanded="false" />
+            <element signature="e#6029#7020#0" expanded="false" />
+            <element signature="e#7125#8711#0" expanded="false" />
+            <element signature="e#8764#8803#0" expanded="false" />
+            <element signature="e#8856#8895#0" expanded="false" />
+            <element signature="e#8946#8985#0" expanded="false" />
+            <element signature="e#9113#9355#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#482#1048#0" expanded="false" />
             <element signature="e#524#635#0" expanded="false" />
@@ -1518,66 +1667,37 @@
             <element signature="e#2612#2706#0" expanded="false" />
             <element signature="e#2738#3593#0" expanded="false" />
             <element signature="e#3520#3593#0" expanded="false" />
-            <element signature="e#3627#4509#0" expanded="false" />
-            <element signature="e#4302#4375#0" expanded="false" />
-            <element signature="e#4426#4509#0" expanded="false" />
-            <element signature="e#4539#4764#0" expanded="false" />
-            <element signature="e#4795#5893#0" expanded="false" />
-            <element signature="e#5561#5703#0" expanded="false" />
-            <element signature="e#5762#5893#0" expanded="false" />
-            <element signature="e#5930#6129#0" expanded="false" />
-            <element signature="e#6056#6129#0" expanded="false" />
-            <element signature="e#6169#6717#0" expanded="false" />
-            <element signature="e#6644#6717#0" expanded="false" />
-            <element signature="e#6758#6964#0" expanded="false" />
-            <element signature="e#6891#6964#0" expanded="false" />
+            <element signature="e#4288#4361#0" expanded="false" />
+            <element signature="e#4412#4497#0" expanded="false" />
+            <element signature="e#4527#4752#0" expanded="false" />
+            <element signature="e#4783#5881#0" expanded="false" />
+            <element signature="e#5549#5691#0" expanded="false" />
+            <element signature="e#5750#5881#0" expanded="false" />
+            <element signature="e#5918#6117#0" expanded="false" />
+            <element signature="e#6044#6117#0" expanded="false" />
+            <element signature="e#6157#6705#0" expanded="false" />
+            <element signature="e#6632#6705#0" expanded="false" />
+            <element signature="e#6746#6952#0" expanded="false" />
+            <element signature="e#6879#6952#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/403.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.275862">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3225806">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#381#476#0" expanded="false" />
-            <element signature="e#534#855#0" expanded="false" />
-            <element signature="e#923#1351#0" expanded="false" />
-            <element signature="e#1417#1899#0" expanded="false" />
-            <element signature="e#1941#1992#0" expanded="false" />
-            <element signature="e#2090#2569#0" expanded="false" />
-            <element signature="e#2672#3281#0" expanded="false" />
-            <element signature="e#4261#4814#0" expanded="false" />
-            <element signature="e#4946#5572#0" expanded="false" />
-            <element signature="e#5652#6742#0" expanded="false" />
-            <element signature="e#6880#7871#0" expanded="false" />
-            <element signature="e#8107#8146#0" expanded="false" />
-            <element signature="e#8274#8516#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/Shares/tests/testDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="1402" column="2" selection-start-line="1402" selection-start-column="0" selection-end-line="1402" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/addadditionalshares.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4281081">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
+          <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#415#482#0" expanded="false" />
+            <element signature="e#517#558#0" expanded="false" />
+            <element signature="e#597#868#0" expanded="false" />
+            <element signature="e#911#1166#0" expanded="false" />
+            <element signature="e#1206#1343#0" expanded="false" />
+            <element signature="e#1387#1617#0" expanded="false" />
+            <element signature="e#1666#2062#0" expanded="false" />
+            <element signature="e#2115#2662#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

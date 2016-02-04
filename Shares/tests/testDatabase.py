@@ -16,8 +16,7 @@ class test(TestCase):
     TESTING = True
 
     def setUp(self):
-
-        manage.initdb()
+        manage.inittestdb()
         #print self.login('lucas', 'test').data
 
     def tearDown(self):
@@ -100,3 +99,17 @@ class test(TestCase):
         Userownedshare.query.filter_by(ticker="GOOG", user="lucas", portfolioid="testid").delete()
         assert userownedshare not in db.session
 
+
+    def login(self, username, password):
+        return self.client.post('/login', data=dict(
+            username=username,
+            password=password
+        ), follow_redirects=True)
+
+
+    def test_login(self):
+        lucas=User(username="lucas2", email="lucas2@example.com", password="test")
+        db.session.add(lucas)
+
+        rv = self.login('lucas2', 'test')
+        assert 'Welcome' in rv.data

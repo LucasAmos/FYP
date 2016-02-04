@@ -55,6 +55,11 @@ def initdb():
 
         print('Database initialised')
 
+
+@manager.command
+def inittestdb():
+        db.create_all()
+
 @manager.command
 def dropdb():
     if prompt_bool(

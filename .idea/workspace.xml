@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/AddShare.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/tutorial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/oldtests/testDatabase.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/oldtests/testSetup.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/Authentication.feature" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/Authentication.feature" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" afterPath="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py" afterPath="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testDatabase.py" afterPath="$PROJECT_DIR$/Shares/Tests/testDatabase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,8 +107,8 @@
       <file leaf-file-name="testDeletePortfolio.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52459013">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6318927">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding>
                 <element signature="e#255#352#0" expanded="false" />
                 <element signature="e#686#727#0" expanded="false" />
@@ -697,12 +684,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00046" summary="added subportfolio value functionality">
-      <created>1452808349956</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1452808349956</updated>
-    </task>
     <task id="LOCAL-00047" summary="added ability have share in more than one portfolio and validation for this">
       <created>1452877840797</created>
       <option name="number" value="00047" />
@@ -991,7 +972,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454953126050</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="testing">
+      <created>1454972805562</created>
+      <option name="number" value="00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1454972805563</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1064,7 +1051,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed reversion" />
     <MESSAGE value="total overhaul, fixed loads of broken shit" />
     <MESSAGE value="removed import" />
     <MESSAGE value="database init" />
@@ -1089,7 +1075,8 @@
     <MESSAGE value="add additional share validation" />
     <MESSAGE value="fixed testing and added share sale functionality" />
     <MESSAGE value="testing and error page if share price API not available" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing and error page if share price API not available" />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1609,8 +1596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52459013">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6318927">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
             <element signature="e#255#352#0" expanded="false" />
             <element signature="e#686#727#0" expanded="false" />

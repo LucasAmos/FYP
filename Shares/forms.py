@@ -20,7 +20,7 @@ class ExistingShareInPortfolioValidator(object):
         portfolioid = form.data['portfolioid']
         originalportfolioid = form.data['originalportfolioid']
 
-        if Userownedshare.query.filter_by(ticker=ticker).filter_by(user=current_user.username).filter_by(portfolioid=portfolioid).first() and originalportfolioid != portfolioid:
+        if Userownedshare.query.filter_by(ticker=ticker.upper()).filter_by(user=current_user.username).filter_by(portfolioid=portfolioid).first() and originalportfolioid != portfolioid:
             raise ValidationError(self.message)
 
 
@@ -77,6 +77,7 @@ class ShareQuantityValidator(object):
 
         if field.data and not form.data['shareprice']:
             raise ValidationError(self.message)
+
 
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',

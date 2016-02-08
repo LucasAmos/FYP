@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/static/img/monkey.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/Authentication.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/oldtests/testDatabase.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/oldtests/testSetup.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/templates/connectiondown.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/tutorial/tutorial.feature" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/tests/testDatabase.py" afterPath="$PROJECT_DIR$/Shares/Tests/steps/testDatabase.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py" afterPath="$PROJECT_DIR$/Shares/Tests/steps/tutorial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/AddShare.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/tutorial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/oldtests/testDatabase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Shares/oldtests/testSetup.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/Authentication.feature" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/Authentication.feature" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" afterPath="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py" afterPath="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Shares/Tests/steps/testDatabase.py" afterPath="$PROJECT_DIR$/Shares/Tests/testDatabase.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/portfolio.html" afterPath="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +30,29 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase.coverage" NAME="Unittests in testDatabase Coverage Results" MODIFIED="1454870551399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase.coverage" NAME="Unittests in testDatabase Coverage Results" MODIFIED="1454958627425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$tutorial_feature.coverage" NAME="tutorial.feature Coverage Results" MODIFIED="1454946877282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FYP$tutorial.coverage" NAME="tutorial Coverage Results" MODIFIED="1454945284293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Authentication.coverage" NAME="Unittests in testAuthentication Coverage Results" MODIFIED="1454952632618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests/steps" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Authentication.coverage" NAME="Unittests in testAuthentication Coverage Results" MODIFIED="1454959692967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests/steps" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_tests__1_.coverage" NAME="Unittests in tests (1) Coverage Results" MODIFIED="1454689776335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_test.coverage" NAME="Unittests in test Coverage Results" MODIFIED="1453753259716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__1_.coverage" NAME="Unittests in Tests (1) Coverage Results" MODIFIED="1454972756678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testSetup__1_.coverage" NAME="Unittests in testSetup (1) Coverage Results" MODIFIED="1454948828592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__2_.coverage" NAME="Unittests in Tests (2) Coverage Results" MODIFIED="1454962070814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__3_.coverage" NAME="Unittests in Tests (3) Coverage Results" MODIFIED="1454962088188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddShare.coverage" NAME="Unittests in testAddShare Coverage Results" MODIFIED="1454972709688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1454972318707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase__1_.coverage" NAME="Unittests in testDatabase (1) Coverage Results" MODIFIED="1454870556024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
+    <SUITE FILE_PATH="coverage/FYP$steps.coverage" NAME="steps Coverage Results" MODIFIED="1454958461821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testLogin.coverage" NAME="Unittests in testLogin Coverage Results" MODIFIED="1454625753659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
     <SUITE FILE_PATH="coverage/FYP$testsuite.coverage" NAME="testsuite Coverage Results" MODIFIED="1454689986470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_FlaskrTestCase.coverage" NAME="Unittests in FlaskrTestCase Coverage Results" MODIFIED="1453335241683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
     <SUITE FILE_PATH="coverage/FYP$views.coverage" NAME="views Coverage Results" MODIFIED="1454376888203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testSetup.coverage" NAME="Unittests in testSetup Coverage Results" MODIFIED="1454882186705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddPortfolio.coverage" NAME="Unittests in testAddPortfolio Coverage Results" MODIFIED="1454952675064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests/steps" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddPortfolio.coverage" NAME="Unittests in testAddPortfolio Coverage Results" MODIFIED="1454971344250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1454689764422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDeletePortfolio.coverage" NAME="Unittests in testDeletePortfolio Coverage Results" MODIFIED="1454972570037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__4_.coverage" NAME="Unittests in Tests (4) Coverage Results" MODIFIED="1454966487017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$test_flaskr.coverage" NAME="test_flaskr Coverage Results" MODIFIED="1453335565959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -76,7 +81,8 @@
                 <element signature="e#534#885#0" expanded="false" />
                 <element signature="e#953#1381#0" expanded="false" />
                 <element signature="e#1447#1929#0" expanded="false" />
-                <element signature="e#2727#3336#0" expanded="false" />
+                <element signature="e#1996#2047#0" expanded="false" />
+                <element signature="e#2145#2624#0" expanded="false" />
                 <element signature="e#3446#3999#0" expanded="false" />
                 <element signature="e#4129#4868#0" expanded="false" />
                 <element signature="e#4948#6038#0" expanded="false" />
@@ -91,25 +97,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testAddPortfolio.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py">
+      <file leaf-file-name="DeletePortfolio.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58536583">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddShare.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddShare.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testDeletePortfolio.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52459013">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="e#47#85#0" expanded="true" />
-                <element signature="e#582#721#0" expanded="false" />
+                <element signature="e#255#352#0" expanded="false" />
+                <element signature="e#686#727#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPortfolio.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature">
+      <file leaf-file-name="testAddShare.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-              <folding />
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+              <folding>
+                <element signature="e#256#353#0" expanded="false" />
+                <element signature="e#684#823#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,6 +151,7 @@
         <option value="Python Unit Test" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Gherkin feature file" />
       </list>
     </option>
   </component>
@@ -139,15 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sendgridEmail.py" />
-        <option value="$PROJECT_DIR$/twilioSMS.py" />
-        <option value="$PROJECT_DIR$/Shares/share data.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/bookmark_form.html" />
-        <option value="$PROJECT_DIR$/Shares/share.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/portfoliovalue.html" />
-        <option value="$PROJECT_DIR$/Shares/__init__.py" />
-        <option value="$PROJECT_DIR$/Shares/tutorial/steps/FlaskrTestCase.py" />
-        <option value="$PROJECT_DIR$/Shares/tutorial/steps/FlastTester.py" />
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/test_flaskr.py" />
         <option value="$USER_HOME$/Desktop/website/index.html" />
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/test.py" />
@@ -184,12 +205,21 @@
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/testSetup.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/Authentication.py" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/Authentication.feature" />
-        <option value="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testDatabase.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/steps/AddShare.feature" />
+        <option value="$PROJECT_DIR$/Shares/Tests/steps/addShare.feature" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" />
+        <option value="$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature" />
+        <option value="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
       </list>
     </option>
   </component>
@@ -275,24 +305,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oldtests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -315,7 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="steps" />
+              <option name="myItemId" value="Scenarios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +345,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shares/Tests" />
+      <recent name="$PROJECT_DIR$/Shares/Tests/steps" />
+      <recent name="$PROJECT_DIR$/Shares/static/img" />
+      <recent name="$PROJECT_DIR$/Shares/static/js/vendor" />
+      <recent name="$PROJECT_DIR$/Shares/static/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Shares/tutorial/steps" />
       <recent name="$PROJECT_DIR$/Shares/templates" />
@@ -340,26 +359,20 @@
       <recent name="$PROJECT_DIR$/Shares/static/js" />
       <recent name="$PROJECT_DIR$/Shares/static/css" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Shares/static/img" />
-      <recent name="$PROJECT_DIR$/Shares/static/js/vendor" />
-      <recent name="$PROJECT_DIR$/Shares/static/js" />
-      <recent name="$PROJECT_DIR$/Shares/static/css" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in testAddPortfolio">
-    <configuration default="false" name="Unittests in testSetup (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in Tests (1)">
+    <configuration default="false" name="Unittests in testAddShare" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/tutorial/steps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/tutorial/steps/testSetup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -371,51 +384,18 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="tutorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Unittests in testDeletePortfolio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/tutorial/steps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tutorial.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/Shares/tutorial/tutorial.feature" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in testAuthentication" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests/steps" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -432,17 +412,63 @@
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests/steps" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Tests (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -644,19 +670,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testSetup (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.tutorial" />
-      <item index="2" class="java.lang.String" itemvalue="Behave.tutorial.feature" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testAuthentication" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testAddShare" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testAuthentication" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testSetup (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Behave.tutorial.feature" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tutorial" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testAddShare" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
       </list>
     </recent_temporary>
   </component>
@@ -670,12 +696,6 @@
       <created>1450373040501</created>
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
-    </task>
-    <task id="LOCAL-00045" summary="added subportfolio value functionality">
-      <created>1452718298567</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1452718298567</updated>
     </task>
     <task id="LOCAL-00046" summary="added subportfolio value functionality">
       <created>1452808349956</created>
@@ -965,39 +985,45 @@
       <option name="project" value="LOCAL" />
       <updated>1454600522087</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="testing and error page if share price API not available">
+      <created>1454953126048</created>
+      <option name="number" value="00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1454953126050</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 51m 03s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_Tests - 2016.02.08 at 22h 58m 45s.xml">
+      <configuration name="Unittests in Tests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 52m 19s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_Tests_(1) - 2016.02.08 at 23h 06m 04s.xml">
+      <configuration name="Unittests in Tests (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 52m 28s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testAddShare - 2016.02.08 at 22h 45m 38s.xml">
+      <configuration name="Unittests in testAddShare" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 52m 41s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testAddShare - 2016.02.08 at 22h 45m 59s.xml">
+      <configuration name="Unittests in testAddShare" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 53m 04s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testAddShare - 2016.02.08 at 23h 05m 15s.xml">
+      <configuration name="Unittests in testAddShare" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 54m 03s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testDeletePortfolio - 2016.02.08 at 22h 59m 22s.xml">
+      <configuration name="Unittests in testDeletePortfolio" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 16h 54m 18s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testDeletePortfolio - 2016.02.08 at 23h 00m 12s.xml">
+      <configuration name="Unittests in testDeletePortfolio" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddPortfolio - 2016.02.08 at 17h 31m 17s.xml">
-      <configuration name="Unittests in testAddPortfolio" configurationId="tests" />
+    <history-entry file="Unittests_in_testDeletePortfolio - 2016.02.08 at 23h 01m 29s.xml">
+      <configuration name="Unittests in testDeletePortfolio" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAuthentication - 2016.02.08 at 17h 30m 15s.xml">
-      <configuration name="Unittests in testAuthentication" configurationId="tests" />
+    <history-entry file="Unittests_in_testDeletePortfolio - 2016.02.08 at 23h 02m 06s.xml">
+      <configuration name="Unittests in testDeletePortfolio" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAuthentication - 2016.02.08 at 17h 30m 40s.xml">
-      <configuration name="Unittests in testAuthentication" configurationId="tests" />
+    <history-entry file="Unittests_in_testDeletePortfolio - 2016.02.08 at 23h 02m 52s.xml">
+      <configuration name="Unittests in testDeletePortfolio" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1006,17 +1032,17 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19946092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30142567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2545825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42973524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1064,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new commit" />
     <MESSAGE value="fixed reversion" />
     <MESSAGE value="total overhaul, fixed loads of broken shit" />
     <MESSAGE value="removed import" />
@@ -1063,7 +1088,8 @@
     <MESSAGE value="added purchase price functionality and form" />
     <MESSAGE value="add additional share validation" />
     <MESSAGE value="fixed testing and added share sale functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed testing and added share sale functionality" />
+    <MESSAGE value="testing and error page if share price API not available" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing and error page if share price API not available" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,7 +1101,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>148</line>
+          <line>149</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1099,35 +1125,41 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py</url>
+          <url>file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py</url>
           <line>14</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py</url>
+          <line>26</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/Tests/testDatabase.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/forms.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/Tests/testAddShare.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/flask_testing/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/tcunittest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1340,13 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/oldtests/testDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/wtforms/fields/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1373,6 +1398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.5925927">
           <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,6 +1411,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82228494">
           <caret line="62" column="123" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="123" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,33 +1428,6 @@
             <element signature="e#4960#5076#0" expanded="false" />
             <marker date="1454719781946" expanded="false" signature="353:443" placeholder="select LastT... quote" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/oldtests/testSetup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#615#656#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/tutorial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04845222">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/testDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,25 +1453,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/Authentication.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287">
-          <caret line="150" column="138" selection-start-line="150" selection-start-column="138" selection-end-line="150" selection-end-column="138" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDatabase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.784">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="e#4783#5881#0" expanded="false" />
-            <element signature="e#5549#5691#0" expanded="false" />
-            <element signature="e#5750#5881#0" expanded="false" />
-            <element signature="e#6220#6293#0" expanded="false" />
-            <element signature="e#6333#6881#0" expanded="false" />
-            <element signature="e#6808#6881#0" expanded="false" />
+            <element signature="e#225#322#0" expanded="false" />
+            <element signature="e#415#482#0" expanded="false" />
+            <element signature="e#517#558#0" expanded="false" />
+            <element signature="e#597#868#0" expanded="false" />
+            <element signature="e#911#1166#0" expanded="false" />
+            <element signature="e#1206#1343#0" expanded="false" />
+            <element signature="e#1387#1617#0" expanded="false" />
+            <element signature="e#1666#2062#0" expanded="false" />
+            <element signature="e#2115#2662#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/Authentication.feature">
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAuthentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77952754">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#256#353#0" expanded="false" />
+            <element signature="e#500#541#0" expanded="false" />
+            <element signature="e#592#731#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45648855">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#524#635#0" expanded="false" />
+            <element signature="e#1105#1591#0" expanded="false" />
+            <element signature="e#1147#1260#0" expanded="false" />
+            <element signature="e#1308#1591#0" expanded="false" />
+            <element signature="e#1637#2027#0" expanded="false" />
+            <element signature="e#1679#1799#0" expanded="false" />
+            <element signature="e#1847#2027#0" expanded="false" />
+            <element signature="e#2069#2362#0" expanded="false" />
+            <element signature="e#2111#2217#0" expanded="false" />
+            <element signature="e#2265#2362#0" expanded="false" />
+            <element signature="e#2407#2714#0" expanded="false" />
+            <element signature="e#2449#2572#0" expanded="false" />
+            <element signature="e#2620#2714#0" expanded="false" />
+            <element signature="e#3529#3602#0" expanded="false" />
+            <element signature="e#3638#4506#0" expanded="false" />
+            <element signature="e#4297#4370#0" expanded="false" />
+            <element signature="e#4421#4506#0" expanded="false" />
+            <element signature="e#4536#4761#0" expanded="false" />
+            <element signature="e#4792#5890#0" expanded="false" />
+            <element signature="e#5558#5700#0" expanded="false" />
+            <element signature="e#5759#5890#0" expanded="false" />
+            <element signature="e#5927#6302#0" expanded="false" />
+            <element signature="e#6229#6302#0" expanded="false" />
+            <element signature="e#6342#6890#0" expanded="false" />
+            <element signature="e#6817#6890#0" expanded="false" />
+            <element signature="e#6931#7137#0" expanded="false" />
+            <element signature="e#7064#7137#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28396946">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#395#1661#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47860962">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="51" selection-end-column="84" />
+          <folding>
+            <element signature="e#303#428#0" expanded="false" />
+            <element signature="e#463#528#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddShare.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1485,7 +1581,8 @@
             <element signature="e#534#885#0" expanded="false" />
             <element signature="e#953#1381#0" expanded="false" />
             <element signature="e#1447#1929#0" expanded="false" />
-            <element signature="e#2727#3336#0" expanded="false" />
+            <element signature="e#1996#2047#0" expanded="false" />
+            <element signature="e#2145#2624#0" expanded="false" />
             <element signature="e#3446#3999#0" expanded="false" />
             <element signature="e#4129#4868#0" expanded="false" />
             <element signature="e#4948#6038#0" expanded="false" />
@@ -1499,42 +1596,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/testAuthentication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32317072">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
             <element signature="e#256#353#0" expanded="false" />
-            <element signature="e#500#541#0" expanded="false" />
-            <element signature="e#593#732#0" expanded="false" />
-            <element signature="e#764#821#0" expanded="false" />
+            <element signature="e#684#823#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature">
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58536583">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.52459013">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#47#85#0" expanded="true" />
-            <element signature="e#582#721#0" expanded="false" />
+            <element signature="e#255#352#0" expanded="false" />
+            <element signature="e#686#727#0" expanded="false" />
           </folding>
         </state>
       </provider>

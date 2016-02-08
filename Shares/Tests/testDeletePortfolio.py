@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from flask.ext.testing import TestCase
 from flask import Flask
 from Shares import db, app as appy
@@ -9,23 +6,30 @@ from testDatabase import test
 
 import manage
 
-
 class test(TestCase):
 
     def create_app(self):
         appy.config['TESTING'] = True
         appy.config['WTF_CSRF_ENABLED'] = False
-        manage.inittestdb()
         return appy
 
+    SQLALCHEMY_DATABASE_URI = "sqlite://"
+    TESTING = True
 
+
+
+    def setUp(self):
+        manage.inittestdb()
+
+        self.login('lucas2', 'test')
+        self.addPortfolio("testportfolio")
+        self.addPortfolio("testportfolio2222")
+        print self.deletePortfolio("testportfolio").data
 
     def tearDown(self):
 
         db.session.remove()
         db.drop_all()
-        manage.initdb()
-
 
     def login(self, username, password):
         return self.client.post('/login', data=dict(
@@ -34,20 +38,20 @@ class test(TestCase):
         ), follow_redirects=True)
 
     def addPortfolio(self, portfolioname):
-        self.login('lucas2', 'test')
         return self.client.post('/addportfolio', data=dict(
             name=portfolioname
         ), follow_redirects=True)
 
-    def test_addPortfolio(self):
-        rv = self.addPortfolio("Portfolio1")
+    def deletePortfolio(self, portfolioname):
+        return self.client.post('/deleteportfolio', data=dict(
+            name2=portfolioname
+        ), follow_redirects=True)
 
-        assert "Added portfolio &#39;portfolio1&#39;" in rv.data
+    def testDeletePortfolio(self):
+        self.login('lucas2', 'test')
 
-        rv = self.addPortfolio("Portfolio1")
-        assert "A portfolio with that name already exists" in rv.data
+        rv = self.addPortfolio("testportfolio")
+        assert "testportfolio" in rv.data
 
-        rv = self.addPortfolio("Test``¬¬|||")
-        assert "The portfolio name must contain only letters and numbers" in rv.data
-
-
+        rv=self.deletePortfolio("testportfolio")
+        assert "testportfolio" not in rv.data

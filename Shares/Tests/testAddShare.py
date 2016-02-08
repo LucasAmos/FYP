@@ -19,14 +19,13 @@ class test(TestCase):
 
     def setUp(self):
         manage.inittestdb()
-       #print self.addShare("GOOG", "ee", 100, "testportfolio").data
-        print self.login("test", "test").data
+      #  print self.addShare("GOOG", 10, 100, "testportfolio").data
 
     def tearDown(self):
 
         db.session.remove()
         db.drop_all()
-
+        manage.initdb()
 
     def login(self, username, password):
         return self.client.post('/login', data=dict(
@@ -34,35 +33,13 @@ class test(TestCase):
             password=password
         ), follow_redirects=True)
 
-
-    def test_login(self):
-        lucas=User(username="lucas2", email="lucas2@example.com", password="test")
-        db.session.add(lucas)
-
-        rv = self.login('lucas2', 'test')
-        assert 'Welcome' in rv.data
-
     def addPortfolio(self, portfolioname):
-        self.login('test', 'test')
         return self.client.post('/addportfolio', data=dict(
             name=portfolioname
         ), follow_redirects=True)
 
-    def test_addPortfolio(self):
-
-        rv = self.login("test", "test")
-
-        rv = self.addPortfolio("testportfolioname")
-
-        assert "testportfolioname" in rv.data
-        assert "notavalidname" not in rv.data
-
-
-
-
     def addShare(self, ticker, quantity, purchaseprice, portfolioid):
-        self.login("test", "test")
-        self.addPortfolio("testportfolio")
+        #self.addPortfolio(portfolioid)
         return self.client.post('/add', data=dict(
             ticker=ticker,
             quantity=quantity,
@@ -71,19 +48,15 @@ class test(TestCase):
         ), follow_redirects=True)
 
     def testAddShare(self):
+        self.login('lucas2', 'test')
+
+        self.addPortfolio("testportfolio")
         rv = self.addShare("GOOG", 10, 100, "testportfolio")
-        assert "Added share" in rv.data
-        assert "GOOG" in rv.data
+        assert "Added share &#39;GOOG&#39;" in rv.data
 
+        rv = self.addShare("GOOG", 10, 100, "testportfolio")
+        assert "That share is already in that portfolio" in rv.data
 
-    def deletePortfolio(self, portfolioname):
-        self.login("test", "test")
-        return self.client.post('/deleteportfolio', data=dict(
-            name2=portfolioname
-        ), follow_redirects=True)
-
-    def testDeletePortfolio(self):
-        self.addPortfolio("testportfolioname")
-        rv = self.login("test", "test")
-        assert "testportfolioname" in rv.data
-
+        self.addPortfolio("secondtestportfolio")
+        rv = self.addShare("GOOG", 10, 100, "secondtestportfolio")
+        assert "Added share &#39;GOOG&#39;" in rv.data

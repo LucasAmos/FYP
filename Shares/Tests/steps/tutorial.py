@@ -1,14 +1,16 @@
 from behave import *
 
-@given('2 is less than 4')
+
+
+@given('User credentials')
 def step_impl(context):
     pass
 
-@when('three equals three')
+@when('The user logs in')
 def step_impl(context):
-    assert 3 == 3
+    pass
 
-@then('five is greater than two')
+@then('The users log in is confirmed')
 def step_impl(context):
     #assert context.failed is False
     assert 5 > 2

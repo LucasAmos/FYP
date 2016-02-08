@@ -113,3 +113,25 @@ class test(TestCase):
 
         rv = self.login('lucas2', 'test')
         assert 'Welcome' in rv.data
+
+    def addPortfolio(self, portfolioname):
+        return self.client.post('/addportfolio', data=dict(
+            name=portfolioname
+        ), follow_redirects=True)
+
+    def test_addPortfolio(self):
+        lucas=User(username="lucas2", email="lucas2@example.com", password="test")
+        db.session.add(lucas)
+        self.login('lucas2', 'test')
+
+        rv = self.addPortfolio("testportfolioname")
+
+        assert "testportfolioname" in rv.data
+        assert "notavalidname" not in rv.data
+
+
+    #
+    #
+    # def addShare(self,username, password, sharename, quantity):
+    #     self.login(username, password)
+    #     return self.client.post('/add')

@@ -1,4 +1,5 @@
 from sqlalchemy import desc
+from flask import render_template, redirect, url_for
 import urllib
 import json
 from models import Userownedshare, Portfolios
@@ -9,45 +10,53 @@ class share_data():
     @staticmethod
     def JSONSharePrice(ticker):
 
-        base_url = 'https://query.yahooapis.com/v1/public/yql?'
-        query = {
-            'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("%s","")' %ticker,
-            'format': 'json',
-            'env': 'store://datatables.org/alltableswithkeys'
-        }
+        try:
 
-        url = base_url + urllib.urlencode(query)
-        response = urllib.urlopen(url)
-        data = response.read()
-        quote = json.loads(data)
+            base_url = 'https://query.yahooapis.com/v1/public/yql?'
+            query = {
+                'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("%s","")' %ticker,
+                'format': 'json',
+                'env': 'store://datatables.org/alltableswithkeys'
+            }
 
-        return quote
+            url = base_url + urllib.urlencode(query)
+            response = urllib.urlopen(url)
+            data = response.read()
+            quote = json.loads(data)
 
+            return quote
+
+        except:
+            return redirect(url_for('connectiondown'))
 
     @staticmethod
     def getalljsonshares(user):
-        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
 
-        sharearray = []
 
-        for row in tempshares:
+            tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
 
-            ticker = row.ticker
-            quote = share_data.JSONSharePrice(ticker)
-            sharedata = {
-                'symbol': quote['query']['results']['quote']['symbol'],
-                'quantity': row.quantity,
-                'price': quote['query']['results']['quote']['LastTradePriceOnly'],
-                'averagepurchaseprice': row.averagepurchaseprice,
-                'name': row.name.name,
-                'dividends': row.dividends,
-                'id': row.id,
+            sharearray = []
 
-                'portfolioid': row.portfolioid
-            }
-            sharearray.append(sharedata)
+            for row in tempshares:
 
-        return sharearray
+                ticker = row.ticker
+                quote = share_data.JSONSharePrice(ticker)
+                sharedata = {
+                    'symbol': quote['query']['results']['quote']['symbol'],
+                    'quantity': row.quantity,
+                    'price': quote['query']['results']['quote']['LastTradePriceOnly'],
+                    'averagepurchaseprice': row.averagepurchaseprice,
+                    'name': row.name.name,
+                    'dividends': row.dividends,
+                    'id': row.id,
+
+                    'portfolioid': row.portfolioid
+                }
+                sharearray.append(sharedata)
+
+            return sharearray
+
+
 
 
     @staticmethod

@@ -27,7 +27,7 @@ def index():
             return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
         except:
-            return render_template("500.html")
+            return render_template("connectiondown.html")
 
     else: return render_template('index.html')
 
@@ -59,7 +59,7 @@ def login():
         flash('Incorrect username or password.')
     return render_template("login.html", form=form)
 
-@app.route("/logout")
+@app.route("/logout", methods=["GET", "POST"])
 def logout():
     logout_user()
     return redirect(url_for('index'))
@@ -128,20 +128,23 @@ def delete_share(share_id):
 @login_required
 def list_portfolio(portfolio_id):
 
+    try:
 
+        allshares = share_data.getalljsonshares(current_user.username)
+        sharesinportfolio = []
 
-    allshares = share_data.getalljsonshares(current_user.username)
-    sharesinportfolio = []
+        for share in allshares:
 
-    for share in allshares:
+            if share['portfolioid'] == portfolio_id:
 
-        if share['portfolioid'] == portfolio_id:
+                share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
+                sharesinportfolio.append(share)
 
-            share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
-            sharesinportfolio.append(share)
+        return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
+                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
 
-    return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
-                           portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
+    except:
+            return render_template("connectiondown.html")
 
 
 @app.route('/add', methods=['GET', 'POST'], )

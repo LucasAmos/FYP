@@ -2,7 +2,7 @@
 
 from Shares import app, db
 
-from Shares.models import User, Userownedshare, Share
+from Shares.models import User, Userownedshare, Share, Portfolios
 from flask.ext.script import Manager, prompt_bool
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand
@@ -59,6 +59,13 @@ def initdb():
 @manager.command
 def inittestdb():
         db.create_all()
+        testuser=User(username="test", email="test@test.com", password="test")
+        db.session.add(testuser)
+        lucas=User(username="lucas2", email="lucas2@example.com", password="test")
+        db.session.add(lucas)
+        portfolio=Portfolios(portfolioname="Portfolio1", username="test")
+        db.session.add(portfolio)
+
 
 @manager.command
 def dropdb():

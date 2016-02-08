@@ -147,7 +147,8 @@ class SignupForm(Form):
 
 
 class AddPortfolioForm(Form):
-    name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator()])
+    name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator(), Regexp(r'^[a-zA-Z0-9]*$',
+                                                                                 message="The portfolio name must contain only letters and numbers")])
 
     def validate(self):
 

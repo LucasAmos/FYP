@@ -20,6 +20,13 @@ def load_user(userid):
 @app.route('/')
 @app.route('/index')
 def index():
+    # print "London*******************"
+    # print share_data.JSONSharePriceLondon("MKS")
+    # print""
+    # print""
+    # print "NYSE*******************"
+    # print share_data.JSONSharePrice("GSK")
+
 
     if current_user.is_authenticated:
 

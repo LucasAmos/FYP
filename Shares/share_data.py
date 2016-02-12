@@ -14,7 +14,7 @@ class share_data():
 
             base_url = 'https://query.yahooapis.com/v1/public/yql?'
             query = {
-                'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("%s","")' %ticker,
+                'q': 'select LastTradePriceOnly, symbol, Name from yahoo.finance.quote where symbol in ("{}{}","")'.format(ticker,".L"),
                 'format': 'json',
                 'env': 'store://datatables.org/alltableswithkeys'
             }
@@ -44,7 +44,7 @@ class share_data():
                 sharedata = {
                     'symbol': quote['query']['results']['quote']['symbol'],
                     'quantity': row.quantity,
-                    'price': quote['query']['results']['quote']['LastTradePriceOnly'],
+                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
                     'averagepurchaseprice': row.averagepurchaseprice,
                     'name': row.name.name,
                     'dividends': row.dividends,
@@ -147,7 +147,6 @@ class share_data():
 
         return dictvalues
 
-
     @staticmethod
     def getportfoliovalues(user):
 
@@ -158,7 +157,6 @@ class share_data():
             portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
 
         return portfoliovalues
-
 
     @staticmethod
     def getPortfolioIDbyusernameandPortfolioName(username, portfolioname):

@@ -23,7 +23,8 @@ def initdb():
         lucas=User(username="lucas", email="lucas@example.com", password="test")
         db.session.add(lucas)
 
-
+        portfolio = Portfolios(username="lucas", portfolioname="test")
+        db.session.add(portfolio)
 
         google = Userownedshare(user="lucas", ticker="GOOG", quantity=1, portfolioid="test")
         db.session.add(google)

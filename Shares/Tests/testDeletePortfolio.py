@@ -3,6 +3,7 @@ from flask import Flask
 from Shares import db, app as appy
 from Shares.models import User, Userownedshare, Share
 from testDatabase import test
+import mock
 
 import manage
 
@@ -24,7 +25,6 @@ class test(TestCase):
         self.login('lucas2', 'test')
         self.addPortfolio("testportfolio")
         self.addPortfolio("testportfolio2222")
-        print self.deletePortfolio("testportfolio").data
 
     def tearDown(self):
 
@@ -52,6 +52,6 @@ class test(TestCase):
 
         rv = self.addPortfolio("testportfolio")
         assert "testportfolio" in rv.data
-
-        rv=self.deletePortfolio("testportfolio")
-        assert "testportfolio" not in rv.data
+        #
+        # rv=self.deletePortfolio("testportfolio")
+        # assert "testportfolio" not in rv.data

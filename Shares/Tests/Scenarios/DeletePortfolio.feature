@@ -9,5 +9,7 @@ Feature: As a website user,
       Then "testportfolio" should not appear in the list of portfolios
 
 
+    delete portfolio with shares in it
+
 
 

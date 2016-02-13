@@ -39,10 +39,10 @@
         <tr>
             <td> {{share['name']}} </td>
             <td> {{share['symbol']}} </td>
-            <td> {{share['price']}} </td>
+            <td> £{{share['price']}} </td>
             <td> {{share['quantity']}} </td>
             <td> {{share['dividends']}} </td>
-            <td> {{totalprice}}</td>
+            <td> £{{totalprice}}</td>
 
             {% if  share['profit'] | float < 0 %}
 
@@ -50,7 +50,7 @@
 
             {% else %}
 
-            <td class="profit"> {{share['profit']}} </td>
+            <td class="profit"> £{{share['profit']}} </td>
 
             {% endif %}
 

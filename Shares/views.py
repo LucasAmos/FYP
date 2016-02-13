@@ -20,17 +20,12 @@ def load_user(userid):
 @app.route('/')
 @app.route('/index')
 def index():
-    # print "London*******************"
-    # print share_data.JSONSharePriceLondon("MKS")
-    # print""
-    # print""
-    # print "NYSE*******************"
-    # print share_data.JSONSharePrice("GSK")
-
-
     if current_user.is_authenticated:
 
         try:
+
+
+
             return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
         except:
@@ -285,8 +280,28 @@ def sharedata():
 
     if current_user.is_authenticated:
 
-        return render_template('sharedata.html', data=share_data.getalljsonshares(current_user.username),
-                               portfoliovalues= share_data.getportfoliovalues(current_user.username))
+        allshares = share_data.getalljsonshares(current_user.username)
+        sharesinportfolio = []
+
+        for share in allshares:
+                share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
+                sharesinportfolio.append(share)
+
+        profits ={}
+        for share in sharesinportfolio:
+
+            if share['portfolioid'] in profits:
+
+                profits[share['portfolioid']] = profits[share['portfolioid']] + share['profit']
+
+            else:
+                profits[share['portfolioid']] = share['profit']
+
+            print str(share['profit']) + share['portfolioid']
+
+        print profits
+        return render_template('sharedata.html', data=sharesinportfolio,
+                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits)
 
 
 

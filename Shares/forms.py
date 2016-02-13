@@ -3,6 +3,7 @@ from wtforms.fields import StringField, IntegerField, PasswordField, BooleanFiel
 from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, optional
 from wtforms_components import read_only
+from share_data import *
 
 from flask_login import current_user
 from models import *
@@ -79,9 +80,24 @@ class ShareQuantityValidator(object):
             raise ValidationError(self.message)
 
 
+class ShareTickerValidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"No company exists for that symbol"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        symbol = form.data['ticker']
+
+        if not share_data.isValidShare(symbol):
+            raise ValidationError(self.message)
+
+
+
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
-                                                                                 message="The share ticker must only be letters")])
+                                                                                 message="The share ticker must only be letters"), ShareTickerValidator()])
     quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
     dividends = DecimalField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
@@ -171,8 +187,6 @@ class AddAdditionalShares(Form):
             return False
 
         return True
-
-
 
 class DeletePortfolioForm(Form):
     name = SelectField('Select a portfolio to delete: &nbsp ', validators=[EmptyPortfolioValidator()])

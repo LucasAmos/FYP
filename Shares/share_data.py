@@ -42,6 +42,7 @@ class share_data():
                 ticker = row.ticker
                 quote = share_data.JSONSharePrice(ticker)
                 sharedata = {
+                    ### change this line to fix symbol display in portfolio page
                     'symbol': quote['query']['results']['quote']['symbol'],
                     'quantity': row.quantity,
                     'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
@@ -164,5 +165,18 @@ class share_data():
         ID = Portfolios.query.filter_by(portfolioname=portfolioname).filter_by(username=username).first()
 
         return ID
+
+    @staticmethod
+    def isValidShare(ticker):
+
+
+            quote = share_data.JSONSharePrice(ticker)
+
+            if quote['query']['results']['quote']['LastTradePriceOnly']:
+                return True
+
+            else:
+                return False
+
 
 

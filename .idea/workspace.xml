@@ -4,11 +4,12 @@
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" afterPath="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" afterPath="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/index.html" afterPath="$PROJECT_DIR$/Shares/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/portfolio.html" afterPath="$PROJECT_DIR$/Shares/templates/portfolio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/sharedata.html" afterPath="$PROJECT_DIR$/Shares/templates/sharedata.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,57 +64,7 @@
     <favorites_list name="FYP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#381#476#0" expanded="false" />
-                <element signature="e#1156#1584#0" expanded="false" />
-                <element signature="e#2199#2250#0" expanded="false" />
-                <element signature="e#2348#2827#0" expanded="false" />
-                <element signature="e#3649#4202#0" expanded="false" />
-                <element signature="e#4332#5071#0" expanded="false" />
-                <element signature="e#5151#6241#0" expanded="false" />
-                <element signature="e#6379#7370#0" expanded="false" />
-                <element signature="e#7475#9061#0" expanded="false" />
-                <element signature="e#9114#9153#0" expanded="false" />
-                <element signature="e#9206#9245#0" expanded="false" />
-                <element signature="e#9296#9335#0" expanded="false" />
-                <element signature="e#9463#9705#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="share_data.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09453782">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <marker date="1455320616008" expanded="true" signature="353:438" placeholder="select LastT... quote" />
-                <marker date="1455320616008" expanded="true" signature="353:445" placeholder="select LastT... quote" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-              <folding>
-                <element signature="e#24#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,8 +98,6 @@
         <option value="$PROJECT_DIR$/Shares/templates/layout.html" />
         <option value="$PROJECT_DIR$/Shares/templates/home.html" />
         <option value="$PROJECT_DIR$/Shares/templates/login.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/index.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
         <option value="$PROJECT_DIR$/Shares/templates/editshare_form.html" />
         <option value="$PROJECT_DIR$/Shares/templates/editportfolios.html" />
         <option value="$PROJECT_DIR$/Shares/templates/addportfolio.html" />
@@ -166,7 +115,6 @@
         <option value="$PROJECT_DIR$/Shares/tests/testLogin.py" />
         <option value="$PROJECT_DIR$/Shares/tests/testDatabase.py" />
         <option value="$PROJECT_DIR$/Shares/tests/testsuite.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/Shares/templates/connectiondown.html" />
         <option value="$PROJECT_DIR$/Shares/tests/testSetup.py" />
         <option value="$PROJECT_DIR$/Shares/tutorial/steps/tutorial.py" />
@@ -178,7 +126,6 @@
         <option value="$PROJECT_DIR$/Shares/Tests/steps/testAddPortfolio.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/testDatabase.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/AddShare.feature" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/addShare.feature" />
         <option value="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" />
@@ -188,8 +135,12 @@
         <option value="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
         <option value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/Shares/share_data.py" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/index.html" />
+        <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
       </list>
     </option>
   </component>
@@ -260,6 +211,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -659,12 +628,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00048" summary="overhauled how shares are displayed">
-      <created>1452985091288</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1452985091288</updated>
-    </task>
     <task id="LOCAL-00049" summary="removed erroneous validation on edit share from forms.py&#10;">
       <created>1452985289714</created>
       <option name="number" value="00049" />
@@ -953,7 +916,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454972895335</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="changed getalljsonshares method in share_data so that prices are fetched them the LSE">
+      <created>1455320654871</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1455320654874</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -990,10 +959,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1002,7 +972,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1026,7 +995,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed import" />
     <MESSAGE value="database init" />
     <MESSAGE value="added new table to store portfolio names and added functionality for this" />
     <MESSAGE value="added new portfolio call to all views" />
@@ -1051,24 +1019,25 @@
     <MESSAGE value="testing and error page if share price API not available" />
     <MESSAGE value="testing" />
     <MESSAGE value="db" />
-    <option name="LAST_COMMIT_MESSAGE" value="db" />
+    <MESSAGE value="changed getalljsonshares method in share_data so that prices are fetched them the LSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed getalljsonshares method in share_data so that prices are fetched them the LSE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>149</line>
+          <line>165</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1083,7 +1052,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>219</line>
+          <line>214</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1103,7 +1072,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>81</line>
+          <line>97</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1116,8 +1085,13 @@
           <line>39</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/share_data.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1229,13 +1203,6 @@
         <state vertical-scroll-proportion="0.3329832">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.819672">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1358,20 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/sharedata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22284909">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5925927">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/static/img/monkey.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1416,42 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.45648855">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#524#635#0" expanded="false" />
-            <element signature="e#1105#1591#0" expanded="false" />
-            <element signature="e#1147#1260#0" expanded="false" />
-            <element signature="e#1308#1591#0" expanded="false" />
-            <element signature="e#1637#2027#0" expanded="false" />
-            <element signature="e#1679#1799#0" expanded="false" />
-            <element signature="e#1847#2027#0" expanded="false" />
-            <element signature="e#2069#2362#0" expanded="false" />
-            <element signature="e#2111#2217#0" expanded="false" />
-            <element signature="e#2265#2362#0" expanded="false" />
-            <element signature="e#2407#2714#0" expanded="false" />
-            <element signature="e#2449#2572#0" expanded="false" />
-            <element signature="e#2620#2714#0" expanded="false" />
-            <element signature="e#3529#3602#0" expanded="false" />
-            <element signature="e#3638#4506#0" expanded="false" />
-            <element signature="e#4297#4370#0" expanded="false" />
-            <element signature="e#4421#4506#0" expanded="false" />
-            <element signature="e#4536#4761#0" expanded="false" />
-            <element signature="e#4792#5890#0" expanded="false" />
-            <element signature="e#5558#5700#0" expanded="false" />
-            <element signature="e#5759#5890#0" expanded="false" />
-            <element signature="e#5927#6302#0" expanded="false" />
-            <element signature="e#6229#6302#0" expanded="false" />
-            <element signature="e#6342#6890#0" expanded="false" />
-            <element signature="e#6817#6890#0" expanded="false" />
-            <element signature="e#6931#7137#0" expanded="false" />
-            <element signature="e#7064#7137#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1470,6 +1387,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,44 +1449,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.47163865">
           <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
-            <element signature="e#24#50#0" expanded="true" />
+            <element signature="e#24#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#549#660#0" expanded="false" />
+            <element signature="e#1172#1285#0" expanded="false" />
+            <element signature="e#1333#1616#0" expanded="false" />
+            <element signature="e#1662#2052#0" expanded="false" />
+            <element signature="e#1704#1824#0" expanded="false" />
+            <element signature="e#1872#2052#0" expanded="false" />
+            <element signature="e#2094#2387#0" expanded="false" />
+            <element signature="e#2136#2242#0" expanded="false" />
+            <element signature="e#2290#2387#0" expanded="false" />
+            <element signature="e#2474#2597#0" expanded="false" />
+            <element signature="e#2824#2929#0" expanded="false" />
+            <element signature="e#4051#4919#0" expanded="false" />
+            <element signature="e#4710#4783#0" expanded="false" />
+            <element signature="e#4834#4919#0" expanded="false" />
+            <element signature="e#4949#5174#0" expanded="false" />
+            <element signature="e#5205#6303#0" expanded="false" />
+            <element signature="e#5971#6113#0" expanded="false" />
+            <element signature="e#6172#6303#0" expanded="false" />
+            <element signature="e#6340#6715#0" expanded="false" />
+            <element signature="e#6642#6715#0" expanded="false" />
+            <element signature="e#6755#7303#0" expanded="false" />
+            <element signature="e#7230#7303#0" expanded="false" />
+            <element signature="e#7342#7548#0" expanded="false" />
+            <element signature="e#7475#7548#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.333334">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="178" selection-end-column="28" />
+          <folding>
+            <element signature="e#235#848#0" expanded="false" />
+            <element signature="e#1913#2811#0" expanded="false" />
+            <element signature="e#3352#3669#0" expanded="false" />
+            <element signature="e#3744#4678#0" expanded="false" />
+            <element signature="e#4741#4956#0" expanded="false" />
+            <element signature="e#5060#5176#0" expanded="false" />
+            <marker date="1455323727844" expanded="false" signature="353:438" placeholder="select LastT... quote" />
+            <marker date="1455323727844" expanded="false" signature="353:445" placeholder="select LastT... quote" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.67742">
+          <caret line="303" column="47" selection-start-line="303" selection-start-column="47" selection-end-line="303" selection-end-column="47" />
           <folding>
             <element signature="e#381#476#0" expanded="false" />
-            <element signature="e#1156#1584#0" expanded="false" />
-            <element signature="e#2199#2250#0" expanded="false" />
-            <element signature="e#2348#2827#0" expanded="false" />
-            <element signature="e#3649#4202#0" expanded="false" />
-            <element signature="e#4332#5071#0" expanded="false" />
-            <element signature="e#5151#6241#0" expanded="false" />
-            <element signature="e#6379#7370#0" expanded="false" />
-            <element signature="e#7475#9061#0" expanded="false" />
-            <element signature="e#9114#9153#0" expanded="false" />
-            <element signature="e#9206#9245#0" expanded="false" />
-            <element signature="e#9296#9335#0" expanded="false" />
-            <element signature="e#9463#9705#0" expanded="false" />
+            <element signature="e#955#1383#0" expanded="false" />
+            <element signature="e#1449#1931#0" expanded="false" />
+            <element signature="e#1998#2049#0" expanded="false" />
+            <element signature="e#2147#2626#0" expanded="false" />
+            <element signature="e#2729#3338#0" expanded="false" />
+            <element signature="e#3448#4001#0" expanded="false" />
+            <element signature="e#4950#6040#0" expanded="false" />
+            <element signature="e#6178#7169#0" expanded="false" />
+            <element signature="e#7274#8860#0" expanded="false" />
+            <element signature="e#8913#8952#0" expanded="false" />
+            <element signature="e#9005#9044#0" expanded="false" />
+            <element signature="e#9095#9134#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09453782">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1455320616008" expanded="true" signature="353:438" placeholder="select LastT... quote" />
-            <marker date="1455320616008" expanded="true" signature="353:445" placeholder="select LastT... quote" />
-          </folding>
+        <state vertical-scroll-proportion="0.38486487">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="54" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/sharedata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5718919">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

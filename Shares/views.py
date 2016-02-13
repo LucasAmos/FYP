@@ -134,6 +134,7 @@ def list_portfolio(portfolio_id):
 
         allshares = share_data.getalljsonshares(current_user.username)
         sharesinportfolio = []
+        profit = 0
 
         for share in allshares:
 
@@ -141,9 +142,12 @@ def list_portfolio(portfolio_id):
 
                 share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
                 sharesinportfolio.append(share)
+                profit += share['profit']
+
 
         return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
-                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id ))
+                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id),
+                               portfolioprofit=profit)
 
     except:
             return render_template("connectiondown.html")
@@ -297,9 +301,6 @@ def sharedata():
             else:
                 profits[share['portfolioid']] = share['profit']
 
-            print str(share['profit']) + share['portfolioid']
-
-        print profits
         return render_template('sharedata.html', data=sharesinportfolio,
                                portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits)
 

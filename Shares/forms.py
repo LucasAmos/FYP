@@ -98,10 +98,10 @@ class ShareTickerValidator(object):
 class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters"), ShareTickerValidator()])
-    quantity = IntegerField('How many of this share do you own:', validators=[optional(), number_range(min=1, max=10000)])
+    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
     dividends = DecimalField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = DecimalField('How much did you pay for each of these shares? &nbsp', validators=[optional(), number_range(min=0.0)])
+    purchaseprice = DecimalField('How much did you pay for each of these shares? &nbsp', validators=[number_range(min=0.0)])
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
@@ -116,7 +116,7 @@ class RemoveShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
     quantity = IntegerField('How many of this share did you sell:', validators=[number_range(min=1, max=10000)])
-    price = DecimalField('What price did you sell them for', validators=[optional(), number_range(min=0.00)])
+    price = DecimalField('What price did you sell them for', validators=[number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
     portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
 
@@ -177,8 +177,8 @@ class AddPortfolioForm(Form):
 
 class AddAdditionalShares(Form):
     name = StringField('Share name')
-    sharequantity = IntegerField('Have you bought any additional shares:', validators=[ShareQuantityValidator(), number_range(min=1, max=10000)])
-    shareprice = FloatField('How much did you pay for these shares:', validators=[SharePricevalidator(), number_range(min=1, max=10000)])
+    sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(),ShareQuantityValidator(), number_range(min=1, max=10000)])
+    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(),SharePricevalidator(), number_range(min=1, max=10000)])
     dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)])
 
     def validate(self):

@@ -209,7 +209,10 @@ def addadditionalshares(share_id):
             share.dividends += float(form.dividends.data)
             db.session.commit()
 
-        return redirect(url_for('index'))
+        temp = str( share.portfolioid)
+
+        flash("You have successfully edited the share: '{}'". format(share.name.name))
+        return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
     return render_template('addadditionalshares.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), name=share.name.name)
 
@@ -226,35 +229,34 @@ def sell_share(share_id):
 
     form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
     form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
+    form.shareID.data=share_id
 
     if form.validate_on_submit():
-        #form.populate_obj(tempeditshare)
-
-        print "***added ***"
-        print form.ticker.data
-        print "Total sale price:" + str (form.quantity.data * form.price.data)
-        print "Average share sale price:" + str(form.price.data)
-
 
         originalpurchaseprice = float(share.averagepurchaseprice)
         originalquantity = float(share.quantity)
         salequantity = float(form.quantity.data)
         saleprice = float(form.price.data)
 
-        newpurchaseprice = str( ((originalpurchaseprice * originalquantity) - (saleprice * salequantity)) / (originalquantity-salequantity)
 
+
+        if (originalquantity - salequantity) == 0:
+
+            newpurchaseprice = 0
+
+        else:
+            newpurchaseprice = str(((originalpurchaseprice * originalquantity) - (saleprice * salequantity)) /
+                               (originalquantity-salequantity)
         )
 
         share.averagepurchaseprice = newpurchaseprice
         share.quantity = (originalquantity - salequantity)
         db.session.commit()
 
-
-        print "New average purchase price:" + newpurchaseprice
-
         db.session.commit()
+
         flash("You have successfully edited the share: '{}'". format(share.name.name))
-        return redirect(url_for('index'))
+        return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
     return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
 

@@ -93,6 +93,19 @@ class ShareTickerValidator(object):
         if not share_data.isValidShare(symbol):
             raise ValidationError(self.message)
 
+class SellShareValidator(object):
+    def __init__(self, message=None):
+        if not message:
+            message = u"You cannot sell more shares than you own"
+        self.message = message
+
+    def __call__(self, form, field):
+
+        shareID = form.data['shareID']
+        share = Userownedshare.query.get_or_404(shareID)
+
+        if share.quantity - form.data['quantity'] < 0:
+            raise ValidationError(self.message)
 
 
 class AddShareForm(Form):
@@ -115,8 +128,9 @@ class AddShareForm(Form):
 class RemoveShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
-    quantity = IntegerField('How many of this share did you sell:', validators=[number_range(min=1, max=10000)])
+    quantity = IntegerField('How many of this share did you sell:', validators=[SellShareValidator(),number_range(min=1, max=10000)])
     price = DecimalField('What price did you sell them for', validators=[number_range(min=0.00)])
+    shareID = HiddenField("hidden field")
     originalportfolioid = HiddenField("hidden field")
     portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
 

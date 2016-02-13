@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/index.html" afterPath="$PROJECT_DIR$/Shares/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/portfolio.html" afterPath="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/sharedata.html" afterPath="$PROJECT_DIR$/Shares/templates/sharedata.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +58,44 @@
     <favorites_list name="FYP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24264705">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#549#660#0" expanded="false" />
+                <element signature="e#1172#1285#0" expanded="false" />
+                <element signature="e#1333#1616#0" expanded="false" />
+                <element signature="e#1662#2052#0" expanded="false" />
+                <element signature="e#1704#1824#0" expanded="false" />
+                <element signature="e#1872#2052#0" expanded="false" />
+                <element signature="e#2094#2387#0" expanded="false" />
+                <element signature="e#2136#2242#0" expanded="false" />
+                <element signature="e#2290#2387#0" expanded="false" />
+                <element signature="e#2474#2597#0" expanded="false" />
+                <element signature="e#2824#2929#0" expanded="false" />
+                <element signature="e#4075#4943#0" expanded="false" />
+                <element signature="e#4734#4807#0" expanded="false" />
+                <element signature="e#4858#4943#0" expanded="false" />
+                <element signature="e#4973#5198#0" expanded="false" />
+                <element signature="e#5229#6327#0" expanded="false" />
+                <element signature="e#5995#6137#0" expanded="false" />
+                <element signature="e#6196#6327#0" expanded="false" />
+                <element signature="e#6364#6739#0" expanded="false" />
+                <element signature="e#6666#6739#0" expanded="false" />
+                <element signature="e#6779#7327#0" expanded="false" />
+                <element signature="e#7254#7327#0" expanded="false" />
+                <element signature="e#7366#7572#0" expanded="false" />
+                <element signature="e#7499#7572#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,10 +168,10 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/Shares/share_data.py" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
       </list>
     </option>
   </component>
@@ -211,24 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,12 +641,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00049" summary="removed erroneous validation on edit share from forms.py&#10;">
-      <created>1452985289714</created>
-      <option name="number" value="00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1452985289714</updated>
-    </task>
     <task id="LOCAL-00050" summary="removed old code">
       <created>1452986061108</created>
       <option name="number" value="00050" />
@@ -922,7 +929,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455320654874</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="profit and loss on home page">
+      <created>1455329694172</created>
+      <option name="number" value="00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1455329694172</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -959,7 +972,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19838275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -995,7 +1008,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="database init" />
     <MESSAGE value="added new table to store portfolio names and added functionality for this" />
     <MESSAGE value="added new portfolio call to all views" />
     <MESSAGE value="fixed display of edit portfolio when user is not logged in" />
@@ -1020,7 +1032,8 @@
     <MESSAGE value="testing" />
     <MESSAGE value="db" />
     <MESSAGE value="changed getalljsonshares method in share_data so that prices are fetched them the LSE" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed getalljsonshares method in share_data so that prices are fetched them the LSE" />
+    <MESSAGE value="profit and loss on home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="profit and loss on home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1457,40 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#549#660#0" expanded="false" />
-            <element signature="e#1172#1285#0" expanded="false" />
-            <element signature="e#1333#1616#0" expanded="false" />
-            <element signature="e#1662#2052#0" expanded="false" />
-            <element signature="e#1704#1824#0" expanded="false" />
-            <element signature="e#1872#2052#0" expanded="false" />
-            <element signature="e#2094#2387#0" expanded="false" />
-            <element signature="e#2136#2242#0" expanded="false" />
-            <element signature="e#2290#2387#0" expanded="false" />
-            <element signature="e#2474#2597#0" expanded="false" />
-            <element signature="e#2824#2929#0" expanded="false" />
-            <element signature="e#4051#4919#0" expanded="false" />
-            <element signature="e#4710#4783#0" expanded="false" />
-            <element signature="e#4834#4919#0" expanded="false" />
-            <element signature="e#4949#5174#0" expanded="false" />
-            <element signature="e#5205#6303#0" expanded="false" />
-            <element signature="e#5971#6113#0" expanded="false" />
-            <element signature="e#6172#6303#0" expanded="false" />
-            <element signature="e#6340#6715#0" expanded="false" />
-            <element signature="e#6642#6715#0" expanded="false" />
-            <element signature="e#6755#7303#0" expanded="false" />
-            <element signature="e#7230#7303#0" expanded="false" />
-            <element signature="e#7342#7548#0" expanded="false" />
-            <element signature="e#7475#7548#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.333334">
@@ -1551,6 +1530,40 @@
         <state vertical-scroll-proportion="0.5718919">
           <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24264705">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#549#660#0" expanded="false" />
+            <element signature="e#1172#1285#0" expanded="false" />
+            <element signature="e#1333#1616#0" expanded="false" />
+            <element signature="e#1662#2052#0" expanded="false" />
+            <element signature="e#1704#1824#0" expanded="false" />
+            <element signature="e#1872#2052#0" expanded="false" />
+            <element signature="e#2094#2387#0" expanded="false" />
+            <element signature="e#2136#2242#0" expanded="false" />
+            <element signature="e#2290#2387#0" expanded="false" />
+            <element signature="e#2474#2597#0" expanded="false" />
+            <element signature="e#2824#2929#0" expanded="false" />
+            <element signature="e#4075#4943#0" expanded="false" />
+            <element signature="e#4734#4807#0" expanded="false" />
+            <element signature="e#4858#4943#0" expanded="false" />
+            <element signature="e#4973#5198#0" expanded="false" />
+            <element signature="e#5229#6327#0" expanded="false" />
+            <element signature="e#5995#6137#0" expanded="false" />
+            <element signature="e#6196#6327#0" expanded="false" />
+            <element signature="e#6364#6739#0" expanded="false" />
+            <element signature="e#6666#6739#0" expanded="false" />
+            <element signature="e#6779#7327#0" expanded="false" />
+            <element signature="e#7254#7327#0" expanded="false" />
+            <element signature="e#7366#7572#0" expanded="false" />
+            <element signature="e#7499#7572#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

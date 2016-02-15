@@ -2,12 +2,12 @@
 {% from "form_macros.html" import render_field %}
 
 {% block title %}
-FYP -- edit share{{ Title }}
+Sell share{{ Title }}
 {% endblock %}
 
 {% block content %}
 <section>
-    <h1>{{ title }}</h1>
+    <h1>Sell shares</h1><br>
     <form action="" method="post">
         {{form.hidden_tag()}}
         <table>
@@ -15,7 +15,6 @@ FYP -- edit share{{ Title }}
             {{ render_field(form.quantity, size=20) }}
             {{ render_field(form.price, size=20) }}
             <!--{{ render_field(form.originalportfolioid, size=20) }}-->
-            {{ render_field(form.portfolioid, class="chosen dropdown", size=260) }}
 
             <tr class="submit">
                 <td></td>

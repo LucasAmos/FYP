@@ -61,6 +61,7 @@ def login():
         flash('Incorrect username or password.')
     return render_template("login.html", form=form)
 
+
 @app.route("/logout", methods=["GET", "POST"])
 def logout():
     logout_user()
@@ -105,7 +106,6 @@ def deleteportfolio():
         return redirect(url_for('index'))
 
     return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
-
 
 
 @app.route('/delete/<share_id>', methods=['GET', 'POST'])
@@ -227,7 +227,7 @@ def sell_share(share_id):
     form = RemoveShareForm()
     form.ticker.data = share.ticker
 
-    form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+    # form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
     form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
     form.shareID.data=share_id
 
@@ -258,7 +258,8 @@ def sell_share(share_id):
         flash("You have successfully edited the share: '{}'". format(share.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
-    return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, title="Edit share")
+    return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form)
+    #return render_template('sellshare_form.html', form=form)
 
 
 @app.errorhandler(403)

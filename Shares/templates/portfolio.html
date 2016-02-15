@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+Portfolio - {{ id | capitalize }}
+{% endblock %}
+
 {%  block content %}
 
 {% if portfoliovalue %}
@@ -56,7 +60,11 @@
             <td> {{share['dividends']}} </td>
             <td> £{{totalprice}}</td>
 
-            {% if  share['profit'] | float < 0 %}
+            {% if share['quantity'] == 0 %}
+
+            <td> N/A </td>
+
+            {% elif  share['profit'] | float < 0 %}
 
             <td class="loss"> £{{share['profit']}}</td>
 

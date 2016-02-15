@@ -132,7 +132,7 @@ class RemoveShareForm(Form):
     price = DecimalField('What price did you sell them for', validators=[number_range(min=0.00)])
     shareID = HiddenField("hidden field")
     originalportfolioid = HiddenField("hidden field")
-    portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
+    # portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
 

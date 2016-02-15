@@ -22,7 +22,12 @@
         <td> £{{portfoliovalues[id]['dividends'] }} </td>
 
 
-        {% if  portfolioprofits[id] | float < 0 %}
+        {% if  portfolioprofits[id] | float == 0 %}
+
+        <td> £{{portfolioprofits[id]}} </td>
+
+
+        {% elif  portfolioprofits[id] | float < 0 %}
 
         <td class="loss"> £{{portfolioprofits[id]}} </td>
 
@@ -62,9 +67,15 @@
         <td> £{{share['dividends']}} </td>
         <td>£{{price}}</td>
 
-        {% if  share['profit'] | float < 0 %}
+        {% if share['quantity'] == 0 %}
 
-            <td class="loss"> {{share['profit']}}</td>
+        <td> N/A </td>
+
+        {% elif  share['profit'] | float < 0 %}
+
+            <td class="loss"> £{{share['profit']}}</td>
+
+
 
             {% else %}
 

@@ -23,7 +23,7 @@ class sendMessage():
   </tr>
 </table>""".format(name=name)
 
-    email.sendEmail("xkv1922c@gmail.com", "alerts@lucasamos.net", "Your portfolio status",html)
+    email.sendEmail("xkv1922c@gmail.com", "alerts@lucasamos.net", "Your portfolio status", html)
 
     sms.sendSMS("+447506292708", "Your share GSK has fallen in price, "
                                  "log in to www.lucasamos.pythonanywhere.com to check it")

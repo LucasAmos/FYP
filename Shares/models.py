@@ -68,11 +68,9 @@ class Userownedshare(db.Model):
 
 # is this being user anywhere? yes!
         @staticmethod
-        def listportfolios():
+        def listportfolios(user):
 
-            if current_user.is_authenticated:
-
-                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=current_user.username).filter(Userownedshare.portfolioid != "")
+                shares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != "")
 
                 tempset = set()
                 for row in shares:

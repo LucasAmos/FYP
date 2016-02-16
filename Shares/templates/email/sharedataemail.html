@@ -1,13 +1,17 @@
+<html>
+
+<body>
+
+
+
 
 {% if data %}
-
-
 {% for id in portfoliovalues %}
 
 <h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id | capitalize }} </a> </h2>
 
 
-
+<div style="background-color:lightgray;">
 
 <table class="share portfolioshares">
     <caption>Portfolio details</caption>
@@ -92,9 +96,11 @@
     {% endfor %}
 </table>
 <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> View all shares in portfolio </a>
-
+</div>
 {% endfor %}
 
 
 {% endif %}
 
+</body>
+</html>

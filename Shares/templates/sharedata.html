@@ -1,5 +1,28 @@
 
+{% if not ids and not data %}
+
+
+<br>
+<h3>You don't have any portfolios. Why not create one and add some shares to it?</h3>
+
+<a href="{{ url_for('addportfolio') }}" class="btn btn-lg btn-primary  tweaked-margin"> Add portfolio</a>
+
+
+{% endif %}
+
+
+{% if not data and ids %}
+<br>
+<h3> You don't have any shares, why not add some to your portfolio?</h3>
+<a href="{{ url_for('add') }}" class="btn btn-lg btn-primary  tweaked-margin"> Add share</a>
+
+{% endif %}
+
+
+
 {% if data %}
+
+
 
 
 {% for id in portfoliovalues %}
@@ -73,15 +96,15 @@
 
         {% elif  share['profit'] | float < 0 %}
 
-            <td class="loss"> £{{share['profit']}}</td>
+        <td class="loss"> £{{share['profit']}}</td>
 
 
 
-            {% else %}
+        {% else %}
 
-            <td class="profit"> £{{share['profit']}} </td>
+        <td class="profit"> £{{share['profit']}} </td>
 
-            {% endif %}
+        {% endif %}
 
     </tr>
     {% set count = count + 1 %}
@@ -94,6 +117,8 @@
 <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> View all shares in portfolio </a>
 
 {% endfor %}
+
+
 
 
 {% endif %}

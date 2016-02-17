@@ -164,9 +164,17 @@ class SignupForm(Form):
                              validators=[
                                  DataRequired(),
                                  EqualTo('password2', message='Passwords must match.')])
-    password2 = PasswordField('Confirm password', validators=[DataRequired()])
+    password2 = PasswordField('Confirm password &nbsp', validators=[DataRequired()])
     email = StringField('Email',
-                        validators=[DataRequired(), Length(1, 120), Email()])
+                        validators=[DataRequired(), Length(1, 80), Email()])
+    phonenumber = StringField('Mobile phone number &nbsp',
+                           validators=[
+                               DataRequired(),
+                               Regexp('^(\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$',
+                                      message='Not a valid UK phone number')])
+
+
+
 
     def validate_email(self, email_field):
         if User.query.filter_by(email=email_field.data).first():
@@ -179,7 +187,7 @@ class SignupForm(Form):
 
 class AddPortfolioForm(Form):
     name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator(), Regexp(r'^[a-zA-Z0-9]*$',
-                                                                                 message="The portfolio name must contain only letters and numbers")])
+                                                                                                      message="The portfolio name must contain only letters and numbers")])
 
     def validate(self):
 

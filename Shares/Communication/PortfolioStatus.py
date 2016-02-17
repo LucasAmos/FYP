@@ -20,16 +20,13 @@ class PortfolioStatus():
 
 
     for user in session.query(User):
+
         portfoliovalues = share_data.getportfoliovalues(user.username)
-
-
-        html =PortfolioData.sharedata(User.username)
-
-
-
+        html =PortfolioData.sharedata(user.username)
         email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
-        #print html
+
+        print user.username
         print user.email
 
 

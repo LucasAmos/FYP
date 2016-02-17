@@ -1,6 +1,6 @@
 <html>
 
-<body>
+<body style="background-color: #e6f2ff">
 
 
 
@@ -8,13 +8,11 @@
 {% if data %}
 {% for id in portfoliovalues %}
 
-<h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id | capitalize }} </a> </h2>
+<h2 style="margin-bottom: 0px; text-decoration: none; "> <a href="lucasamos.pythonanywhere.com/portfolio/{{id}}"> {{ id | capitalize }} </a> </h2>
 
 
-<div style="background-color:lightgray;">
+<table style="border: 1px dashed lightgray; background-color: #e6e6e6">
 
-<table class="share portfolioshares">
-    <caption>Portfolio details</caption>
     <th> Portfolio value  </th>
     <th> Total share value  </th>
     <th> Dividend value  </th>
@@ -33,10 +31,10 @@
 
         {% elif  portfolioprofits[id] | float < 0 %}
 
-        <td class="loss"> £{{portfolioprofits[id]}} </td>
+        <td style="color: red"> £{{portfolioprofits[id]}} </td>
 
         {% else %}
-        <td class="profit">  £{{portfolioprofits[id]}}  </td>
+        <td style="color: green">  £{{portfolioprofits[id]}}  </td>
 
         {% endif %}
 
@@ -44,9 +42,9 @@
 
 </table>
 
-
+<div style="background-color: #e6e6e6
+;">
 <table class="share">
-    <caption>Share details</caption>
     <tr>
         <th>Name</th>
         <th>Share value</th>
@@ -95,7 +93,7 @@
 
     {% endfor %}
 </table>
-<a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> View all shares in portfolio </a>
+<a href="lucasamos.pythonanywhere.com/portfolio/{{id}}"> View all shares in portfolio </a>
 </div>
 {% endfor %}
 

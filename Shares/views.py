@@ -24,9 +24,8 @@ def index():
 
         try:
 
-
-
-            return render_template('index.html', shares=share_data.getalljsonshares(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+            return render_template('index.html', shares=share_data.getalljsonshares(current_user.username),
+                                   portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
         except:
             return render_template("connectiondown.html")
@@ -40,7 +39,8 @@ def signup():
     if form.validate_on_submit():
         user = User(email=form.email.data.lower(),
                     username=form.username.data.lower(),
-                    password=form.password.data)
+                    password=form.password.data,
+                    phonenumber=form.phonenumber.data)
         db.session.add(user)
         db.session.commit()
         flash('Welcome, {}! Please login.'.format(user.username))
@@ -119,11 +119,11 @@ def delete_share(share_id):
         db.session.delete(tempshare)
         db.session.commit()
         flash("You have successfully deleted the share: '{}'". format(tempshare.name.name))
-        return redirect(url_for('index'))
+        return redirect(url_for('list_portfolio', portfolio_id=tempshare.portfolioid))
     else:
-        flash("Please confirm deleting the bookmark.")
+        flash("Please confirm deleting the share.")
 
-    return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(), share=tempshare, nolinks=True)
+    return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(current_user.username), share=tempshare, nolinks=True)
 
 
 @app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])
@@ -262,6 +262,13 @@ def sell_share(share_id):
     #return render_template('sellshare_form.html', form=form)
 
 
+@app.route('/notifications', methods=['GET', 'POST'], )
+@login_required
+def notifications():
+
+
+    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
 @app.errorhandler(403)
 def page_not_found(e):
     return render_template('403.html'), 403
@@ -303,9 +310,11 @@ def sharedata():
 
             else:
                 profits[share['portfolioid']] = share['profit']
-
+        print "**"
+        print Userownedshare.listportfolios(current_user.username)
         return render_template('sharedata.html', data=sharesinportfolio,
-                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits)
+                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
+                               ids=share_data.getportfolioidsfromtable(current_user.username))
 
 
 

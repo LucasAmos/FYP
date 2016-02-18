@@ -5,6 +5,7 @@ from manage import db
 from Shares.models import User
 from flask import render_template
 from PortfolioData import PortfolioData
+import datetime
 
 
 class PortfolioStatus():
@@ -18,15 +19,45 @@ class PortfolioStatus():
 
     #values = share_data.getportfoliovalues(user)
 
+    today = datetime.datetime.today().weekday()
+
+    print today
+
 
     for user in session.query(User):
 
-        portfoliovalues = share_data.getportfoliovalues(user.username)
-        html =PortfolioData.sharedata(user.username)
-        email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
+        if user.emailfrequency is 0:
+            portfoliovalues = share_data.getportfoliovalues(user.username)
+            html =PortfolioData.sharedata(user.username)
+            email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
+
+            print "no emails: "
+            print user.username
+            break
+
+        if user.emailfrequency is 1:
+            portfoliovalues = share_data.getportfoliovalues(user.username)
+            html =PortfolioData.sharedata(user.username)
+            email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
+
+            print "once a day email: "
+            print user.username
+            break
+
+        if user.emailfrequency is 2 and today is 3:
+            portfoliovalues = share_data.getportfoliovalues(user.username)
+            html =PortfolioData.sharedata(user.username)
+            email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
+
+            print "once a week email:"
+            print user.username
 
 
-        print user.username
-        print user.email
+
+        # portfoliovalues = share_data.getportfoliovalues(user.username)
+        # html =PortfolioData.sharedata(user.username)
+        # email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
+
+
 
 

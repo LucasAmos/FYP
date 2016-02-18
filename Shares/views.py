@@ -266,8 +266,10 @@ def sell_share(share_id):
 @login_required
 def notifications():
 
+    form = NotificationSettingsForm()
 
-    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
+    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form)
 
 @app.errorhandler(403)
 def page_not_found(e):

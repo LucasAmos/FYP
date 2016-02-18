@@ -1,5 +1,34 @@
 {% extends "base.html" %}
+{% from "form_macros.html" import render_field %}
 
 {% block title %}
 Notification settings
+{% endblock %}
+
+
+{% block content %}
+
+<section>
+    <h1> Notification settings</h1>
+    <br>
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+
+
+        {{form.frequency.label}}
+        <table>
+            {{ form.frequency(class_="buttons") }}
+            <tr class="submit">
+                <td></td>
+                <td><button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</section>
+
+
+
 {% endblock %}

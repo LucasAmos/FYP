@@ -1,5 +1,5 @@
 from flask_wtf import Form
-from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField, FloatField
+from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField, FloatField, RadioField
 from flask.ext.wtf.html5 import DecimalField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, optional
 from wtforms_components import read_only
@@ -92,6 +92,7 @@ class ShareTickerValidator(object):
 
         if not share_data.isValidShare(symbol):
             raise ValidationError(self.message)
+
 
 class SellShareValidator(object):
     def __init__(self, message=None):
@@ -210,6 +211,7 @@ class AddAdditionalShares(Form):
 
         return True
 
+
 class DeletePortfolioForm(Form):
     name = SelectField('Select a portfolio to delete: &nbsp ', validators=[EmptyPortfolioValidator()])
 
@@ -220,3 +222,14 @@ class DeletePortfolioForm(Form):
 
         return True
 
+class NotificationSettingsForm(Form):
+    frequency = RadioField(u'Notification frequency', choices=[('1', 'Daily'), ('2', 'Weekly')])
+
+
+
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True

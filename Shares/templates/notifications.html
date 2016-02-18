@@ -11,18 +11,38 @@ Notification settings
 <section>
     <h1> Notification settings</h1>
     <br>
+
+
     <form action="" method="post">
         {{form.hidden_tag()}}
 
 
-        {{form.frequency.label}}
+
         <table>
-            {{ form.frequency(class_="buttons") }}
+
+            <div class="row">
+                <div class="col-md-4">
+                    {{form.emailfrequency.label}}
+
+                    {{ form.emailfrequency(class_="buttons") }}
+
+                </div>
+                <div class="col-md-4">
+
+                    {{form.smsenabled.label}}
+
+                    {{form.smsenabled(class_="buttons") }}
+                </div>
+            </div>
+
+<div class="row">
+
             <tr class="submit">
                 <td></td>
                 <td><button type="submit">Submit</button>
                 </td>
             </tr>
+    </div>
         </table>
 
     </form>

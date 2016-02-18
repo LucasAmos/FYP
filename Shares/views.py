@@ -40,7 +40,9 @@ def signup():
         user = User(email=form.email.data.lower(),
                     username=form.username.data.lower(),
                     password=form.password.data,
-                    phonenumber=form.phonenumber.data)
+                    phonenumber=form.phonenumber.data,
+                    emailfrequency=0,
+                    smsenabled=False)
         db.session.add(user)
         db.session.commit()
         flash('Welcome, {}! Please login.'.format(user.username))
@@ -265,8 +267,17 @@ def sell_share(share_id):
 @app.route('/notifications', methods=['GET', 'POST'], )
 @login_required
 def notifications():
-
+    user = User.query.get_or_404(current_user.id)
     form = NotificationSettingsForm()
+
+    if form.validate_on_submit():
+        user.emailfrequency = form.emailfrequency.data
+        user.smsenabled = form.smsenabled.data
+
+        db.session.commit()
+        flash("You have successfully updated your notification preferences")
+        return redirect(url_for('index'))
+
 
 
     return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form)

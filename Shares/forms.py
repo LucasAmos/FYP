@@ -185,6 +185,10 @@ class SignupForm(Form):
         if User.query.filter_by(username=username_field.data).first():
             raise ValidationError('This username is already taken.')
 
+    def validate_phonenumber(self, phonenumber_field):
+        if User.query.filter_by(phonenumber=phonenumber_field.data).first():
+            raise ValidationError('A user with that phone number is already registered')
+
 
 class AddPortfolioForm(Form):
     name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator(), Regexp(r'^[a-zA-Z0-9]*$',
@@ -222,8 +226,10 @@ class DeletePortfolioForm(Form):
 
         return True
 
+
 class NotificationSettingsForm(Form):
-    frequency = RadioField(u'Notification frequency', choices=[('1', 'Daily'), ('2', 'Weekly')])
+    emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')], default='0')
+    smsenabled = RadioField(u'Set the status of your SMS share <br> price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
 
 
 

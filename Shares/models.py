@@ -13,8 +13,8 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True)
     password_hash = db.Column(db.String)
     phonenumber = db.Column(db.String(15))
-    emailupdate = db.Column(db.Boolean)
-    updatefrequency = db.Column(db.Integer)
+    emailfrequency = db.Column(db.Integer)
+    smsenabled = db.Column(db.Boolean)
     shares = db.relationship('Userownedshare', backref='Userownedshare', lazy='dynamic')
 
     @property
@@ -34,6 +34,7 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return "<user '{}'>".format(self.username)
+
 
 
 class Userownedshare(db.Model):

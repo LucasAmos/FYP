@@ -228,7 +228,7 @@ class DeletePortfolioForm(Form):
 
 
 class NotificationSettingsForm(Form):
-    emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')], default='0')
+    emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
     smsenabled = RadioField(u'Set the status of your SMS share <br> price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
 
 

@@ -20,6 +20,11 @@ class test(TestCase):
     def setUp(self):
         manage.inittestdb()
       #  print self.addShare("GOOG", 10, 100, "testportfolio").data
+        self.login('lucas2', 'test')
+
+        self.addPortfolio("testportfolio")
+        #print self.addShare("MKS", 10, 100, "testportfolio").data
+
 
     def tearDown(self):
 
@@ -51,12 +56,13 @@ class test(TestCase):
         self.login('lucas2', 'test')
 
         self.addPortfolio("testportfolio")
-        rv = self.addShare("GOOG", 10, 100, "testportfolio")
-        assert "Added share &#39;GOOG&#39;" in rv.data
+        rv = self.addShare("MKS", 10, 100, "testportfolio")
+        assert "Added share &#39;MKS&#39;" in rv.data
 
-        rv = self.addShare("GOOG", 10, 100, "testportfolio")
+
+        rv = self.addShare("MKS", 10, 100, "testportfolio")
         assert "That share is already in that portfolio" in rv.data
 
         self.addPortfolio("secondtestportfolio")
-        rv = self.addShare("GOOG", 10, 100, "secondtestportfolio")
-        assert "Added share &#39;GOOG&#39;" in rv.data
+        rv = self.addShare("MKS", 10, 100, "secondtestportfolio")
+        assert "Added share &#39;MKS&#39;" in rv.data

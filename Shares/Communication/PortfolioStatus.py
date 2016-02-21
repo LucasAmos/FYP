@@ -1,4 +1,4 @@
-#test
+
 from sendgridEmail import Email
 from twilioSMS import SMS
 from Shares.share_data import share_data
@@ -13,8 +13,6 @@ class PortfolioStatus():
     sms = SMS("ACb3d2405e15df8441919994ce553eae4b", "41e85a6638606f578860825b750462c1")
     session = db.session()
     today = datetime.datetime.today().weekday()
-
-    print today
 
     noemail = 0
     daily =0

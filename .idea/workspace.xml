@@ -67,8 +67,8 @@
       <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45251396">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.32681563">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
                 <element signature="e#1#32#0" expanded="true" />
               </folding>
@@ -638,12 +638,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00079" summary="added working delete and add portfolio functionality">
-      <created>1454282230904</created>
-      <option name="number" value="00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1454282230904</updated>
-    </task>
     <task id="LOCAL-00080" summary="added working delete and add portfolio functionality">
       <created>1454282277664</created>
       <option name="number" value="00080" />
@@ -932,7 +926,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456104683878</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="test">
+      <created>1456105545275</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1456105545275</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1554,8 +1554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45251396">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.32681563">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="e#1#32#0" expanded="true" />
           </folding>

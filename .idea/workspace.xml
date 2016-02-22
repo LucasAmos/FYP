@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/PortfolioData.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/PortfolioStatus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/ShareFall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/sendMessage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/sendgridEmail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Communication/twilioSMS.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,6 +25,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="true" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FYP$sendgridEmail2.coverage" NAME="sendgridEmail2 Coverage Results" MODIFIED="1455577509924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
+    <SUITE FILE_PATH="coverage/FYP$PortfolioStatus__2_.coverage" NAME="PortfolioStatus (2) Coverage Results" MODIFIED="1456145808073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Communication" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__1_.coverage" NAME="Unittests in Tests (1) Coverage Results" MODIFIED="1455786527679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddShare.coverage" NAME="Unittests in testAddShare Coverage Results" MODIFIED="1454972709688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__3_.coverage" NAME="Unittests in Tests (3) Coverage Results" MODIFIED="1455015745418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
@@ -69,11 +76,9 @@
       <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6447761">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -264,6 +269,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Communication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -286,14 +305,14 @@
       <recent name="$PROJECT_DIR$/Shares/Tests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Shares" />
       <recent name="$PROJECT_DIR$/Shares/Communication" />
       <recent name="$PROJECT_DIR$/Shares/templates/email" />
       <recent name="$PROJECT_DIR$/Shares/Communication/template" />
-      <recent name="$PROJECT_DIR$/Shares/tutorial/steps" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PortfolioStatus (1)">
+  <component name="RunManager" selected="Python.PortfolioStatus (2)">
     <configuration default="false" name="PortfolioStatus" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,29 +329,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/PortfolioStatus.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in Tests (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="Unittests in Tests (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -395,6 +391,24 @@
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PortfolioStatus (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Communication" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Communication/PortfolioStatus.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -594,18 +608,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.PortfolioStatus" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in tempemail" />
-      <item index="4" class="java.lang.String" itemvalue="Python.PortfolioStatus (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in tempemail" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PortfolioStatus (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.PortfolioStatus (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.PortfolioStatus (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PortfolioStatus" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in tempemail" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.PortfolioStatus (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.PortfolioStatus (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PortfolioStatus" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in tempemail" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Tests (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -619,12 +633,6 @@
       <created>1450373040501</created>
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
-    </task>
-    <task id="LOCAL-00094" summary="testing and error page if share price API not available">
-      <created>1454953126048</created>
-      <option name="number" value="00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1454953126050</updated>
     </task>
     <task id="LOCAL-00095" summary="testing">
       <created>1454972805562</created>
@@ -914,7 +922,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456139098130</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="email">
+      <created>1456140155135</created>
+      <option name="number" value="00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1456140155135</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -951,9 +965,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="27" width="1847" height="1053" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
@@ -1534,11 +1548,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6447761">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

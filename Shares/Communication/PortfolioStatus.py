@@ -1,5 +1,6 @@
 import sys
-print sys.path
+sys.path.append("../Shares/")
+
 from Shares.share_data import share_data
 from sendgridEmail import Email
 from twilioSMS import SMS

@@ -1,4 +1,4 @@
-import sendgrid
+from sendgrid import SendGridClient, sendgrid
 
 
 class Email():

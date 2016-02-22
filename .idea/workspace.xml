@@ -92,8 +92,8 @@
       <file leaf-file-name="sendgridEmail.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.168">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -639,12 +639,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00082" summary="faded out flashes and changed their colour">
-      <created>1454286025307</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1454286025307</updated>
-    </task>
     <task id="LOCAL-00083" summary="test flash css">
       <created>1454286386422</created>
       <option name="number" value="00083" />
@@ -933,7 +927,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456106398547</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="email">
+      <created>1456106640985</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1456106640985</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1557,8 +1557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.168">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>

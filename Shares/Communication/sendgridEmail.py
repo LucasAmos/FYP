@@ -1,4 +1,4 @@
-import sendgrid
+import sendgrid as bt
 
 
 class Email():
@@ -12,8 +12,8 @@ class Email():
 
         # using SendGrid's Python Library - https://github.com/sendgrid/sendgrid-python
 
-        sg = sendgrid.SendGridClient(self.UserID, self.UserPassword, secure=True)
-        message = sendgrid.Mail()
+        sg = bt.SendGridClient(self.UserID, self.UserPassword, secure=True)
+        message = bt.Mail()
         message.add_to(add_to)
         message.set_from(set_from)
         message.set_subject(set_subject)

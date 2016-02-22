@@ -25,8 +25,8 @@ class PortfolioStatus():
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
-            # print "no emails: "
-            # print user.username
+            print "no emails: "
+            print user.username
             noemail+=1
 
 
@@ -35,9 +35,9 @@ class PortfolioStatus():
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
-            # print "once a day email: "
-            # print user.username
-            # print user.email
+            print "once a day email: "
+            print user.username
+            print user.email
             daily+=1
 
 
@@ -46,14 +46,14 @@ class PortfolioStatus():
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
-            # print "once a week email:"
-            # print user.username
+            print "once a week email:"
+            print user.username
             weekly+=1
 
-    #
-    # print "No emails: %s" %noemail
-    # print "Daily emails: %s" %daily
-    # print "Weekly emails: %s" %weekly
+
+    print "No emails: %s" %noemail
+    print "Daily emails: %s" %daily
+    print "Weekly emails: %s" %weekly
 
 
 

@@ -1,6 +1,6 @@
 from sendgridEmail import Email
 from twilioSMS import SMS
-from Shares.share_data import share_data
+from Shares.share_data import *
 from manage import db
 from Shares.models import User
 from PortfolioData import PortfolioData

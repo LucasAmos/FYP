@@ -1,3 +1,6 @@
+import sys
+sys.path.append('')
+
 from Shares.share_data import share_data
 from sendgridEmail import Email
 from twilioSMS import SMS

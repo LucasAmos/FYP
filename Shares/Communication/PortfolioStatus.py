@@ -1,4 +1,6 @@
-from Shares.share_data import share_data as data
+import sys
+print sys.path
+from Shares.share_data import share_data
 from sendgridEmail import Email
 from twilioSMS import SMS
 from manage import db
@@ -19,7 +21,7 @@ class PortfolioStatus():
     for user in session.query(User):
 
         if user.emailfrequency is 0:
-            portfoliovalues = data.getportfoliovalues(user.username)
+            portfoliovalues = share_data.getportfoliovalues(user.username)
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
@@ -29,7 +31,7 @@ class PortfolioStatus():
 
 
         if user.emailfrequency is 1:
-            portfoliovalues = data.getportfoliovalues(user.username)
+            portfoliovalues = share_data.getportfoliovalues(user.username)
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
@@ -40,7 +42,7 @@ class PortfolioStatus():
 
 
         if user.emailfrequency is 2 and today is 3:
-            portfoliovalues = data.getportfoliovalues(user.username)
+            portfoliovalues = share_data.getportfoliovalues(user.username)
             html =PortfolioData.sharedata(user.username)
             email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 

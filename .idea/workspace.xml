@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioData.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/ShareFall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/sendMessage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/twilioSMS.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -606,12 +612,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00108" summary="portfolio email functionality">
-      <created>1455588695452</created>
-      <option name="number" value="00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1455588695452</updated>
-    </task>
     <task id="LOCAL-00109" summary="new portfolio email template">
       <created>1455589739639</created>
       <option name="number" value="00109" />
@@ -900,7 +900,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456181011206</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="email">
+      <created>1456181234294</created>
+      <option name="number" value="00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1456181234294</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -937,9 +943,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="27" width="1847" height="1053" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
@@ -1497,14 +1503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8235292">
@@ -1512,6 +1510,14 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4774536">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

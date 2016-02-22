@@ -1,5 +1,5 @@
 
-from sendgridEmail import Email
+from Emailz import Email
 from twilioSMS import SMS
 from Shares.share_data import share_data
 from manage import db

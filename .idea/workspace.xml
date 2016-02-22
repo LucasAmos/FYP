@@ -69,9 +69,11 @@
       <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.026865672">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.6447761">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -618,12 +620,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00093" summary="fixed testing and added share sale functionality">
-      <created>1454600522087</created>
-      <option name="number" value="00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1454600522087</updated>
-    </task>
     <task id="LOCAL-00094" summary="testing and error page if share price API not available">
       <created>1454953126048</created>
       <option name="number" value="00094" />
@@ -912,7 +908,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456138417028</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="email">
+      <created>1456139098130</created>
+      <option name="number" value="00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1456139098130</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1520,7 +1522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.583582">
+        <state vertical-scroll-proportion="1.5850747">
           <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="79" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
@@ -1532,9 +1534,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026865672">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.6447761">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

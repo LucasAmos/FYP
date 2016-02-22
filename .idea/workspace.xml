@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/temp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" afterPath="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,8 +89,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sendgridEmail.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sendgridEmail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/Communication/temp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
@@ -106,8 +116,8 @@
       <list>
         <option value="Python Unit Test" />
         <option value="Gherkin feature file" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -125,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Shares/templates/addadditionalshares.html" />
         <option value="$PROJECT_DIR$/Shares/tests/testLogin.py" />
         <option value="$PROJECT_DIR$/Shares/tests/testDatabase.py" />
         <option value="$PROJECT_DIR$/Shares/tests/testsuite.py" />
@@ -176,6 +185,7 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" />
+        <option value="$PROJECT_DIR$/Shares/Communication/temp.py" />
       </list>
     </option>
   </component>
@@ -639,12 +649,6 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
-    <task id="LOCAL-00084" summary=" flash css">
-      <created>1454286402301</created>
-      <option name="number" value="00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1454286402301</updated>
-    </task>
     <task id="LOCAL-00085" summary=" flash css">
       <created>1454286623340</created>
       <option name="number" value="00085" />
@@ -933,7 +937,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456106744620</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="email">
+      <created>1456106777231</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1456106777231</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1117,13 +1127,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/flask_wtf/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.958904">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/wtforms/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1556,6 +1559,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />

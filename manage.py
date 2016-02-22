@@ -1,3 +1,4 @@
+#test
 #! /usr/bin/env python
 
 from Shares import app, db

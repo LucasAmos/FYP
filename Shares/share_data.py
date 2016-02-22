@@ -1,7 +1,7 @@
 from sqlalchemy import desc
 from flask import render_template, redirect, url_for
 import urllib
-import jsoni
+import json
 from models import Userownedshare, Portfolios
 
 class share_data():

@@ -25,5 +25,10 @@ login_manager.init_app(app)
 #for displaying timestamps
 moment = Moment(app)
 
+app.config['RECAPTCHA_USE_SSL'] = False
+app.config['RECAPTCHA_PUBLIC_KEY'] = 'public'
+app.config['RECAPTCHA_PRIVATE_KEY'] = '6LdMHxkTAAAAAPwhtJjpWwTA7h6kNWDKO9SzUw2U'
+app.config['RECAPTCHA_OPTIONS'] = {'theme': 'white'}
+
 import models
 import views

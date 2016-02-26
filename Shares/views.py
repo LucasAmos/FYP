@@ -4,10 +4,11 @@ from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
 from forms import *
-from models import User, Userownedshare, Share
+from models import User, Share
 from share_data import *
-import json
+from temp import *
 
+from News import *
 
 @login_manager.user_loader
 def load_user(userid):
@@ -23,6 +24,11 @@ def index():
     if current_user.is_authenticated:
 
         try:
+
+
+            #print temp.getTickers("lucas")
+
+
 
             return render_template('index.html', shares=share_data.getalljsonshares(current_user.username),
                                    portfolioids=share_data.getportfolioidsfromtable(current_user.username))

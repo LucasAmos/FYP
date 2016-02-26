@@ -5,8 +5,8 @@ from flask_login import login_required, login_user, logout_user, current_user
 from Shares import app, db, login_manager
 from forms import *
 from models import User, Share
-from share_data import *
-from temp import *
+from share_data import share_data
+#from temp import temp
 
 @login_manager.user_loader
 def load_user(userid):

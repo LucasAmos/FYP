@@ -168,19 +168,6 @@ class share_data():
             else:
                 return False
 
-    @staticmethod
-    def getTickers(user):
-
-        tickers = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user)
-
-        tempset = set()
-        templist = list(tempset)
-        for row in tickers:
-            name = row.ticker
-            tempset.add(name)
-
-            templist = list(tempset)
-        return templist
 
 
 

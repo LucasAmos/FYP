@@ -8,8 +8,6 @@ from models import User, Share
 from share_data import *
 from temp import *
 
-from News import *
-
 @login_manager.user_loader
 def load_user(userid):
 

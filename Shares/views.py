@@ -138,6 +138,7 @@ def list_portfolio(portfolio_id):
         sharesinportfolio = []
         profit = 0
 
+
         for share in allshares:
 
             if share['portfolioid'] == portfolio_id:
@@ -147,8 +148,27 @@ def list_portfolio(portfolio_id):
                 profit += share['profit']
 
 
+        sharevalue = 0.0
+        dividends = 0.0
+        portfoliovalue = 0.0
+
+        for share in allshares:
+
+            print share
+
+            shareprice = float (share['price'])
+            quantity = share['quantity']
+            shareholding = shareprice * quantity
+            dividends = dividends + share['dividends']
+            sharevalue += shareholding
+            portfoliovalue = sharevalue + dividends
+
+        dictvalues = {'portfoliovalue': round(portfoliovalue, 2), 'sharevalue': sharevalue, 'dividends': dividends}
+
+
+
         return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
-                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id),
+                               portfolioshares=sharesinportfolio, portfoliovalue=dictvalues,
                                portfolioprofit=profit)
 
     except:

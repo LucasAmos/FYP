@@ -4,9 +4,10 @@ from flask_login import login_required, login_user, logout_user, current_user
 
 from Shares import app, db, login_manager
 from forms import *
-from models import User, Share
-from share_data import share_data
-#from temp import temp
+from models import User, Userownedshare, Share
+from share_data import *
+import json
+
 
 @login_manager.user_loader
 def load_user(userid):
@@ -23,13 +24,7 @@ def index():
 
         try:
 
-
-            #print temp.getTickers("lucas")
-
-
-
-            return render_template('index.html', shares=share_data.getalljsonshares(current_user.username),
-                                   portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
         except:
             return render_template("connectiondown.html")
@@ -195,7 +190,10 @@ def addadditionalshares(share_id):
 
     if current_user.username != share.user:
         abort(403)
+
     form = AddAdditionalShares()
+
+    share.averagepurchaseprice
 
     if form.validate_on_submit():
 
@@ -212,6 +210,8 @@ def addadditionalshares(share_id):
             share.dividends += float(form.dividends.data)
             db.session.commit()
 
+        temp = str( share.portfolioid)
+
         flash("You have successfully edited the share: '{}'". format(share.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
@@ -224,9 +224,11 @@ def sell_share(share_id):
     share = Userownedshare.query.get_or_404(share_id)
     if current_user.username != share.user:
         abort(403)
+    #form = RemoveShareForm(obj=tempeditshare)
     form = RemoveShareForm()
     form.ticker.data = share.ticker
 
+    # form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
     form.originalportfolioid.data = Userownedshare.query.get_or_404(share_id).portfolioid
     form.shareID.data=share_id
 
@@ -258,6 +260,7 @@ def sell_share(share_id):
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
     return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form)
+    #return render_template('sellshare_form.html', form=form)
 
 
 @app.route('/notifications', methods=['GET', 'POST'], )
@@ -319,20 +322,11 @@ def sharedata():
 
             else:
                 profits[share['portfolioid']] = share['profit']
-
+        print "**"
+        print Userownedshare.listportfolios(current_user.username)
         return render_template('sharedata.html', data=sharesinportfolio,
                                portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -57,6 +57,35 @@ class share_data():
 
             return sharearray
 
+
+    @staticmethod
+    def getalljsonsharesInPortfolio(user, portfolio):
+
+            tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user, Userownedshare.portfolioid == portfolio)
+
+            sharearray = []
+
+            for row in tempshares:
+
+                ticker = row.ticker
+                quote = share_data.JSONSharePrice(ticker)
+                sharedata = {
+                    ### change this line to fix symbol display in portfolio page
+                    'symbol': quote['query']['results']['quote']['symbol'],
+                    'quantity': row.quantity,
+                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
+                    'averagepurchaseprice': row.averagepurchaseprice,
+                    'name': row.name.name,
+                    'dividends': row.dividends,
+                    'id': row.id,
+
+                    'portfolioid': row.portfolioid
+                }
+                sharearray.append(sharedata)
+
+            return sharearray
+
+
     @staticmethod
     def getportfoliovalue(user):
         tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
@@ -158,7 +187,6 @@ class share_data():
 
     @staticmethod
     def isValidShare(ticker):
-
 
             quote = share_data.JSONSharePrice(ticker)
 

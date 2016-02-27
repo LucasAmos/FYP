@@ -132,7 +132,7 @@ def delete_share(share_id):
 def list_portfolio(portfolio_id):
 
 
-    # try:
+    try:
 
         allshares = share_data.getalljsonsharesInPortfolio(current_user.username, portfolio_id)
         sharesinportfolio = []
@@ -151,8 +151,8 @@ def list_portfolio(portfolio_id):
                                portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id),
                                portfolioprofit=profit)
 
-    # except:
-    #         return render_template("connectiondown.html")
+    except:
+            return render_template("connectiondown.html")
 
 
 @app.route('/add', methods=['GET', 'POST'], )

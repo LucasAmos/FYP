@@ -28,7 +28,7 @@ class share_data():
             return quote
 
         except:
-            return redirect(url_for('connectiondown'))
+            return render_template("connectiondown.html")
 
     @staticmethod
     def getalljsonshares(user):

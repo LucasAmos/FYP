@@ -4,8 +4,12 @@
     <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
+>>>>>>> parent of 541311a... fixed share sale validation
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,6 +78,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,12 +100,25 @@
                 <element signature="e#3434#3497#0" expanded="false" />
                 <element signature="e#3532#3648#0" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14845361">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
+=======
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/test.py">
+>>>>>>> parent of 541311a... fixed share sale validation
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -200,6 +218,11 @@
         <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
         <option value="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
+>>>>>>> parent of 541311a... fixed share sale validation
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/temp.py" />
@@ -210,6 +233,7 @@
         <option value="$PROJECT_DIR$/Shares/PortfolioStatus.py" />
         <option value="$PROJECT_DIR$/Shares/test.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/__init__.py" />
         <option value="$PROJECT_DIR$/Shares/templates/login.html" />
@@ -225,6 +249,8 @@
         <option value="$PROJECT_DIR$/Shares/temp.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/share_data.py" />
+=======
+>>>>>>> parent of 541311a... fixed share sale validation
       </list>
     </option>
   </component>
@@ -234,10 +260,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="73" />
+    <option name="y" value="27" />
+    <option name="width" value="1847" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -264,7 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,6 +324,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -642,6 +668,39 @@
       <option name="number" value="Default" />
       <updated>1450373040501</updated>
     </task>
+<<<<<<< HEAD
+=======
+    <task id="LOCAL-00114" summary="email logic">
+      <created>1456084976942</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1456084976944</updated>
+    </task>
+    <task id="LOCAL-00115" summary="email logic">
+      <created>1456084980793</created>
+      <option name="number" value="00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1456084980793</updated>
+    </task>
+    <task id="LOCAL-00116" summary="email logic">
+      <created>1456085715933</created>
+      <option name="number" value="00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1456085715934</updated>
+    </task>
+    <task id="LOCAL-00117" summary="test">
+      <created>1456086248894</created>
+      <option name="number" value="00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1456086248894</updated>
+    </task>
+    <task id="LOCAL-00118" summary="test">
+      <created>1456086256672</created>
+      <option name="number" value="00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1456086256672</updated>
+    </task>
+>>>>>>> parent of 541311a... fixed share sale validation
     <task id="LOCAL-00119" summary="test">
       <created>1456086263649</created>
       <option name="number" value="00119" />
@@ -906,6 +965,7 @@
       <option name="project" value="LOCAL" />
       <updated>1456182792623</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00163" summary="email">
       <created>1456183942240</created>
       <option name="number" value="00163" />
@@ -937,6 +997,9 @@
       <updated>1456529549361</updated>
     </task>
     <option name="localTasksCounter" value="168" />
+=======
+    <option name="localTasksCounter" value="163" />
+>>>>>>> parent of 541311a... fixed share sale validation
     <servers />
   </component>
   <component name="TestHistory">
@@ -972,29 +1035,37 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="73" y="27" width="1847" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23157895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+>>>>>>> parent of 541311a... fixed share sale validation
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.170706" sideWeight="0.49806523" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41833508" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4296142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24790795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> parent of 541311a... fixed share sale validation
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4296142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1340,6 +1411,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.941177">
+          <caret line="230" column="168" selection-start-line="230" selection-start-column="168" selection-end-line="230" selection-end-column="168" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#561#672#0" expanded="false" />
+            <element signature="e#1142#1628#0" expanded="false" />
+            <element signature="e#1184#1297#0" expanded="false" />
+            <element signature="e#1345#1628#0" expanded="false" />
+            <element signature="e#1674#2064#0" expanded="false" />
+            <element signature="e#1716#1836#0" expanded="false" />
+            <element signature="e#1884#2064#0" expanded="false" />
+            <element signature="e#2106#2399#0" expanded="false" />
+            <element signature="e#2148#2254#0" expanded="false" />
+            <element signature="e#2302#2399#0" expanded="false" />
+            <element signature="e#2444#2751#0" expanded="false" />
+            <element signature="e#2486#2609#0" expanded="false" />
+            <element signature="e#2657#2751#0" expanded="false" />
+            <element signature="e#2794#3114#0" expanded="false" />
+            <element signature="e#2836#2941#0" expanded="false" />
+            <element signature="e#2989#3114#0" expanded="false" />
+            <element signature="e#3155#3548#0" expanded="false" />
+            <element signature="e#3197#3309#0" expanded="false" />
+            <element signature="e#3357#3548#0" expanded="false" />
+            <element signature="e#3581#4460#0" expanded="false" />
+            <element signature="e#4387#4460#0" expanded="false" />
+            <element signature="e#4496#5417#0" expanded="false" />
+            <element signature="e#5208#5281#0" expanded="false" />
+            <element signature="e#5332#5417#0" expanded="false" />
+            <element signature="e#5447#5672#0" expanded="false" />
+            <element signature="e#5703#7341#0" expanded="false" />
+            <element signature="e#6787#6929#0" expanded="false" />
+            <element signature="e#6988#7119#0" expanded="false" />
+            <element signature="e#7184#7341#0" expanded="false" />
+            <element signature="e#7701#7774#0" expanded="false" />
+            <element signature="e#7814#8384#0" expanded="false" />
+            <element signature="e#8311#8384#0" expanded="false" />
+            <element signature="e#8424#8630#0" expanded="false" />
+            <element signature="e#8557#8630#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45742357">
@@ -1354,7 +1469,14 @@
     <entry file="file://$PROJECT_DIR$/Shares/Communication/ShareFall.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+=======
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#56#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
@@ -1367,8 +1489,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.4774536">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
@@ -1376,27 +1504,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+=======
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="41" />
+          <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+=======
+        <state vertical-scroll-proportion="0.4774536">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
@@ -1462,8 +1607,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioData.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.07750269">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.31021196">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
+>>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
@@ -1485,12 +1636,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="38" />
+=======
+        <state vertical-scroll-proportion="0.14845361">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+>>>>>>> parent of 541311a... fixed share sale validation
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Shares/News/yahooz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1585,5 +1742,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> parent of 541311a... fixed share sale validation
   </component>
 </project>

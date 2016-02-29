@@ -27,9 +27,9 @@ FYP - share portfolio
 
                 <a href="{{ url_for('signup') }}" class="btn btn-lg btn-primary">Signup</a>
 
-        </div>
+            </div>
 
-    </div>
+        </div>
     </div>
 
 </header>
@@ -56,14 +56,16 @@ FYP - share portfolio
             {% if current_user.is_authenticated %}
 
             <div id="result">
-                <br>
-                <img id="gear" src="static/img/gears.gif">
-                Just fetching your portfolios...
-                <br><br>
+                <div id="result2">
+                    <br>
+                    <img id="gear" src="static/img/gears.gif">
+                    Just fetching your portfolios...
+                    <br><br>
+                </div>
             </div>
 
             <script>$( document ).ready(function() {
-                $('#result').load('/sharedatanolivedata')
+                $('#result2').load('/sharedatanolivedata')
             });
             </script>
 

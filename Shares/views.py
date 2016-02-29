@@ -25,8 +25,7 @@ def index():
     if current_user.is_authenticated:
 
         try:
-            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                                   news=News.getNews(current_user.username))
+            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
         except:
             return render_template("connectiondown.html")
 

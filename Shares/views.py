@@ -379,7 +379,7 @@ def sharedata():
         # print share_data.getportfoliovalues(current_user.username)
 
         return render_template('sharedata.html', data=sharesinportfolio,
-                               portfoliovalues=portfoliovalues, portfolioprofits=profits,
+                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
 
 

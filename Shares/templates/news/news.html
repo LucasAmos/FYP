@@ -2,7 +2,7 @@
 
 {% for key, value in news.iteritems()  if not count > 5 %}
 
-<a href='{{value}}'> '{{key}}'</a> <br>
+<a href='{{value}}'> {{key}}</a> <br>
 
 {% set count = count + 1 %}
 {% endfor %}

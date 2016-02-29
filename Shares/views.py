@@ -7,7 +7,7 @@ from forms import *
 from models import User, Userownedshare, Share
 from share_data import *
 import json
-
+from News.News import News
 
 @login_manager.user_loader
 def load_user(userid):
@@ -25,7 +25,8 @@ def index():
 
         try:
 
-            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                                   news=News.getNews(current_user.username))
 
         except:
             return render_template("connectiondown.html")

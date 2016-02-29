@@ -6,8 +6,10 @@ class yahooz():
 
      stories = News.getNews("reindert")
 
-     for story in stories:
+     print stories
 
-         print "**"
-         print story, stories[story]
+     # for story in stories:
+     #
+     #     print "**"
+     #     print story, stories[story]
 

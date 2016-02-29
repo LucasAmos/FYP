@@ -1,10 +1,9 @@
 {% if current_user.is_authenticated %}
-<header>
-    <h1>Welcome {{ current_user.username | capitalize }} </h1>
+        <header>
+            <h1>Welcome {{ current_user.username | capitalize }}  <img id="gear" src="static/img/longloader.gif"></h1>
 
-</header>
+        </header>
 {% endif%}
-
 
 {% if not ids and not data %}
 
@@ -32,9 +31,9 @@
 
 
 
-{% for id in portfoliovalues %}
+{% for id in ids %}
 
-<h2>    <a href="{{ url_for('list_portfolio', portfolio_id=id) }}"> {{ id | capitalize }} </a> </h2>
+<h2>    <a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> {{ id | capitalize }} </a> </h2>
 
 
 
@@ -47,24 +46,10 @@
     <th> Profit/loss</th>
 
     <tr>
-        <td> £{{portfoliovalues[id]['portfoliovalue'] }}  </td>
-        <td> £{{portfoliovalues[id]['sharevalue'] }}  </td>
-        <td> £{{portfoliovalues[id]['dividends'] }} </td>
-
-
-        {% if  portfolioprofits[id] | float == 0 %}
-
-        <td> £{{portfolioprofits[id]}} </td>
-
-
-        {% elif  portfolioprofits[id] | float < 0 %}
-
-        <td class="loss"> £{{portfolioprofits[id]}} </td>
-
-        {% else %}
-        <td class="profit">  £{{portfolioprofits[id]}}  </td>
-
-        {% endif %}
+        <td> -- </td>
+        <td> -- </td>
+        <td> --</td>
+        <td> -- </td>
 
     </tr>
 
@@ -81,6 +66,9 @@
         <th>Total share value</th>
         <th>Profit/loss</th>
     </tr>
+
+
+
     {% set count = 0 %}
     {% for share in data if not count > 2 %}
 
@@ -88,30 +76,19 @@
 
     {% if share.portfolioid == id %}
 
-    {% set price = share['price'] | float * share['quantity'] %}
 
     <tr>
         <td> {{share['name']}} </td>
-        <td> £{{share['price']}} </td>
+        <td> -- </td>
         <td> {{share['quantity']}} </td>
         <td> £{{share['dividends']}} </td>
-        <td>£{{price}}</td>
-
-        {% if share['quantity'] == 0 %}
-
-        <td> N/A </td>
-
-        {% elif  share['profit'] | float < 0 %}
-
-        <td class="loss"> £{{share['profit']}}</td>
+        <td>--</td>
 
 
 
-        {% else %}
+        <td> -- </td>
 
-        <td class="profit"> £{{share['profit']}} </td>
 
-        {% endif %}
 
     </tr>
     {% set count = count + 1 %}
@@ -121,8 +98,9 @@
 
     {% endfor %}
 </table>
-<a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> View all shares in portfolio </a>
 
+
+<a href="{{ url_for('list_portfolio', portfolio_id =id) }}"> View all shares in portfolio </a>
 {% endfor %}
 
 

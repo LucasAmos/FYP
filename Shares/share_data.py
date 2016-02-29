@@ -5,7 +5,6 @@ import json
 from models import Userownedshare, Portfolios
 
 
-
 class share_data():
 
     @staticmethod
@@ -29,6 +28,33 @@ class share_data():
 
         except:
             return render_template("connectiondown.html")
+
+
+
+    @staticmethod
+    def getSharesNoLiveData(user):
+
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
+
+        sharearray = []
+
+        for row in tempshares:
+
+            sharedata = {
+                'symbol': row.name.ticker,
+                'quantity': row.quantity,
+                'price': "--",
+                'averagepurchaseprice': row.averagepurchaseprice,
+                'name': row.name.name,
+                'dividends': row.dividends,
+                'id': row.id,
+
+                'portfolioid': row.portfolioid
+            }
+            sharearray.append(sharedata)
+
+        return sharearray
+
 
     @staticmethod
     def getalljsonshares(user):
@@ -167,6 +193,24 @@ class share_data():
 
         return dictvalues
 
+
+    @staticmethod
+    def getnonemptyportfolios(user):
+
+        tempset = set()
+        templist = list(tempset)
+
+        portfoliovalues =[]
+        portfolionames = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user).filter(Userownedshare.portfolioid != "")
+
+        for row in portfolionames:
+            id = row.portfolioid
+            tempset.add(id)
+            templist = list(tempset)
+
+        return templist
+
+
     @staticmethod
     def getportfoliovalues(user):
 
@@ -177,6 +221,10 @@ class share_data():
             portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
 
         return portfoliovalues
+
+
+
+
 
     @staticmethod
     def getPortfolioIDbyusernameandPortfolioName(username, portfolioname):

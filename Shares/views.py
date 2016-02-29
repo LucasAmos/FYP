@@ -20,6 +20,7 @@ def load_user(userid):
 @app.route('/')
 @app.route('/index')
 def index():
+
     if current_user.is_authenticated:
 
         try:
@@ -154,7 +155,6 @@ def list_portfolio(portfolio_id):
 
         for share in allshares:
 
-            print share
 
             shareprice = float (share['price'])
             quantity = share['quantity']
@@ -168,7 +168,7 @@ def list_portfolio(portfolio_id):
 
 
         return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
-                               portfolioshares=sharesinportfolio, portfoliovalue=dictvalues,
+                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id),
                                portfolioprofit=profit)
 
     except:
@@ -343,12 +343,22 @@ def sharedata():
 
             else:
                 profits[share['portfolioid']] = share['profit']
-        print "**"
-        print Userownedshare.listportfolios(current_user.username)
+
+
+
         return render_template('sharedata.html', data=sharesinportfolio,
                                portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
 
+
+@app.route('/sharedatanolivedata')
+def sharedatanolivedata():
+
+    if current_user.is_authenticated:
+
+
+        return render_template('sharedatanolivedata.html', data=share_data.getSharesNoLiveData(current_user.username),
+                               ids=share_data.getnonemptyportfolios(current_user.username))
 
 
 

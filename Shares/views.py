@@ -299,7 +299,8 @@ def notifications():
 
 
 
-    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form)
+    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           form=form, news=News.getNews(current_user.username))
 
 @app.errorhandler(403)
 def page_not_found(e):

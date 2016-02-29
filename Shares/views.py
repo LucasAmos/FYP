@@ -393,7 +393,13 @@ def sharedatanolivedata():
         return render_template('sharedatanolivedata.html', data=share_data.getSharesNoLiveData(current_user.username),
                                ids=share_data.getnonemptyportfolios(current_user.username))
 
+@app.route('/newsdata')
+def newsdata():
 
+    if current_user.is_authenticated:
+
+
+        return render_template('news/news.html', news=News.getNews(current_user.username))
 
 
 

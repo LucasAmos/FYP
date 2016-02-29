@@ -183,15 +183,17 @@
                 <div class="col-md-8">
                     <p>
 
-                  {#      {% set count = 0 %}
+                    <div id="news"> </div>
 
-                        {% for key, value in news.iteritems()  if not count > 5 %}
+                    {#      {% set count = 0 %}
 
-                        <a href='{{value}}'> '{{key}}'</a> <br>
+                    {% for key, value in news.iteritems()  if not count > 5 %}
 
-                        {% set count = count + 1 %}
-                        {% endfor %}
-                        #}
+                    <a href='{{value}}'> '{{key}}'</a> <br>
+
+                    {% set count = count + 1 %}
+                    {% endfor %}
+                    #}
 
                     </p>                </div>
                 <div class="col-md-4">
@@ -201,7 +203,12 @@
         </div>
 
         {% endif %}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
+        <script>$( document ).ready(function() {
+            $('#news').load('/newsdata')
+        });
+        </script>
 
 
         <hr>

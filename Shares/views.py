@@ -6,7 +6,6 @@ from Shares import app, db, login_manager
 from forms import *
 from models import User, Userownedshare, Share
 from share_data import *
-from News.News import News
 import json
 
 
@@ -25,7 +24,9 @@ def index():
     if current_user.is_authenticated:
 
         try:
+
             return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
         except:
             return render_template("connectiondown.html")
 
@@ -366,12 +367,19 @@ def sharedata():
                     portfoliovalue = sharevalue + dividends
 
                     dictvalues = {'portfoliovalue': round(portfoliovalue, 2), 'sharevalue': sharevalue, 'dividends': dividends}
-                    portfoliovalues[id] = dictvalues
+                portfoliovalues ={share['portfolioid']: dictvalues}
 
 
+
+
+        print "** new calc**"
+        print portfoliovalues
+        print""
+        print "** old calc**"
+        print share_data.getportfoliovalues(current_user.username)
 
         return render_template('sharedata.html', data=sharesinportfolio,
-                               portfoliovalues=portfoliovalues, portfolioprofits=profits,
+                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
 
 

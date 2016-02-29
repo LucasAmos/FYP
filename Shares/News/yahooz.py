@@ -1,13 +1,10 @@
-import xml.sax
-
-from Shares.News import News
+from News import News
 
 
-class yahooz(xml.sax.ContentHandler):
+class yahooz():
 
 
-
-     stories = News.getNews("twtr,goog, fb")
+     stories = News.getNews("reindert")
 
      for story in stories:
 

@@ -11,20 +11,19 @@ class News():
 
         tickers = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter_by(user=user)
 
-        tempset = set()
-        tickerlist = list(tempset)
+        tickerstring =""
         for row in tickers:
             name = row.ticker
-            tempset.add(name)
 
-            tickerlist = list(tempset)
+            tickerstring+=name
+            tickerstring+=","
 
-            for ticker in tickerlist:
-                print ticker
-        return tickerlist
+        return tickerstring
 
     @staticmethod
-    def getNews(ticker):
+    def getNews(user):
+
+        ticker = News.getTickers(user)
 
         base_url = 'http://finance.yahoo.com/rss/headline?s='
         query = ticker
@@ -40,11 +39,6 @@ class News():
         dict ={}
 
         for item in items:
-
-
-           # print "**"
-           # print item.find('title').text
-           # print item.find('link').text
 
            title = item.find('title').text
            item = item.find('link').text

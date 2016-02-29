@@ -165,10 +165,8 @@ def list_portfolio(portfolio_id):
 
         dictvalues = {'portfoliovalue': round(portfoliovalue, 2), 'sharevalue': sharevalue, 'dividends': dividends}
 
-
-
         return render_template('portfolio.html', id=portfolio_id, portfolioids = share_data.getportfolioidsfromtable(current_user.username),
-                               portfolioshares=sharesinportfolio, portfoliovalue=share_data.getsubportfoliovalue(current_user.username, portfolio_id),
+                               portfolioshares=sharesinportfolio, portfoliovalue=dictvalues,
                                portfolioprofit=profit)
 
     except:
@@ -345,9 +343,36 @@ def sharedata():
                 profits[share['portfolioid']] = share['profit']
 
 
+        portfolioids=share_data.getportfolioidsfromtable(current_user.username)
+
+        portfoliovalues = {}
+        for id in portfolioids:
+
+
+
+            sharevalue = 0.0
+            dividends = 0.0
+            portfoliovalue = 0.0
+
+            for share in allshares:
+
+                if share['portfolioid'] == id:
+
+
+                    shareprice = float (share['price'])
+                    quantity = share['quantity']
+                    shareholding = shareprice * quantity
+                    dividends = dividends + share['dividends']
+                    sharevalue += shareholding
+                    portfoliovalue = sharevalue + dividends
+
+                    dictvalues = {'portfoliovalue': round(portfoliovalue, 2), 'sharevalue': sharevalue, 'dividends': dividends}
+                    portfoliovalues[id] = dictvalues
+
+
 
         return render_template('sharedata.html', data=sharesinportfolio,
-                               portfoliovalues=share_data.getportfoliovalues(current_user.username), portfolioprofits=profits,
+                               portfoliovalues=portfoliovalues, portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
 
 

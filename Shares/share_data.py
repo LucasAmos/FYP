@@ -97,7 +97,7 @@ class share_data():
                 quote = share_data.JSONSharePrice(ticker)
                 sharedata = {
                     ### change this line to fix symbol display in portfolio page
-                    'symbol': quote['query']['results']['quote']['symbol'],
+                    'symbol': quote['query']['results']['quote']['symbol'][:-2],
                     'quantity': row.quantity,
                     'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
                     'averagepurchaseprice': row.averagepurchaseprice,
@@ -195,6 +195,20 @@ class share_data():
 
 
     @staticmethod
+    def getportfoliovalues(user):
+
+        portfolioids = Userownedshare.listportfolios(user)
+        portfoliovalues ={}
+
+        for id in portfolioids:
+            portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
+
+        return portfoliovalues
+
+
+
+
+    @staticmethod
     def getnonemptyportfolios(user):
 
         tempset = set()
@@ -209,20 +223,6 @@ class share_data():
             templist = list(tempset)
 
         return templist
-
-
-    @staticmethod
-    def getportfoliovalues(user):
-
-        portfolioids = Userownedshare.listportfolios(user)
-        portfoliovalues ={}
-
-        for id in portfolioids:
-            portfoliovalues[id] = share_data.getsubportfoliovalue(user, id)
-
-        return portfoliovalues
-
-
 
 
 

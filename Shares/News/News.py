@@ -39,11 +39,9 @@ class News():
         dict ={}
 
         for item in items:
-
-           title = item.find('title').text
-           item = item.find('link').text
-
-           dict[title] = item
+            title = item.find('title').text
+            item = item.find('link').text
+            dict[title] = item
 
         return dict
 

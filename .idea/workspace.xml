@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
+    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="added context processors&#10;&#10;prepopulated notification radio field">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/News/News.py" afterPath="$PROJECT_DIR$/Shares/News/News.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/notifications.html" afterPath="$PROJECT_DIR$/Shares/templates/notifications.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/news/news.html" afterPath="$PROJECT_DIR$/Shares/templates/news/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
@@ -36,86 +34,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <file leaf-file-name="sendMessage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/Communication/sendMessage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="231" column="18" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="18" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="20" />
               <folding>
-                <element signature="e#519#1093#0" expanded="false" />
-                <element signature="e#561#672#0" expanded="false" />
-                <element signature="e#720#1093#0" expanded="false" />
-                <element signature="e#1142#1628#0" expanded="false" />
-                <element signature="e#1184#1297#0" expanded="false" />
-                <element signature="e#1345#1628#0" expanded="false" />
-                <element signature="e#1674#2064#0" expanded="false" />
-                <element signature="e#1716#1836#0" expanded="false" />
-                <element signature="e#1884#2064#0" expanded="false" />
-                <element signature="e#2106#2399#0" expanded="false" />
-                <element signature="e#2148#2254#0" expanded="false" />
-                <element signature="e#2302#2399#0" expanded="false" />
-                <element signature="e#2444#2751#0" expanded="false" />
-                <element signature="e#2486#2609#0" expanded="false" />
-                <element signature="e#2657#2751#0" expanded="false" />
-                <element signature="e#2794#3114#0" expanded="false" />
-                <element signature="e#2836#2941#0" expanded="false" />
-                <element signature="e#2989#3114#0" expanded="false" />
-                <element signature="e#3155#3548#0" expanded="false" />
-                <element signature="e#3197#3309#0" expanded="false" />
-                <element signature="e#3357#3548#0" expanded="false" />
-                <element signature="e#3581#4456#0" expanded="false" />
-                <element signature="e#4383#4456#0" expanded="false" />
-                <element signature="e#4492#5413#0" expanded="false" />
-                <element signature="e#5204#5277#0" expanded="false" />
-                <element signature="e#5328#5413#0" expanded="false" />
-                <element signature="e#5443#5703#0" expanded="false" />
-                <element signature="e#5734#7372#0" expanded="false" />
-                <element signature="e#6818#6960#0" expanded="false" />
-                <element signature="e#7019#7150#0" expanded="false" />
-                <element signature="e#7215#7372#0" expanded="false" />
-                <element signature="e#7409#7805#0" expanded="false" />
-                <element signature="e#7732#7805#0" expanded="false" />
-                <element signature="e#7845#8415#0" expanded="false" />
-                <element signature="e#8342#8415#0" expanded="false" />
-                <element signature="e#8455#8661#0" expanded="false" />
-                <element signature="e#8588#8661#0" expanded="false" />
-                <element signature="e#9052#9125#0" expanded="false" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
+      <file leaf-file-name="risefallstatus.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.074074">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.096878365">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33853006">
-              <caret line="323" column="43" selection-start-line="323" selection-start-column="43" selection-end-line="323" selection-end-column="43" />
-              <folding>
-                <element signature="e#407#502#0" expanded="false" />
-                <element signature="e#848#1407#0" expanded="false" />
-                <element signature="e#1473#1955#0" expanded="false" />
-                <element signature="e#2023#2074#0" expanded="false" />
-                <element signature="e#2172#2651#0" expanded="false" />
-                <element signature="e#2754#3363#0" expanded="false" />
-                <element signature="e#3472#4088#0" expanded="false" />
-                <element signature="e#4219#5557#0" expanded="false" />
-                <element signature="e#6865#8024#0" expanded="false" />
-                <element signature="e#10663#10702#0" expanded="false" />
-                <element signature="e#10755#10794#0" expanded="false" />
-                <element signature="e#10845#10884#0" expanded="false" />
-                <element signature="e#10980#12902#0" expanded="false" />
-                <element signature="e#12972#13218#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +76,9 @@
         <option value="$PROJECT_DIR$/Shares/News/News.py" />
         <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
         <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
       </list>
     </option>
   </component>
@@ -210,46 +148,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,6 +487,13 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
+    <task id="LOCAL-00001" summary="added context processors&#10;&#10;prepopulated notification radio field">
+      <created>1457049826598</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1457049826598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -602,6 +507,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15478165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -630,6 +536,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added context processors&#10;&#10;prepopulated notification radio field" />
+    <option name="LAST_COMMIT_MESSAGE" value="added context processors&#10;&#10;prepopulated notification radio field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,17 +618,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/News/News.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6899892">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.074074">
+        <state vertical-scroll-proportion="0.019955654">
           <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/news/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13968958">
+          <caret line="7" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43875277">
+          <caret line="295" column="8" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
+          <folding>
+            <element signature="e#407#502#0" expanded="false" />
+            <element signature="e#848#1407#0" expanded="false" />
+            <element signature="e#1473#1955#0" expanded="false" />
+            <element signature="e#2023#2074#0" expanded="false" />
+            <element signature="e#2172#2651#0" expanded="false" />
+            <element signature="e#2754#3363#0" expanded="false" />
+            <element signature="e#3472#4088#0" expanded="false" />
+            <element signature="e#4219#5553#0" expanded="false" />
+            <element signature="e#6861#8020#0" expanded="false" />
+            <element signature="e#10443#10482#0" expanded="false" />
+            <element signature="e#10535#10574#0" expanded="false" />
+            <element signature="e#10625#10664#0" expanded="false" />
+            <element signature="e#10760#12674#0" expanded="false" />
+            <element signature="e#12744#12990#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.074074">
+        <state vertical-scroll-proportion="0.60088694">
           <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding />
         </state>
@@ -726,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.74811625">
           <caret line="231" column="18" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="18" />
           <folding>
             <element signature="e#519#1093#0" expanded="false" />
@@ -771,36 +722,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/News/News.py">
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6899892">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/views.py">
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33853006">
-          <caret line="323" column="43" selection-start-line="323" selection-start-column="43" selection-end-line="323" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#407#502#0" expanded="false" />
-            <element signature="e#848#1407#0" expanded="false" />
-            <element signature="e#1473#1955#0" expanded="false" />
-            <element signature="e#2023#2074#0" expanded="false" />
-            <element signature="e#2172#2651#0" expanded="false" />
-            <element signature="e#2754#3363#0" expanded="false" />
-            <element signature="e#3472#4088#0" expanded="false" />
-            <element signature="e#4219#5557#0" expanded="false" />
-            <element signature="e#6865#8024#0" expanded="false" />
-            <element signature="e#10663#10702#0" expanded="false" />
-            <element signature="e#10755#10794#0" expanded="false" />
-            <element signature="e#10845#10884#0" expanded="false" />
-            <element signature="e#10980#12902#0" expanded="false" />
-            <element signature="e#12972#13218#0" expanded="false" />
+            <element signature="e#289#2027#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/sendMessage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.096878365">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

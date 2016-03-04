@@ -170,7 +170,7 @@ def list_portfolio(portfolio_id):
                                portfolioprofit=profit)
 
     except:
-            return render_template("connectiondown.html")
+        return render_template("connectiondown.html")
 
 
 @app.route('/add', methods=['GET', 'POST'], )
@@ -266,8 +266,8 @@ def sell_share(share_id):
 
         else:
             newpurchaseprice = str(((originalpurchaseprice * originalquantity) - (saleprice * salequantity)) /
-                               (originalquantity-salequantity)
-        )
+                                   (originalquantity-salequantity)
+                                   )
 
         share.averagepurchaseprice = newpurchaseprice
         share.quantity = (originalquantity - salequantity)
@@ -288,7 +288,6 @@ def notifications():
     user = User.query.get_or_404(current_user.id)
     form = NotificationSettingsForm(request.form, emailfrequency=user.emailfrequency, smsenabled=int(user.smsenabled))
 
-
     if form.validate_on_submit():
         user.emailfrequency = form.emailfrequency.data
         user.smsenabled = form.smsenabled.data
@@ -296,15 +295,6 @@ def notifications():
         db.session.commit()
         flash("You have successfully updated your notification preferences")
         return redirect(url_for('index'))
-
-    #   share = Userownedshare.query.get_or_404(share_id)
-    # if current_user.username != share.user:
-    #     abort(403)
-    # #form = RemoveShareForm(obj=tempeditshare)
-    # form = RemoveShareForm()
-    # form.ticker.data = share.ticker
-
-
 
     return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
                            form=form)
@@ -335,8 +325,8 @@ def sharedata():
         sharesinportfolio = []
 
         for share in allshares:
-                share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
-                sharesinportfolio.append(share)
+            share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
+            sharesinportfolio.append(share)
 
         profits ={}
         for share in sharesinportfolio:

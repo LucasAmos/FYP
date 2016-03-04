@@ -278,7 +278,7 @@ def sell_share(share_id):
         flash("You have successfully edited the share: '{}'". format(share.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
-    return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, news=News.getNews(current_user.username))
+    return render_template('sellshare_form.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), form=form, news=News.getNews(current_user.username), name=share.name.name)
     #return render_template('sellshare_form.html', form=form)
 
 
@@ -405,6 +405,14 @@ def newsdata():
 
 
         return render_template('news/news.html', news=News.getNews(current_user.username))
+
+@app.route('/allnews')
+def allnews():
+
+    if current_user.is_authenticated:
+
+
+        return render_template('news/allnews.html', news=News.getNews(current_user.username))
 
 
 

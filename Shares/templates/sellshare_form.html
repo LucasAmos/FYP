@@ -7,11 +7,13 @@ Sell share{{ Title }}
 
 {% block content %}
 <section>
-    <h1>Sell shares</h1><br>
+    <h1>Sell shares</h1>
     <form action="" method="post">
         {{form.hidden_tag()}}
+
+        <h3 class="red"> <strong>{{name}}</strong></h3>
+        <br>
         <table>
-            {{ render_field(form.ticker, size=20) }}
             {{ render_field(form.quantity, size=20) }}
             {{ render_field(form.price, size=20) }}
             <!--{{ render_field(form.originalportfolioid, size=20) }}-->

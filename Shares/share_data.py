@@ -8,6 +8,28 @@ from models import Userownedshare, Portfolios
 class share_data():
 
     @staticmethod
+    def JSONShareFall(ticker):
+
+        try:
+
+            base_url = 'https://query.yahooapis.com/v1/public/yql?'
+            query = {
+                'q': 'select Change, symbol, Name from yahoo.finance.quote where symbol in ("{}{}","")'.format(ticker,".L"),
+                'format': 'json',
+                'env': 'store://datatables.org/alltableswithkeys'
+            }
+
+            url = base_url + urllib.urlencode(query)
+            response = urllib.urlopen(url)
+            data = response.read()
+            quote = json.loads(data)
+
+            return quote
+
+        except:
+            return render_template("connectiondown.html")
+
+    @staticmethod
     def JSONSharePrice(ticker):
 
         try:
@@ -28,8 +50,6 @@ class share_data():
 
         except:
             return render_template("connectiondown.html")
-
-
 
     @staticmethod
     def getSharesNoLiveData(user):

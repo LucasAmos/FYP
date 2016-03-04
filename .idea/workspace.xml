@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="">
+    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/News/News.py" afterPath="$PROJECT_DIR$/Shares/News/News.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/notifications.html" afterPath="$PROJECT_DIR$/Shares/templates/notifications.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
->>>>>>> parent of 541311a... fixed share sale validation
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" afterPath="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
->>>>>>> parent of 541311a... fixed share sale validation
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored path="Shares/Sendgrid" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,55 +20,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="true" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/FYP$sendgridEmail2.coverage" NAME="sendgridEmail2 Coverage Results" MODIFIED="1455577509924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$PortfolioStatus__2_.coverage" NAME="PortfolioStatus (2) Coverage Results" MODIFIED="1456145808073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__1_.coverage" NAME="Unittests in Tests (1) Coverage Results" MODIFIED="1455786527679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddShare.coverage" NAME="Unittests in testAddShare Coverage Results" MODIFIED="1454972709688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__3_.coverage" NAME="Unittests in Tests (3) Coverage Results" MODIFIED="1455015745418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$PortfolioStatus.coverage" NAME="PortfolioStatus Coverage Results" MODIFIED="1456146534384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase__1_.coverage" NAME="Unittests in testDatabase (1) Coverage Results" MODIFIED="1454870556024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$steps.coverage" NAME="steps Coverage Results" MODIFIED="1454958461821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/FYP$ShareFall.coverage" NAME="ShareFall Coverage Results" MODIFIED="1455633967626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1454689764422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$test_flaskr.coverage" NAME="test_flaskr Coverage Results" MODIFIED="1453335565959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$PortfolioStatus__3_.coverage" NAME="PortfolioStatus (3) Coverage Results" MODIFIED="1456356661359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDatabase.coverage" NAME="Unittests in testDatabase Coverage Results" MODIFIED="1454958627425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$tutorial_feature.coverage" NAME="tutorial.feature Coverage Results" MODIFIED="1454946877282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/FYP$yahooz.coverage" NAME="yahooz Coverage Results" MODIFIED="1456394978894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News" />
-    <SUITE FILE_PATH="coverage/FYP$tutorial.coverage" NAME="tutorial Coverage Results" MODIFIED="1454945284293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Authentication.coverage" NAME="Unittests in testAuthentication Coverage Results" MODIFIED="1454959692967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests/steps" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_tests__1_.coverage" NAME="Unittests in tests (1) Coverage Results" MODIFIED="1454689776335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$PortfolioStatus__1_.coverage" NAME="PortfolioStatus (1) Coverage Results" MODIFIED="1456146464661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_test.coverage" NAME="Unittests in test Coverage Results" MODIFIED="1456356763677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testSetup__1_.coverage" NAME="Unittests in testSetup (1) Coverage Results" MODIFIED="1454948828592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__2_.coverage" NAME="Unittests in Tests (2) Coverage Results" MODIFIED="1456082326281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$sendMessage.coverage" NAME="sendMessage Coverage Results" MODIFIED="1455579056618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$test.coverage" NAME="test Coverage Results" MODIFIED="1456356916222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares" />
-    <SUITE FILE_PATH="coverage/FYP$Scenarios.coverage" NAME="Scenarios Coverage Results" MODIFIED="1455015689457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1455786465408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testLogin.coverage" NAME="Unittests in testLogin Coverage Results" MODIFIED="1454625753659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$testsuite.coverage" NAME="testsuite Coverage Results" MODIFIED="1454689986470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_FlaskrTestCase.coverage" NAME="Unittests in FlaskrTestCase Coverage Results" MODIFIED="1453335241683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tutorial/steps" />
-    <SUITE FILE_PATH="coverage/FYP$views.coverage" NAME="views Coverage Results" MODIFIED="1454376888203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testSetup.coverage" NAME="Unittests in testSetup Coverage Results" MODIFIED="1454882186705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/tests" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddPortfolio.coverage" NAME="Unittests in testAddPortfolio Coverage Results" MODIFIED="1454971344250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$News2.coverage" NAME="News2 Coverage Results" MODIFIED="1456363941500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDeletePortfolio.coverage" NAME="Unittests in testDeletePortfolio Coverage Results" MODIFIED="1454972570037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$News.coverage" NAME="News Coverage Results" MODIFIED="1456394531024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests__4_.coverage" NAME="Unittests in Tests (4) Coverage Results" MODIFIED="1454966487017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
-    <SUITE FILE_PATH="coverage/FYP$twilioSMS.coverage" NAME="twilioSMS Coverage Results" MODIFIED="1455579038226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1457045620100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$yahooz.coverage" NAME="yahooz Coverage Results" MODIFIED="1457046464486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
+    <SUITE FILE_PATH="coverage/FYP$temp.coverage" NAME="temp Coverage Results" MODIFIED="1457047504881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
+    <SUITE FILE_PATH="coverage/FYP$News.coverage" NAME="News Coverage Results" MODIFIED="1457047840015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DatabaseView">
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -82,101 +36,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/models.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="231" column="18" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="18" />
               <folding>
-                <element signature="e#243#1161#0" expanded="false" />
-                <element signature="e#694#744#0" expanded="false" />
-                <element signature="e#809#862#0" expanded="false" />
-                <element signature="e#912#968#0" expanded="false" />
-                <element signature="e#1031#1085#0" expanded="false" />
-                <element signature="e#1119#1161#0" expanded="false" />
-                <element signature="e#2031#2089#0" expanded="false" />
-                <element signature="e#2152#2304#0" expanded="false" />
-                <element signature="e#2346#2439#0" expanded="false" />
-                <element signature="e#2552#2901#0" expanded="false" />
-                <element signature="e#2935#3497#0" expanded="false" />
-                <element signature="e#3264#3392#0" expanded="false" />
-                <element signature="e#3434#3497#0" expanded="false" />
-                <element signature="e#3532#3648#0" expanded="false" />
+                <element signature="e#519#1093#0" expanded="false" />
+                <element signature="e#561#672#0" expanded="false" />
+                <element signature="e#720#1093#0" expanded="false" />
+                <element signature="e#1142#1628#0" expanded="false" />
+                <element signature="e#1184#1297#0" expanded="false" />
+                <element signature="e#1345#1628#0" expanded="false" />
+                <element signature="e#1674#2064#0" expanded="false" />
+                <element signature="e#1716#1836#0" expanded="false" />
+                <element signature="e#1884#2064#0" expanded="false" />
+                <element signature="e#2106#2399#0" expanded="false" />
+                <element signature="e#2148#2254#0" expanded="false" />
+                <element signature="e#2302#2399#0" expanded="false" />
+                <element signature="e#2444#2751#0" expanded="false" />
+                <element signature="e#2486#2609#0" expanded="false" />
+                <element signature="e#2657#2751#0" expanded="false" />
+                <element signature="e#2794#3114#0" expanded="false" />
+                <element signature="e#2836#2941#0" expanded="false" />
+                <element signature="e#2989#3114#0" expanded="false" />
+                <element signature="e#3155#3548#0" expanded="false" />
+                <element signature="e#3197#3309#0" expanded="false" />
+                <element signature="e#3357#3548#0" expanded="false" />
+                <element signature="e#3581#4456#0" expanded="false" />
+                <element signature="e#4383#4456#0" expanded="false" />
+                <element signature="e#4492#5413#0" expanded="false" />
+                <element signature="e#5204#5277#0" expanded="false" />
+                <element signature="e#5328#5413#0" expanded="false" />
+                <element signature="e#5443#5703#0" expanded="false" />
+                <element signature="e#5734#7372#0" expanded="false" />
+                <element signature="e#6818#6960#0" expanded="false" />
+                <element signature="e#7019#7150#0" expanded="false" />
+                <element signature="e#7215#7372#0" expanded="false" />
+                <element signature="e#7409#7805#0" expanded="false" />
+                <element signature="e#7732#7805#0" expanded="false" />
+                <element signature="e#7845#8415#0" expanded="false" />
+                <element signature="e#8342#8415#0" expanded="false" />
+                <element signature="e#8455#8661#0" expanded="false" />
+                <element signature="e#8588#8661#0" expanded="false" />
+                <element signature="e#9052#9125#0" expanded="false" />
               </folding>
-=======
-      <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14845361">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding />
->>>>>>> parent of 541311a... fixed share sale validation
-=======
-      <file leaf-file-name="PortfolioStatus.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14845361">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding />
->>>>>>> parent of 541311a... fixed share sale validation
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.074074">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
-=======
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/test.py">
->>>>>>> parent of 541311a... fixed share sale validation
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.33853006">
+              <caret line="323" column="43" selection-start-line="323" selection-start-column="43" selection-end-line="323" selection-end-column="43" />
               <folding>
-                <element signature="e#23#98#0" expanded="true" />
-                <element signature="e#384#479#0" expanded="false" />
-                <element signature="e#1039#1598#0" expanded="false" />
-                <element signature="e#1664#2146#0" expanded="false" />
-                <element signature="e#2214#2265#0" expanded="false" />
-                <element signature="e#2363#2842#0" expanded="false" />
-                <element signature="e#2945#3554#0" expanded="false" />
-                <element signature="e#3663#4279#0" expanded="false" />
-                <element signature="e#4409#5264#0" expanded="false" />
-                <element signature="e#5344#6434#0" expanded="false" />
-                <element signature="e#6572#7658#0" expanded="false" />
-                <element signature="e#7763#9069#0" expanded="false" />
-                <element signature="e#9169#9673#0" expanded="false" />
-                <element signature="e#9725#9764#0" expanded="false" />
-                <element signature="e#9817#9856#0" expanded="false" />
-                <element signature="e#9907#9946#0" expanded="false" />
-                <element signature="e#10074#11008#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="share_data.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35255712">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-              <folding>
-                <element signature="e#236#849#0" expanded="false" />
-                <element signature="e#914#1849#0" expanded="false" />
-                <element signature="e#1910#2808#0" expanded="false" />
-                <element signature="e#3348#3665#0" expanded="false" />
-                <element signature="e#3740#4539#0" expanded="false" />
-                <element signature="e#4602#4821#0" expanded="false" />
-                <element signature="e#4925#5041#0" expanded="false" />
-                <element signature="e#5105#5296#0" expanded="false" />
-                <marker date="1456530107363" expanded="false" signature="354:439" placeholder="select LastT... quote" />
-                <marker date="1456530107363" expanded="false" signature="354:446" placeholder="select LastT... quote" />
+                <element signature="e#407#502#0" expanded="false" />
+                <element signature="e#848#1407#0" expanded="false" />
+                <element signature="e#1473#1955#0" expanded="false" />
+                <element signature="e#2023#2074#0" expanded="false" />
+                <element signature="e#2172#2651#0" expanded="false" />
+                <element signature="e#2754#3363#0" expanded="false" />
+                <element signature="e#3472#4088#0" expanded="false" />
+                <element signature="e#4219#5557#0" expanded="false" />
+                <element signature="e#6865#8024#0" expanded="false" />
+                <element signature="e#10663#10702#0" expanded="false" />
+                <element signature="e#10755#10794#0" expanded="false" />
+                <element signature="e#10845#10884#0" expanded="false" />
+                <element signature="e#10980#12902#0" expanded="false" />
+                <element signature="e#12972#13218#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -187,92 +125,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
-        <option value="Gherkin feature file" />
-        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Lucas" />
-      </list>
-    </option>
-    <option name="UPDATE_TYPE" value="REBASE" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Shares/Tests/steps/AddPortfolio.feature" />
-        <option value="$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature" />
-        <option value="$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature" />
-        <option value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/index.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/add.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/addportfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/deleteportfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/sellshare_form.html" />
-        <option value="$PROJECT_DIR$/Shares/test2.py" />
-        <option value="$PROJECT_DIR$/Shares/email.py" />
-        <option value="$PROJECT_DIR$/Shares/Sendgrid.py" />
-        <option value="$PROJECT_DIR$/Shares/Sendgrid/SendGrid.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/sendMessage.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/PortfolioData.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/email/sharedataemail.html" />
-        <option value="$PROJECT_DIR$/Shares/Communication/ShareFall.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/signup.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/form_macros.html" />
-        <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
-        <option value="$PROJECT_DIR$/Shares/models.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
-        <option value="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
-        <option value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-        <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/sendgridEmail.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/temp.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/test.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/tempemail.py" />
-        <option value="$PROJECT_DIR$/Shares/sendMessage.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/__init__.py" />
-        <option value="$PROJECT_DIR$/Shares/PortfolioStatus.py" />
-        <option value="$PROJECT_DIR$/Shares/test.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
-<<<<<<< HEAD
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
-        <option value="$PROJECT_DIR$/Shares/__init__.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/login.html" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
-        <option value="$PROJECT_DIR$/News/__init__.py" />
-        <option value="$PROJECT_DIR$/News/test.py" />
-        <option value="$PROJECT_DIR$/News/Biji1.py" />
-        <option value="$PROJECT_DIR$/News/News2.py" />
-        <option value="$PROJECT_DIR$/News/yahooz.py" />
-        <option value="$PROJECT_DIR$/News/News.py" />
+        <option value="$PROJECT_DIR$/Shares/News/temp.py" />
         <option value="$PROJECT_DIR$/Shares/News/News.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/temp.py" />
-        <option value="$PROJECT_DIR$/Shares/temp.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/share_data.py" />
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
       </list>
     </option>
   </component>
@@ -282,10 +150,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
-    <option name="y" value="27" />
-    <option name="width" value="1847" />
-    <option name="height" value="1053" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -294,7 +162,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -312,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,88 +213,107 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="News" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Communication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shares/Sendgrid" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Shares" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Shares/Communication1" />
-      <recent name="$PROJECT_DIR$/Shares/Communication" />
-      <recent name="$PROJECT_DIR$/Shares/templates/email" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Shares" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Shares/Communication" />
-      <recent name="$PROJECT_DIR$/Communication" />
-      <recent name="$PROJECT_DIR$/Shares/Tests" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.yahooz">
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="News" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/News" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/News/News.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in Biji1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.News">
+    <configuration default="false" name="Unittests in Tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/News" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/News/Biji1.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -440,31 +328,49 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/News" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/News" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/News/yahooz.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/News/yahooz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="News2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/News" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/News" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/News/News2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/News/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="News" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/News" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/News/News.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -539,11 +445,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -662,20 +563,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.News" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Biji1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.yahooz" />
-      <item index="4" class="java.lang.String" itemvalue="Python.News2" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
+      <item index="1" class="java.lang.String" itemvalue="Python.yahooz" />
+      <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.News" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.yahooz" />
-        <item index="1" class="java.lang.String" itemvalue="Python.News" />
-        <item index="2" class="java.lang.String" itemvalue="Python.News2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Biji1" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.News" />
+        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.yahooz" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -685,422 +584,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3a9c9c4-1bfe-4f30-a4eb-21441f44a940" name="Default" comment="" />
-      <created>1450373040501</created>
+      <changelist id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="" />
+      <created>1457045194251</created>
       <option name="number" value="Default" />
-      <updated>1450373040501</updated>
+      <updated>1457045194251</updated>
     </task>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-    <task id="LOCAL-00114" summary="email logic">
-      <created>1456084976942</created>
-      <option name="number" value="00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1456084976944</updated>
-    </task>
-    <task id="LOCAL-00115" summary="email logic">
-      <created>1456084980793</created>
-      <option name="number" value="00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1456084980793</updated>
-    </task>
-    <task id="LOCAL-00116" summary="email logic">
-      <created>1456085715933</created>
-      <option name="number" value="00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1456085715934</updated>
-    </task>
-    <task id="LOCAL-00117" summary="test">
-      <created>1456086248894</created>
-      <option name="number" value="00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1456086248894</updated>
-    </task>
-    <task id="LOCAL-00118" summary="test">
-      <created>1456086256672</created>
-      <option name="number" value="00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1456086256672</updated>
-    </task>
->>>>>>> parent of 541311a... fixed share sale validation
-    <task id="LOCAL-00119" summary="test">
-      <created>1456086263649</created>
-      <option name="number" value="00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1456086263649</updated>
-    </task>
-    <task id="LOCAL-00120" summary="test">
-      <created>1456097876953</created>
-      <option name="number" value="00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1456097876953</updated>
-    </task>
-    <task id="LOCAL-00121" summary="test">
-      <created>1456101931923</created>
-      <option name="number" value="00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1456101931923</updated>
-    </task>
-    <task id="LOCAL-00122" summary="test">
-      <created>1456101943530</created>
-      <option name="number" value="00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1456101943530</updated>
-    </task>
-    <task id="LOCAL-00123" summary="test">
-      <created>1456101946946</created>
-      <option name="number" value="00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1456101946946</updated>
-    </task>
-    <task id="LOCAL-00124" summary="test">
-      <created>1456102417389</created>
-      <option name="number" value="00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1456102417389</updated>
-    </task>
-    <task id="LOCAL-00125" summary="test">
-      <created>1456104409420</created>
-      <option name="number" value="00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1456104409421</updated>
-    </task>
-    <task id="LOCAL-00126" summary="test">
-      <created>1456104607666</created>
-      <option name="number" value="00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1456104607666</updated>
-    </task>
-    <task id="LOCAL-00127" summary="test">
-      <created>1456104683878</created>
-      <option name="number" value="00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1456104683878</updated>
-    </task>
-    <task id="LOCAL-00128" summary="test">
-      <created>1456105545275</created>
-      <option name="number" value="00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1456105545275</updated>
-    </task>
-    <task id="LOCAL-00129" summary="email">
-      <created>1456105556751</created>
-      <option name="number" value="00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1456105556751</updated>
-    </task>
-    <task id="LOCAL-00130" summary="email">
-      <created>1456106398547</created>
-      <option name="number" value="00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1456106398547</updated>
-    </task>
-    <task id="LOCAL-00131" summary="email">
-      <created>1456106640985</created>
-      <option name="number" value="00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1456106640985</updated>
-    </task>
-    <task id="LOCAL-00132" summary="email">
-      <created>1456106744620</created>
-      <option name="number" value="00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1456106744620</updated>
-    </task>
-    <task id="LOCAL-00133" summary="email">
-      <created>1456106777231</created>
-      <option name="number" value="00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1456106777231</updated>
-    </task>
-    <task id="LOCAL-00134" summary="email">
-      <created>1456106825717</created>
-      <option name="number" value="00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1456106825717</updated>
-    </task>
-    <task id="LOCAL-00135" summary="email">
-      <created>1456136004325</created>
-      <option name="number" value="00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1456136004325</updated>
-    </task>
-    <task id="LOCAL-00136" summary="email">
-      <created>1456136674313</created>
-      <option name="number" value="00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1456136674313</updated>
-    </task>
-    <task id="LOCAL-00137" summary="email">
-      <created>1456137392776</created>
-      <option name="number" value="00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1456137392776</updated>
-    </task>
-    <task id="LOCAL-00138" summary="email">
-      <created>1456137510338</created>
-      <option name="number" value="00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1456137510338</updated>
-    </task>
-    <task id="LOCAL-00139" summary="email">
-      <created>1456137616310</created>
-      <option name="number" value="00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1456137616310</updated>
-    </task>
-    <task id="LOCAL-00140" summary="email">
-      <created>1456138078797</created>
-      <option name="number" value="00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1456138078797</updated>
-    </task>
-    <task id="LOCAL-00141" summary="email">
-      <created>1456138417028</created>
-      <option name="number" value="00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1456138417028</updated>
-    </task>
-    <task id="LOCAL-00142" summary="email">
-      <created>1456139098130</created>
-      <option name="number" value="00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1456139098130</updated>
-    </task>
-    <task id="LOCAL-00143" summary="email">
-      <created>1456140155135</created>
-      <option name="number" value="00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1456140155135</updated>
-    </task>
-    <task id="LOCAL-00144" summary="email">
-      <created>1456145825260</created>
-      <option name="number" value="00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1456145825263</updated>
-    </task>
-    <task id="LOCAL-00145" summary="email">
-      <created>1456146554654</created>
-      <option name="number" value="00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1456146554654</updated>
-    </task>
-    <task id="LOCAL-00146" summary="email">
-      <created>1456147105349</created>
-      <option name="number" value="00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1456147105349</updated>
-    </task>
-    <task id="LOCAL-00147" summary="email">
-      <created>1456148348228</created>
-      <option name="number" value="00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1456148348228</updated>
-    </task>
-    <task id="LOCAL-00148" summary="email">
-      <created>1456150782229</created>
-      <option name="number" value="00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1456150782229</updated>
-    </task>
-    <task id="LOCAL-00149" summary="email">
-      <created>1456150959034</created>
-      <option name="number" value="00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1456150959034</updated>
-    </task>
-    <task id="LOCAL-00150" summary="email">
-      <created>1456151580591</created>
-      <option name="number" value="00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1456151580591</updated>
-    </task>
-    <task id="LOCAL-00151" summary="email">
-      <created>1456151791267</created>
-      <option name="number" value="00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1456151791267</updated>
-    </task>
-    <task id="LOCAL-00152" summary="email">
-      <created>1456178222601</created>
-      <option name="number" value="00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1456178222601</updated>
-    </task>
-    <task id="LOCAL-00153" summary="email">
-      <created>1456178526585</created>
-      <option name="number" value="00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1456178526585</updated>
-    </task>
-    <task id="LOCAL-00154" summary="email">
-      <created>1456178685809</created>
-      <option name="number" value="00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1456178685809</updated>
-    </task>
-    <task id="LOCAL-00155" summary="email">
-      <created>1456178735663</created>
-      <option name="number" value="00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1456178735663</updated>
-    </task>
-    <task id="LOCAL-00156" summary="email">
-      <created>1456181011206</created>
-      <option name="number" value="00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1456181011206</updated>
-    </task>
-    <task id="LOCAL-00157" summary="email">
-      <created>1456181234294</created>
-      <option name="number" value="00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1456181234294</updated>
-    </task>
-    <task id="LOCAL-00158" summary="email">
-      <created>1456181781987</created>
-      <option name="number" value="00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1456181781987</updated>
-    </task>
-    <task id="LOCAL-00159" summary="email">
-      <created>1456182059167</created>
-      <option name="number" value="00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1456182059167</updated>
-    </task>
-    <task id="LOCAL-00160" summary="email">
-      <created>1456182171300</created>
-      <option name="number" value="00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1456182171300</updated>
-    </task>
-    <task id="LOCAL-00161" summary="email">
-      <created>1456182446372</created>
-      <option name="number" value="00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1456182446372</updated>
-    </task>
-    <task id="LOCAL-00162" summary="email">
-      <created>1456182792623</created>
-      <option name="number" value="00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1456182792623</updated>
-    </task>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <task id="LOCAL-00163" summary="email">
-      <created>1456183942240</created>
-      <option name="number" value="00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1456183942241</updated>
-    </task>
-    <task id="LOCAL-00164" summary="fixed share sale validation">
-      <created>1456269703107</created>
-      <option name="number" value="00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1456269703108</updated>
-    </task>
-    <task id="LOCAL-00165" summary="gets news stories">
-      <created>1456395003571</created>
-      <option name="number" value="00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1456395003572</updated>
-    </task>
-    <task id="LOCAL-00166" summary="gets news stories">
-      <created>1456529388403</created>
-      <option name="number" value="00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1456529388404</updated>
-    </task>
-    <task id="LOCAL-00167" summary="gets news stories">
-      <created>1456529549361</created>
-      <option name="number" value="00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1456529549361</updated>
-    </task>
-    <option name="localTasksCounter" value="168" />
-=======
-    <option name="localTasksCounter" value="163" />
->>>>>>> parent of 541311a... fixed share sale validation
-=======
-    <option name="localTasksCounter" value="163" />
->>>>>>> parent of 541311a... fixed share sale validation
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 29m 47s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 30m 52s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 31m 27s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 32m 02s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 33m 33s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 33m 48s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.18 at 09h 34m 16s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Tests_(2) - 2016.02.21 at 19h 18m 55s.xml">
-      <configuration name="Unittests in Tests (2)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test - 2016.02.22 at 10h 05m 47s.xml">
-      <configuration name="Unittests in test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test - 2016.02.24 at 23h 32m 44s.xml">
-      <configuration name="Unittests in test" configurationId="tests" />
+    <history-entry file="Unittests_in_Tests - 2016.03.03 at 22h 53m 47s.xml">
+      <configuration name="Unittests in Tests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="27" width="1847" height="1053" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23157895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15478165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50193477" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.170706" sideWeight="0.49806523" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41833508" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25755996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4296142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24790795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1114,345 +631,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=" flash css" />
-    <MESSAGE value="fixed flashes" />
-    <MESSAGE value="added portfolio profitiability functionality" />
-    <MESSAGE value="added red text to losses" />
-    <MESSAGE value="added purchase price functionality and form" />
-    <MESSAGE value="add additional share validation" />
-    <MESSAGE value="fixed testing and added share sale functionality" />
-    <MESSAGE value="testing and error page if share price API not available" />
-    <MESSAGE value="testing" />
-    <MESSAGE value="db" />
-    <MESSAGE value="changed getalljsonshares method in share_data so that prices are fetched them the LSE" />
-    <MESSAGE value="profit and loss on home page" />
-    <MESSAGE value="profit and loss on portfolio page" />
-    <MESSAGE value="validation for removing more shares that you own" />
-    <MESSAGE value="styling and removed ability to move share from one portfolio to another" />
-    <MESSAGE value="email and sms" />
-    <MESSAGE value="portfolio email functionality" />
-    <MESSAGE value="new portfolio email template" />
-    <MESSAGE value="added new UI functionality" />
-    <MESSAGE value="notification form" />
-    <MESSAGE value="email logic" />
-    <MESSAGE value="test" />
-    <MESSAGE value="email" />
-    <MESSAGE value="fixed share sale validation" />
-    <MESSAGE value="gets news stories" />
-    <option name="LAST_COMMIT_MESSAGE" value="gets news stories" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>194</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/oldtests/testSetup.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/testDatabase.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/testAddShare.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/forms.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/share_data.py</url>
-          <line>117</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Shares/models.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="35" />
+          <line>21</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Shares/templates/addadditionalshares.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.666667">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/user.html">
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/wtforms/fields/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_monkey_qt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33207548">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/img/monkey.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/connectiondown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82228494">
-          <caret line="62" column="123" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/Authentication.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.784">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="e#225#322#0" expanded="false" />
-            <element signature="e#415#482#0" expanded="false" />
-            <element signature="e#517#558#0" expanded="false" />
-            <element signature="e#597#868#0" expanded="false" />
-            <element signature="e#911#1166#0" expanded="false" />
-            <element signature="e#1206#1343#0" expanded="false" />
-            <element signature="e#1387#1617#0" expanded="false" />
-            <element signature="e#1666#2062#0" expanded="false" />
-            <element signature="e#2115#2662#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAuthentication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77952754">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddPortfolio.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/AddShare.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/Scenarios/DeletePortfolio.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="e#267#364#0" expanded="false" />
-            <element signature="e#641#682#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/addportfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11675676">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/deleteportfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18398637">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09199318">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/sellshare_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5212947">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.814815">
-          <caret line="1404" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="6897" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/modern-business.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="15" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/email/sharedataemail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19955654">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/403.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6308204">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.333333">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/sharedata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019955654">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/form_macros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039911307">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.020022247">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6607342">
-          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44428363">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="e#303#428#0" expanded="false" />
-            <element signature="e#463#528#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.941177">
-          <caret line="230" column="168" selection-start-line="230" selection-start-column="168" selection-end-line="230" selection-end-column="168" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#519#1093#0" expanded="false" />
             <element signature="e#561#672#0" expanded="false" />
+            <element signature="e#720#1093#0" expanded="false" />
             <element signature="e#1142#1628#0" expanded="false" />
             <element signature="e#1184#1297#0" expanded="false" />
             <element signature="e#1345#1628#0" expanded="false" />
@@ -1471,339 +670,139 @@
             <element signature="e#3155#3548#0" expanded="false" />
             <element signature="e#3197#3309#0" expanded="false" />
             <element signature="e#3357#3548#0" expanded="false" />
-            <element signature="e#3581#4460#0" expanded="false" />
-            <element signature="e#4387#4460#0" expanded="false" />
-            <element signature="e#4496#5417#0" expanded="false" />
-            <element signature="e#5208#5281#0" expanded="false" />
-            <element signature="e#5332#5417#0" expanded="false" />
-            <element signature="e#5447#5672#0" expanded="false" />
-            <element signature="e#5703#7341#0" expanded="false" />
-            <element signature="e#6787#6929#0" expanded="false" />
-            <element signature="e#6988#7119#0" expanded="false" />
-            <element signature="e#7184#7341#0" expanded="false" />
-            <element signature="e#7701#7774#0" expanded="false" />
-            <element signature="e#7814#8384#0" expanded="false" />
-            <element signature="e#8311#8384#0" expanded="false" />
-            <element signature="e#8424#8630#0" expanded="false" />
-            <element signature="e#8557#8630#0" expanded="false" />
+            <element signature="e#3581#4456#0" expanded="false" />
+            <element signature="e#4383#4456#0" expanded="false" />
+            <element signature="e#4492#5413#0" expanded="false" />
+            <element signature="e#5204#5277#0" expanded="false" />
+            <element signature="e#5328#5413#0" expanded="false" />
+            <element signature="e#5443#5703#0" expanded="false" />
+            <element signature="e#5734#7372#0" expanded="false" />
+            <element signature="e#6818#6960#0" expanded="false" />
+            <element signature="e#7019#7150#0" expanded="false" />
+            <element signature="e#7215#7372#0" expanded="false" />
+            <element signature="e#7409#7805#0" expanded="false" />
+            <element signature="e#7732#7805#0" expanded="false" />
+            <element signature="e#7845#8415#0" expanded="false" />
+            <element signature="e#8342#8415#0" expanded="false" />
+            <element signature="e#8455#8661#0" expanded="false" />
+            <element signature="e#8588#8661#0" expanded="false" />
+            <element signature="e#8706#9125#0" expanded="false" />
+            <element signature="e#9052#9125#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45742357">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#353#0" expanded="false" />
-            <element signature="e#833#972#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/ShareFall.py">
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAuthentication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-=======
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#56#0" expanded="true" />
-          </folding>
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/twilioSMS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/sendgridEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.4774536">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-=======
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="41" />
-          <folding />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
-=======
-        <state vertical-scroll-proportion="0.4774536">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.074074">
+          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.074074">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <caret line="231" column="18" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="18" />
           <folding>
-            <element signature="e#535#1109#0" expanded="false" />
-            <element signature="e#577#688#0" expanded="false" />
-            <element signature="e#736#1109#0" expanded="false" />
-            <element signature="e#1158#1644#0" expanded="false" />
-            <element signature="e#1200#1313#0" expanded="false" />
-            <element signature="e#1361#1644#0" expanded="false" />
-            <element signature="e#1690#2080#0" expanded="false" />
-            <element signature="e#1732#1852#0" expanded="false" />
-            <element signature="e#1900#2080#0" expanded="false" />
-            <element signature="e#2122#2415#0" expanded="false" />
-            <element signature="e#2164#2270#0" expanded="false" />
-            <element signature="e#2318#2415#0" expanded="false" />
-            <element signature="e#2460#2767#0" expanded="false" />
-            <element signature="e#2502#2625#0" expanded="false" />
-            <element signature="e#2673#2767#0" expanded="false" />
-            <element signature="e#2810#3130#0" expanded="false" />
-            <element signature="e#2852#2957#0" expanded="false" />
-            <element signature="e#3005#3130#0" expanded="false" />
-            <element signature="e#3213#3325#0" expanded="false" />
-            <element signature="e#3373#3564#0" expanded="false" />
-            <element signature="e#3597#4476#0" expanded="false" />
-            <element signature="e#4403#4476#0" expanded="false" />
-            <element signature="e#4512#5453#0" expanded="false" />
-            <element signature="e#5244#5317#0" expanded="false" />
-            <element signature="e#5368#5453#0" expanded="false" />
-            <element signature="e#5483#5743#0" expanded="false" />
-            <element signature="e#5775#7413#0" expanded="false" />
-            <element signature="e#6859#7001#0" expanded="false" />
-            <element signature="e#7060#7191#0" expanded="false" />
-            <element signature="e#7256#7413#0" expanded="false" />
-            <element signature="e#7450#7846#0" expanded="false" />
-            <element signature="e#7773#7846#0" expanded="false" />
-            <element signature="e#8374#8447#0" expanded="false" />
-            <element signature="e#8487#8693#0" expanded="false" />
-            <element signature="e#8620#8693#0" expanded="false" />
-            <element signature="e#8738#9156#0" expanded="false" />
-            <element signature="e#9083#9156#0" expanded="false" />
+            <element signature="e#519#1093#0" expanded="false" />
+            <element signature="e#561#672#0" expanded="false" />
+            <element signature="e#720#1093#0" expanded="false" />
+            <element signature="e#1142#1628#0" expanded="false" />
+            <element signature="e#1184#1297#0" expanded="false" />
+            <element signature="e#1345#1628#0" expanded="false" />
+            <element signature="e#1674#2064#0" expanded="false" />
+            <element signature="e#1716#1836#0" expanded="false" />
+            <element signature="e#1884#2064#0" expanded="false" />
+            <element signature="e#2106#2399#0" expanded="false" />
+            <element signature="e#2148#2254#0" expanded="false" />
+            <element signature="e#2302#2399#0" expanded="false" />
+            <element signature="e#2444#2751#0" expanded="false" />
+            <element signature="e#2486#2609#0" expanded="false" />
+            <element signature="e#2657#2751#0" expanded="false" />
+            <element signature="e#2794#3114#0" expanded="false" />
+            <element signature="e#2836#2941#0" expanded="false" />
+            <element signature="e#2989#3114#0" expanded="false" />
+            <element signature="e#3155#3548#0" expanded="false" />
+            <element signature="e#3197#3309#0" expanded="false" />
+            <element signature="e#3357#3548#0" expanded="false" />
+            <element signature="e#3581#4456#0" expanded="false" />
+            <element signature="e#4383#4456#0" expanded="false" />
+            <element signature="e#4492#5413#0" expanded="false" />
+            <element signature="e#5204#5277#0" expanded="false" />
+            <element signature="e#5328#5413#0" expanded="false" />
+            <element signature="e#5443#5703#0" expanded="false" />
+            <element signature="e#5734#7372#0" expanded="false" />
+            <element signature="e#6818#6960#0" expanded="false" />
+            <element signature="e#7019#7150#0" expanded="false" />
+            <element signature="e#7215#7372#0" expanded="false" />
+            <element signature="e#7409#7805#0" expanded="false" />
+            <element signature="e#7732#7805#0" expanded="false" />
+            <element signature="e#7845#8415#0" expanded="false" />
+            <element signature="e#8342#8415#0" expanded="false" />
+            <element signature="e#8455#8661#0" expanded="false" />
+            <element signature="e#8588#8661#0" expanded="false" />
+            <element signature="e#9052#9125#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioData.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.07750269">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.31021196">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
-<<<<<<< HEAD
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/News/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/sendMessage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15669206">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="38" />
-=======
-        <state vertical-scroll-proportion="0.14845361">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
->>>>>>> parent of 541311a... fixed share sale validation
-=======
-        <state vertical-scroll-proportion="0.14845361">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
->>>>>>> parent of 541311a... fixed share sale validation
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Shares/News/yahooz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/News/News.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#23#98#0" expanded="true" />
-            <element signature="e#384#479#0" expanded="false" />
-            <element signature="e#1039#1598#0" expanded="false" />
-            <element signature="e#1664#2146#0" expanded="false" />
-            <element signature="e#2214#2265#0" expanded="false" />
-            <element signature="e#2363#2842#0" expanded="false" />
-            <element signature="e#2945#3554#0" expanded="false" />
-            <element signature="e#3663#4279#0" expanded="false" />
-            <element signature="e#4409#5264#0" expanded="false" />
-            <element signature="e#5344#6434#0" expanded="false" />
-            <element signature="e#6572#7658#0" expanded="false" />
-            <element signature="e#7763#9069#0" expanded="false" />
-            <element signature="e#9169#9673#0" expanded="false" />
-            <element signature="e#9725#9764#0" expanded="false" />
-            <element signature="e#9817#9856#0" expanded="false" />
-            <element signature="e#9907#9946#0" expanded="false" />
-            <element signature="e#10074#11008#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#243#1161#0" expanded="false" />
-            <element signature="e#694#744#0" expanded="false" />
-            <element signature="e#809#862#0" expanded="false" />
-            <element signature="e#912#968#0" expanded="false" />
-            <element signature="e#1031#1085#0" expanded="false" />
-            <element signature="e#1119#1161#0" expanded="false" />
-            <element signature="e#2031#2089#0" expanded="false" />
-            <element signature="e#2152#2304#0" expanded="false" />
-            <element signature="e#2346#2439#0" expanded="false" />
-            <element signature="e#2552#2901#0" expanded="false" />
-            <element signature="e#2935#3497#0" expanded="false" />
-            <element signature="e#3264#3392#0" expanded="false" />
-            <element signature="e#3434#3497#0" expanded="false" />
-            <element signature="e#3532#3648#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17627856">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6899892">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/share_data.py">
+    <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35255712">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.33853006">
+          <caret line="323" column="43" selection-start-line="323" selection-start-column="43" selection-end-line="323" selection-end-column="43" />
           <folding>
-            <element signature="e#236#849#0" expanded="false" />
-            <element signature="e#914#1849#0" expanded="false" />
-            <element signature="e#1910#2808#0" expanded="false" />
-            <element signature="e#3348#3665#0" expanded="false" />
-            <element signature="e#3740#4539#0" expanded="false" />
-            <element signature="e#4602#4821#0" expanded="false" />
-            <element signature="e#4925#5041#0" expanded="false" />
-            <element signature="e#5105#5296#0" expanded="false" />
-            <marker date="1456530107363" expanded="false" signature="354:439" placeholder="select LastT... quote" />
-            <marker date="1456530107363" expanded="false" signature="354:446" placeholder="select LastT... quote" />
+            <element signature="e#407#502#0" expanded="false" />
+            <element signature="e#848#1407#0" expanded="false" />
+            <element signature="e#1473#1955#0" expanded="false" />
+            <element signature="e#2023#2074#0" expanded="false" />
+            <element signature="e#2172#2651#0" expanded="false" />
+            <element signature="e#2754#3363#0" expanded="false" />
+            <element signature="e#3472#4088#0" expanded="false" />
+            <element signature="e#4219#5557#0" expanded="false" />
+            <element signature="e#6865#8024#0" expanded="false" />
+            <element signature="e#10663#10702#0" expanded="false" />
+            <element signature="e#10755#10794#0" expanded="false" />
+            <element signature="e#10845#10884#0" expanded="false" />
+            <element signature="e#10980#12902#0" expanded="false" />
+            <element signature="e#12972#13218#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-=======
->>>>>>> parent of 541311a... fixed share sale validation
-=======
->>>>>>> parent of 541311a... fixed share sale validation
   </component>
 </project>

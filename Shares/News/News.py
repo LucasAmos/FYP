@@ -29,6 +29,7 @@ class News():
         query = ticker
 
         url = base_url + query
+        print url
         response = urllib.urlopen(url)
         data = response.read()
 

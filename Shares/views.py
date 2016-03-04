@@ -25,7 +25,7 @@ def index():
 
         try:
 
-            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+            return render_template('index.html')
 
         except:
             return render_template("connectiondown.html")
@@ -286,7 +286,8 @@ def sell_share(share_id):
 @login_required
 def notifications():
     user = User.query.get_or_404(current_user.id)
-    form = NotificationSettingsForm()
+    form = NotificationSettingsForm(request.form, emailfrequency=user.emailfrequency, smsenabled=int(user.smsenabled))
+
 
     if form.validate_on_submit():
         user.emailfrequency = form.emailfrequency.data
@@ -296,10 +297,17 @@ def notifications():
         flash("You have successfully updated your notification preferences")
         return redirect(url_for('index'))
 
+    #   share = Userownedshare.query.get_or_404(share_id)
+    # if current_user.username != share.user:
+    #     abort(403)
+    # #form = RemoveShareForm(obj=tempeditshare)
+    # form = RemoveShareForm()
+    # form.ticker.data = share.ticker
+
 
 
     return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                           form=form, news=News.getNews(current_user.username))
+                           form=form)
 
 @app.errorhandler(403)
 def page_not_found(e):
@@ -317,9 +325,6 @@ def server_error(e):
 
 from StringIO import StringIO
 io = StringIO()
-
-from StringIO import StringIO
-
 
 @app.route('/sharedata')
 def sharedata():
@@ -398,8 +403,17 @@ def newsdata():
 
     if current_user.is_authenticated:
 
-
         return render_template('news/news.html', news=News.getNews(current_user.username))
+
+
+@app.context_processor
+def inject_news():
+    return dict(news=News.getNews(current_user.username))
+
+
+@app.context_processor
+def inject_portfolioids():
+    return dict(portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
 

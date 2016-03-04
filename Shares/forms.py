@@ -113,9 +113,9 @@ class AddShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters"), ShareTickerValidator()])
     quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
-    dividends = DecimalField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
+    dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = DecimalField('How much did you pay for each of these shares? &nbsp', validators=[number_range(min=0.0)])
+    purchaseprice = FloatField('How much did you pay for each of these shares? &nbsp', validators=[number_range(min=0.0)])
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
@@ -153,7 +153,6 @@ class LoginForm(Form):
     remember_me = BooleanField('Keep me logged in')
     submit = SubmitField('Log in')
     # recaptcha = RecaptchaField()
-
 
 
 class SignupForm(Form):
@@ -232,6 +231,7 @@ class DeletePortfolioForm(Form):
 class NotificationSettingsForm(Form):
     emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
     smsenabled = RadioField(u'Set the status of your SMS share <br> price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
+
 
 
 

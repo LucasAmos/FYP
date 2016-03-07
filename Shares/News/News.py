@@ -13,7 +13,7 @@ class News():
 
         tickerstring =""
         for row in tickers:
-            name = row.ticker
+            name = row.ticker + ".L"
 
             tickerstring+=name
             tickerstring+=","
@@ -23,28 +23,35 @@ class News():
     @staticmethod
     def getNews(user):
 
-        ticker = News.getTickers(user)
 
-        base_url = 'http://finance.yahoo.com/rss/headline?s='
-        query = ticker
+        try:
 
-        url = base_url + query
-        print url
-        response = urllib.urlopen(url)
-        data = response.read()
+            ticker = News.getTickers(user)
 
-        dom = ElementTree.fromstring(data)
+            base_url = 'http://finance.yahoo.com/rss/headline?s='
+            query = ticker
 
-        items = dom.findall('channel/item')
+            url = base_url + query
+           # print url
+            response = urllib.urlopen(url)
+            data = response.read()
 
-        dict ={}
+            dom = ElementTree.fromstring(data)
 
-        for item in items:
-            title = item.find('title').text
-            item = item.find('link').text
-            dict[title] = item
+            items = dom.findall('channel/item')
 
-        return dict
+            dict ={}
+
+            for item in items:
+                title = item.find('title').text
+                item = item.find('link').text
+                dict[title] = item
+
+            return dict
+
+        except:
+
+            print "fail"
 
 
 

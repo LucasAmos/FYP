@@ -232,7 +232,19 @@ class NotificationSettingsForm(Form):
     emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
     smsenabled = RadioField(u'Set the status of your SMS share <br> price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
 
+    def validate(self):
 
+        if not Form.validate(self):
+            return False
+
+        return True
+
+
+class ShareNotificationForm(Form):
+    emailenabled = RadioField(u'Receive email notifications?', choices=[('0', 'No'), ('1', 'Yes')])
+    smsenabled = RadioField(u'Receive SMS notifications?', choices=[('0', 'No'), ('1', 'Yes')])
+    triggerlevel = DecimalField(u'Set the trigger level')
+    positivenegative = RadioField(u' ',choices=[('0', 'Fall by'), ('1', 'Rise by')], validators=[DataRequired()])
 
 
     def validate(self):

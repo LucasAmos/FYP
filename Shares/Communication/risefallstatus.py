@@ -13,12 +13,14 @@ class risefallstatus():
     sms = SMS("ACb3d2405e15df8441919994ce553eae4b", "41e85a6638606f578860825b750462c1")
     session = db.session()
 
-    print "** sms's enabled: **"
 
     for user in session.query(User):
 
 
         if user.smsenabled:
+
+            print "** sms's enabled: **"
+
 
             for share in session.query(Userownedshare).filter_by(user=user.username):
 
@@ -27,7 +29,7 @@ class risefallstatus():
                 ticker = share.ticker
                 print ticker
                 change = float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
-                print float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
+                print "rise/fall: %s" %float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
 
 
                 print "triggerlevel: %s" \
@@ -35,24 +37,35 @@ class risefallstatus():
 
                 if share.smsalert:
 
-                    if share.triggerlevel < change:
-                        print "alert: Sent"
+                    if share.triggerlevel < 0:
 
-                    else:
-                        print "alert: False"
+                        if change < share.triggerlevel:
+                            print "alert: Sent"
+
+                        else:
+                            print "alert: False"
+
+                    elif share.triggerlevel > 0:
+                        if change > share.triggerlevel:
+                            print "alert: Sent"
+
+                        else:
+                            print "alert: False"
+
 
                 else:
                     print "alert disbaled for this share"
 
                     print ""
-
-    print ""
-    print "** sms's disabled: **"
+        # else:
+        #     print ""
+        #     print "** sms's disabled: **"
 
     for user in session.query(User):
 
         if not user.smsenabled:
 
+            print "** sms's disabled: **"
             for share in session.query(Userownedshare).filter_by(user=user.username):
 
                 print user.username

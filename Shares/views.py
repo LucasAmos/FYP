@@ -170,7 +170,7 @@ def list_portfolio(portfolio_id):
                                portfolioprofit=profit, news=News.getNews(current_user.username))
 
     except:
-            return render_template("connectiondown.html")
+        return render_template("connectiondown.html")
 
 
 @app.route('/add', methods=['GET', 'POST'], )
@@ -194,7 +194,9 @@ def add():
             newshare = Share(ticker=ticker, name=sharename)
             db.session.add(newshare)
 
-        share = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends, averagepurchaseprice=purchaseprice, portfolioid=portfolioid)
+        share = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends,
+                               averagepurchaseprice=purchaseprice, portfolioid=portfolioid, smsalert=False,
+                               emailalert=False, triggerlevel=0)
         db.session.add(share)
         db.session.commit()
         flash("Added share '{}'".format(ticker))
@@ -234,7 +236,9 @@ def addadditionalshares(share_id):
         flash("You have successfully edited the share: '{}'". format(share.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
 
-    return render_template('addadditionalshares.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), name=share.name.name, news=News.getNews(current_user.username))
+    return render_template('addadditionalshares.html', form=form,
+                           portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           name=share.name.name, news=News.getNews(current_user.username))
 
 
 @app.route('/sell/<share_id>', methods=['GET', 'POST'])
@@ -266,8 +270,8 @@ def sell_share(share_id):
 
         else:
             newpurchaseprice = str(((originalpurchaseprice * originalquantity) - (saleprice * salequantity)) /
-                               (originalquantity-salequantity)
-        )
+                                   (originalquantity-salequantity)
+                                   )
 
         share.averagepurchaseprice = newpurchaseprice
         share.quantity = (originalquantity - salequantity)
@@ -309,6 +313,57 @@ def notifications():
     return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
                            form=form, news=News.getNews(current_user.username))
 
+
+@app.route('/setnotification<share_id>', methods=['GET', 'POST'])
+def setNotification(share_id):
+
+    if current_user.is_authenticated:
+
+        share = Userownedshare.query.get_or_404(share_id)
+
+
+        if share.triggerlevel == 0:
+            trigger = 0
+            positivenegative = 0
+
+        elif share.triggerlevel < 0:
+            trigger=abs(share.triggerlevel)
+            positivenegative=0
+
+        else:
+            trigger=share.triggerlevel
+            positivenegative=1
+
+
+        form=ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),
+                                   triggerlevel=trigger, positivenegative=positivenegative)
+
+
+        if form.validate_on_submit():
+
+            share.emailalert=form.emailenabled.data
+            share.smsalert=form.smsenabled.data
+
+            if (int(form.positivenegative.data) == 0) and (int(form.triggerlevel.data) < 0):
+                share.triggerlevel=form.triggerlevel.data
+
+            elif int(form.positivenegative.data) == 0:
+                trigger=form.triggerlevel.data
+                trigger = trigger - trigger - trigger
+                share.triggerlevel=trigger
+
+
+            else:
+                share.triggerlevel=form.triggerlevel.data
+
+            db.session.commit()
+
+            flash("You amended the notifcations settings for '{}'".format(share.name.name))
+            return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
+
+        return render_template('setnotification.html', news=News.getNews(current_user.username), tempshare=share,
+                               form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
 @app.errorhandler(403)
 def page_not_found(e):
     return render_template('403.html'), 403
@@ -335,8 +390,8 @@ def sharedata():
         sharesinportfolio = []
 
         for share in allshares:
-                share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
-                sharesinportfolio.append(share)
+            share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
+            sharesinportfolio.append(share)
 
         profits ={}
         for share in sharesinportfolio:
@@ -377,13 +432,6 @@ def sharedata():
 
 
 
-
-        # print "** new calc**"
-        # print portfoliovalues
-        # print""
-        # print "** old calc**"
-        # print share_data.getportfoliovalues(current_user.username)
-
         return render_template('sharedata.html', data=sharesinportfolio,
                                portfoliovalues=portfoliovalues, portfolioprofits=profits,
                                ids=share_data.getportfolioidsfromtable(current_user.username))
@@ -398,6 +446,7 @@ def sharedatanolivedata():
         return render_template('sharedatanolivedata.html', data=share_data.getSharesNoLiveData(current_user.username),
                                ids=share_data.getnonemptyportfolios(current_user.username))
 
+
 @app.route('/newsdata')
 def newsdata():
 
@@ -406,6 +455,7 @@ def newsdata():
 
         return render_template('news/news.html', news=News.getNews(current_user.username))
 
+
 @app.route('/allnews')
 def allnews():
 
@@ -413,7 +463,6 @@ def allnews():
 
 
         return render_template('news/allnews.html', news=News.getNews(current_user.username))
-
 
 
 

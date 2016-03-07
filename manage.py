@@ -21,13 +21,13 @@ def initdb():
         # reindert=User(username="reindert", email="reindert@example.com", password="test")
         # db.session.add(reindert)
 
-        lucas=User(username="lucas", email="xkv1922c@gmail.com", password="test")
+        lucas=User(username="lucas", email="xkv1922c@gmail.com", password="test", emailfrequency=0, smsenabled=False)
         db.session.add(lucas)
 
         portfolio = Portfolios(username="lucas", portfolioname="test")
         db.session.add(portfolio)
 
-        google = Userownedshare(user="lucas", ticker="MKS", quantity=1, portfolioid="test")
+        google = Userownedshare(user="lucas", ticker="MKS", quantity=1, portfolioid="test", triggerlevel=0, smsalert=False, emailalert=False)
         db.session.add(google)
         #
         # apple2 = Userownedshare(user="reindert", ticker="AAPL", quantity=1)

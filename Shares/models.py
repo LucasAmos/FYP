@@ -36,7 +36,6 @@ class User(db.Model, UserMixin):
         return "<user '{}'>".format(self.username)
 
 
-
 class Userownedshare(db.Model):
 
         id = db.Column(db.Integer, primary_key=True)
@@ -44,7 +43,7 @@ class Userownedshare(db.Model):
         user = db.Column(db.String, db.ForeignKey('user.username'))
         quantity = db.Column(db.Integer, nullable=False)
         dividends = db.Column(db.Float, server_default="0.0")
-        triggerlevel = db.Column(db.Integer)
+        triggerlevel = db.Column(db.Float)
         smsalert = db.Column(db.Boolean)
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))

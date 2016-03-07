@@ -80,7 +80,7 @@ Portfolio - {{ id | capitalize }}
                 <a href="{{url_for('addadditionalshares', share_id=share.id)}}"data-toggle="tooltip" title="Add shares"> <span class="glyphicon glyphicon-plus-sign glyph" aria-hidden="true"></span> </a>
                 <a href="{{ url_for('sell_share', share_id=share.id) }}"data-toggle="tooltip" title="Sell shares"><span class="glyphicon glyphicon-minus-sign glyph" aria-hidden="true"></span> </a>
                 <a href="{{url_for('delete_share', share_id=share.id) }}" data-toggle="tooltip" title="Delete this share">  <span class="glyphicon glyphicon-remove-sign glyph" aria-hidden="true"></span> </a>
-                <a href="{{url_for('delete_share', share_id=share.id) }}"  data-toggle="tooltip" title="Set notifications">  <span class="glyphicon glyphicon-bell glyph" aria-hidden="true"></span> </a>
+                <a href="{{url_for('setNotification', share_id=share.id) }}"  data-toggle="tooltip" title="Set notifications">  <span class="glyphicon glyphicon-bell glyph" aria-hidden="true"></span> </a>
             </td>
 
         </tr>

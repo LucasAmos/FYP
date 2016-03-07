@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}
+Share notifications
+{% endblock %}
+{% from "form_macros.html" import render_field %}
+
+{% block content %}
+{{tempshare}}
+
+<h1>Edit notifications for</h1>
+
+<h2 class="red"> <b>{{tempshare.name.name}} </b></h2><br>
+
+
+<form action="" method="post">
+    {{form.hidden_tag()}}
+
+
+
+    <table>
+
+        <div class="row">
+            <div class="col-md-4">
+                {{form.emailenabled.label}}
+
+
+                {{ form.emailenabled(class_="buttons") }}
+
+            </div>
+            <div class="col-md-4">
+                {{form.smsenabled.label}}
+
+
+                {{ form.smsenabled(class_="buttons") }}
+
+            </div>
+
+            <div class="col-md-4">
+                {{form.triggerlevel.label}}
+
+
+                {{form.positivenegative(class_="buttons")}}
+
+
+
+                {{ form.triggerlevel(class_="buttons") }}
+
+
+
+                <ul class="error buttons">
+                    {% for error in form.positivenegative.errors %}
+                    <li> <div class="red error"> {{  error }} for the triggger level </div></li>
+
+                    {% endfor %}
+
+                    {% for error in form.triggerlevel.errors %}
+                    <li> <div class="red error"> {{  error }} </div></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <tr class="submit">
+                <td></td>
+                <td><button type="submit">Submit</button>
+                </td>
+            </tr>
+        </div>
+    </table>
+
+</form>
+
+
+
+
+
+
+{% endblock %}

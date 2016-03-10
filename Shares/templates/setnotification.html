@@ -5,7 +5,6 @@ Share notifications
 {% from "form_macros.html" import render_field %}
 
 {% block content %}
-{{tempshare}}
 
 <h1>Edit notifications for</h1>
 
@@ -43,7 +42,7 @@ Share notifications
 
 
 
-                {{ form.triggerlevel(class_="buttons") }}
+                {{ form.triggerlevel(class_="buttons width20", min="0.01", step="0.01" )}}
 
 
 

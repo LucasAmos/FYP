@@ -154,7 +154,6 @@ def list_portfolio(portfolio_id):
 
         for share in allshares:
 
-
             shareprice = float (share['price'])
             quantity = share['quantity']
             shareholding = shareprice * quantity
@@ -334,8 +333,7 @@ def setNotification(share_id):
             positivenegative=1
 
 
-        form=ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),
-                                   triggerlevel=trigger, positivenegative=positivenegative)
+        form=ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),                                   triggerlevel=trigger, positivenegative=positivenegative)
 
 
         if form.validate_on_submit():
@@ -343,18 +341,22 @@ def setNotification(share_id):
             share.emailalert=form.emailenabled.data
             share.smsalert=form.smsenabled.data
 
-            if (int(form.positivenegative.data) == 0) and (int(form.triggerlevel.data) < 0):
-                share.triggerlevel=form.triggerlevel.data
+            if (int(form.positivenegative.data) == 0):
+                triggervalue = 0.00
+                triggervalue = triggervalue - float(form.triggerlevel.data)
+
+                share.triggerlevel=triggervalue
 
             elif int(form.positivenegative.data) == 0:
                 trigger=form.triggerlevel.data
-                trigger = trigger - trigger - trigger
+
                 share.triggerlevel=trigger
 
 
             else:
                 share.triggerlevel=form.triggerlevel.data
 
+            print form.positivenegative.data
             db.session.commit()
 
             flash("You amended the notifcations settings for '{}'".format(share.name.name))

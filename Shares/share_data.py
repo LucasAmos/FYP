@@ -91,7 +91,7 @@ class share_data():
                     ### change this line to fix symbol display in portfolio page
                     'symbol': quote['query']['results']['quote']['symbol'],
                     'quantity': row.quantity,
-                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
+                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
                     'averagepurchaseprice': row.averagepurchaseprice,
                     'name': row.name.name,
                     'dividends': row.dividends,
@@ -119,7 +119,7 @@ class share_data():
                     ### change this line to fix symbol display in portfolio page
                     'symbol': quote['query']['results']['quote']['symbol'][:-2],
                     'quantity': row.quantity,
-                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']),
+                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
                     'averagepurchaseprice': row.averagepurchaseprice,
                     'name': row.name.name,
                     'dividends': row.dividends,

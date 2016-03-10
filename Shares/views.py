@@ -143,7 +143,6 @@ def list_portfolio(portfolio_id):
         for share in allshares:
 
             if share['portfolioid'] == portfolio_id:
-
                 share['profit'] =(float(share['price']) * share['quantity']) - (share['averagepurchaseprice'] * share['quantity'])
                 sharesinportfolio.append(share)
                 profit += share['profit']

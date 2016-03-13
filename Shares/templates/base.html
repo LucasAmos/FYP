@@ -184,16 +184,6 @@
                     <p>
                     <div id="news"> </div>
 
-                    {#      {% set count = 0 %}
-
-                    {% for key, value in news.iteritems()  if not count > 5 %}
-
-                    <a href='{{value}}'> '{{key}}'</a> <br>
-
-                    {% set count = count + 1 %}
-                    {% endfor %}
-                    #}
-
                     </p>                </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="{{ url_for('allnews') }}">All news</a>
@@ -206,9 +196,9 @@
         {% if news %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-        <script>$( document ).ready(function() {
+        <script>!function() {
             $('#news').load('/newsdata')
-        });
+        }();
         </script>
 
         {% endif %}

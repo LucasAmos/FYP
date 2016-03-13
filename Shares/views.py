@@ -127,7 +127,8 @@ def delete_share(share_id):
     else:
         flash("Please confirm deleting the share.")
 
-    return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(current_user.username), share=tempshare, nolinks=True, news=News.getNews(current_user.username))
+    return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(current_user.username),
+                           share=tempshare, nolinks=True, news=News.getNews(current_user.username), portfolio_id=tempshare.portfolioid)
 
 
 @app.route('/portfolio/<string:portfolio_id>', methods=['GET', 'POST'])

@@ -43,7 +43,18 @@ FYP - share portfolio
 {% endif %}
 {% endblock %}
 
+{% block news %}
 
+            {% if news %}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+            <script>!function() {
+                $('#news2').load('/newsdata')
+            }();
+            </script>
+
+            {% endif %}
+            {% endblock %}
 
 
 {% block content %}
@@ -53,7 +64,6 @@ FYP - share portfolio
 
 
 
-        <section id="foot">
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
@@ -63,7 +73,9 @@ FYP - share portfolio
             {% if current_user.is_authenticated %}
 
             <div id="result">
+
                 <div id="result2">
+
                     <br>
                     <img id="gear" src="static/img/gears.gif">
                     Just fetching your portfolios...
@@ -85,7 +97,6 @@ FYP - share portfolio
             </script>
 
             {% endif %}
-        </section>
 
 
     </article>

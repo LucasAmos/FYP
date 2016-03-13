@@ -7,9 +7,9 @@
 {% set count = 0 %}
 
 {% for key, value in news.iteritems()  if not count > 4 %}
-
+<p>
 <a href='{{value}}' target="_blank"> {{key}}</a> <br>
-
+</p>
 {% set count = count + 1 %}
 {% endfor %}
 <br>

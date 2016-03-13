@@ -12,11 +12,11 @@ FYP - Delete bookmark
 
     <form action="" method="post">
         <span style="color:red"> <h3> Are you sure you want to delete the share <b> {{ share['name']['name'] }}</b> ? </h3></span>
-        <br><br>
+        <br>
         <a href="{{ url_for('index')}}">
-        <button type="button"> No take me out of here!</button>
+        <button type="button" class="submit3"> No take me out of here!</button>
         </a>
-        <button type="submit"> Yes, delete it!</button>
+        <button type="submit" class="submit4"> Yes, delete it!</button>
     </form>
 
 </section>

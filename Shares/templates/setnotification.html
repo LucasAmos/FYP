@@ -6,10 +6,9 @@ Share notifications
 
 {% block content %}
 
-<h1>Edit notifications for</h1>
+<h1>Edit notifications for <bdi class="red">{{tempshare.name.name}}</bdi></h1>
 
-<h2 class="red"> <b>{{tempshare.name.name}} </b></h2><br>
-
+<br>
 
 <form action="" method="post">
     {{form.hidden_tag()}}
@@ -58,12 +57,13 @@ Share notifications
                 </ul>
             </div>
         </div>
+        <br>
 
         <div class="row">
 
             <tr class="submit">
                 <td></td>
-                <td><button type="submit">Submit</button>
+                <td><button class="submit2" type="submit">Submit</button>
                 </td>
             </tr>
         </div>

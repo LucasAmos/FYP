@@ -243,7 +243,7 @@ class NotificationSettingsForm(Form):
 class ShareNotificationForm(Form):
     emailenabled = RadioField(u'Receive email notifications?', choices=[('0', 'No'), ('1', 'Yes')])
     smsenabled = RadioField(u'Receive SMS notifications?', choices=[('0', 'No'), ('1', 'Yes')])
-    triggerlevel = DecimalField(u'Set percentage change at which <br> to send notification')
+    triggerlevel = DecimalField(u'Set price change at which <br> to send notification')
     positivenegative = RadioField(u' ',choices=[('0', 'Fall by'), ('1', 'Rise by')], validators=[DataRequired()])
 
 

@@ -24,7 +24,6 @@ class PortfolioStatus():
         if user.emailfrequency is 0:
             portfoliovalues = share_data.getportfoliovalues(user.username)
             html =PortfolioData.sharedata(user.username)
-            email.sendEmail(user.email, "alerts@lucasamos.net", "Your portfolio status", html)
 
             print "no emails: "
             print user.username

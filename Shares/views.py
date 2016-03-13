@@ -86,7 +86,8 @@ def addportfolio():
         flash("Added portfolio '{}'".format(name))
         return redirect(url_for('index'))
 
-    return render_template('addportfolio.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), news=News.getNews(current_user.username))
+    return render_template('addportfolio.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           news=News.getNews(current_user.username))
 
 
 @app.route('/deleteportfolio', methods=['GET', 'POST'])
@@ -107,7 +108,8 @@ def deleteportfolio():
         flash("deleted portfolio '{}'".format(name2))
         return redirect(url_for('index'))
 
-    return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), news=News.getNews(current_user.username))
+    return render_template('deleteportfolio.html', d_form=d_form, portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           news=News.getNews(current_user.username))
 
 
 @app.route('/delete/<share_id>', methods=['GET', 'POST'])
@@ -199,7 +201,8 @@ def add():
         db.session.commit()
         flash("Added share '{}'".format(ticker))
         return redirect(url_for('index'))
-    return render_template('add.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username), news=News.getNews(current_user.username))
+    return render_template('add.html', form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           news=News.getNews(current_user.username))
 
 
 @app.route('/addadditionalshares/<string:share_id>', methods=['GET', 'POST'], )
@@ -332,9 +335,8 @@ def setNotification(share_id):
             trigger=share.triggerlevel
             positivenegative=1
 
-
-        form=ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),                                   triggerlevel=trigger, positivenegative=positivenegative)
-
+        form = ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),
+                                   triggerlevel=trigger, positivenegative=positivenegative)
 
         if form.validate_on_submit():
 
@@ -463,7 +465,7 @@ def allnews():
     if current_user.is_authenticated:
 
 
-        return render_template('news/allnews.html', news=News.getNews(current_user.username))
+        return render_template('news/allnews.html', news=News.getNews(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
 

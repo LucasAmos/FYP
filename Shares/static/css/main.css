@@ -1,3 +1,10 @@
+#notvisited{
+
+    text-decoration: none;
+    color: white;
+
+}
+
 #news2{
 
     padding-top: 75px;
@@ -29,6 +36,11 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+.submit2:hover{
+
+    background-color: #449D48;
 }
 
 .submit3{

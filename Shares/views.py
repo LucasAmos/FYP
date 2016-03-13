@@ -124,8 +124,8 @@ def delete_share(share_id):
         db.session.commit()
         flash("You have successfully deleted the share: '{}'". format(tempshare.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=tempshare.portfolioid))
-    else:
-        flash("Please confirm deleting the share.")
+    # else:
+    #     flash("Please confirm deleting the share.")
 
     return render_template('confirm_deletes_share.html', portfolioids=Userownedshare.listportfolios(current_user.username),
                            share=tempshare, nolinks=True, news=News.getNews(current_user.username), portfolio_id=tempshare.portfolioid)

@@ -28,7 +28,7 @@ FYP - share portfolio
 
                 <h3>Share portfolio manager </h3>
                 <br>
-          <br>
+                <br>
 
                 <a href="{{ url_for('login') }}" class="btn btn-lg btn-primary  tweaked-margin"> Log in</a>
 
@@ -45,16 +45,16 @@ FYP - share portfolio
 
 {% block news %}
 
-            {% if news %}
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+{% if news %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-            <script>!function() {
-                $('#news2').load('/newsdata')
-            }();
-            </script>
+<script>!function() {
+    $('#news2').load('/newsdata')
+}();
+</script>
 
-            {% endif %}
-            {% endblock %}
+{% endif %}
+{% endblock %}
 
 
 {% block content %}
@@ -64,39 +64,39 @@ FYP - share portfolio
 
 
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
 
 
 
-            {% if current_user.is_authenticated %}
+        {% if current_user.is_authenticated %}
 
-            <div id="result">
+        <div id="result">
 
-                <div id="result2">
+            <div id="result2">
 
-                    <br>
-                    <img id="gear" src="static/img/gears.gif">
-                    Just fetching your portfolios...
-                    <br><br>
-                </div>
+                <br>
+                <img id="gear" src="static/img/gears.gif">
+                Just fetching your portfolios...
+                <br><br>
             </div>
+        </div>
 
 
 
-            <script>$( document ).ready(function() {
-                $('#result2').load('/sharedatanolivedata')
-            });
-            </script>
+        <script>$( document ).ready(function() {
+            $('#result2').load('/sharedatanolivedata')
+        });
+        </script>
 
 
-            <script>$( document ).ready(function() {
-                $('#result').load('/sharedata')
-            });
-            </script>
+        <script>$( document ).ready(function() {
+            $('#result').load('/sharedata')
+        });
+        </script>
 
-            {% endif %}
+        {% endif %}
 
 
     </article>

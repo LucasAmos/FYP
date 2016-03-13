@@ -1,4 +1,16 @@
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#result{
+
+    margin-bottom: 200px;
+
+}
 
 .submit2{
     border-radius: 5px;

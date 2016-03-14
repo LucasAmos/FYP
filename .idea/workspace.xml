@@ -7,6 +7,7 @@
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/static/css/main.css" afterPath="$PROJECT_DIR$/Shares/static/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/notifications.html" afterPath="$PROJECT_DIR$/Shares/templates/notifications.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/portfolio.html" afterPath="$PROJECT_DIR$/Shares/templates/portfolio.html" />
     </list>
     <ignored path="FYP.iws" />
@@ -42,7 +43,17 @@
         <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.3333335">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27161863">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -58,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27937916">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,7 +114,6 @@
         <option value="$PROJECT_DIR$/Shares/templates/addadditionalshares.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sellshare_form.html" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
         <option value="$PROJECT_DIR$/Shares/templates/confirm_deletes_share.html" />
         <option value="$PROJECT_DIR$/Shares/templates/setnotification.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
@@ -114,8 +124,9 @@
         <option value="$PROJECT_DIR$/Shares/templates/signup.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/custom.css" />
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
+        <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
       </list>
     </option>
   </component>
@@ -815,7 +826,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457916695113</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="overflow">
+      <created>1457916795665</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1457916795665</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1308,14 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.555555">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/bookmark_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1467,6 +1476,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.074074">
@@ -1478,15 +1495,15 @@
     <entry file="file://$PROJECT_DIR$/Shares/templates/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3333335">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27937916">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.27161863">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding />
         </state>
       </provider>

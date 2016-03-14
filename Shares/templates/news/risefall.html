@@ -1,0 +1,35 @@
+<div id="fall2">
+
+    <h2> Share performance
+        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> </h2>
+
+    {% set count = 0 %}
+
+    {% for share in data  if not count > 4 %}
+
+    {% if share['Name'] %}
+
+    {% if  share['Change'] | float < 0 %}
+
+    <div class="loss">
+
+        {{share['Name']}} {{share['Change']}}  <br>
+    </div>
+
+    {% else %}
+
+    <div class="profit">
+
+        {{share['Name']}} {{share['Change']}}  <br>
+    </div>
+
+    {% endif %}
+    {% set count = count + 1 %}
+
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+<br>
+<a class="btn btn-lg btn-default btn-block" href="{{ url_for('allnews') }}">All shares</a>

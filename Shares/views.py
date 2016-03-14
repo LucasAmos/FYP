@@ -8,6 +8,7 @@ from models import User, Userownedshare, Share
 from share_data import *
 import json
 from News.News import News
+from News.RiseFall import RiseFall
 
 @login_manager.user_loader
 def load_user(userid):
@@ -458,6 +459,14 @@ def newsdata():
 
 
         return render_template('news/news.html', news=News.getNews(current_user.username))
+
+@app.route('/risefall')
+def risefall():
+
+    if current_user.is_authenticated:
+
+
+        return render_template('news/risefall.html', data=RiseFall.getRiseFall(current_user.username))
 
 
 @app.route('/allnews')

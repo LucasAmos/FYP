@@ -1,4 +1,18 @@
+#fall2{
 
+    background-color:  #EFF5FB;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+
+}
+
+#fall{
+
+    margin-top: 75px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
 
 #notvisited{
 
@@ -7,9 +21,20 @@
 
 }
 
+
+#news3{
+    background-color:  #EFF5FB;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
 #news2{
 
-    padding-top: 75px;
+    margin-top: 75px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+;
 }
 
 #footer {

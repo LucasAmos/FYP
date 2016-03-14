@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/News/RiseFall.py" afterPath="$PROJECT_DIR$/Shares/News/RiseFall.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,8 +71,8 @@
       <file leaf-file-name="RiseFall.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5649547">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.1570997">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -628,12 +629,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00008" summary="more explanatory label">
-      <created>1457613533315</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1457613533315</updated>
-    </task>
     <task id="LOCAL-00009" summary="fixed percentage and no weekend emails">
       <created>1457830998670</created>
       <option name="number" value="00009" />
@@ -922,7 +917,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457986682985</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="button styling">
+      <created>1457986820536</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1457986820536</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1431,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5649547">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.1570997">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

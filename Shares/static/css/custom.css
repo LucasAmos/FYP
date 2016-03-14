@@ -1,6 +1,9 @@
+.row{
+margin: 0px;
+}
+
 body{
     background-color: #FEFBF7;
-     overflow-x: hidden;
 
 }
 

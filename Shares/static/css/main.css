@@ -1,4 +1,7 @@
+.full{
 
+    width:100%;
+}
 
 #notvisited{
 
@@ -99,6 +102,7 @@ ul
 .loss {
     color: red;
 }
+
 
 .profit{
     color: green;

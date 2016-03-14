@@ -57,12 +57,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68031496">
+            <state vertical-scroll-proportion="-16.0">
               <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RiseFall.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5649547">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,12 +124,12 @@
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/News/risefall.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/News/RiseFall.py" />
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
         <option value="$PROJECT_DIR$/Shares/templates/news/risefall.html" />
         <option value="$PROJECT_DIR$/Shares/templates/confirm_deletes_share.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Shares/News/RiseFall.py" />
       </list>
     </option>
   </component>
@@ -616,12 +628,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00007" summary="fixed notification form, can't enter negative values, must use radio buttons">
-      <created>1457613413742</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1457613413742</updated>
-    </task>
     <task id="LOCAL-00008" summary="more explanatory label">
       <created>1457613533315</created>
       <option name="number" value="00008" />
@@ -910,7 +916,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457986673451</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="button styling">
+      <created>1457986682985</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1457986682985</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -963,7 +975,6 @@
     <MESSAGE value="fixed notification form, can't enter negative values, must use radio buttons" />
     <MESSAGE value="more explanatory label" />
     <MESSAGE value="fixed percentage and no weekend emails" />
-    <MESSAGE value="button styling" />
     <MESSAGE value="fixed redirect" />
     <MESSAGE value="removed flash" />
     <MESSAGE value="curved buttons" />
@@ -977,7 +988,8 @@
     <MESSAGE value="overflow" />
     <MESSAGE value="bootstrap" />
     <MESSAGE value="share price widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="share price widget" />
+    <MESSAGE value="button styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="button styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1316,16 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1421,9 +1423,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68031496">
+        <state vertical-scroll-proportion="-16.0">
           <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5649547">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

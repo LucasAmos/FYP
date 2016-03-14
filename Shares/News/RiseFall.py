@@ -29,14 +29,6 @@ class RiseFall():
 
 
 
-print RiseFall.getRiseFall("reindert")
-
-#print RiseFall.getTickers("reindert")
-
-
-
-
-
 
 
 

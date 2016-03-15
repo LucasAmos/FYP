@@ -4,11 +4,13 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_moment import Moment
+from flask_sslify import SSLify
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+sslify =SSLify(app)
 
 #configure database
 app.config['SECRET_KEY'] = '5\x91"\xee:/C\xfc\x03\x9c\x04C9\xdc\xae\x00]\xc8\xa4\x16~\xe5\xe16'

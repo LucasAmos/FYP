@@ -3,6 +3,7 @@ from xml.etree import ElementTree
 from Shares.models import Userownedshare
 from sqlalchemy import desc
 from Shares.share_data import share_data
+import random
 
 
 class RiseFall():
@@ -15,6 +16,8 @@ class RiseFall():
         tickerset = set()
         for item in tickers:
             tickerset.add(item.ticker + ".L")
+
+        tickerset = random.sample(tickerset, len(tickerset))
 
         return tickerset
 

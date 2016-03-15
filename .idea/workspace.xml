@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Shares/views.py" line="339" />
+    <bookmark url="file://$PROJECT_DIR$/Shares/views.py" line="348" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/add.html" afterPath="$PROJECT_DIR$/Shares/templates/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,75 +42,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/login.html">
+      <file leaf-file-name="deleteportfolio.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/deleteportfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="61" />
+            <state vertical-scroll-proportion="-16.0">
+              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm_deletes_share.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/confirm_deletes_share.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            <state vertical-scroll-proportion="-5.580645">
+              <caret line="178" column="15" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="15" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="e#23#98#0" expanded="true" />
+                <element signature="e#442#537#0" expanded="false" />
+                <element signature="e#595#930#0" expanded="false" />
+                <element signature="e#998#1557#0" expanded="false" />
+                <element signature="e#1623#2105#0" expanded="false" />
+                <element signature="e#2173#2224#0" expanded="false" />
+                <element signature="e#2322#2870#0" expanded="false" />
+                <element signature="e#3760#4485#0" expanded="false" />
+                <element signature="e#4616#5990#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RiseFall.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/News/RiseFall.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.2831001">
+              <caret line="119" column="104" selection-start-line="119" selection-start-column="104" selection-end-line="119" selection-end-column="104" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#519#1093#0" expanded="false" />
+                <element signature="e#561#672#0" expanded="false" />
+                <element signature="e#720#1093#0" expanded="false" />
+                <element signature="e#1142#1628#0" expanded="false" />
+                <element signature="e#1184#1297#0" expanded="false" />
+                <element signature="e#1345#1628#0" expanded="false" />
+                <element signature="e#1674#2064#0" expanded="false" />
+                <element signature="e#1716#1836#0" expanded="false" />
+                <element signature="e#1884#2064#0" expanded="false" />
+                <element signature="e#2106#2399#0" expanded="false" />
+                <element signature="e#2148#2254#0" expanded="false" />
+                <element signature="e#2302#2399#0" expanded="false" />
+                <element signature="e#2444#2751#0" expanded="false" />
+                <element signature="e#2486#2609#0" expanded="false" />
+                <element signature="e#2657#2751#0" expanded="false" />
+                <element signature="e#2794#3114#0" expanded="false" />
+                <element signature="e#2836#2941#0" expanded="false" />
+                <element signature="e#2989#3114#0" expanded="false" />
+                <element signature="e#3155#3548#0" expanded="false" />
+                <element signature="e#3197#3309#0" expanded="false" />
+                <element signature="e#3357#3548#0" expanded="false" />
+                <element signature="e#4462#4535#0" expanded="false" />
+                <element signature="e#4571#5492#0" expanded="false" />
+                <element signature="e#5283#5356#0" expanded="false" />
+                <element signature="e#5407#5492#0" expanded="false" />
+                <element signature="e#5522#5782#0" expanded="false" />
+                <element signature="e#5813#7451#0" expanded="false" />
+                <element signature="e#6897#7039#0" expanded="false" />
+                <element signature="e#7098#7229#0" expanded="false" />
+                <element signature="e#7294#7451#0" expanded="false" />
+                <element signature="e#7488#7884#0" expanded="false" />
+                <element signature="e#7811#7884#0" expanded="false" />
+                <element signature="e#7924#8494#0" expanded="false" />
+                <element signature="e#8421#8494#0" expanded="false" />
+                <element signature="e#8667#8740#0" expanded="false" />
+                <element signature="e#8785#9201#0" expanded="false" />
+                <element signature="e#9128#9201#0" expanded="false" />
+                <element signature="e#9243#9745#0" expanded="false" />
+                <element signature="e#9672#9745#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="risefall.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/news/risefall.html">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41906872">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.0">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/news/news.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.810345">
+              <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -139,9 +169,7 @@
         <option value="$PROJECT_DIR$/Shares/share_data.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/PortfolioStatus.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/templates/login.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/add.html" />
         <option value="$PROJECT_DIR$/Shares/templates/addportfolio.html" />
         <option value="$PROJECT_DIR$/Shares/templates/deleteportfolio.html" />
         <option value="$PROJECT_DIR$/Shares/templates/addadditionalshares.html" />
@@ -156,13 +184,15 @@
         <option value="$PROJECT_DIR$/Shares/templates/setnotification.html" />
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/News/risefall.py" />
-        <option value="$PROJECT_DIR$/Shares/views.py" />
-        <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/templates/confirm_deletes_share.html" />
         <option value="$PROJECT_DIR$/Shares/News/RiseFall.py" />
         <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
         <option value="$PROJECT_DIR$/Shares/templates/news/risefall.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Shares/templates/base.html" />
+        <option value="$PROJECT_DIR$/Shares/templates/add.html" />
+        <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
       </list>
     </option>
   </component>
@@ -173,9 +203,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -202,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,9 +240,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,12 +653,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00012" summary="removed flash">
-      <created>1457834420469</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1457834420469</updated>
-    </task>
     <task id="LOCAL-00013" summary="curved buttons">
       <created>1457880348748</created>
       <option name="number" value="00013" />
@@ -835,7 +941,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457990069509</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="db">
+      <created>1457999757493</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1457999757499</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -844,10 +956,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22443339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24156992" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -902,7 +1014,8 @@
     <MESSAGE value="bootstrap" />
     <MESSAGE value="share price widget" />
     <MESSAGE value="button styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="button styling" />
+    <MESSAGE value="db" />
+    <option name="LAST_COMMIT_MESSAGE" value="db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,7 +1036,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Shares/views.py</url>
-          <line>293</line>
+          <line>302</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -937,7 +1050,7 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1082,20 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33221477">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/addadditionalshares.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52">
@@ -1143,31 +1242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/modern-business.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295062">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295062">
-          <caret line="5116" column="10" selection-start-line="5116" selection-start-column="1" selection-end-line="5116" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6666667">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/deleteportfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4789357">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1225,42 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#442#537#0" expanded="false" />
-            <element signature="e#595#930#0" expanded="false" />
-            <element signature="e#998#1557#0" expanded="false" />
-            <element signature="e#1623#2105#0" expanded="false" />
-            <element signature="e#2173#2224#0" expanded="false" />
-            <element signature="e#2322#2870#0" expanded="false" />
-            <element signature="e#2973#3651#0" expanded="false" />
-            <element signature="e#3760#4485#0" expanded="false" />
-            <element signature="e#4616#5990#0" expanded="false" />
-            <element signature="e#6070#7341#0" expanded="false" />
-            <element signature="e#7479#8734#0" expanded="false" />
-            <element signature="e#8839#10459#0" expanded="false" />
-            <element signature="e#10559#11458#0" expanded="false" />
-            <element signature="e#11563#13230#0" expanded="false" />
-            <element signature="e#13282#13321#0" expanded="false" />
-            <element signature="e#13374#13413#0" expanded="false" />
-            <element signature="e#13464#13503#0" expanded="false" />
-            <element signature="e#13599#15328#0" expanded="false" />
-            <element signature="e#15398#15644#0" expanded="false" />
-            <element signature="e#16049#16251#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3344426">
-          <caret line="192" column="51" selection-start-line="192" selection-start-column="47" selection-end-line="192" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/sharedatanolivedata.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61732286">
@@ -1296,7 +1338,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1306,7 +1348,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1324,19 +1366,125 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/news/risefall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/news/risefall.html">
+    <entry file="file://$PROJECT_DIR$/Shares/templates/deleteportfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41906872">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5660161">
+          <caret line="163" column="16" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/modern-business.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0413318">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33295062">
+          <caret line="278" column="14" selection-start-line="278" selection-start-column="12" selection-end-line="278" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.810345">
+          <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.580645">
+          <caret line="178" column="15" selection-start-line="178" selection-start-column="15" selection-end-line="178" selection-end-column="15" />
+          <folding>
+            <element signature="e#23#98#0" expanded="true" />
+            <element signature="e#442#537#0" expanded="false" />
+            <element signature="e#595#930#0" expanded="false" />
+            <element signature="e#998#1557#0" expanded="false" />
+            <element signature="e#1623#2105#0" expanded="false" />
+            <element signature="e#2173#2224#0" expanded="false" />
+            <element signature="e#2322#2870#0" expanded="false" />
+            <element signature="e#3760#4485#0" expanded="false" />
+            <element signature="e#4616#5990#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2831001">
+          <caret line="119" column="104" selection-start-line="119" selection-start-column="104" selection-end-line="119" selection-end-column="104" />
+          <folding>
+            <element signature="e#519#1093#0" expanded="false" />
+            <element signature="e#561#672#0" expanded="false" />
+            <element signature="e#720#1093#0" expanded="false" />
+            <element signature="e#1142#1628#0" expanded="false" />
+            <element signature="e#1184#1297#0" expanded="false" />
+            <element signature="e#1345#1628#0" expanded="false" />
+            <element signature="e#1674#2064#0" expanded="false" />
+            <element signature="e#1716#1836#0" expanded="false" />
+            <element signature="e#1884#2064#0" expanded="false" />
+            <element signature="e#2106#2399#0" expanded="false" />
+            <element signature="e#2148#2254#0" expanded="false" />
+            <element signature="e#2302#2399#0" expanded="false" />
+            <element signature="e#2444#2751#0" expanded="false" />
+            <element signature="e#2486#2609#0" expanded="false" />
+            <element signature="e#2657#2751#0" expanded="false" />
+            <element signature="e#2794#3114#0" expanded="false" />
+            <element signature="e#2836#2941#0" expanded="false" />
+            <element signature="e#2989#3114#0" expanded="false" />
+            <element signature="e#3155#3548#0" expanded="false" />
+            <element signature="e#3197#3309#0" expanded="false" />
+            <element signature="e#3357#3548#0" expanded="false" />
+            <element signature="e#4462#4535#0" expanded="false" />
+            <element signature="e#4571#5492#0" expanded="false" />
+            <element signature="e#5283#5356#0" expanded="false" />
+            <element signature="e#5407#5492#0" expanded="false" />
+            <element signature="e#5522#5782#0" expanded="false" />
+            <element signature="e#5813#7451#0" expanded="false" />
+            <element signature="e#6897#7039#0" expanded="false" />
+            <element signature="e#7098#7229#0" expanded="false" />
+            <element signature="e#7294#7451#0" expanded="false" />
+            <element signature="e#7488#7884#0" expanded="false" />
+            <element signature="e#7811#7884#0" expanded="false" />
+            <element signature="e#7924#8494#0" expanded="false" />
+            <element signature="e#8421#8494#0" expanded="false" />
+            <element signature="e#8667#8740#0" expanded="false" />
+            <element signature="e#8785#9201#0" expanded="false" />
+            <element signature="e#9128#9201#0" expanded="false" />
+            <element signature="e#9243#9745#0" expanded="false" />
+            <element signature="e#9672#9745#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

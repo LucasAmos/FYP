@@ -253,6 +253,11 @@
             placeholder_text_single: "Choose a portfolio to delete"
         });
 
+        $('.chosenshare').chosen({
+            allow_single_deselect: true,
+            placeholder_text_single: "Choose a share to add"
+        });
+
         $(function() {
             $('#flashes').delay(1).fadeIn('normal', function() {
                 $(this).delay(5000).fadeOut();

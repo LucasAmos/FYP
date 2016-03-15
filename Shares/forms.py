@@ -110,12 +110,14 @@ class SellShareValidator(object):
 
 
 class AddShareForm(Form):
-    ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
-                                                                                 message="The share ticker must only be letters"), ShareTickerValidator()])
+    # ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
+    #                                                                              message="The share ticker must only be letters"), ShareTickerValidator()])
+    ticker = SelectField('Test share dropdown: &nbsp ')
+
     quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
     dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = FloatField('How much did you pay for each of these shares? &nbsp', validators=[number_range(min=0.0)])
+    purchaseprice = DecimalField(u'How much did you pay for each of these shares?  &nbsp', default=0.00, validators=[number_range(min=0.0)])
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):

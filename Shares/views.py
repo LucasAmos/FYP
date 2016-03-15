@@ -180,7 +180,16 @@ def list_portfolio(portfolio_id):
 def add():
     form = AddShareForm()
     form.portfolioid.choices = [(h, h) for h in share_data.getportfolioidsfromtable(current_user.username)]
+    form.ticker.choices = [('ADN','ABERDEEN ASSET MANAGEMENT'), ('AAL','ANGLO AMERICAN'),('AHT','ASHTEAD GROUP PLC'),
+                           ('BKG','BERKELY GROUP HOLDING'), ('CARD','CARD FACTORY'),('CLLN','CARILLION PLC'),
+                           ('DTY','DIGNITY PLC'),('FAN','VOLUTION GROUP'), ('GLEN','GLENCORE PLC'), ('HSBA','HSBC'),
+                            ('IHG','INTERCONTINENTAL HOTELS GROUP PLC'), ('LLOY','LLOYDS BANKING GROUP'),
+                           ('MKS', 'MARKS & SPENCER'), ('OML','OLD MUTUAL PLC'), ('RBS', 'ROYAL BANK OF SCOTLAND'),
+                           ('RUS','RAVEN RUSSIA'),('PFG','PROVIDENT FINANCIAL PLC'), ('STAN','STANDARD CHARTERED PLC'),
+                           ('WTB','WHITBRAD PLC')]
+
     if form.validate_on_submit():
+
         ticker = form.ticker.data.upper()
         quantity = form.quantity.data
         dividends = form.dividends.data

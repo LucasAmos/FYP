@@ -14,7 +14,7 @@ class share_data():
 
             base_url = 'https://query.yahooapis.com/v1/public/yql?'
             query = {
-                'q': 'select Change, symbol, Name from yahoo.finance.quote where symbol in ("{}{}","")'.format(ticker,".L"),
+                'q': 'select Change, symbol, Name from yahoo.finance.quote where symbol in ("{}","")'.format(ticker),
                 'format': 'json',
                 'env': 'store://datatables.org/alltableswithkeys'
             }

@@ -24,15 +24,12 @@ class RiseFall():
     @staticmethod
     def getRiseFall(user):
 
-            ticker = RiseFall.getTickers(user)
+        tickers = RiseFall.getTickers(user)
 
-            data = share_data.JSONShareFall(ticker)
-
-            return data['query']['results']['quote']
-
-
-
+        results =[]
+        for ticker in tickers:
+            temp =share_data.JSONShareFall(ticker)['query']['results']['quote']
+            results.append([temp['symbol'], temp['Name'], temp['Change']])
 
 
-
-
+        return results

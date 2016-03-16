@@ -7,20 +7,20 @@
 
     {% for share in data  if not count > 4 %}
 
-    {% if share['Name'] %}
+    {% if share[1] %}
 
-    {% if  share['Change'] | float < 0 %}
+    {% if  share[2] | float < 0 %}
 
     <div class="loss">
 
-        {{share['Name']}} {{share['Change']}}  <br>
+        {{share[1]}} {{share[2]}}  <br>
     </div>
 
     {% else %}
 
     <div class="profit">
 
-        {{share['Name']}} {{share['Change']}}  <br>
+        {{share[1]}} {{share[2]}}  <br>
     </div>
 
     {% endif %}

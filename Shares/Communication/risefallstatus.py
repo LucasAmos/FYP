@@ -20,15 +20,14 @@ class risefallstatus():
 
 
             if user.smsenabled:
-
-                print "** sms's enabled: **"
+                print ""
+                print "** sms's enabled for: %s **" %(user.username)
 
                 for share in session.query(Userownedshare).filter_by(user=user.username):
 
-                    print ""
-                    print user.username
                     ticker = share.ticker
-                    print ticker
+                    name = str(share.name.name)
+                    print name
                     change = float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
                     print "rise/fall: %s" %float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
 
@@ -41,37 +40,33 @@ class risefallstatus():
                         if share.triggerlevel < 0:
 
                             if change < share.triggerlevel:
+
+                                #sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
+
                                 print "alert: Sent"
+                                print""
 
                             else:
                                 print "alert: False"
+                                print""
 
                         elif share.triggerlevel > 0:
                             if change > share.triggerlevel:
+                                name = str(share.name.name)
+                                #sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
+
                                 print "alert: Sent"
+                                print""
 
                             else:
                                 print "alert: False"
+                                print""
 
 
                     else:
-                        print "alert disbaled for this share"
+                        print "alert disabled for this share"
 
                         print ""
-                        # else:
-                        #     print ""
-                        #     print "** sms's disabled: **"
-
-        for user in session.query(User):
-
-            if not user.smsenabled:
-
-                print "** sms's disabled: **"
-                for share in session.query(Userownedshare).filter_by(user=user.username):
-
-                    print user.username
-                    ticker = share.ticker
-                    print ticker
-                    print float(share_data.JSONShareFall("RBS")['query']['results']['quote']['Change'])
-                    print user.smsenabled
-                    print ""
+            else:
+                print "** sms's disabled for: %s **" %(user.username)
+                print""

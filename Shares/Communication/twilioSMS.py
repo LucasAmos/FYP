@@ -14,8 +14,7 @@ class SMS():
         message = client.messages.create(body=message,
         to=phonenumber,    # Replace with your phone number
         from_="+441256830314") # Replace with your Twilio number
-        print message.sid
-
+        #print message.sid
 
 
 

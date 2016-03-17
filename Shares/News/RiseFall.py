@@ -15,7 +15,7 @@ class RiseFall():
 
         tickerset = set()
         for item in tickers:
-            tickerset.add(item.ticker + ".L")
+            tickerset.add(item.ticker)
 
         tickerset = random.sample(tickerset, len(tickerset))
 

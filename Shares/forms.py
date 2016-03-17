@@ -1,13 +1,26 @@
 from flask_wtf import Form
-from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, HiddenField, FloatField, RadioField
+from wtforms.fields import StringField, IntegerField, PasswordField, BooleanField, SubmitField, SelectField, \
+    HiddenField, FloatField, RadioField
 from flask.ext.wtf.html5 import DecimalField
-from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, optional
+from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo, url, ValidationError, number_range, \
+    optional
 from wtforms_components import read_only
 from share_data import *
+from wtforms.widgets import TextInput
 
 from flask_login import current_user
 from models import *
 
+class MyTextInput(TextInput):
+    def __init__(self, error_border=u'errorborder'):
+        super(MyTextInput, self).__init__()
+        self.error_class = error_border
+
+    def __call__(self, field, **kwargs):
+        if field.errors:
+            c = kwargs.pop('class', '') or kwargs.pop('class_', '')
+            kwargs['class'] = u'%s %s' % (self.error_class, c)
+        return super(MyTextInput, self).__call__(field, **kwargs)
 
 class ExistingShareInPortfolioValidator(object):
     def __init__(self, message=None):
@@ -114,10 +127,13 @@ class AddShareForm(Form):
     #                                                                              message="The share ticker must only be letters"), ShareTickerValidator()])
     ticker = SelectField('Test share dropdown: &nbsp ')
 
-    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)])
-    dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(), number_range(min=0.00)])
+    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)],
+                            widget=MyTextInput())
+    dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(),
+                            number_range(min=0.00)], widget=MyTextInput())
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = DecimalField(u'How much did you pay for each of these shares?  &nbsp', default=0.00, validators=[number_range(min=0.0)])
+    purchaseprice = DecimalField(u'How much did you pay for each of these shares?  &nbsp', default=0.00,
+                                 validators=[number_range(min=0.0, max=120)], widget=MyTextInput())
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
     def validate(self):
@@ -231,8 +247,8 @@ class DeletePortfolioForm(Form):
 
 
 class NotificationSettingsForm(Form):
-    emailfrequency = RadioField(u'How often do you wish to receive <br> emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
-    smsenabled = RadioField(u'Set the status of your SMS share <br> price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
+    emailfrequency = RadioField(u'How often do you wish to receive emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
+    smsenabled = RadioField(u'Set the status of your SMS share price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
 
     def validate(self):
 
@@ -255,3 +271,4 @@ class ShareNotificationForm(Form):
             return False
 
         return True
+

@@ -4,10 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/Shares/views.py" line="349" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="SMS">
+    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" afterPath="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/static/css/main.css" afterPath="$PROJECT_DIR$/Shares/static/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/setnotification.html" afterPath="$PROJECT_DIR$/Shares/templates/setnotification.html" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +33,7 @@
     <SUITE FILE_PATH="coverage/FYP$risefall.coverage" NAME="risefall Coverage Results" MODIFIED="1458168546392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
     <SUITE FILE_PATH="coverage/FYP$marcher.coverage" NAME="marcher Coverage Results" MODIFIED="1458170790856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$twilioSMS.coverage" NAME="twilioSMS Coverage Results" MODIFIED="1458174252019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$risefallstatus.coverage" NAME="risefallstatus Coverage Results" MODIFIED="1458175609574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
+    <SUITE FILE_PATH="coverage/FYP$risefallstatus.coverage" NAME="risefallstatus Coverage Results" MODIFIED="1458178884665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$sendMessage.coverage" NAME="sendMessage Coverage Results" MODIFIED="1457051260177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -46,47 +48,8 @@
       <file leaf-file-name="risefallstatus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57929885">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-              <folding>
-                <element signature="e#442#537#0" expanded="false" />
-                <element signature="e#595#930#0" expanded="false" />
-                <element signature="e#998#1557#0" expanded="false" />
-                <element signature="e#1623#2105#0" expanded="false" />
-                <element signature="e#2173#2224#0" expanded="false" />
-                <element signature="e#2322#2870#0" expanded="false" />
-                <element signature="e#2973#3651#0" expanded="false" />
-                <element signature="e#8229#9484#0" expanded="false" />
-                <element signature="e#9589#11209#0" expanded="false" />
-                <element signature="e#11309#12208#0" expanded="false" />
-                <element signature="e#12313#13980#0" expanded="false" />
-                <element signature="e#14032#14071#0" expanded="false" />
-                <element signature="e#14124#14163#0" expanded="false" />
-                <element signature="e#14214#14253#0" expanded="false" />
-                <element signature="e#14349#16078#0" expanded="false" />
-                <element signature="e#16148#16394#0" expanded="false" />
-                <element signature="e#16442#16568#0" expanded="false" />
-                <element signature="e#16799#17001#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twilioSMS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/Communication/twilioSMS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.62857145">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -97,9 +60,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -128,13 +91,9 @@
         <option value="$PROJECT_DIR$/Shares/templates/notifications.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/custom.css" />
         <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/setnotification.html" />
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/News/risefall.py" />
-        <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/add.html" />
-        <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
         <option value="$PROJECT_DIR$/Shares/__init__.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/test.py" />
@@ -152,6 +111,12 @@
         <option value="$PROJECT_DIR$/Shares/Communication/twilioSMS.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/setnotification.html" />
+        <option value="$PROJECT_DIR$/Shares/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/form_macros.html" />
+        <option value="$PROJECT_DIR$/Shares/templates/macro.html" />
+        <option value="$PROJECT_DIR$/Shares/templates/add.html" />
       </list>
     </option>
   </component>
@@ -262,6 +227,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FYP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,12 +635,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00021" summary="line spacing">
-      <created>1457912373343</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1457912373343</updated>
-    </task>
     <task id="LOCAL-00022" summary="line spacing">
       <created>1457912447967</created>
       <option name="number" value="00022" />
@@ -924,7 +923,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458175923839</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="SMS">
+      <created>1458176039437</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1458176039437</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1076,13 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/form_macros.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19459459">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="8" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1165,13 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19010124">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/static/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14173229">
@@ -1219,13 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5660161">
-          <caret line="163" column="16" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/static/css/modern-business.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0413318">
@@ -1244,27 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58668196">
           <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="104" selection-start-line="119" selection-start-column="104" selection-end-line="119" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/news/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05986696">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1303,13 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/setnotification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8358209">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1397,16 +1353,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/twilioSMS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.45714286">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/setnotification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.724138">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.058430716">
+          <caret line="301" column="20" selection-start-line="301" selection-start-column="13" selection-end-line="301" selection-end-column="20" />
           <folding>
             <element signature="e#442#537#0" expanded="false" />
             <element signature="e#595#930#0" expanded="false" />
@@ -1417,7 +1389,6 @@
             <element signature="e#2973#3651#0" expanded="false" />
             <element signature="e#8229#9484#0" expanded="false" />
             <element signature="e#9589#11209#0" expanded="false" />
-            <element signature="e#11309#12208#0" expanded="false" />
             <element signature="e#12313#13980#0" expanded="false" />
             <element signature="e#14032#14071#0" expanded="false" />
             <element signature="e#14124#14163#0" expanded="false" />
@@ -1430,10 +1401,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2903225">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#1042#1153#0" expanded="false" />
+            <element signature="e#1826#2109#0" expanded="false" />
+            <element signature="e#2155#2545#0" expanded="false" />
+            <element signature="e#2197#2317#0" expanded="false" />
+            <element signature="e#2365#2545#0" expanded="false" />
+            <element signature="e#2629#2735#0" expanded="false" />
+            <element signature="e#2783#2880#0" expanded="false" />
+            <element signature="e#2925#3232#0" expanded="false" />
+            <element signature="e#2967#3090#0" expanded="false" />
+            <element signature="e#3138#3232#0" expanded="false" />
+            <element signature="e#3275#3595#0" expanded="false" />
+            <element signature="e#3317#3422#0" expanded="false" />
+            <element signature="e#3470#3595#0" expanded="false" />
+            <element signature="e#3636#4029#0" expanded="false" />
+            <element signature="e#3678#3790#0" expanded="false" />
+            <element signature="e#3838#4029#0" expanded="false" />
+            <element signature="e#5107#5180#0" expanded="false" />
+            <element signature="e#5216#6137#0" expanded="false" />
+            <element signature="e#5928#6001#0" expanded="false" />
+            <element signature="e#6052#6137#0" expanded="false" />
+            <element signature="e#6167#6427#0" expanded="false" />
+            <element signature="e#6458#8096#0" expanded="false" />
+            <element signature="e#7542#7684#0" expanded="false" />
+            <element signature="e#7743#7874#0" expanded="false" />
+            <element signature="e#7939#8096#0" expanded="false" />
+            <element signature="e#8133#8529#0" expanded="false" />
+            <element signature="e#8456#8529#0" expanded="false" />
+            <element signature="e#8569#9139#0" expanded="false" />
+            <element signature="e#9066#9139#0" expanded="false" />
+            <element signature="e#9179#9385#0" expanded="false" />
+            <element signature="e#9312#9385#0" expanded="false" />
+            <element signature="e#9763#9836#0" expanded="false" />
+            <element signature="e#9878#10380#0" expanded="false" />
+            <element signature="e#10307#10380#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/news/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35820895">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/form_macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23880596">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031468533">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57929885">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.62857145">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding />
         </state>
       </provider>

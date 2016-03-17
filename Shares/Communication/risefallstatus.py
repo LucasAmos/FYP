@@ -41,7 +41,7 @@ class risefallstatus():
 
                             if change < share.triggerlevel:
 
-                                #sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
+                                sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
 
                                 print "alert: Sent"
                                 print""
@@ -53,7 +53,7 @@ class risefallstatus():
                         elif share.triggerlevel > 0:
                             if change > share.triggerlevel:
                                 name = str(share.name.name)
-                                #sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
+                                sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
 
                                 print "alert: Sent"
                                 print""

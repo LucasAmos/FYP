@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/News/RiseFall.py" afterPath="$PROJECT_DIR$/Shares/News/RiseFall.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/share_data.py" afterPath="$PROJECT_DIR$/Shares/share_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/news/risefall.html" afterPath="$PROJECT_DIR$/Shares/templates/news/risefall.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
     </list>
     <ignored path="FYP.iws" />
@@ -71,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.51252085">
-              <caret line="188" column="44" selection-start-line="188" selection-start-column="44" selection-end-line="188" selection-end-column="44" />
+              <caret line="188" column="51" selection-start-line="188" selection-start-column="51" selection-end-line="188" selection-end-column="51" />
               <folding>
                 <element signature="e#442#537#0" expanded="false" />
                 <element signature="e#595#930#0" expanded="false" />
@@ -80,17 +76,17 @@
                 <element signature="e#2173#2224#0" expanded="false" />
                 <element signature="e#2322#2870#0" expanded="false" />
                 <element signature="e#2973#3651#0" expanded="false" />
-                <element signature="e#8182#9437#0" expanded="false" />
-                <element signature="e#9542#11162#0" expanded="false" />
-                <element signature="e#11262#12161#0" expanded="false" />
-                <element signature="e#12266#13933#0" expanded="false" />
-                <element signature="e#13985#14024#0" expanded="false" />
-                <element signature="e#14077#14116#0" expanded="false" />
-                <element signature="e#14167#14206#0" expanded="false" />
-                <element signature="e#14302#16031#0" expanded="false" />
-                <element signature="e#16101#16347#0" expanded="false" />
-                <element signature="e#16395#16521#0" expanded="false" />
-                <element signature="e#16752#16954#0" expanded="false" />
+                <element signature="e#8183#9438#0" expanded="false" />
+                <element signature="e#9543#11163#0" expanded="false" />
+                <element signature="e#11263#12162#0" expanded="false" />
+                <element signature="e#12267#13934#0" expanded="false" />
+                <element signature="e#13986#14025#0" expanded="false" />
+                <element signature="e#14078#14117#0" expanded="false" />
+                <element signature="e#14168#14207#0" expanded="false" />
+                <element signature="e#14303#16032#0" expanded="false" />
+                <element signature="e#16102#16348#0" expanded="false" />
+                <element signature="e#16396#16522#0" expanded="false" />
+                <element signature="e#16753#16955#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -669,12 +665,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00018" summary="new news location">
-      <created>1457911619225</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1457911619225</updated>
-    </task>
     <task id="LOCAL-00019" summary="new news location">
       <created>1457911777146</created>
       <option name="number" value="00019" />
@@ -963,7 +953,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458172708926</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="fixed share rise and fall">
+      <created>1458172814046</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1458172814046</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1459,7 +1455,7 @@
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51252085">
-          <caret line="188" column="44" selection-start-line="188" selection-start-column="44" selection-end-line="188" selection-end-column="44" />
+          <caret line="188" column="51" selection-start-line="188" selection-start-column="51" selection-end-line="188" selection-end-column="51" />
           <folding>
             <element signature="e#442#537#0" expanded="false" />
             <element signature="e#595#930#0" expanded="false" />
@@ -1468,17 +1464,17 @@
             <element signature="e#2173#2224#0" expanded="false" />
             <element signature="e#2322#2870#0" expanded="false" />
             <element signature="e#2973#3651#0" expanded="false" />
-            <element signature="e#8182#9437#0" expanded="false" />
-            <element signature="e#9542#11162#0" expanded="false" />
-            <element signature="e#11262#12161#0" expanded="false" />
-            <element signature="e#12266#13933#0" expanded="false" />
-            <element signature="e#13985#14024#0" expanded="false" />
-            <element signature="e#14077#14116#0" expanded="false" />
-            <element signature="e#14167#14206#0" expanded="false" />
-            <element signature="e#14302#16031#0" expanded="false" />
-            <element signature="e#16101#16347#0" expanded="false" />
-            <element signature="e#16395#16521#0" expanded="false" />
-            <element signature="e#16752#16954#0" expanded="false" />
+            <element signature="e#8183#9438#0" expanded="false" />
+            <element signature="e#9543#11163#0" expanded="false" />
+            <element signature="e#11263#12162#0" expanded="false" />
+            <element signature="e#12267#13934#0" expanded="false" />
+            <element signature="e#13986#14025#0" expanded="false" />
+            <element signature="e#14078#14117#0" expanded="false" />
+            <element signature="e#14168#14207#0" expanded="false" />
+            <element signature="e#14303#16032#0" expanded="false" />
+            <element signature="e#16102#16348#0" expanded="false" />
+            <element signature="e#16396#16522#0" expanded="false" />
+            <element signature="e#16753#16955#0" expanded="false" />
           </folding>
         </state>
       </provider>

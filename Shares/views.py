@@ -484,8 +484,18 @@ def allnews():
 
     if current_user.is_authenticated:
 
+        return render_template('news/allnews.html', news=News.getNews(current_user.username),
+                               portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
-        return render_template('news/allnews.html', news=News.getNews(current_user.username), portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+@app.route('/allrisefall')
+def allrisefall():
+
+    if current_user.is_authenticated:
+
+
+        return render_template('news/allrisefall.html', data=RiseFall.getRiseFall(current_user.username),
+                               portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
 
 
 

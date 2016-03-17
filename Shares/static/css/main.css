@@ -1,3 +1,9 @@
+.headermargin{
+    margin:0;
+    padding:3px;
+}
+
+
 .errorborder { border: 2px solid #ff0000;
 }
 

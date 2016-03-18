@@ -11,13 +11,16 @@ Sell share{{ Title }}
     <form action="" method="post">
         {{form.hidden_tag()}}
 
-        <h3 class="red"> <strong>{{name}}</strong></h3>
         <br>
+            <div class="col-md-10 col-xs-12 border2">
+        <h3 class="red"> <strong>{{name}}</strong></h3>
+
         <table>
+
             {{ render_field(form.quantity, size=20) }}
             {{ render_field(form.price, size=20) }}
             <!--{{ render_field(form.originalportfolioid, size=20) }}-->
-
+            </div>
             <tr class="submit">
                 <td></td>
                 <td><button type="submit" class="submit2">Submit</button>

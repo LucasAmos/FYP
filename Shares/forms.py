@@ -22,6 +22,7 @@ class MyTextInput(TextInput):
             kwargs['class'] = u'%s %s' % (self.error_class, c)
         return super(MyTextInput, self).__call__(field, **kwargs)
 
+
 class ExistingShareInPortfolioValidator(object):
     def __init__(self, message=None):
         if not message:
@@ -84,7 +85,7 @@ class SharePricevalidator(object):
 class ShareQuantityValidator(object):
     def __init__(self, message=None):
         if not message:
-            message = u"You must also enter the price paid for these shares"
+            message = u"Enter the price paid for these shares"
         self.message = message
 
     def __call__(self, form, field):
@@ -110,7 +111,7 @@ class ShareTickerValidator(object):
 class SellShareValidator(object):
     def __init__(self, message=None):
         if not message:
-            message = u"You cannot sell more shares than you own"
+            message = u"That is more shares than you own"
         self.message = message
 
     def __call__(self, form, field):
@@ -147,8 +148,8 @@ class AddShareForm(Form):
 class RemoveShareForm(Form):
     ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
                                                                                  message="The share ticker must only be letters")])
-    quantity = IntegerField('How many of this share did you sell:', validators=[SellShareValidator(),number_range(min=1, max=10000)])
-    price = DecimalField('What price did you sell them for', validators=[number_range(min=0.00)])
+    quantity = IntegerField('How many of this share did you sell:', validators=[DataRequired(), SellShareValidator(),number_range(min=1, max=10000)])
+    price = DecimalField('What price did you sell them for', validators=[DataRequired(), number_range(min=0.00)])
     shareID = HiddenField("hidden field")
     originalportfolioid = HiddenField("hidden field")
     # portfolioid = SelectField('Choose a portfolio to add the share to:', validators=[ExistingShareInPortfolioValidator()])
@@ -210,8 +211,8 @@ class SignupForm(Form):
 
 
 class AddPortfolioForm(Form):
-    name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator(), Regexp(r'^[a-zA-Z0-9]*$',
-                                                                                                      message="The portfolio name must contain only letters and numbers")])
+    name = StringField('New portfolio name: &nbsp ', validators=[ExistingPortfolioValidator(),
+                        Regexp(r'^[a-zA-Z0-9_]*$', message="The portfolio name must contain only letters and numbers")])
 
     def validate(self):
 
@@ -224,7 +225,7 @@ class AddPortfolioForm(Form):
 class AddAdditionalShares(Form):
     name = StringField('Share name')
     sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(),ShareQuantityValidator(), number_range(min=1, max=10000)])
-    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(),SharePricevalidator(), number_range(min=1, max=10000)])
+    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(),SharePricevalidator(), number_range(min=0.01, max=10000)])
     dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)])
 
     def validate(self):

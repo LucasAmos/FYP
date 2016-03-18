@@ -12,30 +12,30 @@ Add share
 
     <br>
 
-     <div class="row">
-        <div class="col-md-12 col-xs-12 border">
+    <div class="row">
+        <div class="col-md-10 col-xs-12 border">
 
-    <form action="" method="post">
-        {{form.hidden_tag()}}
-        <table>
-            {{ render_field(form.ticker, class="chosenshare dropdown",size=10) }}
-            {{ render_field(form.quantity, size=20) }}
-            {{ render_field(form.dividends, size=20) }}
-            {{ render_field(form.purchaseprice, size=20)}}
-            {{ render_field(form.portfolioid, class="chosen dropdown", size=260) }}
+            <form action="" method="post">
+                {{form.hidden_tag()}}
+                <table>
+                    {{ render_field(form.ticker, class="chosenshare dropdown",size=10) }}
+                    {{ render_field(form.quantity, size=20) }}
+                    {{ render_field(form.dividends, size=20) }}
+                    {{ render_field(form.purchaseprice, size=20)}}
+                    {{ render_field(form.portfolioid, class="chosen dropdown", size=260) }}
 
 
 
-            <tr class="submit">
-                <td></td>
-                <td><button type="submit" class=" submit2">Submit</button>
-                </td>
-            </tr>
-        </table>
+                    <tr class="submit">
+                        <td></td>
+                        <td><button type="submit" class=" submit2">Submit</button>
+                        </td>
+                    </tr>
+                </table>
 
-    </form>
+            </form>
 
-            </div>
+        </div>
 
 </section>
 

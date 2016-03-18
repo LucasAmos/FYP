@@ -18,22 +18,23 @@ Share notifications
     <table>
 
         <div class="row">
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-6 col-xs-6 border">
                 {{form.emailenabled.label}}
                 {{ form.emailenabled(class_="buttons") }}
 
             </div>
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-6 col-xs-6 border">
                 {{form.smsenabled.label}}
                 {{ form.smsenabled(class_="buttons") }}
 
             </div>
 
-            <div class="col-md-4 col-xs-6">
+            <div class="col-md-6 col-xs-6 border">
                 {{form.triggerlevel.label}}
                 {{form.positivenegative(class_="buttons")}}
 
                 <bdi style="font-size:18px">£</bdi>{{ form.triggerlevel(class_="buttons width20", min="0.01", step="0.01" )}}
+                <br><br>
 
                 <ul class="error buttons">
                     {% for error in form.positivenegative.errors %}

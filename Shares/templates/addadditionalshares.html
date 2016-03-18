@@ -8,25 +8,30 @@ FYP -- Add additional shares{{ Title }}
 {% block content %}
 <section>
     <h1>{{ title }}</h1>
-    <form action="" method="post">
+    <h1>Add shares and dividends </h1>
+    <br>
 
-        <h1>Add shares and dividends </h1>
-        <h3 class="red"> <strong>{{name}}</strong></h3>
-        {{form.hidden_tag()}}
-        <br>
-        <table>
-            {{ render_field(form.sharequantity, size=20) }}
-            {{ render_field(form.shareprice, size=20) }}
-            {{ render_field(form.dividends, size=20) }}
+    <div class="col-md-10 col-xs-12 border2">
 
-            <tr class="submit">
-                <td></td>
-                <td><button type="submit" class="submit2">Submit</button>
-                </td>
-            </tr>
-        </table>
+        <form action="" method="post">
 
-    </form>
+            <h3 class="red"> <strong>{{name}}</strong></h3>
+            {{form.hidden_tag()}}
+            <br>
+            <table>
+                {{ render_field(form.sharequantity, size=20) }}
+                {{ render_field(form.shareprice, size=20) }}
+                {{ render_field(form.dividends, size=20) }}
+
+                <tr class="submit">
+                    <td></td>
+                    <td><button type="submit" class="submit2">Submit</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
 
 </section>
 {% endblock %}

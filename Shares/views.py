@@ -328,7 +328,7 @@ def notifications():
                            form=form, news=News.getNews(current_user.username))
 
 
-@app.route('/setnotification<share_id>', methods=['GET', 'POST'])
+@app.route('/setnotification/<share_id>', methods=['GET', 'POST'])
 def setNotification(share_id):
 
     if current_user.is_authenticated:

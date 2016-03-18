@@ -42,10 +42,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="risefallstatus.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="risefallstatus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5377207">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding />
             </state>
@@ -84,6 +84,16 @@
                 <element signature="e#17845#18077#0" expanded="false" />
                 <element signature="e#18130#18375#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.5100671">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -593,12 +603,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00027" summary="carousel height">
-      <created>1457914726792</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1457914726792</updated>
-    </task>
     <task id="LOCAL-00028" summary="overflow">
       <created>1457915871580</created>
       <option name="number" value="00028" />
@@ -887,7 +891,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458277698692</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="added datetime log to">
+      <created>1458277800621</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1458277800621</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1275,16 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58183855">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
@@ -1469,8 +1469,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/Communication/risefallstatus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5377207">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5100671">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="48" />
           <folding />
         </state>
       </provider>

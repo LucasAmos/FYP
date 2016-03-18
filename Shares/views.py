@@ -6,9 +6,9 @@ from Shares import app, db, login_manager
 from forms import *
 from models import User, Userownedshare, Share
 from share_data import *
-import json
 from News.News import News
 from News.RiseFall import RiseFall
+from datetime import datetime
 
 @login_manager.user_loader
 def load_user(userid):
@@ -49,36 +49,6 @@ def signup():
         flash('Welcome, {}! Please login.'.format(user.username))
         return redirect(url_for('login'))
     return render_template("signup.html", form=form)
-
-
-
-
-@app.route('/accountsettings', methods=['GET', 'POST'])
-@login_required
-def accountsettings():
-
-        form=EditSettingsForm()
-        user = current_user
-
-
-        if form.validate_on_submit():
-
-            if form.email.data:
-                user.email = form.email.data.lower()
-
-            if form.phonenumber.data:
-                user.phonenumber = form.phonenumber.data
-
-            if form.password.data:
-                user.password = form.password.data
-            db.session.add(user)
-            db.session.commit()
-            return redirect(url_for('settings'))
-
-        return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                               user=current_user, form=form)
-
-
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -239,6 +209,7 @@ def add():
         share = Userownedshare(user=current_user.username, quantity=quantity, ticker=ticker, dividends=dividends,
                                averagepurchaseprice=purchaseprice, portfolioid=portfolioid, smsalert=False,
                                emailalert=False, triggerlevel=0)
+
         db.session.add(share)
         db.session.commit()
         flash("Added share '{}'".format(ticker))
@@ -418,6 +389,30 @@ def settings():
                                user=current_user)
 
 
+@app.route('/accountsettings', methods=['GET', 'POST'])
+@login_required
+def accountsettings():
+
+        form=EditSettingsForm()
+        user = current_user
+
+
+        if form.validate_on_submit():
+
+            if form.email.data:
+                user.email = form.email.data.lower()
+
+            if form.phonenumber.data:
+                user.phonenumber = form.phonenumber.data
+
+            if form.password.data:
+                user.password = form.password.data
+            db.session.add(user)
+            db.session.commit()
+            return redirect(url_for('settings'))
+
+        return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                               user=current_user, form=form)
 
 
 @app.errorhandler(403)

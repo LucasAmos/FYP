@@ -11,23 +11,28 @@ Delete portfolio
 <section>
     <h1>Delete a portfolio</h1>
     <br>
-    <form action=" {{url_for('deleteportfolio')}}" method="post" name ="deleteform">
-        {{d_form.hidden_tag()}}
-        <table>
-            {{ render_field(d_form.name, size=5, class="chosendelete dropdown") }}
+
+    <div class="col-md-12 col-xs-12 border">
+
+        <form action=" {{url_for('deleteportfolio')}}" method="post" name ="deleteform">
+            {{d_form.hidden_tag()}}
+            <table>
+                {{ render_field(d_form.name, size=5, class="chosendelete dropdown") }}
 
 
 
 
 
-            <tr class="submit">
-                <td></td>
-                <td><button type="submit" class="submit2">Submit</button>
-                </td>
-            </tr>
-        </table>
+                <tr class="submit">
+                    <td></td>
+                    <td><button type="submit" class="submit2">Submit</button>
+                    </td>
+                </tr>
+            </table>
 
-    </form>
+        </form>
+
+    </div>
 
 </section>
 

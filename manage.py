@@ -21,7 +21,7 @@ def initdb():
         # reindert=User(username="reindert", email="reindert@example.com", password="test")
         # db.session.add(reindert)
 
-        lucas=User(username="lucas", email="xkv1922c@gmail.com", password="test", emailfrequency=0, smsenabled=False)
+        lucas=User(username="lucas", email="xkv1922c@gmail.com", password="test", emailfrequency=0, smsenabled=False, phonenumber="07506292708")
         db.session.add(lucas)
 
         portfolio = Portfolios(username="lucas", portfolioname="test")

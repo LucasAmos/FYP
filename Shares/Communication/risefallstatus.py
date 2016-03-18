@@ -5,6 +5,7 @@ from Shares.models import User, Userownedshare
 from twilioSMS import SMS
 from manage import db
 from Shares.share_data import share_data
+from datetime import datetime as dt
 import datetime
 
 
@@ -40,8 +41,11 @@ class risefallstatus():
                         if share.triggerlevel < 0:
 
                             if change < share.triggerlevel:
-
+                                print share
                                 sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
+                                share.lastalert = dt.today()
+                                db.session.commit()
+
 
                                 print "alert: Sent"
                                 print""
@@ -54,6 +58,8 @@ class risefallstatus():
                             if change > share.triggerlevel:
                                 name = str(share.name.name)
                                 sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
+                                share.lastalert = dt.today()
+                                db.session.commit()
 
                                 print "alert: Sent"
                                 print""

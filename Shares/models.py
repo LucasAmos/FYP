@@ -48,6 +48,7 @@ class Userownedshare(db.Model):
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))
         averagepurchaseprice = db.Column(db.Float, server_default="0.0")
+        lastalert = db.Column(db.DateTime)
         name = db.relationship('Share', backref='userownedshare',  foreign_keys=[ticker], lazy="joined")
         owner = db.relationship('User', backref='userownedshare',  foreign_keys=[user], lazy="joined")
 

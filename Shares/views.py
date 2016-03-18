@@ -51,6 +51,36 @@ def signup():
     return render_template("signup.html", form=form)
 
 
+
+
+@app.route('/accountsettings', methods=['GET', 'POST'])
+@login_required
+def accountsettings():
+
+        form=EditSettingsForm()
+        user = current_user
+
+
+        if form.validate_on_submit():
+
+            if form.email.data:
+                user.email = form.email.data.lower()
+
+            if form.phonenumber.data:
+                user.phonenumber = form.phonenumber.data
+
+            if form.password.data:
+                user.password = form.password.data
+            db.session.add(user)
+            db.session.commit()
+            return redirect(url_for('settings'))
+
+        return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                               user=current_user, form=form)
+
+
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     form = LoginForm()
@@ -379,6 +409,17 @@ def setNotification(share_id):
         return render_template('setnotification.html', news=News.getNews(current_user.username), tempshare=share,
                                form=form, portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
+
+@app.route('/settings', methods=['GET', 'POST'])
+@login_required
+def settings():
+
+        return render_template('settings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                               user=current_user)
+
+
+
+
 @app.errorhandler(403)
 def page_not_found(e):
     return render_template('403.html'), 403
@@ -495,6 +536,8 @@ def allrisefall():
 
         return render_template('news/allrisefall.html', data=RiseFall.getRiseFall(current_user.username),
                                portfolioids=share_data.getportfolioidsfromtable(current_user.username))
+
+
 
 
 

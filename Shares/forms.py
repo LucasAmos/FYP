@@ -125,14 +125,14 @@ class SellShareValidator(object):
 class AddShareForm(Form):
     # ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
     #                                                                              message="The share ticker must only be letters"), ShareTickerValidator()])
-    ticker = SelectField('Test share dropdown: &nbsp ')
+    ticker = SelectField('Select a share to add: &nbsp ')
 
     quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)],
                             widget=MyTextInput())
     dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(),
                             number_range(min=0.00)], widget=MyTextInput())
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = DecimalField(u'How much did you pay for each of these shares?  &nbsp', default=0.00,
+    purchaseprice = DecimalField(u'How much did you pay for these shares?  &nbsp', default=0.00,
                                  validators=[number_range(min=0.0, max=120)], widget=MyTextInput())
     portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
 
@@ -191,7 +191,7 @@ class SignupForm(Form):
                            validators=[
                                DataRequired(),
                                Regexp('^(\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$',
-                                      message='Not a valid UK phone number')])
+                                      message='Not a valid UK mobile phone number')])
 
 
 
@@ -271,4 +271,20 @@ class ShareNotificationForm(Form):
             return False
 
         return True
+
+
+class EditSettingsForm(Form):
+
+
+    password = PasswordField('Password',
+                             validators=[
+                                 EqualTo('password2', message='Passwords must match.')])
+    password2 = PasswordField('Confirm password &nbsp')
+    email = StringField('Email',
+                        validators=[optional(), Email()])
+    phonenumber = StringField('Mobile phone number &nbsp',
+                           validators=[optional(),
+                               Regexp('^(\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$',
+                                      message='Not a valid UK mobile phone number')])
+
 

@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/index.html" afterPath="$PROJECT_DIR$/Shares/templates/index.html" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +92,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5100671">
-              <caret line="32" column="48" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.24161074">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,7 +130,6 @@
         <option value="$PROJECT_DIR$/Shares/templates/signup.html" />
         <option value="$PROJECT_DIR$/Shares/static/css/custom.css" />
         <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/News/risefall.py" />
         <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
         <option value="$PROJECT_DIR$/Shares/__init__.py" />
@@ -164,6 +164,7 @@
         <option value="$PROJECT_DIR$/Shares/models.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/risefallstatus.py" />
+        <option value="$PROJECT_DIR$/Shares/templates/index.html" />
       </list>
     </option>
   </component>
@@ -603,12 +604,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00028" summary="overflow">
-      <created>1457915871580</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1457915871580</updated>
-    </task>
     <task id="LOCAL-00029" summary="overflow">
       <created>1457915892167</created>
       <option name="number" value="00029" />
@@ -897,7 +892,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458277800621</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="added datetime log to">
+      <created>1458278053564</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1458278053564</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1477,8 +1478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5100671">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.24161074">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

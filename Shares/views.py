@@ -26,10 +26,11 @@ def index():
 
         try:
 
-            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username), news=News.getNews(current_user.username))
+            return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                                   news=News.getNews(current_user.username))
 
         except:
-            return render_template("connectiondown.html")
+            return render_template("connectiondown.html", portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
     else: return render_template('index.html')
 
@@ -172,7 +173,7 @@ def list_portfolio(portfolio_id):
                                portfolioprofit=profit, news=News.getNews(current_user.username))
 
     except:
-        return render_template("connectiondown.html")
+        return render_template("connectiondown.html", portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
 @app.route('/add', methods=['GET', 'POST'], )

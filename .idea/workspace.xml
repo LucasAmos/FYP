@@ -640,12 +640,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00035" summary="overflow">
-      <created>1457916933824</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1457916933824</updated>
-    </task>
     <task id="LOCAL-00036" summary="overflow">
       <created>1457917055243</created>
       <option name="number" value="00036" />
@@ -934,7 +928,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458419012028</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="daily share limit">
+      <created>1458419433540</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1458419433540</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">

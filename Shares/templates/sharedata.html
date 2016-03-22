@@ -12,7 +12,7 @@
 <br>
 <h3>You don't have any portfolios. Why not create one and add some shares to it?</h3>
 
-<a href="{{ url_for('addportfolio') }}" class="btn btn-lg btn-primary  tweaked-margin"> Add portfolio</a>
+<a href="{{ url_for('addportfolio') }}" class="btn btn-lg btn-primary  tweaked-margin" id="notvisited"> Add portfolio</a>
 
 
 {% endif %}
@@ -21,7 +21,7 @@
 {% if not data and ids %}
 <br>
 <h3> You don't have any shares, why not add some to your portfolio?</h3>
-<a href="{{ url_for('add') }}" class="btn btn-lg btn-primary  tweaked-margin"> Add share</a>
+<a href="{{ url_for('add') }}" class="btn btn-lg btn-primary  tweaked-margin" id="notvisited"> Add share</a>
 
 {% endif %}
 

@@ -1,3 +1,21 @@
+.nospacing{
+    margin:4px;
+    padding:0;
+}
+
+.bottompadding{
+    margin-bottom: 10px;
+}
+
+#sidebaradd {
+    margin-top: 25px;
+    background-color: #EFF5FB;
+    padding: 5px 5px 5px 5px;
+
+    border-radius: 5px;
+
+}
+
 ul {
     padding: 0;
     list-style-type: none;
@@ -21,7 +39,7 @@ ul {
 
 .border{
 
-border-radius: 25px;
+    border-radius: 25px;
     border: 1px solid lightgrey;
     padding-left: 15px;
     padding-top: 15px;
@@ -32,7 +50,7 @@ border-radius: 25px;
 
 .border2{
 
-border-radius: 25px;
+    border-radius: 25px;
     border: 1px solid lightgrey;
     padding-left: 15px;
     padding-top: 0px;
@@ -62,7 +80,7 @@ border-radius: 25px;
 
 #fall{
 
-    margin-top: 75px;
+    margin-top: 25px;
     padding-bottom: 25px;
     border-radius: 5px;
 }
@@ -84,7 +102,7 @@ border-radius: 25px;
 
 #news2{
 
-    margin-top: 75px;
+    margin-top: 25px;
     padding-bottom: 25px;
     border-radius: 5px;
 ;
@@ -189,10 +207,6 @@ ul
     color: green;
 }
 
-.dropdown{
-    width: 175px;
-    color: red
-}
 
 
 /*custom styles*/

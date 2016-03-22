@@ -27,7 +27,7 @@ def index():
         try:
 
             return render_template('index.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                                   news=News.getNews(current_user.username))
+                                   news=News.getNews(current_user.username), sharesexist=share_data.getnonemptyportfolios(current_user.username))
 
         except:
             return render_template("connectiondown.html", portfolioids=share_data.getportfolioidsfromtable(current_user.username))
@@ -185,7 +185,7 @@ def add():
                            ('BKG','BERKELY GROUP HOLDING'), ('CARD','CARD FACTORY'),('CLLN','CARILLION PLC'),
                            ('DCC','DCC PLC'),
                            ('DTY','DIGNITY PLC'),('FAN','VOLUTION GROUP'), ('GLEN','GLENCORE PLC'), ('HSBA','HSBC'),
-                            ('IHG','INTERCONTINENTAL HOTELS GROUP PLC'), ('LLOY','LLOYDS BANKING GROUP'),
+                           ('IHG','INTERCONTINENTAL HOTELS GROUP PLC'), ('LLOY','LLOYDS BANKING GROUP'),
                            ('MKS', 'MARKS & SPENCER'), ('OML','OLD MUTUAL PLC'), ('RBS', 'ROYAL BANK OF SCOTLAND'),
                            ('RUS','RAVEN RUSSIA'),('PFG','PROVIDENT FINANCIAL PLC'), ('STAN','STANDARD CHARTERED PLC'),
                            ('WTB','WHITBREAD PLC')]
@@ -350,7 +350,7 @@ def setNotification(share_id):
             positivenegative=1
 
         form = ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),
-                                   triggerlevel=trigger, positivenegative=positivenegative)
+                                     triggerlevel=trigger, positivenegative=positivenegative)
 
         if form.validate_on_submit():
 
@@ -386,34 +386,34 @@ def setNotification(share_id):
 @login_required
 def settings():
 
-        return render_template('settings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                               user=current_user)
+    return render_template('settings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           user=current_user)
 
 
 @app.route('/accountsettings', methods=['GET', 'POST'])
 @login_required
 def accountsettings():
 
-        form=EditSettingsForm()
-        user = current_user
+    form=EditSettingsForm()
+    user = current_user
 
 
-        if form.validate_on_submit():
+    if form.validate_on_submit():
 
-            if form.email.data:
-                user.email = form.email.data.lower()
+        if form.email.data:
+            user.email = form.email.data.lower()
 
-            if form.phonenumber.data:
-                user.phonenumber = form.phonenumber.data
+        if form.phonenumber.data:
+            user.phonenumber = form.phonenumber.data
 
-            if form.password.data:
-                user.password = form.password.data
-            db.session.add(user)
-            db.session.commit()
-            return redirect(url_for('settings'))
+        if form.password.data:
+            user.password = form.password.data
+        db.session.add(user)
+        db.session.commit()
+        return redirect(url_for('settings'))
 
-        return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                               user=current_user, form=form)
+    return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           user=current_user, form=form)
 
 
 @app.errorhandler(403)
@@ -534,7 +534,26 @@ def allrisefall():
                                portfolioids=share_data.getportfolioidsfromtable(current_user.username))
 
 
+@app.route('/sidebarshare', methods=['GET', 'POST'] )
+def sidebarshare():
+
+    form = SidebarShareForm()
+    form.ticker.choices = [('AAL','ANGLO AMERICAN'),('AHT','ASHTEAD GROUP PLC'),
+                           ('BKG','BERKELY GROUP HOLDING'), ('CARD','CARD FACTORY'),('CLLN','CARILLION PLC'),
+                           ('DCC','DCC PLC'),
+                           ('DTY','DIGNITY PLC'),('FAN','VOLUTION GROUP'), ('GLEN','GLENCORE PLC'), ('HSBA','HSBC'),
+                           ('IHG','INTERCONTINENTAL HOTELS GROUP PLC'), ('LLOY','LLOYDS BANKING GROUP'),
+                           ('MKS', 'MARKS & SPENCER'), ('OML','OLD MUTUAL PLC'), ('RBS', 'ROYAL BANK OF SCOTLAND'),
+                           ('RUS','RAVEN RUSSIA'),('PFG','PROVIDENT FINANCIAL PLC'), ('STAN','STANDARD CHARTERED PLC'),
+                           ('WTB','WHITBREAD PLC')]
+
+    if current_user.is_authenticated:
+
+        if form.validate_on_submit():
+
+            return redirect(url_for('sidebar/addshare.html'))
 
 
 
 
+        return render_template('sidebar/addshare.html', form=form)

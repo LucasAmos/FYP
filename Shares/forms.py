@@ -124,18 +124,28 @@ class SellShareValidator(object):
 
 
 class AddShareForm(Form):
-    # ticker = StringField('The share ticker:', validators=[DataRequired(), Regexp(r'^[a-zA-Z]*$',
-    #                                                                              message="The share ticker must only be letters"), ShareTickerValidator()])
-    ticker = SelectField('Select a share to add: &nbsp ')
+    ticker = SelectField('Select a share to add &nbsp ')
 
-    quantity = IntegerField('How many of this share do you own:', validators=[number_range(min=1, max=10000)],
+    quantity = IntegerField('Quantity of shares purchased', validators=[number_range(min=1, max=10000)],
                             widget=MyTextInput())
-    dividends = FloatField('Do you have any dividends for this share? &nbsp', validators=[optional(),
+    dividends = FloatField('Dividends for these shares &nbsp', validators=[optional(),
                             number_range(min=0.00)], widget=MyTextInput())
     originalportfolioid = HiddenField("hidden field")
-    purchaseprice = DecimalField(u'How much did you pay for these shares?  &nbsp', default=0.00,
-                                 validators=[number_range(min=0.0, max=120)], widget=MyTextInput())
-    portfolioid = SelectField(u'Choose a portfolio:', validators=[ExistingShareInPortfolioValidator()])
+    purchaseprice = DecimalField(u'Purchase price for each share &nbsp',
+                                 validators=[number_range(min=0.0, max=120)], render_kw={"placeholder": "0.00"}, widget=MyTextInput())
+    portfolioid = SelectField(u'Choose a portfolio', validators=[ExistingShareInPortfolioValidator()])
+
+    def validate(self):
+
+        if not Form.validate(self):
+            return False
+
+        return True
+
+
+class SidebarShareForm(Form):
+    ticker = SelectField('')
+
 
     def validate(self):
 
@@ -287,5 +297,7 @@ class EditSettingsForm(Form):
                            validators=[optional(),
                                Regexp('^(\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$',
                                       message='Not a valid UK mobile phone number')])
+
+
 
 

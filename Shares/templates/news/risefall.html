@@ -13,14 +13,17 @@
 
     <div class="loss">
 
-        {{share[1]}} {{share[2]}}  <br>
+         <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> {{share[1]}} {{share[2] | float | round(3)}}  <br>
     </div>
 
     {% else %}
 
     <div class="profit">
 
-        {{share[1]}} {{share[2]}}  <br>
+        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>    {{share[1]}} {{share[2]}}  <br>
+
+
+
     </div>
 
     {% endif %}
@@ -31,7 +34,7 @@
     {% endfor %}
 
     <br>
-<a class="btn btn-lg btn-default btn-block" href="{{ url_for('allrisefall') }}">All shares</a>
+    <a class="btn btn-lg btn-default btn-block" href="{{ url_for('allrisefall') }}">All shares</a>
 
 </div>
 

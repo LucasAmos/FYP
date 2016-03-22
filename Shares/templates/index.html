@@ -39,8 +39,11 @@ FYP - share portfolio
 {% endif %}
 {% endblock %}
 
-{% block news %}
 
+
+
+
+{% block news %}
 {% if news %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
@@ -49,25 +52,38 @@ FYP - share portfolio
 }();
 </script>
 
-
-
 {% endif %}
 {% endblock %}
 
+
+
+
+
 {% block fall %}
 
-{% if news %}
+{% if sharesexist %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <script>!function() {
     $('#fall').load('/risefall')
 }();
 </script>
-
-
-
 {% endif %}
 {% endblock %}
+
+
+
+
+{% block addshare %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script>!function() {
+    $('#addshare').load('/sidebarshare')
+}();
+</script>
+
+{% endblock %}
+
 
 
 {% block content %}

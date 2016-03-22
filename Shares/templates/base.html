@@ -188,6 +188,9 @@
 
                 <div class="col-md-4">
 
+                    <div class="col-md-12" id="addshare"> </div>
+
+
                     <div class="col-md-12" id="news2">
 
 
@@ -204,13 +207,19 @@
             <br>
         </div>
 
-        {% block news %}
-
+        {% block addshare %}
 
         {% endblock %}
 
-        {% block fall %}
 
+
+        {% block news %}
+
+        {% endblock %}
+
+
+
+        {% block fall %}
 
         {% endblock %}
 
@@ -248,17 +257,20 @@
 
         $('.chosen').chosen({
             allow_single_deselect: true,
+            width: "100%",
             placeholder_text_single: "Choose a portfolio"
         });
 
         $('.chosendelete').chosen({
             allow_single_deselect: true,
+            width: 'resolve',
             placeholder_text_single: "Choose a portfolio to delete"
         });
 
         $('.chosenshare').chosen({
             allow_single_deselect: true,
-            placeholder_text_single: "Choose a share to add"
+            width: '100%',
+            placeholder_text_single: "Start typing to find a share"
         });
 
         $(function() {

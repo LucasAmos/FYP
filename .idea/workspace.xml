@@ -5,19 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/Shares/templates/settings.html" line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="css">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
+    <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/forms.py" afterPath="$PROJECT_DIR$/Shares/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/static/css/main.css" afterPath="$PROJECT_DIR$/Shares/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/add.html" afterPath="$PROJECT_DIR$/Shares/templates/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/base.html" afterPath="$PROJECT_DIR$/Shares/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/index.html" afterPath="$PROJECT_DIR$/Shares/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/news/news.html" afterPath="$PROJECT_DIR$/Shares/templates/news/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/news/risefall.html" afterPath="$PROJECT_DIR$/Shares/templates/news/risefall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/sharedata.html" afterPath="$PROJECT_DIR$/Shares/templates/sharedata.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" afterPath="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addshare.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addshare.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/templates/sidebar/addshare.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.407408">
-              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4789357">
-              <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.29933482">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -272,7 +252,6 @@
         <option value="$PROJECT_DIR$/Shares/templates/form_macros.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sidebar/addshare2.html" />
         <option value="$PROJECT_DIR$/Shares/templates/news/news.html" />
-        <option value="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sharedata.html" />
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
@@ -280,6 +259,7 @@
         <option value="$PROJECT_DIR$/Shares/templates/base.html" />
         <option value="$PROJECT_DIR$/Shares/forms.py" />
         <option value="$PROJECT_DIR$/Shares/templates/add.html" />
+        <option value="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" />
       </list>
     </option>
   </component>
@@ -785,12 +765,6 @@
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
     </task>
-    <task id="LOCAL-00044" summary="overflow">
-      <created>1457917854880</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1457917854880</updated>
-    </task>
     <task id="LOCAL-00045" summary="overflow">
       <created>1457917994647</created>
       <option name="number" value="00045" />
@@ -1079,7 +1053,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458568731793</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="lots of stuff">
+      <created>1458614514934</created>
+      <option name="number" value="00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1458614514935</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1096,6 +1076,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19624102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1086,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1127,7 +1107,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loads news immediately&#10;" />
     <MESSAGE value="new news location" />
     <MESSAGE value="undo container fluid" />
     <MESSAGE value="line spacing" />
@@ -1152,7 +1131,8 @@
     <MESSAGE value="daily share limit" />
     <MESSAGE value="daily share notification limit" />
     <MESSAGE value="css" />
-    <option name="LAST_COMMIT_MESSAGE" value="css" />
+    <MESSAGE value="lots of stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="lots of stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1472,6 +1452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.060538117">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,18 +1614,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/sidebar/addshare.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.407408">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4789357">
           <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/sectional.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3326157">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/sidebar/addshare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29933482">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding />
         </state>
       </provider>

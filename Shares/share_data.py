@@ -2,7 +2,7 @@ from sqlalchemy import desc
 from flask import render_template, redirect, url_for
 import urllib
 import json
-from models import Userownedshare, Portfolios
+from models import Userownedshare, Portfolios, Transactions
 
 
 class share_data():
@@ -79,57 +79,57 @@ class share_data():
     @staticmethod
     def getalljsonshares(user):
 
-            tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user)
 
-            sharearray = []
+        sharearray = []
 
-            for row in tempshares:
+        for row in tempshares:
 
-                ticker = row.ticker
-                quote = share_data.JSONSharePrice(ticker)
-                sharedata = {
-                    ### change this line to fix symbol display in portfolio page
-                    'symbol': quote['query']['results']['quote']['symbol'],
-                    'quantity': row.quantity,
-                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
-                    'averagepurchaseprice': row.averagepurchaseprice,
-                    'name': row.name.name,
-                    'dividends': row.dividends,
-                    'id': row.id,
+            ticker = row.ticker
+            quote = share_data.JSONSharePrice(ticker)
+            sharedata = {
+                ### change this line to fix symbol display in portfolio page
+                'symbol': quote['query']['results']['quote']['symbol'],
+                'quantity': row.quantity,
+                'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
+                'averagepurchaseprice': row.averagepurchaseprice,
+                'name': row.name.name,
+                'dividends': row.dividends,
+                'id': row.id,
 
-                    'portfolioid': row.portfolioid
-                }
-                sharearray.append(sharedata)
+                'portfolioid': row.portfolioid
+            }
+            sharearray.append(sharedata)
 
-            return sharearray
+        return sharearray
 
 
     @staticmethod
     def getalljsonsharesInPortfolio(user, portfolio):
 
-            tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user, Userownedshare.portfolioid == portfolio)
+        tempshares = Userownedshare.query.order_by(desc(Userownedshare.ticker)).filter(Userownedshare.user == user, Userownedshare.portfolioid == portfolio)
 
-            sharearray = []
+        sharearray = []
 
-            for row in tempshares:
+        for row in tempshares:
 
-                ticker = row.ticker
-                quote = share_data.JSONSharePrice(ticker)
-                sharedata = {
-                    ### change this line to fix symbol display in portfolio page
-                    'symbol': quote['query']['results']['quote']['symbol'][:-2],
-                    'quantity': row.quantity,
-                    'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
-                    'averagepurchaseprice': row.averagepurchaseprice,
-                    'name': row.name.name,
-                    'dividends': row.dividends,
-                    'id': row.id,
+            ticker = row.ticker
+            quote = share_data.JSONSharePrice(ticker)
+            sharedata = {
+                ### change this line to fix symbol display in portfolio page
+                'symbol': quote['query']['results']['quote']['symbol'][:-2],
+                'quantity': row.quantity,
+                'price': float(quote['query']['results']['quote']['LastTradePriceOnly']) /100,
+                'averagepurchaseprice': row.averagepurchaseprice,
+                'name': row.name.name,
+                'dividends': row.dividends,
+                'id': row.id,
 
-                    'portfolioid': row.portfolioid
-                }
-                sharearray.append(sharedata)
+                'portfolioid': row.portfolioid
+            }
+            sharearray.append(sharedata)
 
-            return sharearray
+        return sharearray
 
 
     @staticmethod
@@ -226,8 +226,6 @@ class share_data():
         return portfoliovalues
 
 
-
-
     @staticmethod
     def getnonemptyportfolios(user):
 
@@ -245,7 +243,6 @@ class share_data():
         return templist
 
 
-
     @staticmethod
     def getPortfolioIDbyusernameandPortfolioName(username, portfolioname):
 
@@ -256,13 +253,38 @@ class share_data():
     @staticmethod
     def isValidShare(ticker):
 
-            quote = share_data.JSONSharePrice(ticker)
+        quote = share_data.JSONSharePrice(ticker)
 
-            if quote['query']['results']['quote']['LastTradePriceOnly']:
-                return True
+        if quote['query']['results']['quote']['LastTradePriceOnly']:
+            return True
 
-            else:
-                return False
+        else:
+            return False
+
+    @staticmethod
+    def getTransactions(username):
+
+        transactions = Transactions.query.filter(Transactions.user == username)
+
+        transactionarray = []
+        for row in transactions:
+
+
+            transaction = {
+                'portfolioid': row.portfolioid,
+                'date': row.time,
+                'name': row.name.name,
+                'buysell': row.buySell,
+                'quantity': row.quantity,
+                'dividends': row.dividends,
+                'price': row.price,
+                'ticker': row.ticker
+            }
+
+            transactionarray.append(transaction)
+
+        return transactionarray
+
 
 
 

@@ -80,7 +80,6 @@ ul {
 
 #fall{
 
-    margin-top: 25px;
     padding-bottom: 25px;
     border-radius: 5px;
 }
@@ -228,6 +227,9 @@ ul
     color: red
 }
 
+.fulltable{
+    width: 100%;
+}
 
 .share tr:nth-child(odd)		{ background-color:#eee; }
 .share tr:nth-child(even)		{ background-color:#fff; }

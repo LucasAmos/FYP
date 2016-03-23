@@ -22,11 +22,11 @@ Portfolio - {{ id | capitalize }}
 
             {% if  portfolioprofit | float < 0 %}
 
-            <th>  Profit/loss:<span class="loss"> £{{portfolioprofit}} </span> </th>
+            <th>  Profit/loss:<span class="loss"> £{{portfolioprofit |round(3, 'floor') }} </span> </th>
 
             {% else %}
 
-            <th>Profit/loss: <span class="profit">  £{{portfolioprofit}} </span></th>
+            <th>Profit/loss: <span class="profit">  £{{portfolioprofit | round(3, 'floor') }} </span></th>
 
             {% endif %}
 

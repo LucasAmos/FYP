@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from sqlalchemy import desc
+from sqlalchemy import desc, DateTime
 from flask_login import UserMixin, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
-
 from Shares import db
+import datetime
 
 
 class User(db.Model, UserMixin):
@@ -103,5 +103,19 @@ class Share(db.Model):
 
 
 class Portfolios(db.Model):
-    portfolioname = db.Column(db.String(50), primary_key=True)
-    username = db.Column(db.String(50), primary_key=True)
+        portfolioname = db.Column(db.String(50), primary_key=True)
+        username = db.Column(db.String(50), primary_key=True)
+
+
+class Transactions(db.Model):
+        id = db.Column(db.Integer, primary_key=True)
+        user = db.Column(db.String, db.ForeignKey('user.username'))
+        portfolioid = db.Column(db.String(50))
+        time = db.Column(DateTime, default=datetime.datetime.utcnow())
+        buySell = db.Column(db.Integer)
+        quantity = db.Column(db.Integer)
+        dividends = db.Column(db.Float)
+        price = db.Column(db.Float)
+        ticker = db.Column(db.String(20), db.ForeignKey('share.ticker'))
+        name = db.relationship('Share', backref='transaction',  foreign_keys=[ticker], lazy="joined")
+        owner = db.relationship('User', backref='transaction',  foreign_keys=[user], lazy="joined")

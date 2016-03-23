@@ -3,7 +3,7 @@
 
 from Shares import app, db
 
-from Shares.models import User, Userownedshare, Share, Portfolios
+from Shares.models import User, Userownedshare, Share, Portfolios, Transactions
 from flask.ext.script import Manager, prompt_bool
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand
@@ -26,6 +26,14 @@ def initdb():
 
         portfolio = Portfolios(username="lucas", portfolioname="test")
         db.session.add(portfolio)
+
+        #transaction = Transaction(user="lucas", portfolioid="test", buySell="sell", quantity=6, dividends=476.44, price= 324.3, ticker="RBS")
+
+        #transaction = Transaction(id=1)
+        #db.session.add(transaction)
+
+
+
 
         google = Userownedshare(user="lucas", ticker="MKS", quantity=1, portfolioid="test", triggerlevel=0, smsalert=False, emailalert=False)
         db.session.add(google)

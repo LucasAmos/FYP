@@ -122,6 +122,14 @@ def delete_share(share_id):
         abort(403)
 
     if request.method == "POST":
+
+        transaction = Transactions()
+        transaction.user = current_user.username
+        transaction.portfolioid = tempshare.portfolioid
+        transaction.buySell = 3
+        transaction.ticker = tempshare.ticker
+
+        db.session.add(transaction)
         db.session.delete(tempshare)
         db.session.commit()
         flash("You have successfully deleted the share: '{}'". format(tempshare.name.name))
@@ -192,6 +200,16 @@ def add():
 
     if form.validate_on_submit():
 
+        transaction = Transactions()
+        transaction.user = current_user.username
+        transaction.portfolioid = form.portfolioid.data
+        transaction.buySell = 0
+        transaction.ticker = form.ticker.data.upper()
+        transaction.quantity = form.quantity.data
+        transaction.dividends = form.dividends.data
+        transaction.price = share_data.JSONSharePrice(form.ticker.data)['query']['results']['quote']['LastTradePriceOnly']
+        db.session.add(transaction)
+
         ticker = form.ticker.data.upper()
         quantity = form.quantity.data
         dividends = form.dividends.data
@@ -233,20 +251,32 @@ def addadditionalshares(share_id):
 
     if form.validate_on_submit():
 
+        transaction = Transactions()
+        transaction.user = current_user.username
+        transaction.portfolioid = share.portfolioid
+        transaction.buySell = 1
+        transaction.ticker = share.ticker
+
+
         if form.sharequantity.data and form.shareprice.data:
 
             totalshares = float(share.quantity) + form.sharequantity.data
             newaveragepurchaseprice = (((float(share.averagepurchaseprice) * share.quantity) + (form.sharequantity.data * form.shareprice.data)) / totalshares)
             share.averagepurchaseprice = newaveragepurchaseprice
-
             share.quantity += form.sharequantity.data
-            db.session.commit()
+
+            transaction.quantity = form.sharequantity.data
+            transaction.price = form.shareprice.data
+
 
         if form.dividends.data:
             share.dividends += float(form.dividends.data)
-            db.session.commit()
+            transaction.dividends = form.dividends.data
 
-        temp = str( share.portfolioid)
+
+        db.session.add(transaction)
+        db.session.commit()
+
 
         flash("You have successfully edited the share: '{}'". format(share.name.name))
         return redirect(url_for('list_portfolio', portfolio_id=share.portfolioid))
@@ -272,6 +302,14 @@ def sell_share(share_id):
 
     if form.validate_on_submit():
 
+        transaction = Transactions()
+        transaction.user = current_user.username
+        transaction.portfolioid = share.portfolioid
+        transaction.buySell = 2
+        transaction.ticker = share.ticker
+        transaction.quantity = form.quantity.data
+        transaction.price = form.price.data
+
         originalpurchaseprice = float(share.averagepurchaseprice)
         originalquantity = float(share.quantity)
         salequantity = float(form.quantity.data)
@@ -290,8 +328,8 @@ def sell_share(share_id):
 
         share.averagepurchaseprice = newpurchaseprice
         share.quantity = (originalquantity - salequantity)
-        db.session.commit()
 
+        db.session.add(transaction)
         db.session.commit()
 
         flash("You have successfully edited the share: '{}'". format(share.name.name))
@@ -414,6 +452,19 @@ def accountsettings():
 
     return render_template('accountsettings.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
                            user=current_user, form=form)
+
+
+@app.route('/transactions/<user>', methods=['GET', 'POST'])
+@login_required
+def transactions(user):
+
+    if current_user.username != user:
+        abort(403)
+
+    transactiondata = share_data.getTransactions(current_user.username)
+    return render_template('transactions.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                           user=current_user, transactiondata = transactiondata)
+
 
 
 @app.errorhandler(403)

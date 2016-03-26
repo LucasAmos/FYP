@@ -259,7 +259,7 @@ class DeletePortfolioForm(Form):
 
 class NotificationSettingsForm(Form):
     emailfrequency = RadioField(u'How often do you wish to receive emails about your portfolio value?', choices=[('0', 'Never'), ('1', 'Daily'), ('2', 'Weekly')]  )
-    smsenabled = RadioField(u'Set the status of your SMS share price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
+    smsenabled = RadioField(u'Set the status of your share price alerts', choices=[('0', 'Disabled'), ('1', 'Enabled')], default='0')
 
     def validate(self):
 

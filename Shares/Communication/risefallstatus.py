@@ -3,14 +3,17 @@ sys.path.append("/home/lucasamos/FYP")
 
 from Shares.models import User, Userownedshare
 from twilioSMS import SMS
+from sendgridEmail import Email
+
 from manage import db
 from Shares.share_data import share_data
 from datetime import datetime as dt
 import datetime
+from EmailFallRise import EmailFallRise
 
 
 class risefallstatus():
-
+    email = Email("lucas_amos", "beadle10")
     sms = SMS("ACb3d2405e15df8441919994ce553eae4b", "41e85a6638606f578860825b750462c1")
     session = db.session()
     today = datetime.datetime.today().weekday()
@@ -27,7 +30,7 @@ class risefallstatus():
 
                 for share in session.query(Userownedshare).filter_by(user=user.username):
 
-                    if share.smsalert:
+                    if share.smsalert or share.emailalert:
 
                         alerttime = share.lastalert
                         currenttime = dt.today()
@@ -48,8 +51,15 @@ class risefallstatus():
                             if share.triggerlevel < 0:
 
                                 if change < share.triggerlevel:
-                                    print share
-                                    #sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
+
+                                    data = {"risefall": "fallen", "name": name, "change": change}
+                                    html = EmailFallRise.emailnotification(data)
+
+                                    if share.emailalert:
+                                        email.sendEmail(user.email, "alerts@lucasamos.net", "Share alert for %s" %name, html)
+
+                                    if share.smsalert:
+                                        sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
                                     share.lastalert = dt.today()
                                     db.session.commit()
 
@@ -62,8 +72,15 @@ class risefallstatus():
 
                             elif share.triggerlevel > 0:
                                 if change > share.triggerlevel:
-                                    name = str(share.name.name)
-                                    #sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
+
+                                    data = {"risefall": "risen", "name": name, "change": change}
+                                    html = EmailFallRise.emailnotification(data)
+
+                                    if share.emailalert:
+                                        email.sendEmail(user.email, "alerts@lucasamos.net", "Share alert for %s" %name, html)
+
+                                    if share.smsalert:
+                                        sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
                                     share.lastalert = dt.today()
                                     db.session.commit()
 
@@ -81,5 +98,5 @@ class risefallstatus():
 
             else:
                 print ""
-                print "** sms's disabled for: %s **" %(user.username)
+                print "** alerts disabled for: %s **" %(user.username)
                 print""

@@ -1,10 +1,11 @@
-from datetime import datetime
+from datetime import datetime as dt
 
 from sqlalchemy import desc, DateTime
 from flask_login import UserMixin, current_user
 from werkzeug.security import check_password_hash, generate_password_hash
 from Shares import db
 import datetime
+from datetime import timedelta
 
 
 class User(db.Model, UserMixin):
@@ -48,9 +49,13 @@ class Userownedshare(db.Model):
         emailalert = db.Column(db.Boolean)
         portfolioid = db.Column(db.String(50))
         averagepurchaseprice = db.Column(db.Float, server_default="0.0")
-        lastalert = db.Column(db.DateTime)
+
+        dt = datetime.datetime.utcnow() - timedelta(days=1)
+        lastalert = db.Column(db.DateTime, default=dt)
+
         name = db.relationship('Share', backref='userownedshare',  foreign_keys=[ticker], lazy="joined")
         owner = db.relationship('User', backref='userownedshare',  foreign_keys=[user], lazy="joined")
+
 
 
         @staticmethod
@@ -111,7 +116,11 @@ class Transactions(db.Model):
         id = db.Column(db.Integer, primary_key=True)
         user = db.Column(db.String, db.ForeignKey('user.username'))
         portfolioid = db.Column(db.String(50))
-        time = db.Column(DateTime, default=datetime.datetime.utcnow())
+
+        dt = datetime.datetime.utcnow()
+        dt = dt.replace(microsecond=0)
+        time = db.Column(DateTime, default=dt)
+        #time = db.Column(DateTime, default=datetime.datetime.utcnow())
         buySell = db.Column(db.Integer)
         quantity = db.Column(db.Integer)
         dividends = db.Column(db.Float)

@@ -12,6 +12,7 @@ class test(TestCase):
     def create_app(self):
         appy.config['TESTING'] = True
         appy.config['WTF_CSRF_ENABLED'] = False
+        appy.config['PRESERVE_CONTEXT_ON_EXCEPTION'] = False
         return appy
 
     SQLALCHEMY_DATABASE_URI = "sqlite://"
@@ -19,11 +20,13 @@ class test(TestCase):
 
     def setUp(self):
         manage.inittestdb()
-      #  print self.addShare("GOOG", 10, 100, "testportfolio").data
         self.login('lucas2', 'test')
-
         self.addPortfolio("testportfolio")
-        #print self.addShare("MKS", 10, 100, "testportfolio").data
+
+        #rv = self.addShare("RBS", 1, 0, -1, "testportfolio")
+        #print rv.data
+
+
 
 
     def tearDown(self):
@@ -43,26 +46,92 @@ class test(TestCase):
             name=portfolioname
         ), follow_redirects=True)
 
-    def addShare(self, ticker, quantity, purchaseprice, portfolioid):
+    def addShare(self, ticker, quantity, dividends, purchaseprice, portfolioid):
+
         #self.addPortfolio(portfolioid)
         return self.client.post('/add', data=dict(
             ticker=ticker,
             quantity=quantity,
+            dividends=dividends,
             purchaseprice=purchaseprice,
             portfolioid=portfolioid
         ), follow_redirects=True)
 
-    def testAddShare(self):
-        self.login('lucas2', 'test')
 
+    def testAddShare(self):
+        #self.login('lucas2', 'test')
+
+        # Test initial add
         self.addPortfolio("testportfolio")
-        rv = self.addShare("MKS", 10, 100, "testportfolio")
+        rv = self.addShare("MKS", 5000, 0, 100, "testportfolio")
         assert "Added share &#39;MKS&#39;" in rv.data
 
-
-        rv = self.addShare("MKS", 10, 100, "testportfolio")
+        # Test existing share cannot be added
+        rv = self.addShare("MKS", 10, 0, 100, "testportfolio")
         assert "That share is already in that portfolio" in rv.data
 
+        # Test same share can be added to a different portfolio
         self.addPortfolio("secondtestportfolio")
-        rv = self.addShare("MKS", 10, 100, "secondtestportfolio")
+        rv = self.addShare("MKS", 10, 0, 100, "secondtestportfolio")
         assert "Added share &#39;MKS&#39;" in rv.data
+
+
+
+
+    def testQuantityBoundaries(self):
+
+        # Test boundaries for share quantity
+        self.addPortfolio("secondtestportfolio")
+        rv = self.addShare("LLOY", 0, 0, 100, "secondtestportfolio")
+        assert "Number must be between 1 and 10000" in rv.data
+
+        rv = self.addShare("LLOY", -1, 0, 100, "secondtestportfolio")
+        assert "Number must be between 1 and 10000" in rv.data
+
+        rv = self.addShare("LLOY", 10001, 0, 100, "secondtestportfolio")
+        assert "Number must be between 1 and 10000" in rv.data
+
+        self.addPortfolio("testportfolio")
+        rv = self.addShare("RBS", 1, 0, 100, "testportfolio")
+        assert "Added share &#39;RBS&#39;" in rv.data
+
+        self.addPortfolio("testportfolio")
+        rv = self.addShare("MKS", 5000, 0, 100, "testportfolio")
+        assert "Added share &#39;MKS&#39;" in rv.data
+
+        self.addPortfolio("testportfolio")
+        rv = self.addShare("HSBA", 9999, 0, 100, "testportfolio")
+        assert "Added share &#39;HSBA&#39;" in rv.data
+
+    def testDividendBoundaries(self):
+
+        # Test boundaries for dividends
+        self.addPortfolio("secondtestportfolio")
+
+        rv = self.addShare("LLOY", 1, 0, 100, "testportfolio")
+        assert "Added share &#39;LLOY&#39;" in rv.data
+
+        rv = self.addShare("LLOY", 1, -1, 100, "testportfolio")
+        assert "Number must be at least 0.0" in rv.data
+
+    def testPriceBoundaries(self):
+
+        # Test boundaries for share price
+        self.addPortfolio("secondtestportfolio")
+
+        rv = self.addShare("RBS", 1, 0, -0.01, "testportfolio")
+        assert "Number must be between 0.0 and 120" in rv.data
+
+        rv = self.addShare("RBS", 1, 0, 0.00, "testportfolio")
+        assert "Added share &#39;RBS&#39;" in rv.data
+
+        rv = self.addShare("LLOY", 1, 0, 0.01, "testportfolio")
+        assert "Added share &#39;LLOY&#39;" in rv.data
+
+
+        rv = self.addShare("HSBA", 1, 0, 100, "testportfolio")
+        assert "Added share &#39;HSBA&#39;" in rv.data
+
+
+
+

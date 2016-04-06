@@ -19,6 +19,8 @@ class test(TestCase):
 
     def setUp(self):
         manage.inittestdb()
+        rv = self.logout()
+        print rv.data
 
     def tearDown(self):
 
@@ -37,7 +39,7 @@ class test(TestCase):
     def test_login(self):
 
         rv = self.login('lucas2', 'test')
-        assert 'Welcome Lucas2' in rv.data
+        assert 'Logged in successfully as lucas2' in rv.data
 
         rv = self.login('nouser', 'test')
         assert 'Incorrect username or password' in rv.data
@@ -46,4 +48,4 @@ class test(TestCase):
         assert 'Incorrect username or password' in rv.data
 
         rv = self.logout()
-        assert 'Sign in' in rv.data
+        assert 'login' in rv.data

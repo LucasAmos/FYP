@@ -264,7 +264,7 @@ class share_data():
     @staticmethod
     def getTransactions(username):
 
-        transactions = Transactions.query.filter(Transactions.user == username)
+        transactions = Transactions.query.filter(Transactions.user == username).order_by(desc(Transactions.time))
 
         transactionarray = []
         for row in transactions:

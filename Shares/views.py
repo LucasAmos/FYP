@@ -8,7 +8,7 @@ from models import User, Userownedshare, Share
 from share_data import *
 from News.News import News
 from News.RiseFall import RiseFall
-from datetime import datetime
+import datetime
 
 @login_manager.user_loader
 def load_user(userid):
@@ -128,6 +128,8 @@ def delete_share(share_id):
         transaction.portfolioid = tempshare.portfolioid
         transaction.buySell = 3
         transaction.ticker = tempshare.ticker
+        now = datetime.datetime.now()
+        transaction.time = now.replace(microsecond=0)
 
         db.session.add(transaction)
         db.session.delete(tempshare)
@@ -208,6 +210,8 @@ def add():
         transaction.quantity = form.quantity.data
         transaction.dividends = form.dividends.data
         transaction.price = share_data.JSONSharePrice(form.ticker.data)['query']['results']['quote']['LastTradePriceOnly']
+        now = datetime.datetime.now()
+        transaction.time = now.replace(microsecond=0)
         db.session.add(transaction)
 
         ticker = form.ticker.data.upper()
@@ -273,7 +277,8 @@ def addadditionalshares(share_id):
             share.dividends += float(form.dividends.data)
             transaction.dividends = form.dividends.data
 
-
+        now = datetime.datetime.now()
+        transaction.time = now.replace(microsecond=0)
         db.session.add(transaction)
         db.session.commit()
 
@@ -329,6 +334,8 @@ def sell_share(share_id):
         share.averagepurchaseprice = newpurchaseprice
         share.quantity = (originalquantity - salequantity)
 
+        now = datetime.datetime.now()
+        transaction.time = now.replace(microsecond=0)
         db.session.add(transaction)
         db.session.commit()
 

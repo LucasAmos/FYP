@@ -352,7 +352,7 @@ def notifications():
 
         db.session.commit()
         flash("You have successfully updated your notification preferences")
-        return redirect(url_for('index'))
+        return redirect(url_for('settings'))
 
     #   share = Userownedshare.query.get_or_404(share_id)
     # if current_user.username != share.user:

@@ -53,7 +53,7 @@ FYP -- Transactions
 
         <td> {{ row['quantity'] }} </td>
         <td> {{ row['dividends'] }} </td>
-        <td> {{ row['price'] }} </td>
+        <td> £{{ row['price'] /100 }} </td>
 
         {% endfor %}
 </table>

@@ -349,37 +349,40 @@ def sell_share(share_id):
 @app.route('/notifications', methods=['GET', 'POST'], )
 @login_required
 def notifications():
-    user = User.query.get_or_404(current_user.id)
-    form = NotificationSettingsForm(request.form, emailfrequency=user.emailfrequency, smsenabled=int(user.smsenabled))
+
+    if current_user.is_authenticated:
+        user = User.query.get_or_404(current_user.id)
+        form = NotificationSettingsForm(request.form, emailfrequency=user.emailfrequency, smsenabled=int(user.smsenabled))
 
 
-    if form.validate_on_submit():
-        user.emailfrequency = form.emailfrequency.data
-        user.smsenabled = form.smsenabled.data
+        if form.validate_on_submit():
+            user.emailfrequency = form.emailfrequency.data
+            user.smsenabled = form.smsenabled.data
 
-        db.session.commit()
-        flash("You have successfully updated your notification preferences")
-        return redirect(url_for('settings'))
+            db.session.commit()
+            flash("You have successfully updated your notification preferences")
+            return redirect(url_for('settings'))
 
-    #   share = Userownedshare.query.get_or_404(share_id)
-    # if current_user.username != share.user:
-    #     abort(403)
-    # #form = RemoveShareForm(obj=tempeditshare)
-    # form = RemoveShareForm()
-    # form.ticker.data = share.ticker
+        #   share = Userownedshare.query.get_or_404(share_id)
+        # if current_user.username != share.user:
+        #     abort(403)
+        # #form = RemoveShareForm(obj=tempeditshare)
+        # form = RemoveShareForm()
+        # form.ticker.data = share.ticker
 
 
 
-    return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
-                           form=form, news=News.getNews(current_user.username))
+        return render_template('notifications.html', portfolioids=share_data.getportfolioidsfromtable(current_user.username),
+                               form=form, news=News.getNews(current_user.username))
 
 
 @app.route('/setnotification/<share_id>', methods=['GET', 'POST'])
+@login_required
 def setNotification(share_id):
-
-    if current_user.is_authenticated:
-
         share = Userownedshare.query.get_or_404(share_id)
+
+        if current_user.username != share.user:
+            abort(403)
 
 
         if share.triggerlevel == 0:

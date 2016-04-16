@@ -6,9 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7240af3f-671f-4b7d-9af6-d8eb26301e3c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Shares/Tests/testUserNotifications.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/thermos.db" afterPath="$PROJECT_DIR$/Shares/thermos.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/views.py" afterPath="$PROJECT_DIR$/Shares/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shares/Tests/testAddShare.py" afterPath="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
     </list>
     <ignored path="FYP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,20 +28,23 @@
     <SUITE FILE_PATH="coverage/FYP$temp.coverage" NAME="temp Coverage Results" MODIFIED="1457047504881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
     <SUITE FILE_PATH="coverage/FYP$spend.coverage" NAME="spend Coverage Results" MODIFIED="1458167404619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$yahooz.coverage" NAME="yahooz Coverage Results" MODIFIED="1458418483891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testUserNotifications.coverage" NAME="Unittests in testUserNotifications Coverage Results" MODIFIED="1460823329146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAuthentication.coverage" NAME="Unittests in testAuthentication Coverage Results" MODIFIED="1459978991312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_test.coverage" NAME="Unittests in spender Coverage Results" MODIFIED="1458076163043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$marcher.coverage" NAME="marcher Coverage Results" MODIFIED="1458170790856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$sendMessage.coverage" NAME="sendMessage Coverage Results" MODIFIED="1457051260177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddShare.coverage" NAME="Unittests in testAddShare Coverage Results" MODIFIED="1459980954048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddShare.coverage" NAME="Unittests in testAddShare Coverage Results" MODIFIED="1460631309109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$PortfolioStatus.coverage" NAME="PortfolioStatus Coverage Results" MODIFIED="1457830250794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$newrisefall.coverage" NAME="newrisefall Coverage Results" MODIFIED="1458418987240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1459964911228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_Tests.coverage" NAME="Unittests in Tests Coverage Results" MODIFIED="1460800486156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$Unittests_in_testAddPortfolio.coverage" NAME="Unittests in testAddPortfolio Coverage Results" MODIFIED="1459978424498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testShareNotifications.coverage" NAME="Unittests in testShareNotifications Coverage Results" MODIFIED="1460823690601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$News.coverage" NAME="News Coverage Results" MODIFIED="1457047840015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
-    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDeletePortfolio.coverage" NAME="Unittests in testDeletePortfolio Coverage Results" MODIFIED="1459978995445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDeletePortfolio.coverage" NAME="Unittests in testDeletePortfolio Coverage Results" MODIFIED="1460800475962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
     <SUITE FILE_PATH="coverage/FYP$risefall.coverage" NAME="risefall Coverage Results" MODIFIED="1458168546392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/News" />
     <SUITE FILE_PATH="coverage/FYP$twilioSMS.coverage" NAME="twilioSMS Coverage Results" MODIFIED="1458174252019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
     <SUITE FILE_PATH="coverage/FYP$risefallstatus.coverage" NAME="risefallstatus Coverage Results" MODIFIED="1458960617412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Communication" />
+    <SUITE FILE_PATH="coverage/FYP$Unittests_in_testDeleteShare.coverage" NAME="Unittests in testDeleteShare Coverage Results" MODIFIED="1460632492111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Shares/Tests" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="$PROJECT_DIR$" />
@@ -50,46 +55,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testAuthentication.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/Tests/testAuthentication.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testAddShare.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shares/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.5011137">
-              <caret line="555" column="26" selection-start-line="555" selection-start-column="20" selection-end-line="555" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.2837633">
+              <caret line="378" column="19" selection-start-line="378" selection-start-column="13" selection-end-line="378" selection-end-column="19" />
               <folding>
-                <element signature="e#1804#2286#0" expanded="false" />
+                <element signature="e#446#541#0" expanded="false" />
+                <element signature="e#599#1111#0" expanded="false" />
+                <element signature="e#1179#1738#0" expanded="false" />
                 <element signature="e#2354#2405#0" expanded="false" />
                 <element signature="e#2503#3051#0" expanded="false" />
                 <element signature="e#3154#3832#0" expanded="false" />
+                <element signature="e#3941#5016#0" expanded="false" />
                 <element signature="e#5147#6594#0" expanded="false" />
                 <element signature="e#6674#9277#0" expanded="false" />
+                <element signature="e#9415#11107#0" expanded="false" />
+                <element signature="e#11212#13239#0" expanded="false" />
                 <element signature="e#16256#16414#0" expanded="false" />
+                <element signature="e#17237#17564#0" expanded="false" />
                 <element signature="e#17618#17657#0" expanded="false" />
                 <element signature="e#17710#17749#0" expanded="false" />
                 <element signature="e#17800#17839#0" expanded="false" />
+                <element signature="e#17935#19664#0" expanded="false" />
+                <element signature="e#19734#19980#0" expanded="false" />
                 <element signature="e#20028#20154#0" expanded="false" />
                 <element signature="e#20201#20339#0" expanded="false" />
                 <element signature="e#20385#20617#0" expanded="false" />
@@ -100,75 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="122" selection-end-column="47" />
-              <folding>
-                <element signature="e#732#945#0" expanded="false" />
-                <element signature="e#1001#1575#0" expanded="false" />
-                <element signature="e#1043#1154#0" expanded="false" />
-                <element signature="e#1202#1575#0" expanded="false" />
-                <element signature="e#1624#2110#0" expanded="false" />
-                <element signature="e#1666#1779#0" expanded="false" />
-                <element signature="e#1827#2110#0" expanded="false" />
-                <element signature="e#2156#2546#0" expanded="false" />
-                <element signature="e#2198#2318#0" expanded="false" />
-                <element signature="e#2366#2546#0" expanded="false" />
-                <element signature="e#2588#2881#0" expanded="false" />
-                <element signature="e#2630#2736#0" expanded="false" />
-                <element signature="e#2784#2881#0" expanded="false" />
-                <element signature="e#2926#3219#0" expanded="false" />
-                <element signature="e#2968#3077#0" expanded="false" />
-                <element signature="e#3125#3219#0" expanded="false" />
-                <element signature="e#3262#3582#0" expanded="false" />
-                <element signature="e#3304#3409#0" expanded="false" />
-                <element signature="e#3457#3582#0" expanded="false" />
-                <element signature="e#3817#4008#0" expanded="false" />
-                <element signature="e#4811#4884#0" expanded="false" />
-                <element signature="e#4921#5054#0" expanded="false" />
-                <element signature="e#4981#5054#0" expanded="false" />
-                <element signature="e#5834#5907#0" expanded="false" />
-                <element signature="e#5958#6043#0" expanded="false" />
-                <element signature="e#6073#6333#0" expanded="false" />
-                <element signature="e#6364#8009#0" expanded="false" />
-                <element signature="e#7455#7597#0" expanded="false" />
-                <element signature="e#7656#7787#0" expanded="false" />
-                <element signature="e#7852#8009#0" expanded="false" />
-                <element signature="e#8046#8365#0" expanded="false" />
-                <element signature="e#8292#8365#0" expanded="false" />
-                <element signature="e#8405#8978#0" expanded="false" />
-                <element signature="e#8905#8978#0" expanded="false" />
-                <element signature="e#9018#9224#0" expanded="false" />
-                <element signature="e#9151#9224#0" expanded="false" />
-                <element signature="e#9269#9671#0" expanded="false" />
-                <element signature="e#9598#9671#0" expanded="false" />
-                <element signature="e#9713#10215#0" expanded="false" />
-                <element signature="e#10142#10215#0" expanded="false" />
-                <element signature="e#10254#10849#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testDeletePortfolio.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -191,10 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Shares/static/css/custom.css" />
-        <option value="$PROJECT_DIR$/Shares/News/risefall.py" />
-        <option value="$PROJECT_DIR$/Shares/__init__.py" />
-        <option value="$PROJECT_DIR$/Shares/Communication/test.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/testy.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/spender.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/fdgfdg.py" />
@@ -224,7 +145,6 @@
         <option value="$PROJECT_DIR$/Shares/templates/index.html" />
         <option value="$PROJECT_DIR$/Shares/templates/add.html" />
         <option value="$PROJECT_DIR$/Shares/templates/sidebar/addshare.html" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Shares/templates/portfolio.html" />
         <option value="$PROJECT_DIR$/Shares/Communication/pstesy.py" />
         <option value="$PROJECT_DIR$/Shares/Communication/EmailFallRise.py" />
@@ -238,10 +158,15 @@
         <option value="$PROJECT_DIR$/Shares/share_data.py" />
         <option value="$PROJECT_DIR$/Shares/models.py" />
         <option value="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
-        <option value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
         <option value="$PROJECT_DIR$/Shares/templates/transactions.html" />
         <option value="$PROJECT_DIR$/Shares/forms.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testDeleteShare.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
         <option value="$PROJECT_DIR$/Shares/views.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testUserNotifications.py" />
+        <option value="$PROJECT_DIR$/Shares/Tests/testShareNotifications.py" />
       </list>
     </option>
   </component>
@@ -252,9 +177,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -281,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,24 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FYP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +295,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,106 +305,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shares/Tests" />
       <recent name="$PROJECT_DIR$/Shares/Communication" />
       <recent name="$PROJECT_DIR$/Shares/templates" />
       <recent name="$PROJECT_DIR$/Shares/templates/news" />
       <recent name="$PROJECT_DIR$/Shares/static/css" />
-      <recent name="$PROJECT_DIR$/Shares/static/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in testAddShare">
-    <configuration default="false" name="Unittests in testAuthentication" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testAuthentication.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in testAddShare" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testAddShare.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in testAddPortfolio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testAddPortfolio.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in testDatabase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FYP" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testDatabase.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in testShareNotifications">
     <configuration default="false" name="Unittests in testDeletePortfolio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -510,6 +325,98 @@
       <module name="FYP" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testDeleteShare" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testDeleteShare.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testUserNotifications" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testUserNotifications.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in testShareNotifications" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Shares/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FYP" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Shares/Tests/testShareNotifications.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -715,19 +622,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testAuthentication" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testAddShare" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testDatabase" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testDeleteShare" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testUserNotifications" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testShareNotifications" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testAddShare" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testAuthentication" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testDatabase" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testAddPortfolio" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testShareNotifications" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testUserNotifications" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Tests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testDeletePortfolio" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in testDeleteShare" />
       </list>
     </recent_temporary>
   </component>
@@ -741,12 +648,6 @@
       <created>1457045194251</created>
       <option name="number" value="Default" />
       <updated>1457045194251</updated>
-    </task>
-    <task id="LOCAL-00057" summary="button styling">
-      <created>1457986820536</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1457986820536</updated>
     </task>
     <task id="LOCAL-00058" summary="button styling">
       <created>1457986856221</created>
@@ -1036,64 +937,70 @@
       <option name="project" value="LOCAL" />
       <updated>1460368630558</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="authentication">
+      <created>1460543903723</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1460543903723</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 22h 59m 54s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 15m 44s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 01m 02s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 16m 16s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 01m 18s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 19m 38s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 02m 16s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 19m 56s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 03m 03s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 20m 27s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 03m 42s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 20m 44s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 10m 23s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testShareNotifications - 2016.04.16 at 17h 21m 33s.xml">
+      <configuration name="Unittests in testShareNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 13m 42s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testUserNotifications - 2016.04.16 at 17h 02m 57s.xml">
+      <configuration name="Unittests in testUserNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 14m 28s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testUserNotifications - 2016.04.16 at 17h 03m 03s.xml">
+      <configuration name="Unittests in testUserNotifications" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testAddShare - 2016.04.06 at 23h 16m 07s.xml">
-      <configuration name="Unittests in testAddShare" configurationId="tests" />
+    <history-entry file="Unittests_in_testUserNotifications - 2016.04.16 at 17h 15m 31s.xml">
+      <configuration name="Unittests in testUserNotifications" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24543947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25096953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23739496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22106361" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1108,7 +1015,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dropdown for add shares" />
     <MESSAGE value="sslify" />
     <MESSAGE value="removed sslify" />
     <MESSAGE value="fixed share rise and fall" />
@@ -1133,7 +1039,8 @@
     <MESSAGE value="fixed transaction recording" />
     <MESSAGE value="testing" />
     <MESSAGE value="transaction formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="transaction formatting" />
+    <MESSAGE value="authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1185,24 +1092,17 @@
           <line>190</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Shares/views.py</url>
+          <line>434</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Shares/static/img/gears.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/news/allrisefall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73426574">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32286996">
@@ -1385,13 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="27" selection-start-line="274" selection-start-column="27" selection-end-line="274" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/templates/news/risefall.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.666667">
@@ -1483,27 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7287406">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-            <element signature="e#756#806#0" expanded="false" />
-            <element signature="e#871#924#0" expanded="false" />
-            <element signature="e#974#1030#0" expanded="false" />
-            <element signature="e#1093#1147#0" expanded="false" />
-            <element signature="e#1181#1223#0" expanded="false" />
-            <element signature="e#2208#2266#0" expanded="false" />
-            <element signature="e#2329#2481#0" expanded="false" />
-            <element signature="e#2523#2616#0" expanded="false" />
-            <element signature="e#2729#3078#0" expanded="false" />
-            <element signature="e#3441#3569#0" expanded="false" />
-            <element signature="e#3611#3674#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/flask/ctx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.15416098">
@@ -1522,37 +1394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1567,13 +1408,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05986696">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Shares/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5484222">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="122" selection-end-column="47" />
           <folding>
             <element signature="e#732#945#0" expanded="false" />
@@ -1621,21 +1461,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testDeletePortfolio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7062024">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83682984">
+          <caret line="129" column="65" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testUserNotifications.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.260274">
+          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24657534">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#756#806#0" expanded="false" />
+            <element signature="e#871#924#0" expanded="false" />
+            <element signature="e#974#1030#0" expanded="false" />
+            <element signature="e#1093#1147#0" expanded="false" />
+            <element signature="e#1181#1223#0" expanded="false" />
+            <element signature="e#2208#2266#0" expanded="false" />
+            <element signature="e#2329#2481#0" expanded="false" />
+            <element signature="e#2523#2616#0" expanded="false" />
+            <element signature="e#2729#3078#0" expanded="false" />
+            <element signature="e#3441#3569#0" expanded="false" />
+            <element signature="e#3611#3674#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shares/Tests/testAddShare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46575344">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Shares/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5011137">
-          <caret line="555" column="26" selection-start-line="555" selection-start-column="20" selection-end-line="555" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.2837633">
+          <caret line="378" column="19" selection-start-line="378" selection-start-column="13" selection-end-line="378" selection-end-column="19" />
           <folding>
-            <element signature="e#1804#2286#0" expanded="false" />
+            <element signature="e#446#541#0" expanded="false" />
+            <element signature="e#599#1111#0" expanded="false" />
+            <element signature="e#1179#1738#0" expanded="false" />
             <element signature="e#2354#2405#0" expanded="false" />
             <element signature="e#2503#3051#0" expanded="false" />
             <element signature="e#3154#3832#0" expanded="false" />
+            <element signature="e#3941#5016#0" expanded="false" />
             <element signature="e#5147#6594#0" expanded="false" />
             <element signature="e#6674#9277#0" expanded="false" />
+            <element signature="e#9415#11107#0" expanded="false" />
+            <element signature="e#11212#13239#0" expanded="false" />
             <element signature="e#16256#16414#0" expanded="false" />
+            <element signature="e#17237#17564#0" expanded="false" />
             <element signature="e#17618#17657#0" expanded="false" />
             <element signature="e#17710#17749#0" expanded="false" />
             <element signature="e#17800#17839#0" expanded="false" />
+            <element signature="e#17935#19664#0" expanded="false" />
+            <element signature="e#19734#19980#0" expanded="false" />
             <element signature="e#20028#20154#0" expanded="false" />
             <element signature="e#20201#20339#0" expanded="false" />
             <element signature="e#20385#20617#0" expanded="false" />

@@ -71,11 +71,10 @@ def inittestdb():
         db.create_all()
         testuser=User(username="test", email="test@test.com", password="test")
         db.session.add(testuser)
-        lucas=User(username="lucas2", email="lucas2@example.com", password="test")
+        lucas=User(username="lucas2", email="lucas2@example.com", password="test", phonenumber= "07506292708", emailfrequency=0, smsenabled=0)
         db.session.add(lucas)
         portfolio=Portfolios(portfolioname="Portfolio1", username="test")
         db.session.add(portfolio)
-
 
 @manager.command
 def dropdb():

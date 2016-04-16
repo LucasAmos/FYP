@@ -23,7 +23,7 @@ class test(TestCase):
         self.login('lucas2', 'test')
         self.addPortfolio("testportfolio")
 
-        #rv = self.addShare("RBS", 1, 0, -1, "testportfolio")
+        #rv = self.addShare("RBS", 1, 1, 100, "testportfolio")
         #print rv.data
 
 
@@ -110,6 +110,7 @@ class test(TestCase):
 
         rv = self.addShare("LLOY", 1, 0, 100, "testportfolio")
         assert "Added share &#39;LLOY&#39;" in rv.data
+        #assert "100" in rv.data
 
         rv = self.addShare("LLOY", 1, -1, 100, "testportfolio")
         assert "Number must be at least 0.0" in rv.data

@@ -61,6 +61,7 @@ class risefallstatus():
                                     if share.smsalert:
                                         sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
                                     share.lastalert = dt.today()
+                                    db.session.add(share)
                                     db.session.commit()
 
                                     print "alert: Sent"
@@ -82,6 +83,7 @@ class risefallstatus():
                                     if share.smsalert:
                                         sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
                                     share.lastalert = dt.today()
+                                    db.session.add(share)
                                     db.session.commit()
 
                                     print "alert: Sent"

@@ -25,5 +25,5 @@ class PortfolioData():
                 else:
                     profits[share['portfolioid']] = share['profit']
 
-            return render_template('email/sharedataemail.html', data=sharesinportfolio,
+            return render_template('email/sharedataemail2.html', data=sharesinportfolio,
                                    portfoliovalues=share_data.getportfoliovalues(user), portfolioprofits=profits)

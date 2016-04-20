@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 #configure database
 app.config['SECRET_KEY'] = '5\x91"\xee:/C\xfc\x03\x9c\x04C9\xdc\xae\x00]\xc8\xa4\x16~\xe5\xe16'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'thermos.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'sharedb.db')
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
 

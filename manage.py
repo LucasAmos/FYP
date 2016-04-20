@@ -27,39 +27,15 @@ def initdb():
         portfolio = Portfolios(username="lucas", portfolioname="test")
         db.session.add(portfolio)
 
-        #transaction = Transaction(user="lucas", portfolioid="test", buySell="sell", quantity=6, dividends=476.44, price= 324.3, ticker="RBS")
-
-        #transaction = Transaction(id=1)
-        #db.session.add(transaction)
-
 
 
 
         google = Userownedshare(user="lucas", ticker="MKS", quantity=1, portfolioid="test", triggerlevel=0, smsalert=False, emailalert=False)
         db.session.add(google)
-        #
-        # apple2 = Userownedshare(user="reindert", ticker="AAPL", quantity=1)
-        # db.session.add(apple2)
-        #
-        # ibm = Userownedshare(user="lucas", ticker="IBM", quantity=1)
-        # db.session.add(ibm)
-        #
+
         share = Share(ticker="MKS", name="Marks & Spencer")
         db.session.add(share)
-        #
-        # share2 = Share(ticker="AAPL", name="APPLE inc")
-        # db.session.add(share2)
-        #
-        # share3 = Share(ticker="IBM", name="INTERNATIONAL BUSINESS MACHINES")
-        # db.session.add(share3)
-        #
-        # XOM = Share(ticker="XOM", name="EXXON MOBIL CORPORATION")
-        # db.session.add(XOM)
-        #
-        # db.session.commit()
 
-        # lucas=User(username="lucas", email="lucas@example.com", password="test")
-        # db.session.add(lucas)
         db.session.commit()
 
 

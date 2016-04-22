@@ -43,7 +43,7 @@ class risefallstatus():
                             name = str(share.name.name)
                             print name
                             change = float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
-                            print "rise/fall: %s" %float(share_data.JSONShareFall(ticker)['query']['results']['quote']['Change'])
+                            print "rise/fall: %s" %change
 
                             print "triggerlevel: %s" \
                                   " " %share.triggerlevel
@@ -59,7 +59,8 @@ class risefallstatus():
                                         email.sendEmail(user.email, "alerts@lucasamos.net", "Share alert for %s" %name, html)
 
                                     if share.smsalert:
-                                        sms.sendSMS(user.phonenumber, "Your share %s has fallen by %s" % (name, change))
+                                        sms.sendSMS(user.phonenumber, "Your share %s has fallen by %sp" % (name, change))
+
                                     share.lastalert = dt.today()
                                     db.session.add(share)
                                     db.session.commit()
@@ -82,6 +83,7 @@ class risefallstatus():
 
                                     if share.smsalert:
                                         sms.sendSMS(user.phonenumber, "Your share %s has risen by %s" % (name, change))
+
                                     share.lastalert = dt.today()
                                     db.session.add(share)
                                     db.session.commit()

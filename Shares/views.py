@@ -390,11 +390,11 @@ def setNotification(share_id):
             positivenegative = 0
 
         elif share.triggerlevel < 0:
-            trigger=abs(share.triggerlevel)
+            trigger=abs(share.triggerlevel) /100
             positivenegative=0
 
         else:
-            trigger=share.triggerlevel
+            trigger=share.triggerlevel /100
             positivenegative=1
 
         form = ShareNotificationForm(request.form, smsenabled=int(share.smsalert), emailenabled=int(share.emailalert),
@@ -409,16 +409,16 @@ def setNotification(share_id):
                 triggervalue = 0.00
                 triggervalue = triggervalue - float(form.triggerlevel.data)
 
-                share.triggerlevel=triggervalue
+                share.triggerlevel=triggervalue *100
 
             elif int(form.positivenegative.data) == 0:
                 trigger=form.triggerlevel.data
 
-                share.triggerlevel=trigger
+                share.triggerlevel=trigger *100
 
 
             else:
-                share.triggerlevel=form.triggerlevel.data
+                share.triggerlevel=form.triggerlevel.data *100
 
             print form.positivenegative.data
             db.session.commit()

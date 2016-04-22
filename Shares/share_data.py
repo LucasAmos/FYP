@@ -207,8 +207,9 @@ class share_data():
             shareholding = shareprice * quantity
             dividends = dividends + row.dividends
             sharevalue += shareholding
-            portfoliovalue = sharevalue + dividends
 
+        sharevalue = sharevalue/100
+        portfoliovalue = sharevalue + dividends
         dictvalues = {'portfoliovalue': round(portfoliovalue, 2), 'sharevalue': sharevalue, 'dividends': dividends}
 
         return dictvalues

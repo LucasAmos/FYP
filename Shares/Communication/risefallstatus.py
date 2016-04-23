@@ -16,10 +16,9 @@ class risefallstatus():
     email = Email("lucas_amos", "beadle10")
     sms = SMS("ACb3d2405e15df8441919994ce553eae4b", "41e85a6638606f578860825b750462c1")
     session = db.session()
-    today = datetime.datetime.today().weekday()
+    today = datetime.datetime.today().isoweekday()
 
-    if today:
-
+    if today is not 6 and today is not 7:
         for user in session.query(User):
 
             if user.smsenabled:

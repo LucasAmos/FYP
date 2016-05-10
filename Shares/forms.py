@@ -234,9 +234,9 @@ class AddPortfolioForm(Form):
 
 class AddAdditionalShares(Form):
     name = StringField('Share name')
-    sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(),ShareQuantityValidator(), number_range(min=1, max=10000)], default=0)
-    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(),SharePricevalidator(), number_range(min=0.01, max=10000)], default=0)
-    dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)], default=0)
+    sharequantity = IntegerField('Have you bought any additional shares:', validators=[optional(),ShareQuantityValidator(), number_range(min=1, max=10000)])
+    shareprice = FloatField('How much did you pay for these shares:', validators=[optional(),SharePricevalidator(), number_range(min=0.01, max=10000)])
+    dividends = DecimalField('Have you received any new dividends: &nbsp', validators=[optional(), number_range(min=0.00)])
 
     def validate(self):
 

@@ -6,7 +6,7 @@ Python <br>
 Flask <br>
 HTML <br>
 CSS <br>
-Javascript <br>
+JavaScript <br>
 Jinja2 <br>
 Twilio <br>
 SendGrid <br>
